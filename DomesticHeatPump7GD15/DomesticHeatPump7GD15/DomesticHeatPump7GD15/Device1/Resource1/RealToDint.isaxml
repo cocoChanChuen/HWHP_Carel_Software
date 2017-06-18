@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pou FileVersion="200.00.003" Name="RealToDint" ElementGuid="4d321b89-0c1c-4948-9ffc-69d88ab6c957" Comment="" SingleTextLine="Round and cast Real numbers" Language="ST" CustomFbd="0" Localization="Prj" GroupName="(User defined)" Password="E4BDBA2BEF6CC4DC" GenDebugInfo="false" UseResPassword="true" GenerateSymbMon="true" Is1499="false">
+  <Function IdentifierNb="0" Keyword="" ConvDirection="NoConversion" DataType="DINT" />
+  <LocalVars>
+    <Variable Name="RealToDint" DataType="DINT" InitialValue="" Comment="Rounded and casted input" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="ReadWrite" StringSize="0" Direction="Output" CommentFields="" Attributes="23825" />
+    <Variable Name="In" DataType="REAL" InitialValue="" Comment="Input value" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+    <Variable Name="Var1" DataType="DINT" InitialValue="" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+    <Variable Name="Var2" DataType="DINT" InitialValue="" Comment="" Address="" Modifier="NonRetain" Kind="Var" Alias="" AccessRights="ReadWrite" StringSize="0" RetainFlags="" CommentFields="" Attributes="0" GroupName="" />
+  </LocalVars>
+  <PouBody><![CDATA[4FQnV1NbWi9dZGUTZGofaWwxMzU3g1NLR1dLTk5hlmBlb1ZuRCiqcQkJUGRhLZBqQGpsdTp8hUtdXFZOXwWNS1ArUG51L6BaVkZDTSgIqiwtOA8LRQ+AWkJWTEJUCItL]]></PouBody>
+  <PouUIProperties><![CDATA[]]></PouUIProperties>
+</Pou>

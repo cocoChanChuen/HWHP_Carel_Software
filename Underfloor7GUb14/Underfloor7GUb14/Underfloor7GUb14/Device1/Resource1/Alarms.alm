@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Alarms UnitConversionZone="NoConversion">
+  <Alarm Name="Al_retain" Type="ManualReset" Trigger="Al_retain.Trigger" Active="Al_retain.Active" StorVar1="MemWritingsNo" Description="Error in the number of retain memory writings" />
+  <Alarm Name="Al_Err_retain_write" Type="ManualReset" Trigger="Al_Err_retain_write.Trigger" Active="Al_Err_retain_write.Active" Description="Error in retain memory writings" />
+  <Alarm Name="Al_Probe_WaterIn_T" Type="AutoReset" Trigger="Al_Probe_WaterIn_T.Trigger" Active="Al_Probe_WaterIn_T.Active" />
+  <Alarm Name="Al_Probe_Suction_T" Type="AutoReset" Trigger="Al_Probe_Suction_T.Trigger" Active="Al_Probe_Suction_T.Active" />
+  <Alarm Name="Al_Probe_Deice_T" Type="AutoReset" Trigger="Al_Probe_Deice_T.Trigger" Active="Al_Probe_Deice_T.Active" />
+  <Alarm Name="Al_Probe_Discharge_T" Type="AutoReset" Trigger="Al_Probe_Discharge_T.Trigger" Active="Al_Probe_Discharge_T.Active" />
+  <Alarm Name="Al_Probe_HP_P" Type="AutoReset" Trigger="Al_Probe_HP_P.Trigger" Active="Al_Probe_HP_P.Active" />
+  <Alarm Name="Al_Probe_LP_P" Type="AutoReset" Trigger="Al_Probe_LP_P.Trigger" Active="Al_Probe_LP_P.Active" />
+  <Alarm Name="Al_Comp_Overload" Type="AutoReset" Trigger="Al_Comp_Overload.Trigger" Active="Al_Comp_Overload.Active" />
+  <Alarm Name="Al_Comp_Inhibit" Type="AutoReset" Trigger="Al_Comp_Inhibit.Trigger" Active="Al_Comp_Inhibit.Active" />
+  <Alarm Name="Al_Fan_Fail" Type="AutoReset" Trigger="Al_Fan_Fail.Trigger" Active="Al_Fan_Fail.Active" />
+  <Alarm Name="Al_FloatSwitch" Type="ManualReset" Trigger="Al_FloatSwitch.Trigger" Active="Al_FloatSwitch.Active" />
+  <Alarm Name="Al_EEV_Fault" Type="AutoReset" Trigger="Al_EEV_Fault.Trigger" Active="Al_EEV_Fault.Active" />
+  <Alarm Name="Al_HP" Type="AutoResetUntilCounter" Trigger="Al_HP.Trigger" Active="Al_HP.Active" CounterMax="2" TimeValue="3600" />
+  <Alarm Name="Al_LP" Type="AutoResetUntilCounter" Trigger="Al_LP.Trigger" Active="Al_LP.Active" CounterMax="2" TimeValue="3600" />
+  <Alarm Name="Al_LowSH_1" Type="AutoReset" Description=" Low superheat protection" Trigger="Al_LowSH_1.Trigger" Active="Al_LowSH_1.Active" />
+  <Alarm Name="Al_LOP_1" Type="AutoReset" Description=" Low evaporation temperature protection" Trigger="Al_LOP_1.Trigger" Active="Al_LOP_1.Active" />
+  <Alarm Name="Al_MOP_1" Type="AutoReset" Description=" High evaporation temperature protection" Trigger="Al_MOP_1.Trigger" Active="Al_MOP_1.Active" />
+  <Alarm Name="Al_HiTempCond_1" Type="AutoReset" Description="High condensation temperature protection" Trigger="Al_HiTempCond_1.Trigger" Active="Al_HiTempCond_1.Active" />
+  <Alarm Name="Al_LowSuct_1" Type="AutoReset" Description="Low suction temperature" Trigger="Al_LowSuct_1.Trigger" Active="Al_LowSuct_1.Active" />
+  <Alarm Name="Al_EEV_1" Type="AutoReset" Description=" EEV motor error" Trigger="Al_EEV_1.Trigger" Active="Al_EEV_1.Active" />
+  <Alarm Name="Al_SelfTuning_1" Type="AutoReset" Description=" Ineffective adaptive control" Trigger="Al_SelfTuning_1.Trigger" Active="Al_SelfTuning_1.Active" />
+  <Alarm Name="Al_EmergClos_1" Type="AutoReset" Description=" Emergency closing alarm" Trigger="Al_EmergClos_1.Trigger" Active="Al_EmergClos_1.Active" />
+  <Alarm Name="Al_RangeError_1" Type="AutoReset" Description="Parameter range error (some children in the data structure are out of bounds)" Trigger="Al_RangeError_1.Trigger" Active="Al_RangeError_1.Active" />
+  <Alarm Name="Al_ServicePosit_perc_1" Type="AutoReset" Description="ServicePosit_perc must take value 0.0…100.0" Trigger="Al_ServicePosit_perc_1.Trigger" Active="Al_ServicePosit_perc_1.Active" />
+  <Alarm Name="Al_ValveID_1" Type="AutoReset" Description="VlvID must take value 1 or 2" Trigger="Al_ValveID_1.Trigger" Active="Al_ValveID_1.Active" />
+  <Alarm Name="Al_Off" Type="AutoReset" Trigger="Al_Off.Trigger" Active="Al_Off.Active" Description="Unit is switched off manually. " />
+</Alarms>

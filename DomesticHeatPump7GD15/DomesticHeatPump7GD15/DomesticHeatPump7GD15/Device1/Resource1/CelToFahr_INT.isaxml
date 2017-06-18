@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pou FileVersion="200.00.003" Name="CelToFahr_INT" ElementGuid="091b10ed-5545-4179-bf35-9a863c95f323" Comment="" SingleTextLine="Converts a value in Celsius to a value in Fahrenheit" Language="FBD" CustomFbd="0" Localization="Prj" GroupName="(User defined)" Password="E4BDBA2BEF6CC4DC" GenDebugInfo="false" UseResPassword="true" GenerateSymbMon="true" Is1499="false">
+  <Function IdentifierNb="0" Keyword="" ConvDirection="NoConversion" DataType="DINT" />
+  <LocalVars>
+    <Variable Name="CelToFahr_INT" DataType="INT" InitialValue="" Comment="Value in Fahrenheit" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="ReadWrite" StringSize="0" Direction="Output" CommentFields="" Attributes="23825" />
+    <Variable Name="In" DataType="INT" InitialValue="" Comment="Value in Celsius" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+  </LocalVars>
+  <PouBody><![CDATA[gFQnV1NbWi9dZGUTZGofaWwxMzU3g1NLR1dLTk5hh2BoV21HYSm2Wk1NVgwKYq1rYmw/IUYDgAgOQ0JPQgiAODEOCEFCDpw/Ny9SPChw/TcoMjAxKW2XOCwyMDksdfwsKEA/KTFt9SwoWz9AThibUUtcUERBDckPUD4yDAoBhkpcOTYtUHzsMzQ7LjAyce0pVz4qMDJ56DE8Ki5CPWn1KTUqLlk9E6FkaFdtSG41yQ9QPjIMCgGGSlw5NC1QfOw2MTEuMDJx7SlXPiozMnXoMTwqLkI9afUpNSouWT0CoWlQbERgaDObV0FCTgwKFfk1CQlCV0ET/jcoUz8pNnXoNDcxKy1TfOw8Mi8wNSlthzgsMi4wKW2cOE1tDwtAF4VXPjYuUT1p8zM8LzMyMmjoVjkrMzAybfYxLS9BPChw6DQtL1o8QySoUWtFY2lyHo1LUA4IQUEThz9APjItWnzsNSgzKy1GfOw3KDMrLVR87DYoMysMChH5LTU1Mi8xdfA+NTUyLzF18D41NDQvMXXwPjU6MC8xdfAsCQlCQFIC/kE5My5bPWn0KTQqLkc9afApNCouVT1p8Sk0Kg8LUHzsMjc1LDA0df8yNzUsMDR1/zIxMSwwNHX/MjI7LDA0de0IDkNDU0N7gDg0L1g8KHHoNS0vRDwod+g1LS9WPCh16DUtDghRPWnxMjItMzU0evEyMi0zNTR68Tw2LTM1NHryNTwtMzU0aMkPREJQQjoF+TUoWT8pMG30LChFPykzbfQsKFc/KTZt9CwJCVI8KHL2NSoyNjU7cvY1KjI2NTty9zMqMjY1O3LxNyoyNjUpTM4mYW1mXmkvomoJCSFobierOCRMVklFE8kPUmZwcmkuqjhNOTAMChKnZGhqbGY9EY0tNS8zKA1Lh2Bob1FoeiT5VU0rMzcscPYsCQkhZG4lm2xqZW0MCmKta2JsPyFJBZtIRVsPC04kvHFNZz83DUvnYGpnXWhuJ6sIDkZMRV8HkUtHV0tOTg==]]></PouBody>
+  <PouUIProperties><![CDATA[]]></PouUIProperties>
+</Pou>

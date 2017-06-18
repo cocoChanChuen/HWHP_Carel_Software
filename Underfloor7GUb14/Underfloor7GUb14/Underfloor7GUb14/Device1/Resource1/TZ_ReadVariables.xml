@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest
+  Version="1.0.0">
+  <Variables>
+    <Variable
+      Name="Read_TZR"
+      Comment="Read the current time zone (works on the edge)"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false"
+      Access="ReadWrite"
+      Decimals="1" />
+    <Variable
+      Name="Zone_TZR"
+      Comment="Index of the zone"
+      AccessRights="Write"
+      DataType="UINT"
+      Kind="VarOutput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false"
+      Access="ReadWrite"
+      Decimals="1" />
+    <Variable
+      Name="Err_TZR"
+      Comment="Operation result (ERR_xxx error code)"
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false"
+      Access="ReadWrite"
+      Decimals="1" />
+    <Variable
+      Name="PosixString"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STRING"
+      Kind="Var"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false"
+      Access="ReadWrite"
+      Decimals="1" />
+    <Variable
+      Name="RTC_TZ_READ_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="RTC_TZ_READ"
+      Kind="Var">
+      <Variable
+        Name="ENABLE"
+        DataType="BOOL"
+        IO="false"
+        Protocol="false"
+        UI="false"
+        Default="false"
+        LogPV="false"
+        Alarm="false"
+        UoM="NoUnits"
+        IsRetained="false"
+        Access="ReadWrite"
+        Decimals="1" />
+      <Variable
+        Name="TIMEZONE"
+        DataType="STRING"
+        IO="false"
+        Protocol="false"
+        UI="false"
+        Default="false"
+        LogPV="false"
+        Alarm="false"
+        UoM="NoUnits"
+        IsRetained="false"
+        Access="ReadWrite"
+        Decimals="1" />
+      <Variable
+        Name="ERROR"
+        DataType="DINT"
+        IO="false"
+        Protocol="false"
+        UI="false"
+        Default="false"
+        LogPV="false"
+        Alarm="false"
+        UoM="NoUnits"
+        IsRetained="false"
+        Access="ReadWrite"
+        Decimals="1" />
+      <Variable
+        Name="ENABLE_PREV"
+        DataType="BOOL"
+        IO="false"
+        Protocol="false"
+        UI="false"
+        Default="false"
+        LogPV="false"
+        Alarm="false"
+        UoM="NoUnits"
+        IsRetained="false"
+        Access="ReadWrite"
+        Decimals="1" />
+    </Variable>
+  </Variables>
+</Manifest>

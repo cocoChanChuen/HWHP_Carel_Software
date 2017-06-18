@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="EEV_Struct" Comment="" AccessRights="ReadWrite" DataType="DATA_EVD_EEVCONFIG_EVDEMB" Kind="VarOutput">
+      <Variable Name="ExtraClosEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB">
+        <Variable Name="Val" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="ExtraOpEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB">
+        <Variable Name="Val" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="FastClosMoveRate" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="FullClosSteps" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="HoldCurr" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="MoveCurr" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="MoveDuty" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="MoveRate" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="RegMaxPos" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="RegMinPos" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="StepsDoublingEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB">
+        <Variable Name="Val" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+    </Variable>
+    <Variable Name="EEV_Struct_In" Comment="" AccessRights="Read" DataType="DATA_EVD_EEVCONFIG_EVDEMB" Kind="VarInput">
+      <Variable Name="ExtraClosEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB">
+        <Variable Name="Val" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="ExtraOpEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB">
+        <Variable Name="Val" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="FastClosMoveRate" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="FullClosSteps" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="HoldCurr" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="MoveCurr" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="MoveDuty" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="MoveRate" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="RegMaxPos" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="RegMinPos" DataType="DATA_TYPEDESCR_INT_EVDEMB">
+        <Variable Name="Val" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMax" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="MskLimMin" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Err" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="StepsDoublingEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB">
+        <Variable Name="Val" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Dev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="EnDev" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+    </Variable>
+    <Variable Name="SuperEEVtype" Comment="" AccessRights="Read" DataType="INT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+  </Variables>
+</Manifest>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Alarms UnitConversionZone="NoConversion">
+  <Alarm Name="Al_retain" Type="ManualReset" Trigger="Al_retain.Trigger" Active="Al_retain.Active" StorVar1="MemWritingsNo" Description="Error in the number of retain memory writings" />
+  <Alarm Name="Al_Err_retain_write" Type="ManualReset" Trigger="Al_Err_retain_write.Trigger" Active="Al_Err_retain_write.Active" Description="Error in retain memory writings" />
+  <Alarm Name="Al_Probe_WaterIn_T" Type="AutoReset" Trigger="Al_Probe_WaterIn_T.Trigger" Active="Al_Probe_WaterIn_T.Active" />
+  <Alarm Name="Al_Probe_WaterOut_T" Type="AutoReset" Trigger="Al_Probe_WaterOut_T.Trigger" Active="Al_Probe_WaterOut_T.Active" />
+  <Alarm Name="Al_Probe_Deice_T" Type="AutoReset" Trigger="Al_Probe_Deice_T.Trigger" Active="Al_Probe_Deice_T.Active" />
+  <Alarm Name="Al_Probe_HP_P" Type="AutoReset" Trigger="Al_Probe_HP_P.Trigger" Active="Al_Probe_HP_P.Active" />
+  <Alarm Name="Al_Probe_LP_P" Type="AutoReset" Trigger="Al_Probe_LP_P.Trigger" Active="Al_Probe_LP_P.Active" />
+  <Alarm Name="Al_Probe_TopCylinder" Type="AutoReset" Trigger="Al_Probe_TopCylinder.Trigger" Active="Al_Probe_TopCylinder.Active" />
+  <Alarm Name="Al_Probe_MidCylinder" Type="AutoReset" Trigger="Al_Probe_MidCylinder.Trigger" Active="Al_Probe_MidCylinder.Active" />
+  <Alarm Name="Al_Probe_BotCylinder" Type="AutoReset" Trigger="Al_Probe_BotCylinder.Trigger" Active="Al_Probe_BotCylinder.Active" />
+  <Alarm Name="Al_Comp_Overload" Type="AutoReset" Trigger="Al_Comp_Overload.Trigger" Active="Al_Comp_Overload.Active" />
+  <Alarm Name="Al_Comp_Inhibit" Type="AutoReset" Trigger="Al_Comp_Inhibit.Trigger" Active="Al_Comp_Inhibit.Active" />
+  <Alarm Name="Al_FlowSwitch" Type="ManualReset" Trigger="Al_FlowSwitch.Trigger" Active="Al_FlowSwitch.Active" />
+  <Alarm Name="Al_HP" Type="AutoReset" Trigger="Al_HP.Trigger" Active="Al_HP.Active" />
+  <Alarm Name="Al_LP" Type="AutoReset" Trigger="Al_LP.Trigger" Active="Al_LP.Active" />
+  <Alarm Name="Al_Off" Type="AutoReset" Trigger="Al_Off.Trigger" Active="Al_Off.Active" />
+</Alarms>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="ProbeFailComp" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+  </Variables>
+</Manifest>

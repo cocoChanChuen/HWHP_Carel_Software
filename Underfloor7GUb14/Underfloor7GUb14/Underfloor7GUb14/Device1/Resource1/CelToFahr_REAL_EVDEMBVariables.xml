@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="CelToFahr_REAL_EVDEMB" Comment="Value in Fahrenheit" AccessRights="ReadWrite" DataType="REAL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="In" Comment="Value in Celsius" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+  </Variables>
+</Manifest>

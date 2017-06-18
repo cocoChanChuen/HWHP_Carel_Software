@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pou FileVersion="200.00.003" Name="CelToFahrDelta_INT" ElementGuid="0a3ef9ba-3879-4f2f-b083-56e8c0ab2514" Comment="" SingleTextLine="Converts a differential in Celsius to a differential in Fahrenheit" Language="FBD" CustomFbd="0" Localization="Prj" GroupName="(User defined)" Password="E4BDBA2BEF6CC4DC" GenDebugInfo="false" UseResPassword="true" GenerateSymbMon="true" Is1499="false">
+  <Function IdentifierNb="0" Keyword="" ConvDirection="NoConversion" DataType="DINT" />
+  <LocalVars>
+    <Variable Name="CelToFahrDelta_INT" DataType="INT" InitialValue="" Comment="Differential in Fahrenheit" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="ReadWrite" StringSize="0" Direction="Output" CommentFields="" Attributes="23825" />
+    <Variable Name="In" DataType="INT" InitialValue="" Comment="Differential in Celsius" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+  </LocalVars>
+  <PouBody><![CDATA[oFQnV1NbWi9dZGUTZGofaWwxMzU3g1NLR1dLTk5hh2BoV21HYSm2QWFvdmBfCIpRCQkhaG4nqzgkRUBFDUuERUpBS0U9dMkPREFNWTpy6FU5KzM4Mm31NzQqLlI9afU3PC82OSlthzgsMi4wKW2cOEVNW15UDptXQUJODAoV+TUJCUJDTxn+MShTPyk2dPIpNTEyKCwS+S01MTotNHntKUc+KjAscO0pXD5QZGEtkGpNbXYMChX5NQkJQkNPGf4yKFM/KTN09ik1MTIoLBL5LTY0MC00ee0pRz4qMCxw7SlcPkFkbBWrQ2VrcEVlLbBkW1FHQExMzlE5Mw8LQBeFVz4xLlE9afIxKDIxMyltlzgsOjQtMnXtKUc+KjAscO0pXD5Lbw1LhFNFUTg0LBH5LTwyNC0xcvYsKFA/KTF18Ck2NystQ3zsNCgyKy1YfIdgaFdtR2EptkFhb3ZgXwiKUQkJQkBSAv5BOTMuWz1p9Ck0Ki5HPWn2KTQqLlU9afcpNCoPC1B87DQyMywwNHX/NDIzLDA0df80MzUsMDR1/zQ9MSwwNHXtCA5DQ1NDe4A4NC9YPChx6DUtL0Q8KHXoNS0vVjwodOg1LQ4IUT1p8z0wLTM1NHrzPTAtMzU0evw1NC0zNTR6/DQyLTM1NGjJD0RCUEI6Bfk1KFk/KTBt9CwoRT8pN230LChXPyk0bfQsCQlSPCh39jEqMjY1O3f2MSoyNjU7d/A1KjI2NTt38TMqMjY1KUzORUVRQTtEfPQpXj4qMSxx7SlCPioyLHHtKVA+KjYsce0IDlM/KTNz9Cs1NzY6M3P0KzU3NjozcvIrNTc2OjN09is1NzYoDUvnYGpnXWhuJ6sIDiBrb2Yu+SVLV0pEUkzOU2FxcWhvL/lMPjEPC1MipWltbWU8UAjsNCgyKwwKAqFpaFBre2V8lEwsMjQtMXPtCA4gZ29kHq1rYmwPCyMoqmNrPiJIRB6JRFwOCE9lObBMYD41DApioWtgXGtvZi7JD0FNRl5GFIpGUEpNTw==]]></PouBody>
+  <PouUIProperties><![CDATA[]]></PouUIProperties>
+</Pou>

@@ -1,0 +1,13 @@
+Version 1.1 Alarms RepoVersion 3.4.2
+Name	Type	Edge	Description	CounterMax	TimeValue	StorVar1	StorVar2
+Al_LowSH_1	Auto reset	Positive	 Low superheat protection					
+Al_LOP_1	Auto reset	Positive	 Low evaporation temperature protection					
+Al_MOP_1	Auto reset	Positive	 High evaporation temperature protection					
+Al_HiTempCond_1	Auto reset	Positive	High condensation temperature protection					
+Al_LowSuct_1	Auto reset	Positive	Low suction temperature					
+Al_EEV_1	Auto reset	Positive	 EEV motor error					
+Al_SelfTuning_1	Auto reset	Positive	 Ineffective adaptive control					
+Al_EmergClos_1	Auto reset	Positive	 Emergency closing alarm					
+Al_RangeError_1	Auto reset	Positive	Parameter range error (some children in the data structure are out of bounds)					
+Al_ServicePosit_perc_1	Auto reset	Positive	ServicePosit_perc must take value 0.0…100.0					
+Al_ValveID_1	Auto reset	Positive	VlvID must take value 1 or 2					

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="__SYSVA_BEEP_ON" Comment="Activates the buzzer for a while" AccessRights="ReadWrite" DataType="USINT" Kind="VarGlobal" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_CCEXEC" Comment="Execute one cycle when application is in cycle to cycle mode" AccessRights="ReadWrite" DataType="BOOL" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_CURSOR_COLUMN" Comment="Display cursor current X coordinate" AccessRights="ReadWrite" DataType="INT" Kind="VarGlobal" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_CURSOR_ROW" Comment="Display cursor current Y coordinate" AccessRights="ReadWrite" DataType="INT" Kind="VarGlobal" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_CURSOR_VAR" Comment="Display cursor for scrolling lists" AccessRights="ReadWrite" DataType="INT" Kind="VarGlobal" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_CYCLECNT" Comment="Cycle counter" AccessRights="Read" DataType="DINT" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_CYCLEDATE" Comment="Timestamp of the beginning of the cycle in milliseconds" AccessRights="Read" DataType="TIME" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_KEY_COUNTER" Comment="Key pressed time" AccessRights="ReadWrite" DataType="INT" Kind="VarGlobal" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_KEY_PRESSED" Comment="Key pressed flag" AccessRights="ReadWrite" DataType="USINT" Kind="VarGlobal" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_KVBCERR" Comment="Kernel variable binding consuming error (consumption error)" AccessRights="ReadWrite" DataType="BOOL" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_KVBPERR" Comment="Kernel variable binding producing error (production error)" AccessRights="Read" DataType="BOOL" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_MANUAL_BUZZER_OFF" Comment="Deactivates the alarm buzzer when it has been released from integrated alarm management" AccessRights="ReadWrite" DataType="USINT" Kind="VarGlobal" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_MANUAL_BUZZER_ON" Comment="Activates the buzzer when controlled manually" AccessRights="ReadWrite" DataType="USINT" Kind="VarGlobal" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_RESMODE" Comment="Resource execution mode " AccessRights="Read" DataType="SINT" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_RESNAME" Comment="Resource name (max length=255)" AccessRights="Read" DataType="STRING" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_SCANCNT" Comment="Input scan counter" AccessRights="Read" DataType="DINT" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_TCYCURRENT" Comment="Current cycle time" AccessRights="Read" DataType="TIME" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_TCYCYCTIME" Comment="Programmed cycle time" AccessRights="ReadWrite" DataType="TIME" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_TCYMAXIMUM" Comment="Maximum cycle time since last start" AccessRights="Read" DataType="TIME" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_TCYOVERFLOW" Comment="Number of cycle overflows" AccessRights="Read" DataType="DINT" Kind="VarGlobal" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="__SYSVA_TMP_VALUE" Comment="Temp value for field editing" AccessRights="ReadWrite" DataType="UDINT" Kind="VarGlobal" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Al_Comp_Inhibit" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_Comp_Overload" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_EEV_1" Comment=" EEV motor error" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_EEV_Fault" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_EmergClos_1" Comment=" Emergency closing alarm" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_Err_retain_write" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_Fan_Fail" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_FloatSwitch" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_HiTempCond_1" Comment="High condensation temperature protection" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_HP" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_LOP_1" Comment=" Low evaporation temperature protection" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_LowSH_1" Comment=" Low superheat protection" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_LowSuct_1" Comment="Low suction temperature" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_LP" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_MOP_1" Comment=" High evaporation temperature protection" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_Off" Comment="Unit is switched off manually. " AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_Probe_Deice_T" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_Probe_Discharge_T" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_Probe_HP_P" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_Probe_LP_P" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_Probe_Suction_T" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_Probe_WaterIn_T" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_RangeError_1" Comment="Parameter range error (some children in the data structure are out of bounds)" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_retain" Comment="Automatic generated by Alarm editor" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_SelfTuning_1" Comment=" Ineffective adaptive control" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_ServicePosit_perc_1" Comment="ServicePosit_perc must take value 0.0…100.0" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Al_ValveID_1" Comment="VlvID must take value 1 or 2" AccessRights="ReadWrite" DataType="ALM" Kind="Var">
+      <Variable Name="Trigger" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status Trigger" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Active" DataType="BOOL" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Comment="Alarm status" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Alarm_Rly" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="FALSE" />
+    <Variable Name="Ambient_T" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="DegreesCelsius" Access="ReadWrite" Decimals="1" InitialValue="17.0" />
+    <Variable Name="BMS_On_Off" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="BMSconnection" Comment="" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="false" Protocol="true" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Comp_Oload" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="true" Protocol="false" UI="false" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="CompRly" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="true" Protocol="true" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="FALSE" />
+    <Variable Name="Deice_T" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="Discharge_T" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="DisplayOnOff" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="TRUE" />
+    <Variable Name="DriveTyp" Comment="Drive type (0: Internal public volume; 1: USB pendrive)" AccessRights="ReadWrite" DataType="BYTE" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="1" />
+    <Variable Name="En_WipeMem" Comment="Enable the wipe memory operation" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="ErrRetainWrite" Comment="" AccessRights="ReadWrite" DataType="SYSREAD_VALUEOUT" Kind="Var">
+      <Variable Name="ErrRetainWrite[1]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="ErrRetainWrite[2]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="ErrRetainWrite[3]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="ErrRetainWrite[4]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="ErrRetainWrite[5]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Fan_Fail" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="true" Protocol="false" UI="false" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Fan_Rly" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="FALSE" />
+    <Variable Name="FloatSW" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="HP_P" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="true" Protocol="true" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="HP_T" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="ImpExpJmp" Comment="Application jump due to Import/Export operation" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="LP_P" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="true" Protocol="true" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="LP_T" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="MemError" Comment="Automatically generated" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="MemWritingsNo" Comment="Automatically generated" AccessRights="ReadWrite" DataType="UDINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Access="ReadWrite" Min="0" Max="999999" />
+    <Variable Name="minRunTime" Comment="" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="200" Max="500" InitialValue="300" />
+    <Variable Name="minShutdownTime" Comment="" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="200" Max="500" InitialValue="300" />
+    <Variable Name="Probe_Deice_T" Comment="" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="true" Protocol="false" UI="false" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Probe_Discharge_T" Comment="" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="true" Protocol="false" UI="false" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Probe_HP" Comment="" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Probe_LP" Comment="" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="true" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Probe_Suction_T" Comment="" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="true" Protocol="false" UI="false" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Probe_WaterIn_T" Comment="" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="true" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Pump_Rly" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="FALSE" />
+    <Variable Name="PwrOffDate_BLKO_1" Comment="Date of the last power off expressed in seconds (Unix Timestamp, seconds from January 1st 1970) " AccessRights="ReadWrite" DataType="UDINT" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="true" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Room_Thermostat_In" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="TRUE" />
+    <Variable Name="RV_Heat" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="StartupJmp" Comment="Startup jump enable" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="TRUE" />
+    <Variable Name="STD_UOM_ZONE_UI" Comment="UoM zone for mask visualization" AccessRights="ReadWrite" DataType="DINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="STD_UOM_ZONE_WEB" Comment="UoM zone for tERA/Web editor" AccessRights="ReadWrite" DataType="UDINT" Kind="Var" IO="false" Protocol="true" UI="true" Default="false" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Suction_T" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="true" Protocol="false" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="TotalOnOff" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="UnitOff" Comment="Unit Off status: TRUE = Unit OFF" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="UnitOn" Comment="Unit On status: TRUE = Unit ON" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="UnitStatus" Comment="Unit status" AccessRights="ReadWrite" DataType="DINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="9" />
+    <Variable Name="Water_T_DiffHigh" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="true" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="DegreesCelsius" Access="ReadWrite" Decimals="1" Min="0" Max="7" InitialValue="0.0" />
+    <Variable Name="Water_T_DiffLow" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="true" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="DegreesCelsius" Access="ReadWrite" Decimals="1" Min="0" Max="7" InitialValue="5.0" />
+    <Variable Name="Water_T_SP" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="true" Protocol="true" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" Min="10" Max="40" InitialValue="35.0" />
+    <Variable Name="WaterIn_T" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="false" Protocol="true" UI="true" Default="false" LogPV="true" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="WaterIn_T_Offset" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" InitialValue="0.0" />
+    <Variable Name="WaterIn_T_Raw" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="true" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" InitialValue="30.0" />
+  </Variables>
+</Manifest>

@@ -1,0 +1,4103 @@
+﻿<Manifest
+  Version="1.0.0"
+  IsLibrary="true">
+  <Libraries />
+  <Pou
+    Name="EEVMovingTest_EVDEMB"
+    Moniker="EEVMovingTest_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="EEV"
+      Comment=""
+      AccessRights="Read"
+      DataType="TEEV"
+      Kind="VarInput" />
+    <Variable
+      Name="PositionToGo"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="EEVMovingTest_EVDEMB"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="EVD_EmbComm_2"
+    Moniker="EVD_EmbComm_2.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="true">
+    <Variable
+      Name="ParamsMaster"
+      Comment="Master data collection"
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="ParamsSlave"
+      Comment="Slave collection data"
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="En_CommParams"
+      Comment="for each son of the structure, TRUE: copy that variables from Master to Slave "
+      AccessRights="Read"
+      DataType="CFG_COMM_PARAMS_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="En_EVD_EmbComm"
+      Comment="Enable data connection"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Params_EVDEMB"
+      Comment="Merge data collection between Master and Slave"
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="GasP2T_EVDEMB"
+    Moniker="GasP2T_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="lnVal"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="lnVal2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="lnVal3"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="lnVal4"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="lnVal5"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="P_ABS"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="EvapP"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="ka"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="kb"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="kc"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="kd"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="ke"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="kf"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="GasP2T_EVDEMB"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="BLDC2EVD_Emb_2"
+    Moniker="BLDC2EVD_Emb_2.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="true">
+    <Variable
+      Name="ParamsIn_EVDEMB"
+      Comment="data collection used in algorithm (input)"
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="RfrgVlv"
+      Comment="Gas type - 1=R22, 2=R134a, 3=R404A, 4=R407C, 5=R410A, 6=R507, 7=R290, 8=R600, 9=R600a, 10=R717, 11=R744, 12=R728, 13=R1270, 14=R417A, 15=R422d, 16=R413A, 17=R422A, 18=R423A, 19=R407A, 20=R427A, 21=R245Fa, 22=R407F, 23=R32, 24=HTR01, 25=HTR02."
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="CoolCap"
+      Comment="Actual circuit cooling capacity for valve"
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="DscgTempSet"
+      Comment="Discharge temperature setpoint"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Dscg_SH_Set"
+      Comment="Discharge superheat setpoint"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="MOP_ThrshFastChg"
+      Comment="MOP (high evaporation temperature) threshold for frequent change"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="MOP_InhibThrsh"
+      Comment="MOP (high evaporation temperature) suction temperature threshold"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="RegSubTyp"
+      Comment="Secondary regulation mode"
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="S4_NTC_Tht_K"
+      Comment="Thermal time constant NTC probe S4"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="En_BLDC2EVD_Emb"
+      Comment="Enable function block"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Params_EVDEMB"
+      Comment="data collection used in algorithm (output)"
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="RegulationTypeGroups_EVDEMB"
+    Moniker="RegulationTypeGroups_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MACHINES_NUMBER"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="RegulationTypeGroups_EVDEMB"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BYTE"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="EVD_Emb_2"
+    Moniker="EVD_Emb_2.stf"
+    Language="FBD"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="true">
+    <Variable
+      Name="ParamsIn_EVDEMB"
+      Comment="data collection used in algorithm (input)"
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="ExtPositIn_EVDEMB"
+      Comment="external positioner configuration parameters (input)"
+      AccessRights="Read"
+      DataType="TEEV"
+      Kind="VarInput" />
+    <Variable
+      Name="VlvID_EVDEMB"
+      Comment="valve identification number"
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="S1_EVDEMB"
+      Comment="S1 probe value"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="S2_EVDEMB"
+      Comment="S2 probe value"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="S3_EVDEMB"
+      Comment="S3 probe value"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="S4_EVDEMB"
+      Comment="S4 probe value"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="En_ServicePosit_EVDEMB"
+      Comment="Enable service positioner (TRUE: enable, FALSE: disable)"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ServicePosit_perc_EVDEMB"
+      Comment="Position percentual set of service positioner"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="ExtPositOnline"
+      Comment="external positioner online status"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Al_ExtPositOffline"
+      Comment="external positioner offline status"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="InstDef_EVDEMB"
+      Comment="request of default (a positive edge is necessary)"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="En_EVDEMB"
+      Comment="Enable function block"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Params_EVDEMB"
+      Comment="data collection used in algorithm (output)"
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="ExtPosit_EVDEMB"
+      Comment="external positioner configuration parameters"
+      AccessRights="ReadWrite"
+      DataType="TEEV"
+      Kind="VarOutput" />
+    <Variable
+      Name="VlvReadyToGo_EVDEMB"
+      Comment="EVD ready to receive the Cooling capacity and to start the regulation"
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Alarms_EVDEMB"
+      Comment="Contains alarms list"
+      AccessRights="ReadWrite"
+      DataType="ALRMS_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="MaskEnableOn_EVDEMB"
+      Comment="Mask Enable depending on active regulation"
+      AccessRights="ReadWrite"
+      DataType="CHECK_FLAG_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="BaseTemp_EVDEMB"
+      Comment="temperature unit of measure used in algorithm (FALSE: °C, TRUE: °F)"
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="BaseP_EVDEMB"
+      Comment="pressure unit of measure used in algorithm (FALSE: barg, TRUE: psig)"
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="DataDescr"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DESCR_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="MachineServiceTimerUpdate"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MAIN_MachineServiceTimerUpdate_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="MachineDriving"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MAIN_MachineDriving_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="WriteMachineParameters"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MAIN_WriteMachineParameters_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="MachineController"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MAIN_MachineController_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="SystemStatus"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="Init"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MAIN_Init_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="AnalogInputInterface"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MAIN_AnalogInputInterface_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="DefaultAndSuperparameters"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MAIN_DefaultAndSuperparameters_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="TYP_Assign_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="Assign_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="R_TRIG_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="R_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="EVD_Emb_LoadMachineParameters_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MAIN_LoadMachineParameters_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="TYP_CheckFlag_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="CheckMaskEn_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="ServicePositFiltered_perc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="BoardTyp"
+      Comment="Value of requested parameter"
+      AccessRights="ReadWrite"
+      DataType="UDINT,1-5"
+      Kind="Var" />
+    <Variable
+      Name="PinOutOfBoundBitField"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="MAIN_MachineDrivingExtPos_EVDEMB_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MAIN_MachineDrivingExtPos_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="En_EVDEMBcore"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="IS2Any_EVDEMB"
+    Moniker="IS2Any_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="ValueIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Descr"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_TYPEDESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseTemp"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseP"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="IS2Any_EVDEMB"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="MAIN_AnalogInputInterface_EVDEMB"
+    Moniker="MAIN_AnalogInputInterface_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="DataIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="S1"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="S2"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="S3"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="S4"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="AnalogInputAdjust"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="AnalogInputAdjust_EVDEMB"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="Any2IS_EVDEMB"
+    Moniker="Any2IS_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="ValueIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Descr"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_TYPEDESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseTemp"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseP"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Any2IS_EVDEMB"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="AnalogInputAdjust_EVDEMB"
+    Moniker="AnalogInputAdjust_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="46C524E54DB8C7A8"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Val"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="PressureAndTemperatureProbeStatus"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="NTCThermalTimeK"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="NTCThermalTimeKPreviousSumIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="NTCPreviousCompensatedSumIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="AnalogInputAdjust"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="NTCThermalTimeKPreviousSum"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="NTCPreviousCompensatedSum"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="actualCompensatedSum"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="polePosition"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="valueadjust"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Tau"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="ReadyToWork_EVDEMB"
+    Moniker="ReadyToWork_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="tmpResult"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="ReadyToWorkPrevious"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="EVD_Emb_En"
+      Comment="state of FB"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="EEV_PosOnline"
+      Comment="the positioner is online (usefull in case of remote positioner)"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ReadyToWork_EVDEMB"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="MAIN_Init_EVDEMB"
+    Moniker="MAIN_Init_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="DataDescrIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="En_EVD_Emb"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="En_Jump"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="DataDescr"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DESCR_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="Count"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="IsFirst"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="PopulateDescriptor"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="PopulateDescriptor_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="MotorInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MotorInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="RaiseTrig"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="R_TRIG"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="i"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UDINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="CelToFahrDelta_REAL_EVDEMB"
+    Moniker="CelToFahrDelta_REAL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="In"
+      Comment="Differential in Celsius"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="CelToFahrDelta_REAL_EVDEMB"
+      Comment="Differential in Fahrenheit"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="PopulateDescriptor_EVDEMB"
+    Moniker="PopulateDescriptor_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="DataDescrIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="DataDescr"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DESCR_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="ParameterPopulate"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SingleParameterPopulate_EVDEMB"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="FahrToCelDelta_REAL_EVDEMB"
+    Moniker="FahrToCelDelta_REAL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="In"
+      Comment="Differential in Fahrenheit"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="FahrToCelDelta_REAL_EVDEMB"
+      Comment="Differential in Celsius"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="SingleParameterPopulate_EVDEMB"
+    Moniker="SingleParameterPopulate_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="DataType"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="IsTemperature"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="IsPressure"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="IsWritable"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="IsRelative"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="MinValue"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="MaxValue"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Default"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="ParameterPopulated"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DESCR_TYPEDESCR_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="CelToFahr_REAL_EVDEMB"
+    Moniker="CelToFahr_REAL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="In"
+      Comment="Value in Celsius"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="CelToFahr_REAL_EVDEMB"
+      Comment="Value in Fahrenheit"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="MotorInit_EVDEMB"
+    Moniker="MotorInit_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="StartingPosition"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="DeltaPosition"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="EEV_In"
+      Comment=""
+      AccessRights="Read"
+      DataType="TEEV"
+      Kind="VarInput" />
+    <Variable
+      Name="EEV"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TEEV"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="FahrToCel_REAL_EVDEMB"
+    Moniker="FahrToCel_REAL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="In"
+      Comment="Value in Fahrenheit"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="FahrToCel_REAL_EVDEMB"
+      Comment="Value in Celsius"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVOTunesInit_EVDEMB"
+    Moniker="SelfTuning_EVOTunesInit_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="EVOTunesReset"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesReset_EVDEMB"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="BarToPsi_REAL_EVDEMB"
+    Moniker="BarToPsi_REAL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="In"
+      Comment="Value in Bar"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="BarToPsi_REAL_EVDEMB"
+      Comment="Value in Psi"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVOTunesReset_EVDEMB"
+    Moniker="SelfTuning_EVOTunesReset_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="PreviousRMSValue"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="FirstStartUp"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="PsiToBar_REAL_EVDEMB"
+    Moniker="PsiToBar_REAL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="In"
+      Comment="Value in Psi"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="PsiToBar_REAL_EVDEMB"
+      Comment="Value in Bar"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="MAIN_DefaultAndSuperparameters_EVDEMB"
+    Moniker="MAIN_DefaultAndSuperparameters_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="DataDescr"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="DataIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseTemp"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseP"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="TabSuperparametri"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TAB_SuperEEVtype_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="tabSuperEEVtype"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TAB_SuperEEVtype_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="tabSuperMainRegulation"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TAB_SuperMainRegulation_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="tabSuperAuxRegulation"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TAB_SuperAuxRegulation_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="DevSP"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DevSP_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="DevOther"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DevOther_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="LoadDefaultParameters"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="LoadDefaultParameters_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="MainRegulationChangeDetected"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="regulationCategoryType"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BYTE"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="Sel_BOOL_EVDEMB"
+    Moniker="Sel_BOOL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Sel1"
+      Comment="Selector"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="In1"
+      Comment="Value returned if Select = FALSE."
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="In2"
+      Comment="Value returned if Select = TRUE."
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Sel_BOOL_EVDEMB"
+      Comment="Value selected"
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="TAB_SuperEEVtype_EVDEMB"
+    Moniker="TAB_SuperEEVtype_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="SuperEEVtype"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="EEV_Struct_In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVD_EEVCONFIG_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="EEV_Struct"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVD_EEVCONFIG_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="Sel_INT_EVDEMB"
+    Moniker="Sel_INT_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Sel1"
+      Comment="Selector"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="In1"
+      Comment="Value returned if Select = FALSE."
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="In2"
+      Comment="Value returned if Select = TRUE."
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Sel_INT_EVDEMB"
+      Comment="Value selected"
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="TAB_SuperMainRegulation_EVDEMB"
+    Moniker="TAB_SuperMainRegulation_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="SuperMainReg"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="DataIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="DataDescr"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseTemp"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseP"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="Sel_REAL_EVDEMB"
+    Moniker="Sel_REAL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Sel1"
+      Comment="Selector"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="In1"
+      Comment="Value returned if Select = FALSE."
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="In2"
+      Comment="Value returned if Select = TRUE."
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Sel_REAL_EVDEMB"
+      Comment="Value selected"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="TAB_SuperAuxRegulation_EVDEMB"
+    Moniker="TAB_SuperAuxRegulation_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="SuperAuxReg"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="DataIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="DataDescr"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="BAseTemp"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseP"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="Limit_REAL_EVDEMB"
+    Moniker="Limit_REAL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MinVal"
+      Comment="Minimum value"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="In"
+      Comment="Input value"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="MaxVal"
+      Comment="Maximum value"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Limit_REAL_EVDEMB"
+      Comment="Limited value"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="DevSP_EVDEMB"
+    Moniker="DevSP_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="DataIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="RealToDint_EVDEMB"
+    Moniker="RealToDint_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Var1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="Var2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="In"
+      Comment="Input value"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="RealToDint_EVDEMB"
+      Comment="Rounded and casted input"
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="DevOther_EVDEMB"
+    Moniker="DevOther_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="DataIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="Round_REAL_EVDEMB"
+    Moniker="Round_REAL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="In"
+      Comment="Input value"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Round_REAL_EVDEMB"
+      Comment="Rounded input"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="LoadDefaultParameters_EVDEMB"
+    Moniker="LoadDefaultParameters_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="DataIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="DataDescr"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseTemp"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseP"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="Assign_EVDEMB"
+    Moniker="Assign_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="DataIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="MAIN_LoadMachineParameters_EVDEMB"
+    Moniker="MAIN_LoadMachineParameters_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="DataDescr"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="DataIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="SystemStatusIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="S1_In"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="S2_In"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="S3_In"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="S4_In"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="En_ServicePosit"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ServicePosit_perc"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseTemp"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseP"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="S1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="S2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="S3"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="S4"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="SystemStatus"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="RangeError"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="GetParameterInt"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="GetParameterInt_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="GetParameterReal"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="GetParameterReal_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="GetParameterBool"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="GetParameterBool_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="MachineSwap"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MachineSwap_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="MachineReset"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MachineReset_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="MotorInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MotorInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="PIDInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="PIDInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EEVInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="EEVInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="newMOPThreshold"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesSHSetChangingTest"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesSHSetChangingTest_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesMethodSwitch"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesMethodSwitch_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesBestMethodAutoSearching"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesBestMethodAutoSearching_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesTuningTrigger"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesTuningTrigger_EVDEMB"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="PIDInit_EVDEMB"
+    Moniker="PIDInit_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="A1E2A80341A7392B"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="pidIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_PID_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="pid"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_PID_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVOTunesMethodSwitch_EVDEMB"
+    Moniker="SelfTuning_EVOTunesMethodSwitch_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="NewMethod"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="Model"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TFOLPD_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesPIDSetting"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesPIDSetting_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesProtectionsIntegralTimeSet"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesProtectionsIntegralTimeSet_EVDEMB"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVOTunesPIDSetting_EVDEMB"
+    Moniker="SelfTuning_EVOTunesPIDSetting_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="WorkingPIDKpIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="WorkingPIDTiIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="WorkingPIDTdIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="ModelIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="TFOLPD_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Method"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="EEVMaxSteps"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="WorkingPIDKp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="WorkingPIDTi"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="WorkingPIDTd"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Model"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TFOLPD_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="PIDSetting"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="PIDKp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="PIDTi"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="PIDTd"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="PIDTuningRules"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT,0-40;0-15"
+      Kind="Var" />
+    <Variable
+      Name="InitDone"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVOTunesProtectionsIntegralTimeSet_EVDEMB"
+    Moniker="SelfTuning_EVOTunesProtectionsIntegralTimeSet_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVOTunesBestMethodAutoSearching_EVDEMB"
+    Moniker="SelfTuning_EVOTunesBestMethodAutoSearching_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="SelectionLevel"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="i"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="testingPIDKp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="testingPIDTi"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="testingPIDTd"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Model"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TFOLPD_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="PIDSettingResult"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesPIDSetting"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesPIDSetting_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="TiTestValue"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="KpRatio"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="TiRatio"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="ThresholdRatio"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="ThresholdIndex"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="SelectedMethodRank"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="NullMethodsCounter"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="j"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesProtectionsIntegralTimeSet"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesProtectionsIntegralTimeSet_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="KpTestValue"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVOTunesTuningTrigger_EVDEMB"
+    Moniker="SelfTuning_EVOTunesTuningTrigger_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="tempStatus"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesReset"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesReset_EVDEMB"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MachineSwap_EVDEMB"
+    Moniker="MachineSwap_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Machine_IN"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="MachineType"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="EngineType"
+      Comment=""
+      AccessRights="Read"
+      DataType="BYTE"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="MachineReset_EVDEMB"
+    Moniker="MachineReset_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Machine_IN"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="ManualPositioningEnable"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="EVOTunesReset"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesReset_EVDEMB"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="GetParameterInt_EVDEMB"
+    Moniker="GetParameterInt_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="ParIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_TYPEDESCR_INT_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="ParDescriptor"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_TYPEDESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="RangeErrorIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Par"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_TYPEDESCR_INT_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="Val"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="RangeError"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="GetParameterReal_EVDEMB"
+    Moniker="GetParameterReal_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="ParIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_TYPEDESCR_REAL_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="ParDescriptor"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_TYPEDESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="RangeErrorIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="IsImperialSysT"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="IsImperialSysP"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Par"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_TYPEDESCR_REAL_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="Val"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="RangeError"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="TmpVal"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="GetParameterBool_EVDEMB"
+    Moniker="GetParameterBool_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="ParVal"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ParDescriptor"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_TYPEDESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="ValidVal"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="EEVInit_EVDEMB"
+    Moniker="EEVInit_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="EEVin"
+      Comment=""
+      AccessRights="Read"
+      DataType="TEEV"
+      Kind="VarInput" />
+    <Variable
+      Name="EEV"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TEEV"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVOTunesSHSetChangingTest_EVDEMB"
+    Moniker="SelfTuning_EVOTunesSHSetChangingTest_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="NewSHSet"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="EVOTunesReset"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesReset_EVDEMB"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MAIN_MachineServiceTimerUpdate_EVDEMB"
+    Moniker="MAIN_MachineServiceTimerUpdate_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="ElapsedTimems"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UDINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MAIN_MachineDriving_EVDEMB"
+    Moniker="MAIN_MachineDriving_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="ID_Driver"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="DataIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="MotorInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MotorInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="MotorDriver"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UNIPVLV_DRV"
+      Kind="Var" />
+    <Variable
+      Name="VlvTmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TEEV"
+      Kind="Var" />
+    <Variable
+      Name="VlvOLD"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TEEV"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MAIN_MachineDrivingExtPos_EVDEMB"
+    Moniker="MAIN_MachineDrivingExtPos_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="ExtPosIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="TEEV"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="ExtPos"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TEEV"
+      Kind="VarOutput" />
+    <Variable
+      Name="MotorInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MotorInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="MotorDriver"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UNIPVLV_DRV"
+      Kind="Var" />
+    <Variable
+      Name="PriorityMng_INT_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="PriorityMng_INT_EVDEMB"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MAIN_WriteMachineParameters_EVDEMB"
+    Moniker="MAIN_WriteMachineParameters_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="DataIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="DataDescr"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="SystemStatusIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseTemp"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="BaseP"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="SystemStatus"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="m_valuetowrite"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="SetParameterReal"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SetParameterReal_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="tabSuperMainRegulation"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TAB_SuperMainRegulation_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesReset"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesReset_EVDEMB"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="SetParameterReal_EVDEMB"
+    Moniker="SetParameterReal_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="ParValue"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="ParDescriptor"
+      Comment=""
+      AccessRights="Read"
+      DataType="DESCR_TYPEDESCR_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="IsImperialSysT"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="IsImperialSysP"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ValidValue"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="MAIN_MachineController_EVDEMB"
+    Moniker="MAIN_MachineController_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="55EEC54EF470ACC8"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="SystemStatusIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Vlv_ID"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="SystemStatus"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="actualSH"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="m_ManualPositionEnable"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="MachineSwap"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MachineSwap_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="machineReset"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MachineReset_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="m_MaxValue"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="m_MinValue"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="RegType"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BYTE"
+      Kind="Var" />
+    <Variable
+      Name="PREVIOUS_REGULATION_SUB_TYPE_VALUE"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="ACTUAL_REGULATION_SUB_TYPE_VALUE"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="m_MotorPositionForcedInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="m_UnitPowerDelta"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="PositioningSteps"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="isBreak"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="m_StandByPositiontoSet"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="ProtectionSetTemp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="TotalControlTermToEEVSteps"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TotalControlTermToEEVSteps_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="MotorInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MotorInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="PIDInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="PIDInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="TotalControlTermSet"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TotalControlTermSet_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="PIDFunction"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="PIDFunction_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="PIDMeasureUpdate"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="PIDMeasureUpdate_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="GasTable"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TAB_GasTable_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="gotoNOT_STANDARD_SH_REGULATION"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="m_protectionsettemp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Ts"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UDINT"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesServiceTimerUpdate"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesServiceTimerUpdate_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="TuningPositionResult"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunes"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesReset"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesReset_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="SH_Protections"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SH_Protections_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="FEdge_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="FEdge_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="tmpReset"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVOTunesServiceTimerUpdate_EVDEMB"
+    Moniker="SelfTuning_EVOTunesServiceTimerUpdate_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="ElapsedTimes"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UDINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="TotalControlTermSet_EVDEMB"
+    Moniker="TotalControlTermSet_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="pidIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_PID_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Steps"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="pid"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_PID_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="PIDFunction_EVDEMB"
+    Moniker="PIDFunction_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="A1E2A80341A7392B"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="pidIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_PID_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Ts"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="pid"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_PID_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="DeltaProportionalTerm"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="DeltaIntegralTerm"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="m_tempderivative"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="m_Tl"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="m_K"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="PIDMeasureUpdate_EVDEMB"
+    Moniker="PIDMeasureUpdate_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="A1E2A80341A7392B"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="pidIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_PID_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="pid"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_PID_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="TotalControlTermToEEVSteps_EVDEMB"
+    Moniker="TotalControlTermToEEVSteps_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="pidIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_PID_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="EEV"
+      Comment=""
+      AccessRights="Read"
+      DataType="TEEV"
+      Kind="VarInput" />
+    <Variable
+      Name="ReturnValue"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="pid"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_PID_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="SH_Protections_EVDEMB"
+    Moniker="SH_Protections_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="343EC8A44F447FF8"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="ProtectionSetTempIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="ProtectionSetTemp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Ts"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UDINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="TAB_GasTable_EVDEMB"
+    Moniker="TAB_GasTable_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="GasNum"
+      Comment="Gas Type [1..25]"
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Formula"
+      Comment="Formula=0 : Dew Temperature;   Formula=1 : Bubble Temperature"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ka"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="kb"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="kc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="kd"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ke"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="kf"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Gas_K_Vect"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL,0-5"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVDEMB"
+    Moniker="SelfTuning_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="SelfTuningReturn"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="DeltaT"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UDINT"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesMeasure"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesError"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesSetPoint"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="UnitStepMaxSteps"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="UnitStepMinSteps"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="EVOTUNES_MINSTEPS"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="SHFilt"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="tempnewposition"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="tempaborttimer"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="EEVHighBorder"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="EEVLowBorder"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="idx"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="timeRemained"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="deltaSH"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="deltaSHFilt"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="DeltaSHFinalValue"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="ResponseTime"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="S3Area"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="S1Area"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="LagPlusDelay"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="x0"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="x"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="y0"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="y1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="SHLagPlusDelay"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="S2Area"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="samplesIdx"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="SampleHigh"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="SampleLow"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="model"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TFOLPD_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="tempRetriesCounter"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="tempSpyRegister"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="SHSignCheck"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="tempPeriodLenght"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="SHRMSActual"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="SHRMSPercDelta"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="tempInstabilityCounter"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="tempEEVStepsMax"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="tempEEVStepsMin"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="tempSetPointPosition"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesReset"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesReset_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesSHTestInit"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesSHTestInit_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesSHTest"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesSHTest_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="EVOTunesMethodSwitch"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SelfTuning_EVOTunesMethodSwitch_EVDEMB"
+      Kind="Var" />
+    <Variable
+      Name="ActualTuningResult"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UINT"
+      Kind="Var" />
+    <Variable
+      Name="FOLPD_SAMPLES_NUMBER"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVOTunesSHTestInit_EVDEMB"
+    Moniker="SelfTuning_EVOTunesSHTestInit_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="StartingRMSValue"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="SHTestTimeout"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="SelfTuning_EVOTunesSHTest_EVDEMB"
+    Moniker="SelfTuning_EVOTunesSHTest_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="0E0EFE09BE39D185"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="MachineIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="SHTestValue"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="SHOnSetThreshold"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="MaxAttemptsNumber"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="TestTimeOut"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="NoiseLevel"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Machine"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DATA_EVDEMB"
+      Kind="VarOutput" />
+    <Variable
+      Name="SHTest"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="SHdelta"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="CheckMaskEn_EVDEMB"
+    Moniker="CheckMaskEn_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Data"
+      Comment=""
+      AccessRights="Read"
+      DataType="DATA_EVDEMB"
+      Kind="VarInput" />
+    <Variable
+      Name="CheckFlag"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="CHECK_FLAG_EVDEMB"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="PriorityMng_INT_EVDEMB"
+    Moniker="PriorityMng_INT_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="VariableIn"
+      Comment="Variable used on the strategy"
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="SerialIn"
+      Comment="Variable flag as Protocol"
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Variable"
+      Comment="Variable flag as Protocol"
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Serial"
+      Comment="Variable used on the strategy"
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="UpdtDn"
+      Comment="Update done"
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="FEdge_EVDEMB"
+    Moniker="FEdge_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="In"
+      Comment="Input value"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Reset"
+      Comment="Reset"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Out"
+      Comment="Edge"
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="In_Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="Min_REAL_EVDEMB"
+    Moniker="Min_REAL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="In1"
+      Comment="Input value 1"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="In2"
+      Comment="Input value 2"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Min_REAL_EVDEMB"
+      Comment="The smallest of the two values"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="Eq_REAL_EVDEMB"
+    Moniker="Eq_REAL_EVDEMB.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Value1"
+      Comment="First value"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Value2"
+      Comment="Second value"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Error"
+      Comment="Tollerance (±error) of the function"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Eq_REAL_EVDEMB"
+      Comment="If the two values are closer than the error"
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="VarOutput" />
+  </Pou>
+</Manifest>

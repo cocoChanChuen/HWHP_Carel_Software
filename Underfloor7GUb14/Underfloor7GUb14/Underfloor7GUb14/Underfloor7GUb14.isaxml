@@ -1,0 +1,1106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Underfloor7GUb14" ElementGuid="0d779997-876c-45fc-86bf-eb6ce0842c2f" FileVersion="200.00.003" Comment="" SingleTextLine="template" DbVersion="05.50.02" LibraryType="Project" LegacyBinding="true" Password="E4BDBA2BEF6CC4DC" ReadOnly="false">
+  <FileHeader CompanyName="Rockwell Automation Canada, Ltd." ProductName="CAM ISaGRAF 5" CompanyUrl="http://www.isagraf.com" ProductVersion="0" />
+  <Libraries />
+  <DefineWords>
+    <DefineWord Name="ERR_FILE_ACCESS" Define="-3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_FILE_INVALID" Define="-5" Comment="" Access="ReadOnly" />
+    <DefineWord Name="COM_CHANNEL_BMS2" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_NETWORK_SETTINGS" Define="13" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_BOARD_INFO" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_BUSY" Define="-10" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_VALUE_INVALID" Define="-6" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_POWER_SUPPLY_VOLT" Define="5" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_RETAINED_ERRORS" Define="8" Comment="" Access="ReadOnly" />
+    <DefineWord Name="COM_CHANNEL_FB1" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_DISK_ACCESS" Define="-2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_SUCCESS" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="COM_CHANNEL_FB2" Define="4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_USB_STATUS" Define="16" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_GET_RETAIN_WRITE_HITS" Define="11" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_BUILTIN_DISPLAY_INFO" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_DISK_INTERNAL" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_FILE_EMPTY" Define="-8" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_NOT_IMPLEMENTED" Define="-14" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_REMOTE_DISPLAY_3_INFO" Define="4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_EXPORT_LOG" Define="-12" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_ERROR_ON_DIV_BY_ZERO" Define="9" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_REMOTE_DISPLAY_2_INFO" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_POWER_SUPPLY_FREQ" Define="6" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_BOARD_TEMP" Define="7" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_REMOTE_DISPLAY_1_INFO" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_PARAM_INVALID" Define="-13" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_FNAME_INVALID" Define="-1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_OS_VERSION" Define="14" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_NO_LOGGER" Define="-11" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_UNKNOWN" Define="-99" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_DATE_FILTER" Define="-9" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_DISK_USB" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_VALUE_WIPE_NVRAM" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_BUFFER_SMALL" Define="-7" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_VALUE_WIPE_ALL" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_RESTART_ON_FATAL_ERROR" Define="10" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_FILE_IO" Define="-4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_PLAN_INFO" Define="15" Comment="" Access="ReadOnly" />
+    <DefineWord Name="COM_CHANNEL_BMS1" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_VM_QUIT" Define="12" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_NO_ERR" Define="10" Comment="Result is a valid value" Access="UserDefined" />
+    <DefineWord Name="SYS_FMODE_OVERWRITE" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_UNKNOWN" Define="0" Comment="Default value" Access="UserDefined" />
+    <DefineWord Name="SYS_PARAM_IS_WATCHDOG_RESTART" Define="25" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_OPEN" Define="-1" Comment="NTC/PTC input is open" Access="UserDefined" />
+    <DefineWord Name="IO_ERR_SHORT" Define="-2" Comment="NTC/PTC input is shorted" Access="UserDefined" />
+    <DefineWord Name="IO_ERR_OVERFLOW" Define="-3" Comment="Voltage input exceed max allowed value" Access="UserDefined" />
+    <DefineWord Name="IO_ERR_UNDERFLOW" Define="-4" Comment="Voltage input exceed min allowed value" Access="UserDefined" />
+    <DefineWord Name="IO_ERR_INVALID_PARAM" Define="-5" Comment="Channel is out of range" Access="UserDefined" />
+    <DefineWord Name="SYS_PARAM_SET_PLAN_ADDR" Define="32" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_CHANNEL_NOTFREE" Define="-6" Comment="Channel is not readable due to previous bi-channel probe" Access="UserDefined" />
+    <DefineWord Name="SYS_PARAM_WIPE_MEMORIES" Define="29" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_INTERNAL_TABLE" Define="-8" Comment="Only ISAI when scaling variable reference are invalid" Access="UserDefined" />
+    <DefineWord Name="SYS_PARAM_LIC_SNMP" Define="36" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_INVALID_PROBE_TYPE" Define="-9" Comment="Out of range probe type selected" Access="UserDefined" />
+    <DefineWord Name="IO_ERR_CHIPIO_CONFIG_COMM" Define="-100" Comment="Io system has not started due to a severe error" Access="UserDefined" />
+    <DefineWord Name="SYS_PARAM_GET_PHYSICAL_RAM_SIZE" Define="27" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_7SEG_MNG" Define="33" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_SYSTEM_POWERDOWN" Define="18" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_VALUE_RTC_SRC_NTP" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_SYSTEM_REBOOT" Define="17" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_VALUE_WIPE_RETAIN" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_CFG" Define="-15" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_RTC_SRC" Define="20" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PASSWORD_1" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PERMISSION_LOCK_1" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PASSWORD_2" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_INTERNAL_FULL" Define="-10" Comment="Linked variable already used in timed relays or no more timed relays free" Access="UserDefined" />
+    <DefineWord Name="SYS_VALUE_RTC_SRC_TERA" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PERMISSION_LOCK_2" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PASSWORD_3" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_GET_UID" Define="28" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_GET_JST_INPUT" Define="26" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PERMISSION_LOCK_3" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PASSWORD_NONE" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PERMISSION_NO_LOCK" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PERMISSION_LOCK_4" Define="4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_TICKS" Define="19" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_VALUE_RTC_SRC_MANUAL" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_LIC_BACNET" Define="35" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_MEM_FREE" Define="31" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_MEM_USED" Define="30" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_FMODE_MODIFY" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_BOOT_VERSION" Define="34" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_TRANSFER_PATH" Define="HTTP\TRANSFER\" Comment="" Access="ReadOnly" />
+    <DefineWord Name="STARTUP_JMP_T" Define="T#10s" Comment="Starup jump time" Access="UserDefined" />
+    <DefineWord Name="INST_DEF_T" Define="T#5s" Comment="Default installation time" Access="UserDefined" />
+    <DefineWord Name="ATMOSPHERIC_PRESSURE" Define="1.01325" Comment="Atmospheric pressure in bar" Access="ReadOnly" />
+    <DefineWord Name="e" Define="2.7182818284590452353602874713526624977572470936999595749" Comment="Euler's number" Access="ReadOnly" />
+    <DefineWord Name="GAS_NUMBER" Define="27" Comment="Number of gas supported by thermodynamic functions (indexes from 0 to GAS_NUMBER-1)" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_ERROR_ON_DIV_BY_ZERO_EVDEMB" Define="9" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_RESTART_ON_FATAL_ERROR_EVDEMB" Define="10" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ALARM_WHAT_TO_DO_NONE_EVDEMB" Define="0" Comment="Alarm configurations" Access="ReadOnly" />
+    <DefineWord Name="NTC_THERMAL_TIME_K_COMPENSATION_ENABLE_EVDEMB" Define="16#0001" Comment="NTC THERMAL TIME CONSTANT COMPENSATION" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_ALARM_PROBE_5_EVDEMB" Define="16#0010" Comment="Machine HW" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_MAX_RETRIES_EVDEMB" Define="6" Comment="SH rising acceptability thresholds []" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_SH_RISING_TIMEOUT_EVDEMB" Define="60" Comment="SH rising acceptability thresholds" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FIRST_SH_CROSSING_DETECTED_EVDEMB" Define="16#01" Comment="SH AUTOTUNING STATUS REGISTER" Access="ReadOnly" />
+    <DefineWord Name="SH_INTEGRAL_SUM_INSTABILITY_ACCEPTABILITY_PERCENTAGE_EVDEMB" Define="25" Comment="Instability sensing rules [%]" Access="ReadOnly" />
+    <DefineWord Name="FOLPD_SAMPLING_TIME_EVDEMB" Define="10" Comment="FOLPD model open-loop" Access="ReadOnly" />
+    <DefineWord Name="TUNING_RULES_NUMBER_EVDEMB" Define="33" Comment="SH PID TUNING METHODS" Access="ReadOnly" />
+    <DefineWord Name="ALARM_WHAT_TO_DO_NO_ACTION_EVDEMB" Define="1" Comment="Alarm configurations" Access="ReadOnly" />
+    <DefineWord Name="NTC_THERMAL_TIME_K_COMPENSATION_DONE_EVDEMB" Define="16#0002" Comment="NTC THERMAL TIME CONSTANT COMPENSATION" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_ALARM_PROBE_6_EVDEMB" Define="16#0020" Comment="Machine HW" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_RETRIES_RESET_TIMEOUT_EVDEMB" Define="43200" Comment="SH rising acceptability thresholds [sec]" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_RUNNING_EVDEMB" Define="16#02" Comment="SH AUTOTUNING STATUS REGISTER" Access="ReadOnly" />
+    <DefineWord Name="SH_OSCILLATION_PEAK_MINIMUN_DELTA_EVDEMB" Define="1" Comment="Instability sensing rules [K]" Access="ReadOnly" />
+    <DefineWord Name="TUNING_RULES_CONSTANTS_EVDEMB" Define="16" Comment="SH PID TUNING METHODS" Access="ReadOnly" />
+    <DefineWord Name="ALARM_WHAT_TO_DO_EEV_FORCE_CLOSING_EVDEMB" Define="2" Comment="Alarm configurations" Access="ReadOnly" />
+    <DefineWord Name="T_AND_P_PROBE_FAST_FILTERING_ENABLE_EVDEMB" Define="16#0004" Comment="NTC THERMAL TIME CONSTANT COMPENSATION" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_ABORT_TIMEOUT_EVDEMB" Define="7200" Comment="SH rising acceptability thresholds [sec]" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FINE_TUNING_RUNNING_EVDEMB" Define="16#04" Comment="SH AUTOTUNING STATUS REGISTER" Access="ReadOnly" />
+    <DefineWord Name="SH_OSCILLATION_DURATION_MINIMUN_EVDEMB" Define="30" Comment="Instability sensing rules [sec]" Access="ReadOnly" />
+    <DefineWord Name="TUNING_RULES_ACCEPTABILITY_MIN_POSITION_EVDEMB" Define="14" Comment="SH PID TUNING METHODS" Access="ReadOnly" />
+    <DefineWord Name="ALARM_WHAT_TO_DO_EEV_FIXED_POSITION_FORCING_EVDEMB" Define="3" Comment="Alarm configurations" Access="ReadOnly" />
+    <DefineWord Name="pCO_PROBES_FIRST_SAMPLING_DONE_EVDEMB" Define="16#8000" Comment="NTC THERMAL TIME CONSTANT COMPENSATION" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_TUNING_FORCING_TIME_EVDEMB" Define="3600" Comment="SH rising acceptability thresholds [sec]" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_SUCTION_TEMPERATURE_TUNING_SELECTED_EVDEMB" Define="16#08" Comment="SH AUTOTUNING STATUS REGISTER" Access="ReadOnly" />
+    <DefineWord Name="SH_OSCILLATION_PERIOD_INSTABILITY_THRESHOLD_EVDEMB" Define="3" Comment="Instability sensing rules [periods]" Access="ReadOnly" />
+    <DefineWord Name="TUNING_RULES_ACCEPTABILITY_MAX_POSITION_EVDEMB" Define="15" Comment="SH PID TUNING METHODS" Access="ReadOnly" />
+    <DefineWord Name="ALARM_WHAT_TO_DO_USE_BACKUP_PROBE_EVDEMB" Define="4" Comment="Alarm configurations" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_SH_SET_POSITION_INIT_EVDEMB" Define="16#10" Comment="SH AUTOTUNING STATUS REGISTER" Access="ReadOnly" />
+    <DefineWord Name="SH_OSCILLATION_INHIBITION_TIMEOUT_EVDEMB" Define="600" Comment="Instability sensing rules [sec]" Access="ReadOnly" />
+    <DefineWord Name="TUNING_RULES_KP_CONSTANTS_END_INDEX_EVDEMB" Define="3" Comment="SH PID TUNING METHODS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_SH_RISING_TIMEOUTS_NUMBER_EVDEMB" Define="10" Comment="SH rising acceptability thresholds []" Access="ReadOnly" />
+    <DefineWord Name="SH_OSCILLATION_PROBE_NOISE_EVDEMB" Define="20" Comment="Instability sensing rules [K*100]" Access="ReadOnly" />
+    <DefineWord Name="TUNING_RULES_TI_CONSTANTS_END_INDEX_EVDEMB" Define="9" Comment="SH PID TUNING METHODS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_SH_RISING_TIMEOUTS_MAX_ATTEMPTS_EVDEMB" Define="12" Comment="SH rising acceptability thresholds []" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FOLPD_UNIT_STEP_EVDEMB" Define="16#40" Comment="SH AUTOTUNING STATUS REGISTER" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FIRST_STARTUP_EVDEMB" Define="1" Comment="SH AUTOTUNING INIT STATUS" Access="ReadOnly" />
+    <DefineWord Name="TUNING_RULES_TD_CONSTANTS_END_INDEX_EVDEMB" Define="13" Comment="SH PID TUNING METHODS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_SH_RISING_TIMEOUTS_MAX_ATTEMPTS_FINE_TUNING_EVDEMB" Define="20" Comment="SH rising acceptability thresholds []" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FOLPD_SAMPLING_EVDEMB" Define="16#80" Comment="SH AUTOTUNING STATUS REGISTER" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_ALREADY_STARTED_EVDEMB" Define="0" Comment="SH AUTOTUNING INIT STATUS" Access="ReadOnly" />
+    <DefineWord Name="EEV_ALARM_EMERGENCY_CLOSURE_EVDEMB" Define="16#80" Comment="ALARMS EEV" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_SH_SET_POSITION_REACHING_EVDEMB" Define="16#20" Comment="SH AUTOTUNING STATUS REGISTER" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNESPIDSETTING_INVALID_FOLPD_MODEL_EVDEMB" Define="0" Comment="EVOTunesPIDSetting RESULTS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_SH_PROBE_NOISE_ON_10_SECONDS_SAMPLING_EVDEMB" Define="5" Comment="SH rising acceptability thresholds [k*100]" Access="ReadOnly" />
+    <DefineWord Name="SUBCOOLING_MEASUREMENT_EVDEMB" Define="8" Comment="Aux machines" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNESBESTMETHOD_SEARCHING_START_EVDEMB" Define="0" Comment="EVOTunes best method autosearch STATUS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNESPIDSETTING_FOLPD_MODEL_OK_RULE_OK_EVDEMB" Define="1" Comment="EVOTunesPIDSetting RESULTS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_SH_PROBE_NOISE_ON_1_MINUTES_SAMPLING_EVDEMB" Define="20" Comment="SH rising acceptability thresholds [k*100]" Access="ReadOnly" />
+    <DefineWord Name="INV_HIGH_CONDENSING_TEMPERATURE_PROTECTION_EVDEMB" Define="9" Comment="Aux machines" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNESBESTMETHOD_PEAK_VALUES_SEARCH_EVDEMB" Define="1" Comment="EVOTunes best method autosearch STATUS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNESPIDSETTING_FOLPD_MODEL_OK_INVALID_RULE_EVDEMB" Define="2" Comment="EVOTunesPIDSetting RESULTS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_SH_ACCEPTABILITY_BAND_EVDEMB" Define="300" Comment="SH rising acceptability thresholds [k*100]" Access="ReadOnly" />
+    <DefineWord Name="PROGRAMMABLE_SH_REGULATION_EVDEMB" Define="10" Comment="Aux machines" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNESBESTMETHOD_EVALUATION_EVDEMB" Define="2" Comment="EVOTunes best method autosearch STATUS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNESPIDSETTING_FOLPD_MODEL_OK_PID_OVERFLOW_EVDEMB" Define="3" Comment="EVOTunesPIDSetting RESULTS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FOLPD_OFF_EVDEMB" Define="0" Comment="SH AUTOTUNING RESULT REGISTER" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNESBESTMETHOD_RANKING_EVDEMB" Define="3" Comment="EVOTunes best method autosearch STATUS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FOLPD_QUIT_FOR_INTERRUPTION_EVDEMB" Define="1" Comment="SH AUTOTUNING RESULT REGISTER" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNESBESTMETHOD_SELECTING_EVDEMB" Define="4" Comment="EVOTunes best method autosearch STATUS" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FOLPD_QUIT_FOR_UNIT_STEP_ERROR_EVDEMB" Define="2" Comment="SH AUTOTUNING RESULT REGISTER" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNESBESTMETHOD_SEARCHING_OFF_EVDEMB" Define="255" Comment="EVOTunes best method autosearch STATUS" Access="ReadOnly" />
+    <DefineWord Name="SPV_NULL_VALUE_REAL_EVDEMB" Define="-777.7" Comment="" Access="ReadOnly" />
+    <DefineWord Name="L_DIRECT_REGULATION_TYPE_EVDEMB" Define="14" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FOLPD_QUIT_FOR_LAG_PLUS_DELAY_ERROR_EVDEMB" Define="3" Comment="SH AUTOTUNING RESULT REGISTER" Access="ReadOnly" />
+    <DefineWord Name="UNLIMITED_K_EVDEMB" Define="32767" Comment="SH PID TUNING METHODS" Access="ReadOnly" />
+    <DefineWord Name="SPV_NULL_VALUE_INTEGER_EVDEMB" Define="-7777" Comment="" Access="ReadOnly" />
+    <DefineWord Name="L_REVERSE_REGULATION_TYPE_EVDEMB" Define="15" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FOLPD_QUIT_FOR_MODEL_ERROR_EVDEMB" Define="4" Comment="SH AUTOTUNING RESULT REGISTER" Access="ReadOnly" />
+    <DefineWord Name="NULL_REGULATION_TYPE_EVDEMB" Define="0" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FOLPD_DONE_ON_SUCTION_TEMPERATURE_EVDEMB" Define="5" Comment="SH AUTOTUNING RESULT REGISTER" Access="ReadOnly" />
+    <DefineWord Name="SH_REGULATION_TYPE_EVDEMB" Define="1" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FOLPD_DONE_ON_SH_EVDEMB" Define="6" Comment="SH AUTOTUNING RESULT REGISTER" Access="ReadOnly" />
+    <DefineWord Name="P_DIRECT_REGULATION_TYPE_EVDEMB" Define="2" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FOLPD_DONE_WITH_ERRORS_EVDEMB" Define="7" Comment="SH AUTOTUNING RESULT REGISTER" Access="ReadOnly" />
+    <DefineWord Name="P_REVERSE_REGULATION_TYPE_EVDEMB" Define="3" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_FOLPD_DONE_WITH_ERRORS_FINE_TUNING_ABORT_EVDEMB" Define="8" Comment="SH AUTOTUNING RESULT REGISTER" Access="ReadOnly" />
+    <DefineWord Name="T_REVERSE_REGULATION_TYPE_EVDEMB" Define="4" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_OFF_EVDEMB" Define="0" Comment="SH AUTOTUNING SPY REGISTER" Access="ReadOnly" />
+    <DefineWord Name="P_DIRECT_CO2_REGULATION_TYPE_EVDEMB" Define="5" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_ON_SH_SENSING_EVDEMB" Define="1" Comment="SH AUTOTUNING SPY REGISTER" Access="ReadOnly" />
+    <DefineWord Name="ANALOGUE_4_20MA_REGULATION_TYPE_EVDEMB" Define="6" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_ON_SUCTION_TEMPERATURE_SENSING_EVDEMB" Define="2" Comment="SH AUTOTUNING SPY REGISTER" Access="ReadOnly" />
+    <DefineWord Name="ANALOGUE_0_10V_REGULATION_TYPE_EVDEMB" Define="7" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_ON_SH_WAITING_EVDEMB" Define="3" Comment="SH AUTOTUNING SPY REGISTER" Access="ReadOnly" />
+    <DefineWord Name="SIAM_ANB_COMPR_REGULATION_TYPE_EVDEMB" Define="8" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_ON_SUCTION_TEMPERATURE_WAITING_EVDEMB" Define="4" Comment="SH AUTOTUNING SPY REGISTER" Access="ReadOnly" />
+    <DefineWord Name="TWO_T_PROBES_SH_REGULATION_TYPE_EVDEMB" Define="9" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_ON_UNIT_STEP_POSITION_REACHING_EVDEMB" Define="5" Comment="SH AUTOTUNING SPY REGISTER" Access="ReadOnly" />
+    <DefineWord Name="IO_EXPANDER_FOR_PCO_TYPE_EVDEMB" Define="10" Comment="Regulation type groups" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_ON_POSITION_REACHING_EVDEMB" Define="6" Comment="SH AUTOTUNING SPY REGISTER" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_FORCE_CLOSING_DONE_EVDEMB" Define="16#0001" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_ON_SAMPLING_EVDEMB" Define="7" Comment="SH AUTOTUNING SPY REGISTER" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_STANDING_BY_EVDEMB" Define="16#0002" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_ON_RISING_WAITING_EVDEMB" Define="8" Comment="SH AUTOTUNING SPY REGISTER" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_PREPOSITIONING_DONE_EVDEMB" Define="16#0004" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_ON_SH_WAITING_FOR_FINE_TUNING_EVDEMB" Define="9" Comment="SH AUTOTUNING SPY REGISTER" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_PROTECTIONS_ENABLE_EVDEMB" Define="16#0008" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="EVOTUNES_STOPPED_BY_ALARM_EVDEMB" Define="10" Comment="SH AUTOTUNING SPY REGISTER" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_MANUAL_POSITION_ENABLE_EVDEMB" Define="16#0010" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="EEV_CLOSING_PERCENT_MAXIMUN_EVDEMB" Define="8" Comment="FOLPD model open-loop identification [%]" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_RUNNING_EVDEMB" Define="16#0020" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="EEV_CLOSING_PERCENT_MINIMUN_EVDEMB" Define="2" Comment="FOLPD model open-loop identification [%]" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_WAITING_EVDEMB" Define="16#0040" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="FOLPD_UNITSTEP_SIZE_DEFINITION_EVDEMB" Define="1" Comment="FOLPD model open-loop identification [steps]" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_WAITING_DONE_EVDEMB" Define="16#0080" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_PREPOSITIONING_EVDEMB" Define="16#0100" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_REPOSITIONING_EVDEMB" Define="16#0200" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_LOCK_OPENED_EVDEMB" Define="16#0400" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_LOCK_CLOSED_EVDEMB" Define="16#0800" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="FOLPD_DELTA_SH_FILTERING_K_EVDEMB" Define="10" Comment="FOLPD model open-loop identification [sec]" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_UNLOCK_DONE_EVDEMB" Define="16#1000" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="FOLPD_SH_FILTERING_K_EVDEMB" Define="2" Comment="FOLPD model open-loop identification [sec]" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_DEFROST_EXECUTED_EVDEMB" Define="16#2000" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="FOLPD_SH_RISING_TIMEOUTS_NUMBER_EVDEMB" Define="5" Comment="FOLPD model open-loop identification" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_EXTRASTEPS_CHECK_ENABLE_EVDEMB" Define="16#4000" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="FOLPD_SH_RISING_TIMEOUTS_MAX_ATTEMPTS_EVDEMB" Define="255" Comment="FOLPD model open-loop identification" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_EXTRASTEPS_EXECUTING_EVDEMB" Define="16#8000" Comment="Machine status" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_NONE_EVDEMB" Define="0" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_STOP_EVDEMB" Define="1" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_FORCED_CLOSING_EVDEMB" Define="2" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_STAND_BY_EVDEMB" Define="3" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_PRE_RE_POSITION_REACHING_EVDEMB" Define="4" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_PRE_POSITIONING_EVDEMB" Define="5" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_WAIT_EVDEMB" Define="6" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_PID_EVDEMB" Define="7" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_UNLOCK_OPENED_EVDEMB" Define="8" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_UNLOCK_CLOSED_EVDEMB" Define="9" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_DELAY_EVDEMB" Define="10" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_EXTRASTEPS_CHECK_EVDEMB" Define="11" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_ANALOGUE_POSITIONING_EVDEMB" Define="12" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_RE_POSITIONING_EVDEMB" Define="13" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_POWER_ON_EEV_CHECK_EVDEMB" Define="14" Comment="Engines type" Access="ReadOnly" />
+    <DefineWord Name="UNIT_POWER_GAP_EVDEMB" Define="10" Comment="percentual gap for re-positioning" Access="ReadOnly" />
+    <DefineWord Name="EEV_PREPOSITIONING_TIMEOUT_5S_EVDEMB" Define="6" Comment="1 sec service timer's timeouts" Access="ReadOnly" />
+    <DefineWord Name="EEV_UNLOCK_TIMEOUT_600S_EVDEMB" Define="600" Comment="1 sec service timer's timeouts" Access="ReadOnly" />
+    <DefineWord Name="EEV_POWER_ON_CHECK_TIMEOUT_10S_EVDEMB" Define="10" Comment="1 sec service timer's timeouts" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_WAIT_FOR_REGULATION_SUB_TYPE_CHANGE_TIMEOUT_2S_EVDEMB" Define="2" Comment="1 sec service timer's timeouts" Access="ReadOnly" />
+    <DefineWord Name="EXTRA_STEPS_TIMEOUT_1S_EVDEMB" Define="1" Comment="1 sec service timer's timeouts" Access="ReadOnly" />
+    <DefineWord Name="SPV_VALID_ADDRESS_EVDEMB" Define="16#01" Comment="System status flag register" Access="ReadOnly" />
+    <DefineWord Name="NETWORK_OK_EVDEMB" Define="16#02" Comment="System status flag register" Access="ReadOnly" />
+    <DefineWord Name="EMERGENCY_SUPPLY_BATTERY_LOW_LEVEL_EVDEMB" Define="16#04" Comment="System status flag register" Access="ReadOnly" />
+    <DefineWord Name="POWER_SUPPLY_FAILURE_EVDEMB" Define="16#08" Comment="System status flag register" Access="ReadOnly" />
+    <DefineWord Name="EVD_TWIN_SINGLE_MODE_ENABLE_EVDEMB" Define="16#20" Comment="System status flag register" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_FIRST_RUN_DONE_EVDEMB" Define="16#01" Comment="SERVICE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_FIELD_BUS_MODE_ENABLE_EVDEMB" Define="16#02" Comment="SERVICE" Access="ReadOnly" />
+    <DefineWord Name="EVAPORATION_TEMPERATURE_FILTERING_K_EVDEMB" Define="100" Comment="Evaporation temperature's filtering K" Access="ReadOnly" />
+    <DefineWord Name="SIAM_ANB_SCROLL_COMPRESSOR_SH_REGULATION_EVDEMB" Define="1" Comment="SIAM ANB scroll compressor sub-machines" Access="ReadOnly" />
+    <DefineWord Name="SIAM_ANB_SCROLL_COMPRESSOR_DISCHARGE_SH_REGULATION_EVDEMB" Define="2" Comment="SIAM ANB scroll compressor sub-machines" Access="ReadOnly" />
+    <DefineWord Name="SIAM_ANB_SCROLL_COMPRESSOR_DISCHARGE_TEMPERATURE_REGULATION_EVDEMB" Define="3" Comment="SIAM ANB scroll compressor sub-machines" Access="ReadOnly" />
+    <DefineWord Name="MAIN_CUSTOM_EVDEMB" Define="0" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="REFR_CENTRALIZED_CABINET_COLD_ROOM_EVDEMB" Define="1" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="REFR_SELF_CONTAINED_CABINET_COLD_ROOM_EVDEMB" Define="2" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="REFR_PERTURBATED_CABINET_COLD_ROOM_EVDEMB" Define="3" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="REFR_SUBCRITICAL_CO2_CABINET_COLD_ROOM_EVDEMB" Define="4" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="REFR_R404A_CONDENSER_FOR_SUBCRITICAL_CO2_EVDEMB" Define="5" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="AC_CHILLER_PLATE_EVAPORATOR_EVDEMB" Define="6" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="AC_CHILLER_SHELL_TUBE_EVAPORATOR_EVDEMB" Define="7" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="AC_CHILLER_BATTERY_COIL_EVAPORATOR_EVDEMB" Define="8" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="AC_CHILLER_VARIABLE_COOLING_CAPACITY_EVDEMB" Define="9" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="AC_CHILLER_PERTURBATED_UNIT_EVDEMB" Define="10" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="DIRECT_P_CONTROL_EPR_BACK_PRESSURE_CONTROL_EVDEMB" Define="11" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="REVERSE_P_CONTROL_BY_PASS_WARM_GAS_PRESSURE_EVDEMB" Define="12" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="REVERSE_T_CONTROL_BY_PASS_WARM_GAS_TEMPERATURE_EVDEMB" Define="13" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="TRANSCRITICAL_CO2_GAS_COOLER_EVDEMB" Define="14" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="ANALOGUE_POSITIONING_4_20MA_EVDEMB" Define="15" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="ANALOGUE_POSITIONING_0_10V_EVDEMB" Define="16" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="AC_REFR_SELF_TUNED_MACHINE_EVDEMB" Define="17" Comment="Main machines" Access="ReadOnly" />
+    <DefineWord Name="AC_CHILLER_DIGITAL_SCROLL_EVDEMB" Define="18" Comment="Main machines // [NEW_14_2]: digital scroll function" Access="ReadOnly" />
+    <DefineWord Name="AC_CHILLER_WITH_SIAM_ANB_SCROLL_COMPRESSOR_EVDEMB" Define="19" Comment="Main machines // [NEW_35_3]: AC or chiller with SIAM ANB scroll compressor" Access="ReadOnly" />
+    <DefineWord Name="AC_REFR_SH_REGULATION_WITH_TWO_TEMPERATURE_PROBES_EVDEMB" Define="20" Comment="Main machines // [NEW_39_5]: SH regulation with two temperature probes" Access="ReadOnly" />
+    <DefineWord Name="IO_EXPANDER_FOR_PCO_WITH_NO_REGULATION_EVDEMB" Define="21" Comment="Main machines // [NEW_39_10]: EVD Evolution set as I/O expander for pCO" Access="ReadOnly" />
+    <DefineWord Name="HIGH_CONDENSING_TEMPERATURE_PROTECTION_EVDEMB" Define="2" Comment="Aux machines" Access="ReadOnly" />
+    <DefineWord Name="MODULATING_THERMOSTAT_EVDEMB" Define="3" Comment="Aux machines" Access="ReadOnly" />
+    <DefineWord Name="SIAM_ANB_SCROLL_COMPRESSOR_DISCHARGE_SH_AND_TEMPERATURE_EVDEMB" Define="5" Comment="Aux machines" Access="ReadOnly" />
+    <DefineWord Name="TWO_T_PROBES_SH_REGULATION_EVAPORATION_TEMPERATURE_EVDEMB" Define="6" Comment="Aux machines" Access="ReadOnly" />
+    <DefineWord Name="IO_EXPANDER_TWO_ANALOGUE_INPUTS_EXPANSION_EVDEMB" Define="7" Comment="Aux machines" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_LOWSH_PROTECTION_ACTIVE_EVDEMB" Define="16#0001" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_LOP_PROTECTION_ACTIVE_EVDEMB" Define="16#0002" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_MOP_PROTECTION_ACTIVE_EVDEMB" Define="16#0004" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_HITCOND_PROTECTION_ACTIVE_EVDEMB" Define="16#0008" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_EMERGENCY_FORCE_CLOSING_EVDEMB" Define="16#0010" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_LOP_ALARM_EVDEMB" Define="16#0020" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_MOP_ALARM_EVDEMB" Define="16#0040" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_LOWSH_ALARM_EVDEMB" Define="16#0080" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_HITCOND_ALARM_EVDEMB" Define="16#0100" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_LOWSUCT_ALARM_EVDEMB" Define="16#0200" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_PROBE_ALARM_FORCE_CLOSING_EVDEMB" Define="16#0400" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_PROBE_ALARM_FORCE_POSITION_EVDEMB" Define="16#0800" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_PROBE_ALARM_FORCING_PREPOSITIONING_EVDEMB" Define="16#1000" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_EVOTUNES_ALARM_EVDEMB" Define="16#2000" Comment="ALARMS ENGINE" Access="ReadOnly" />
+    <DefineWord Name="EEV_ALARM_EAOUT1_EVDEMB" Define="16#01" Comment="ALARMS EEV" Access="ReadOnly" />
+    <DefineWord Name="EEV_ALARM_EAOUT2_EVDEMB" Define="16#02" Comment="ALARMS EEV" Access="ReadOnly" />
+    <DefineWord Name="EEV_ALARM_CONNECTION_EVDEMB" Define="16#04" Comment="ALARMS EEV" Access="ReadOnly" />
+    <DefineWord Name="EEV_ON_WRONG_MOVING_EVDEMB" Define="0" Comment="EEV pos ??" Access="ReadOnly" />
+    <DefineWord Name="EEV_ON_RIGHT_MOVING_EVDEMB" Define="1" Comment="EEV pos ??" Access="ReadOnly" />
+    <DefineWord Name="EEV_POSITION_REACHED_EVDEMB" Define="2" Comment="EEV pos ??" Access="ReadOnly" />
+    <DefineWord Name="EEV_POSITION_START_MOVING_EVDEMB" Define="3" Comment="EEV pos ??" Access="ReadOnly" />
+    <DefineWord Name="EXTRASTEPS_RETRIES_EVDEMB" Define="43" Comment="Max number of extrasteps retries (128/3)" Access="ReadOnly" />
+    <DefineWord Name="UNLOCK_RETRIES_EVDEMB" Define="5" Comment="Max number of unlock retries" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_WAIT_FOR_REGULATION_SUB_TYPE_CHANGE_EVDEMB" Define="15" Comment="Engines type // [NEW_35_3]: engine type to get the PID measures correctly updated" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_EEV_FULL_OPENING_FORCING_EVDEMB" Define="16" Comment="Engines type // [NEW_39_3]: EEV full opening forcing" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_IO_EXPANDER_EVDEMB" Define="17" Comment="Engines type // [NEW_39_10]: EVD Evolution set as I/O expander for pCO" Access="ReadOnly" />
+    <DefineWord Name="ENGINE_TYPE_REG_STATUS_EVOTUNES_EVDEMB" Define="100" Comment="Engines type // Faked status (isn't a true engine type). It's used in order to show the EVOTunes enabling status on display" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_ALARM_PROBE_1_EVDEMB" Define="16#0001" Comment="Machine HW" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_ALARM_PROBE_2_EVDEMB" Define="16#0002" Comment="Machine HW" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_ALARM_PROBE_3_EVDEMB" Define="16#0004" Comment="Machine HW" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_ALARM_PROBE_4_EVDEMB" Define="16#0008" Comment="Machine HW" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_ALARM_CONDENSING_PROBE_EVDEMB" Define="16#0010" Comment="Machine HW" Access="ReadOnly" />
+    <DefineWord Name="MACHINE_ALARM_MODULATING_THERMOSTAT_PROBE_EVDEMB" Define="16#0020" Comment="Machine HW" Access="ReadOnly" />
+    <DefineWord Name="PROTECTION_NONE_EVDEMB" Define="1" Comment="PROTECTIONS STATUS" Access="ReadOnly" />
+    <DefineWord Name="PROTECTION_LOWSH_EVDEMB" Define="2" Comment="PROTECTIONS STATUS" Access="ReadOnly" />
+    <DefineWord Name="PROTECTION_LOP_EVDEMB" Define="3" Comment="PROTECTIONS STATUS" Access="ReadOnly" />
+    <DefineWord Name="PROTECTION_MOP_EVDEMB" Define="4" Comment="PROTECTIONS STATUS" Access="ReadOnly" />
+    <DefineWord Name="PROTECTION_HITCOND_EVDEMB" Define="5" Comment="PROTECTIONS STATUS" Access="ReadOnly" />
+    <DefineWord Name="ATMOSPHERIC_PRESSURE_EVDEMB" Define="1.01325" Comment="Atmospheric pressure in bar" Access="ReadOnly" />
+    <DefineWord Name="e_EVDEMB" Define="2.7182818284590452353602874713526624977572470936999595749" Comment="Euler's number" Access="ReadOnly" />
+    <DefineWord Name="GAS_NUMBER_EVDEMB" Define="40" Comment="Number of gas supported by thermodynamic functions (indexes from 0 to GAS_NUMBER-1)" Access="ReadOnly" />
+    <DefineWord Name="R410A" Define="5" Comment="" Access="UserDefined" />
+  </DefineWords>
+  <DataTypes>
+    <DataType Name="SYSREAD_VALUEOUT" Comment="" Access="UserDefined">
+      <Array Order="1" DataType="UDINT" StringSize="0">
+        <Dimension Lower="1" Upper="5" />
+      </Array>
+    </DataType>
+    <DataType Name="VERSIONCHK_APPVER" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="X" DataType="UINT" Comment="X version of the application" StringSize="0" Order="1" />
+        <Variable Name="Y" DataType="UINT" Comment="Y version of the application" StringSize="0" Order="2" />
+        <Variable Name="Z" DataType="UINT" Comment="Z version of the application" StringSize="0" Order="3" />
+        <Variable Name="D" DataType="UINT" Comment="D version of the application" StringSize="0" Order="4" />
+        <Variable Name="IsBeta" DataType="BOOL" Comment="Beta version enable" StringSize="0" Order="5" />
+        <Variable Name="IsDemo" DataType="BOOL" Comment="Demo version enable" StringSize="0" Order="6" />
+      </Struct>
+    </DataType>
+    <DataType Name="SYSWRITE_VALUEIN" Comment="" Access="UserDefined">
+      <Array Order="1" DataType="UDINT" StringSize="0">
+        <Dimension Lower="1" Upper="5" />
+      </Array>
+    </DataType>
+    <DataType Name="DATA_TYPEDESCR_INT_EVDEMB" Comment="EVDEMB: Descriptor INT" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Val" DataType="INT" Comment="" StringSize="0" Order="1" />
+        <Variable Name="MskLimMax" DataType="INT" Comment="" StringSize="0" Order="2" />
+        <Variable Name="MskLimMin" DataType="INT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="Err" DataType="INT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="Dev" DataType="INT" Comment="" StringSize="0" Order="5" />
+        <Variable Name="EnDev" DataType="BOOL" Comment="" StringSize="0" Order="6" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_SUPERPARAMETERS_EVDEMB" Comment="EVDEMB: 1- Superparameters" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="MainRegulation" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Main regulation" StringSize="0" Order="2" />
+        <Variable Name="AuxRegulationCom" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Auxiliary regulation" StringSize="0" Order="4" />
+        <Variable Name="EEVtype" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Valve" StringSize="0" Order="5" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="EVDEMB: Descriptor BOOL" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Val" DataType="BOOL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="Dev" DataType="BOOL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="EnDev" DataType="BOOL" Comment="" StringSize="0" Order="3" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVD_EEVCONFIG_EVDEMB" Comment="EVDEMB: 2- EVD parameters for EEV setup" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="ExtraClosEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="EEV closing position synchronization" StringSize="0" Order="1" />
+        <Variable Name="ExtraOpEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="EEV opening position synchronization" StringSize="0" Order="2" />
+        <Variable Name="FastClosMoveRate" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="EEV: emergency EEV closing speed" StringSize="0" Order="3" />
+        <Variable Name="FullClosSteps" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="EEV closing steps" StringSize="0" Order="4" />
+        <Variable Name="HoldCurr" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="EEV holding current" StringSize="0" Order="5" />
+        <Variable Name="MoveCurr" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="EEV nominal current" StringSize="0" Order="6" />
+        <Variable Name="MoveDuty" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="EEV duty cycle" StringSize="0" Order="7" />
+        <Variable Name="MoveRate" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="EEV step rate" StringSize="0" Order="8" />
+        <Variable Name="RegMaxPos" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="EEV maximum steps" StringSize="0" Order="9" />
+        <Variable Name="RegMinPos" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="EEV minimum steps" StringSize="0" Order="10" />
+        <Variable Name="StepsDoublingEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="EEV- Reserved" StringSize="0" Order="11" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_TYPEDESCR_REAL_EVDEMB" Comment="EVDEMB: Descriptor REAL" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Val" DataType="REAL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="MskLimMax" DataType="REAL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="MskLimMin" DataType="REAL" Comment="" StringSize="0" Order="3" />
+        <Variable Name="Err" DataType="INT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="Dev" DataType="REAL" Comment="" StringSize="0" Order="5" />
+        <Variable Name="EnDev" DataType="BOOL" Comment="" StringSize="0" Order="6" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVD_MAINREGULATION_EVDEMB" Comment="EVDEMB: 2- EVD parameters for main regulation" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="LOP_Thrsh" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="LOP (low evaporation temperature) threshold" StringSize="0" Order="2" />
+        <Variable Name="LOP_Ti" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="LOP (low evaporation temperature) integral time" StringSize="0" Order="3" />
+        <Variable Name="LowSH_Thrsh" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="LowSH (low superheat) threshold" StringSize="0" Order="4" />
+        <Variable Name="LowSH_Ti" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="LowSH (low superheat) integral time" StringSize="0" Order="5" />
+        <Variable Name="MOP_InhibThrsh" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="MOP (high evaporation temperature) suction temperature threshold" StringSize="0" Order="6" />
+        <Variable Name="MOP_Thrsh" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="MOP (high evaporation temperature) threshold" StringSize="0" Order="7" />
+        <Variable Name="MOP_Ti" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="MOP (high evaporation temperature) integral time" StringSize="0" Order="8" />
+        <Variable Name="CtrlDirP_Set" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="EPR pressure setpoint" StringSize="0" Order="9" />
+        <Variable Name="CtrlRevP_Set" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Hot gas by-pass pressure setpoint" StringSize="0" Order="10" />
+        <Variable Name="PID_Kp" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="PID proportional gain" StringSize="0" Order="11" />
+        <Variable Name="PID_Td" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="PID derivative time" StringSize="0" Order="12" />
+        <Variable Name="PID_Ti" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="PID integral time" StringSize="0" Order="13" />
+        <Variable Name="RegTyp" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Regulation mode" StringSize="0" Order="14" />
+        <Variable Name="SH_Set" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Superheat setpoint" StringSize="0" Order="15" />
+        <Variable Name="CtrlRevTempSet" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Hot gas by-pass temperature setpoint" StringSize="0" Order="16" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVD_REGULATION_EVDEMB" Comment="EVDEMB: 2- EVD configuration parameters" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="LowSuctAlrmThrsh" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Low suction temperature alarm threshold" StringSize="0" Order="1" />
+        <Variable Name="CO2_A" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="CO2 A coefficient" StringSize="0" Order="2" />
+        <Variable Name="CO2_B" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="CO2 B coefficient" StringSize="0" Order="3" />
+        <Variable Name="CtrlDirTempSet" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Reserved" StringSize="0" Order="4" />
+        <Variable Name="CtrlLiqdSet" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="flooded evap./cond. liquid level control set-point" StringSize="0" Order="5" />
+        <Variable Name="GasTyp" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Refrigerant" StringSize="0" Order="7" />
+        <Variable Name="LOP_AlrmDT" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="LOP (low evaporating temperature) alarm timeout" StringSize="0" Order="8" />
+        <Variable Name="LowSH_AlrmDT" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="LowSH (low superheat) alarm timeout" StringSize="0" Order="9" />
+        <Variable Name="LowSuctAlrmDT" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Low suction temperature alarm timeout" StringSize="0" Order="10" />
+        <Variable Name="MOP_AlrmDT" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="MOP (high evaporating temperature) alarm timeout" StringSize="0" Order="13" />
+        <Variable Name="StandByEEV_OpEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="Valve opened in stand-by" StringSize="0" Order="20" />
+        <Variable Name="StandByEEV_OpPos" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Standby valve opening position %" StringSize="0" Order="21" />
+        <Variable Name="SH_WaitDT" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Regulation starting delay" StringSize="0" Order="24" />
+        <Variable Name="StartEEV_OpRatio" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Valve nominal opening at start-up (EVAP/EEV capacity ratio)" StringSize="0" Order="25" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVD_ALARM_EVDEMB" Comment="EVDEMB: 2- EVD alarms structure" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Al_EEV" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="EEV motor error" StringSize="0" Order="2" />
+        <Variable Name="Al_SelfTuning" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="Ineffective adaptative regulation" StringSize="0" Order="3" />
+        <Variable Name="Al_LOP" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="LOP (low evaporation temperature)" StringSize="0" Order="4" />
+        <Variable Name="Al_LowSH" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="LowSH (low superheat)" StringSize="0" Order="5" />
+        <Variable Name="Al_LowSuct" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="Low suction temperature" StringSize="0" Order="6" />
+        <Variable Name="Al_MOP" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="MOP (high evaporation temperature)" StringSize="0" Order="7" />
+        <Variable Name="Al_EmergClos" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="Forced emergency closing in process" StringSize="0" Order="8" />
+        <Variable Name="Al_HiTempCond" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="HiTcond (high condensing temperature)" StringSize="0" Order="9" />
+        <Variable Name="Al_IncomplClos" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="Last forced emergency closing incomplete" StringSize="0" Order="10" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVD_MANUAL_EVDEMB" Comment="EVDEMB: 2- EVD variables for manual positioning" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="ManPositEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="Enable manual valve positioning" StringSize="0" Order="1" />
+        <Variable Name="ManPositSteps" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Manual valve position" StringSize="0" Order="2" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVD_VARIABLES_EVDEMB" Comment="EVDEMB: 2- EVD working variables" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="CO2_P" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="CO2 gas cooler outlet pressure" StringSize="0" Order="1" />
+        <Variable Name="CO2_Set" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="CO2 gas cooler pressure setpoint" StringSize="0" Order="2" />
+        <Variable Name="CO2_Temp" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="CO2 gas cooler outlet temperature" StringSize="0" Order="3" />
+        <Variable Name="EEV_PosPercent" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Valve opening" StringSize="0" Order="4" />
+        <Variable Name="EEV_PosSteps" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Valve position" StringSize="0" Order="5" />
+        <Variable Name="CtrlLiqdLev" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="flooded evap./cond. liquid level control percentage" StringSize="0" Order="6" />
+        <Variable Name="CtrlDirP_P" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="EPR pressure (back pressure)" StringSize="0" Order="7" />
+        <Variable Name="CtrlRevP_P" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Hot gas by-pass pressure" StringSize="0" Order="8" />
+        <Variable Name="PID_In_Cbar" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Reserved" StringSize="0" Order="9" />
+        <Variable Name="PID_Set_Cbar" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Regulation Setpoint" StringSize="0" Order="10" />
+        <Variable Name="ProtLOP_Status" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="LOP protection status" StringSize="0" Order="12" />
+        <Variable Name="ProtLowSH_Status" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="LowSH protection status" StringSize="0" Order="13" />
+        <Variable Name="ProtMOP_Status" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="MOP protection status" StringSize="0" Order="14" />
+        <Variable Name="ProtStatus" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Protection status" StringSize="0" Order="15" />
+        <Variable Name="RegStatus" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="EVD status" StringSize="0" Order="16" />
+        <Variable Name="SH_ActualSet" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Reserved" StringSize="0" Order="18" />
+        <Variable Name="SH_EvapP" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Evaporation pressure" StringSize="0" Order="19" />
+        <Variable Name="SH_EvapTemp" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Evaporation temperature" StringSize="0" Order="20" />
+        <Variable Name="SH" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Superheat" StringSize="0" Order="21" />
+        <Variable Name="SH_SuctTemp" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Suction temperature" StringSize="0" Order="22" />
+        <Variable Name="CtrlDirTempTemp" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Reserved" StringSize="0" Order="23" />
+        <Variable Name="CtrlRevTempTemp" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Hot gas by-pass temperature" StringSize="0" Order="24" />
+        <Variable Name="SH_FiltK" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Reserved" StringSize="0" Order="25" />
+        <Variable Name="SH_UnitCoolCap" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Actual unit cooling capacity" StringSize="0" Order="26" />
+        <Variable Name="CondP" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Condensing pressure" StringSize="0" Order="27" />
+        <Variable Name="CondTemp" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Condensing temperature" StringSize="0" Order="28" />
+        <Variable Name="DscgTemp" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Discharge temperature" StringSize="0" Order="29" />
+        <Variable Name="ProtHiTempCondStatus" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="HiTcond protection status" StringSize="0" Order="30" />
+        <Variable Name="SbC_BubTemp" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Condensing bubble temperature for Subcooling measure" StringSize="0" Order="31" />
+        <Variable Name="SbC_CondP" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Condensing pressure for Subcooling measure" StringSize="0" Order="32" />
+        <Variable Name="SbC_LiqdTemp" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Condensing liquid temperature for Subcooling measure" StringSize="0" Order="33" />
+        <Variable Name="SbC" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Subcooling" StringSize="0" Order="34" />
+        <Variable Name="ModThermTemp" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Modulating thermostat temperature" StringSize="0" Order="35" />
+        <Variable Name="MOP_ThrshFastChg" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="MOP (high evaporation temperature) threshold for frequent change" StringSize="0" Order="36" />
+        <Variable Name="RegSubTyp" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Secondary regulation mode" StringSize="0" Order="37" />
+        <Variable Name="DscgSH" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Discharge superheat" StringSize="0" Order="38" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVD_SELFTUNING_EVDEMB" Comment="EVDEMB: 2- EVD autotuning parameters" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="SelfTuningLastResult" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Last tuning result" StringSize="0" Order="1" />
+        <Variable Name="SelfTuningMan" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="Start manual tuning" StringSize="0" Order="2" />
+        <Variable Name="SelfTuningMethod" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Tuning method" StringSize="0" Order="3" />
+        <Variable Name="SelfTuningStatus" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Adaptative regulation status" StringSize="0" Order="4" />
+        <Variable Name="SelfTuningEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="Reserved" StringSize="0" Order="5" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVD_AUXREGULATION_EVDEMB" Comment="EVDEMB: 2- Common parameters for auxiliary regulation" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="HiTempCondThrsh" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="HiTcond (high condensing temperature) threshold" StringSize="0" Order="1" />
+        <Variable Name="HiTempCondTi" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="HiTcond (high condensing temperature) integral time" StringSize="0" Order="2" />
+        <Variable Name="ModThermDiff" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Modulating thermostat: differential" StringSize="0" Order="3" />
+        <Variable Name="ModThermSet" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Modulating thermostat: setpoint" StringSize="0" Order="4" />
+        <Variable Name="ModThermSH_Offset" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Modulating thermostat: superheat setpoint offset" StringSize="0" Order="5" />
+        <Variable Name="HiTempCondAlrmDT" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="HiTcond (high condensing temperature) alarm timeout" StringSize="0" Order="14" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVD_CONFIGURATION_EVDEMB" Comment="EVDEMB: 2- Common parameters for configuration" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="GasTypAux" DataType="DATA_TYPEDESCR_INT_EVDEMB" Comment="Refrigerant for auxiliary regulation" StringSize="0" Order="27" />
+        <Variable Name="S4_ThT_ConstNTC" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Thermal time constant NTC probe S4" StringSize="0" Order="45" />
+        <Variable Name="DscgSH_Set" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Discharge superheat setpoint" StringSize="0" Order="52" />
+        <Variable Name="DscgTempSet" DataType="DATA_TYPEDESCR_REAL_EVDEMB" Comment="Discharge temperature setpoint" StringSize="0" Order="53" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVD_SYSTEM_EVDEMB" Comment="EVDEMB: 2- Common system parameters" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="DC_SupplyEn" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="DC power supply enabling" StringSize="0" Order="1" />
+        <Variable Name="EVD_CanGo" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="Enable EVD regulation" StringSize="0" Order="2" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVD_EVDEMB" Comment="EVDEMB: 1- EVD parameters structure" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="EEV_Config" DataType="DATA_EVD_EEVCONFIG_EVDEMB" Comment="Valve configuration" StringSize="0" Order="1" />
+        <Variable Name="MainRegulation" DataType="DATA_EVD_MAINREGULATION_EVDEMB" Comment="Main regulation parameters configuration" StringSize="0" Order="2" />
+        <Variable Name="Regulation" DataType="DATA_EVD_REGULATION_EVDEMB" Comment="Regulation parameters configuration" StringSize="0" Order="3" />
+        <Variable Name="Alarm" DataType="DATA_EVD_ALARM_EVDEMB" Comment="Read only alarms" StringSize="0" Order="4" />
+        <Variable Name="Manual" DataType="DATA_EVD_MANUAL_EVDEMB" Comment="Manual positioner" StringSize="0" Order="5" />
+        <Variable Name="Variables" DataType="DATA_EVD_VARIABLES_EVDEMB" Comment="Status variables" StringSize="0" Order="6" />
+        <Variable Name="SelfTuning" DataType="DATA_EVD_SELFTUNING_EVDEMB" Comment="Self tuning variables and parameters" StringSize="0" Order="7" />
+        <Variable Name="AuxRegulation" DataType="DATA_EVD_AUXREGULATION_EVDEMB" Comment="Auxiliary regulation parameters configuration" StringSize="0" Order="8" />
+        <Variable Name="Configuration" DataType="DATA_EVD_CONFIGURATION_EVDEMB" Comment="BLDC and auxiliary refrigerant configuration" StringSize="0" Order="9" />
+        <Variable Name="System" DataType="DATA_EVD_SYSTEM_EVDEMB" Comment="System configuration" StringSize="0" Order="10" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_INPUTS_SINGLEPROBE_DATA_EVDEMB" Comment="EVDEMB: 3- Single probe data for setup" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="IsUsed" DataType="DATA_TYPEDESCR_BOOL_EVDEMB" Comment="probe necessary for regulation" StringSize="0" Order="7" />
+        <Variable Name="Val" DataType="REAL" Comment="Value" StringSize="0" Order="8" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_INPUTS_EVDEMB" Comment="EVDEMB: 1- Inputs data" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="S1" DataType="DATA_INPUTS_SINGLEPROBE_DATA_EVDEMB" Comment="Probe S1" StringSize="0" Order="1" />
+        <Variable Name="S2" DataType="DATA_INPUTS_SINGLEPROBE_DATA_EVDEMB" Comment="Probe S2" StringSize="0" Order="2" />
+        <Variable Name="S3" DataType="DATA_INPUTS_SINGLEPROBE_DATA_EVDEMB" Comment="Probe S3" StringSize="0" Order="3" />
+        <Variable Name="S4" DataType="DATA_INPUTS_SINGLEPROBE_DATA_EVDEMB" Comment="Probe S4" StringSize="0" Order="4" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_PRIVATE_EVDEMB" Comment="EVDEMB: 1- Private" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="SuperAuxRegulationComOld" DataType="INT" Comment="Auxiliary regulation" StringSize="0" Order="1" />
+        <Variable Name="SuperMainRegulationOld" DataType="INT" Comment="Main regulation" StringSize="0" Order="3" />
+        <Variable Name="DefaultDone" DataType="BOOL" Comment="Default done flag" StringSize="0" Order="11" />
+      </Struct>
+    </DataType>
+    <DataType Name="DATA_EVDEMB" Comment="EVDEMB: 0- Main structure" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Superparameters" DataType="DATA_SUPERPARAMETERS_EVDEMB" Comment="Superparameters" StringSize="0" Order="1" />
+        <Variable Name="EVD" DataType="DATA_EVD_EVDEMB" Comment="EVD parameters" StringSize="0" Order="2" />
+        <Variable Name="Inputs" DataType="DATA_INPUTS_EVDEMB" Comment="Probes data" StringSize="0" Order="4" />
+        <Variable Name="Private" DataType="DATA_PRIVATE_EVDEMB" Comment="Private" StringSize="0" Order="6" />
+      </Struct>
+    </DataType>
+    <DataType Name="CFG_COMM_PARAMS_EVDEMB" Comment="Common Parameters Enable configuration" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="LOP_Thrsh" DataType="BOOL" Comment="LOP threshold" StringSize="0" Order="1" />
+        <Variable Name="LOP_Ti" DataType="BOOL" Comment="LOP integral time" StringSize="0" Order="2" />
+        <Variable Name="LowSH_Thrsh" DataType="BOOL" Comment="LowSH threshold" StringSize="0" Order="3" />
+        <Variable Name="LowSH_Ti" DataType="BOOL" Comment="LowSH integral time" StringSize="0" Order="4" />
+        <Variable Name="MOP_Thrsh" DataType="BOOL" Comment="MOP threshold" StringSize="0" Order="5" />
+        <Variable Name="MOP_Ti" DataType="BOOL" Comment="MOP threshold" StringSize="0" Order="6" />
+        <Variable Name="PID_Kp" DataType="BOOL" Comment="PID proportional gain" StringSize="0" Order="7" />
+        <Variable Name="PID_Ti" DataType="BOOL" Comment="PID integral time" StringSize="0" Order="8" />
+        <Variable Name="PID_Td" DataType="BOOL" Comment="PID derivative time" StringSize="0" Order="9" />
+        <Variable Name="SH_Set" DataType="BOOL" Comment="Superheat setpoint" StringSize="0" Order="10" />
+        <Variable Name="StandByEEV_OpEn" DataType="BOOL" Comment="Valve opened in stand-by" StringSize="0" Order="11" />
+        <Variable Name="StartEEV_OpRatio" DataType="BOOL" Comment="Valve nominal opening at start-up" StringSize="0" Order="12" />
+      </Struct>
+    </DataType>
+    <DataType Name="ALRMS_EVDEMB" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="OR_Alrms" DataType="BOOL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="Al_LowSH" DataType="BOOL" Comment="Low superheat" StringSize="0" Order="2" />
+        <Variable Name="Al_LOP" DataType="BOOL" Comment="LOP" StringSize="0" Order="3" />
+        <Variable Name="Al_MOP" DataType="BOOL" Comment="MOP" StringSize="0" Order="4" />
+        <Variable Name="Al_HiTempCond" DataType="BOOL" Comment="HiTCond" StringSize="0" Order="5" />
+        <Variable Name="Al_LowSuct" DataType="BOOL" Comment="Low suction" StringSize="0" Order="6" />
+        <Variable Name="Al_EEV" DataType="BOOL" Comment="Valve" StringSize="0" Order="7" />
+        <Variable Name="Al_SelfTuning" DataType="BOOL" Comment="Autotuning" StringSize="0" Order="8" />
+        <Variable Name="Al_EmergClos" DataType="BOOL" Comment="Emergency closing" StringSize="0" Order="9" />
+        <Variable Name="Al_RangeError" DataType="BOOL" Comment="Range Error" StringSize="0" Order="11" />
+        <Variable Name="Al_PinOutOfBound" DataType="DINT" Comment="Valve pin value out of bound (bit field)" StringSize="0" Order="12" />
+        <Variable Name="Al_ExtPositNotOnline" DataType="BOOL" Comment="External positioner is not online (only with VlvID=0)" StringSize="0" Order="13" />
+      </Struct>
+    </DataType>
+    <DataType Name="CHECK_FLAG_EVDEMB" Comment="Mask Enable depending on active regulation" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Fl_DisplayEEV_Params" DataType="BOOL" Comment="Enable/disable Custom EEV parameters masks/fields" StringSize="0" Order="1" />
+        <Variable Name="Fl_HiTempCond" DataType="BOOL" Comment="Enable/disable High condensing temp. masks/fields" StringSize="0" Order="2" />
+        <Variable Name="Fl_ModTherm" DataType="BOOL" Comment="Enable/disable Modulating thermostat masks/fields" StringSize="0" Order="3" />
+        <Variable Name="Fl_P_CtrlDir" DataType="BOOL" Comment="Enable/disable Pressure Control Dir. masks/fields" StringSize="0" Order="4" />
+        <Variable Name="Fl_P_CtrlRev" DataType="BOOL" Comment="Enable/disable Pressure Control Rev. masks/fields" StringSize="0" Order="5" />
+        <Variable Name="Fl_TempCtrlDir" DataType="BOOL" Comment="Enable/disable Temperature Control Dir. masks/fields" StringSize="0" Order="6" />
+        <Variable Name="Fl_TempCtrlRev" DataType="BOOL" Comment="Enable/disable Temperature Control Rev. masks/fields" StringSize="0" Order="7" />
+        <Variable Name="Fl_CO2" DataType="BOOL" Comment="Enable/disable CO2 masks/fields" StringSize="0" Order="8" />
+        <Variable Name="Fl_SBC" DataType="BOOL" Comment="Enable/disable Subcooling masks/fields" StringSize="0" Order="9" />
+        <Variable Name="Fl_SelfTuning" DataType="BOOL" Comment="Enable/disable SelfTuning masks/fields" StringSize="0" Order="10" />
+        <Variable Name="Fl_BLDC" DataType="BOOL" Comment="Enable/disable BLDC masks/fields" StringSize="0" Order="11" />
+        <Variable Name="Fl_SH" DataType="BOOL" Comment="Enable/disable SH masks/fields" StringSize="0" Order="13" />
+        <Variable Name="Fl_CtrlLiqd" DataType="BOOL" Comment="Enable/disable Liquid level masks/fields" StringSize="0" Order="14" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_TYPEDESCR_EVDEMB" Comment="EVDEMB DESCR: General descriptor" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="MaxVal" DataType="REAL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="MinVal" DataType="REAL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="DataType" DataType="INT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="IsTemp" DataType="BOOL" Comment="" StringSize="0" Order="4" />
+        <Variable Name="IsP" DataType="BOOL" Comment="" StringSize="0" Order="5" />
+        <Variable Name="IsWritable" DataType="BOOL" Comment="" StringSize="0" Order="6" />
+        <Variable Name="IsRelative" DataType="BOOL" Comment="" StringSize="0" Order="7" />
+        <Variable Name="Default" DataType="REAL" Comment="" StringSize="0" Order="8" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_SUPERPARAMETERS_EVDEMB" Comment="EVDEMB DESCR: 1- Superparameters" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="MainRegulation" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Main regulation" StringSize="0" Order="2" />
+        <Variable Name="AuxRegulationCom" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Auxiliary regulation" StringSize="0" Order="4" />
+        <Variable Name="EEVtype" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Valve" StringSize="0" Order="5" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVD_EEVCONFIG_EVDEMB" Comment="EVDEMB DESCR: 2- EVD parameters for EEV setup" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="ExtraClosEn" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV closing position synchronization" StringSize="0" Order="1" />
+        <Variable Name="ExtraOpEn" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV opening position synchronization" StringSize="0" Order="2" />
+        <Variable Name="FastClosMoveRate" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV: emergency EEV closing speed" StringSize="0" Order="3" />
+        <Variable Name="FullClosSteps" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV closing steps" StringSize="0" Order="4" />
+        <Variable Name="HoldCurr" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV holding current" StringSize="0" Order="5" />
+        <Variable Name="MoveCurr" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV nominal current" StringSize="0" Order="6" />
+        <Variable Name="MoveDuty" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV duty cycle" StringSize="0" Order="7" />
+        <Variable Name="MoveRate" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV step rate" StringSize="0" Order="8" />
+        <Variable Name="RegMaxPos" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV maximum steps" StringSize="0" Order="9" />
+        <Variable Name="RegMinPos" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV minimum steps" StringSize="0" Order="10" />
+        <Variable Name="StepsDoublingEn" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV- Reserved" StringSize="0" Order="11" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVD_MAINREGULATION_EVDEMB" Comment="EVDEMB DESCR: 2- EVD parameters for main regulation" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="LOP_Thrsh" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="LOP (low evaporation temperature) threshold" StringSize="0" Order="2" />
+        <Variable Name="LOP_Ti" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="LOP (low evaporation temperature) integral time" StringSize="0" Order="3" />
+        <Variable Name="LowSH_Thrsh" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="LowSH (low superheat) threshold" StringSize="0" Order="4" />
+        <Variable Name="LowSH_Ti" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="LowSH (low superheat) integral time" StringSize="0" Order="5" />
+        <Variable Name="MOP_InhibThrsh" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="MOP (high evaporation temperature) suction temperature threshold" StringSize="0" Order="6" />
+        <Variable Name="MOP_Thrsh" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="MOP (high evaporation temperature) threshold" StringSize="0" Order="7" />
+        <Variable Name="MOP_Ti" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="MOP (high evaporation temperature) integral time" StringSize="0" Order="8" />
+        <Variable Name="CtrlDirP_Set" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EPR pressure setpoint" StringSize="0" Order="9" />
+        <Variable Name="CtrlRevP_Set" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Hot gas by-pass pressure setpoint" StringSize="0" Order="10" />
+        <Variable Name="PID_Kp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="PID proportional gain" StringSize="0" Order="11" />
+        <Variable Name="PID_Td" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="PID derivative time" StringSize="0" Order="12" />
+        <Variable Name="PID_Ti" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="PID integral time" StringSize="0" Order="13" />
+        <Variable Name="RegTyp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Regulation mode" StringSize="0" Order="14" />
+        <Variable Name="SH_Set" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Superheat setpoint" StringSize="0" Order="15" />
+        <Variable Name="CtrlRevTempSet" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Hot gas by-pass temperature setpoint" StringSize="0" Order="16" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVD_REGULATION_EVDEMB" Comment="EVDEMB DESCR: 2- EVD configuration parameters" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="LowSuctAlrmThrsh" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Low suction temperature alarm threshold" StringSize="0" Order="1" />
+        <Variable Name="CO2_A" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="CO2 A coefficient" StringSize="0" Order="2" />
+        <Variable Name="CO2_B" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="CO2 B coefficient" StringSize="0" Order="3" />
+        <Variable Name="CtrlDirTempSet" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Reserved" StringSize="0" Order="4" />
+        <Variable Name="CtrlLiqdSet" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="flooded evap./cond. liquid level control set-point" StringSize="0" Order="5" />
+        <Variable Name="GasTyp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Refrigerant" StringSize="0" Order="7" />
+        <Variable Name="LOP_AlrmDT" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="LOP (low evaporating temperature) alarm timeout" StringSize="0" Order="8" />
+        <Variable Name="LowSH_AlrmDT" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="LowSH (low superheat) alarm timeout" StringSize="0" Order="9" />
+        <Variable Name="LowSuctAlrmDT" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Low suction temperature alarm timeout" StringSize="0" Order="10" />
+        <Variable Name="MOP_AlrmDT" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="MOP (high evaporating temperature) alarm timeout" StringSize="0" Order="13" />
+        <Variable Name="StandByEEV_OpEn" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Valve opened in stand-by" StringSize="0" Order="20" />
+        <Variable Name="StandByEEV_OpPos" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Standby valve opening position %" StringSize="0" Order="21" />
+        <Variable Name="SH_WaitDT" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Regulation starting delay" StringSize="0" Order="24" />
+        <Variable Name="StartEEV_OpRatio" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Valve nominal opening at start-up (EVAP/EEV capacity ratio)" StringSize="0" Order="25" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVD_ALARM_EVDEMB" Comment="EVDEMB DESCR: 2- EVD alarms structure" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Al_EEV" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EEV motor error" StringSize="0" Order="2" />
+        <Variable Name="Al_EVO_Tunes" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Ineffective adaptative regulation" StringSize="0" Order="3" />
+        <Variable Name="Al_LOP" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="LOP (low evaporation temperature)" StringSize="0" Order="4" />
+        <Variable Name="Al_LowSH" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="LowSH (low superheat)" StringSize="0" Order="5" />
+        <Variable Name="Al_LowSuct" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Low suction temperature" StringSize="0" Order="6" />
+        <Variable Name="Al_MOP" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="MOP (high evaporation temperature)" StringSize="0" Order="7" />
+        <Variable Name="Al_EmergClos" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Forced emergency closing in proces" StringSize="0" Order="8" />
+        <Variable Name="Al_HiTempCond" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="HiTcond (high condensing temperature)" StringSize="0" Order="9" />
+        <Variable Name="Al_IncomplClos" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Last forced emergency closing incomplete" StringSize="0" Order="10" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVD_MANUAL_EVDEMB" Comment="EVDEMB DESCR: 2- EVD variables for manual positioning" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="ManPositEn" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Enable manual valve positioning" StringSize="0" Order="1" />
+        <Variable Name="ManPositSteps" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Manual valve position" StringSize="0" Order="2" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVD_VARIABLES_EVDEMB" Comment="EVDEMB DESCR: 2- EVD working variables" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="CO2_P" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="CO2 gas cooler outlet pressure" StringSize="0" Order="1" />
+        <Variable Name="CO2_Set" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="CO2 gas cooler pressure setpoint" StringSize="0" Order="2" />
+        <Variable Name="CO2_Temp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="CO2 gas cooler outlet temperature" StringSize="0" Order="3" />
+        <Variable Name="EEV_PosPercent" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Valve opening" StringSize="0" Order="4" />
+        <Variable Name="EEV_PosSteps" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Valve position" StringSize="0" Order="5" />
+        <Variable Name="CtrlLiqdLev" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="flooded evap./cond. liquid level control percentage" StringSize="0" Order="6" />
+        <Variable Name="CtrlDirP_P" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EPR pressure (back pressure)" StringSize="0" Order="7" />
+        <Variable Name="CtrlRevP_P" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Hot gas by-pass pressure" StringSize="0" Order="8" />
+        <Variable Name="PID_In_Cbar" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Reserved" StringSize="0" Order="9" />
+        <Variable Name="PID_Set_Cbar" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Regulation Setpoint" StringSize="0" Order="10" />
+        <Variable Name="ProtLOP_Status" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="LOP protection status" StringSize="0" Order="12" />
+        <Variable Name="ProtLowSH_Status" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="LowSH protection status" StringSize="0" Order="13" />
+        <Variable Name="ProtMOP_Status" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="MOP protection status" StringSize="0" Order="14" />
+        <Variable Name="ProtStatus" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Protection status" StringSize="0" Order="15" />
+        <Variable Name="RegStatus" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="EVD status" StringSize="0" Order="16" />
+        <Variable Name="SH_ActualSet" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Reserved" StringSize="0" Order="18" />
+        <Variable Name="SH_EvapP" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Evaporation pressure" StringSize="0" Order="19" />
+        <Variable Name="SH_EvapTemp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Evaporation temperature" StringSize="0" Order="20" />
+        <Variable Name="SH" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Superheat" StringSize="0" Order="21" />
+        <Variable Name="SH_SuctTemp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Suction temperature" StringSize="0" Order="22" />
+        <Variable Name="CtrlDirTempTemp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Reserved" StringSize="0" Order="23" />
+        <Variable Name="CtrlRevTempTemp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Hot gas by-pass temperature" StringSize="0" Order="24" />
+        <Variable Name="SH_FiltK" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Reserved" StringSize="0" Order="25" />
+        <Variable Name="SH_UnitCoolCap" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Actual unit cooling capacity" StringSize="0" Order="26" />
+        <Variable Name="CondP" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Condensing pressure" StringSize="0" Order="27" />
+        <Variable Name="CondTemp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Condensing temperature" StringSize="0" Order="28" />
+        <Variable Name="DscgSh" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Discharge superheat" StringSize="0" Order="29" />
+        <Variable Name="DscgTemp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Discharge temperature" StringSize="0" Order="30" />
+        <Variable Name="ProtHiTempCondStatus" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="HiTcond protection status" StringSize="0" Order="31" />
+        <Variable Name="SbC_BubTemp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Condensing bubble temperature for Subcooling measure" StringSize="0" Order="32" />
+        <Variable Name="Sbc_CondP" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Condensing pressure for Subcooling measure" StringSize="0" Order="33" />
+        <Variable Name="SbC_LiqdTemp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Condensing liquid temperature for Subcooling measure" StringSize="0" Order="34" />
+        <Variable Name="Sbc" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Subcooling" StringSize="0" Order="35" />
+        <Variable Name="ModThermTemp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Modulating thermostat temperature" StringSize="0" Order="36" />
+        <Variable Name="MOP_ThrshFastChg" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="MOP (high evaporation temperature) threshold for frequent change" StringSize="0" Order="37" />
+        <Variable Name="RegSubTyp" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Secondary regulation mode" StringSize="0" Order="38" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVD_SELFTUNING_EVDEMB" Comment="EVDEMB DESCR: 2- EVD autotuning parameters" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="SelfTuningLastResult" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Last tuning result" StringSize="0" Order="1" />
+        <Variable Name="SelfTuningMan" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Start manual tuning" StringSize="0" Order="2" />
+        <Variable Name="SelfTuningMethod" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Tuning method" StringSize="0" Order="3" />
+        <Variable Name="SelfTuningStatus" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Adaptative regulation status" StringSize="0" Order="4" />
+        <Variable Name="SelfTuningEn" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Reserved" StringSize="0" Order="5" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVD_AUXREGULATION_EVDEMB" Comment="EVDEMB DESCR: 2- Common parameters for auxiliary regulation" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="HiTempCondThrsh" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="HiTcond (high condensing temperature) threshold" StringSize="0" Order="1" />
+        <Variable Name="HiTempCondTi" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="HiTcond (high condensing temperature) integral time" StringSize="0" Order="2" />
+        <Variable Name="ModThermDiff" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Modulating thermostat: differential" StringSize="0" Order="3" />
+        <Variable Name="ModThermSet" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Modulating thermostat: setpoint" StringSize="0" Order="4" />
+        <Variable Name="ModThermSH_Offset" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Modulating thermostat: superheat setpoint offset" StringSize="0" Order="5" />
+        <Variable Name="HiTempCondAlrmDT" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="HiTcond (high condensing temperature) alarm timeout" StringSize="0" Order="14" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVD_CONFIGURATION_EVDEMB" Comment="EVDEMB DESCR: 2- Common parameters for configuration" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="GasTypAux" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Refrigerant for auxiliary regulation" StringSize="0" Order="27" />
+        <Variable Name="S4_ThT_ConstNTC" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Thermal time constant NTC probe S4" StringSize="0" Order="45" />
+        <Variable Name="DscgSH_Set" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Discharge superheat setpoint" StringSize="0" Order="52" />
+        <Variable Name="DscgTempSet" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Discharge temperature setpoint" StringSize="0" Order="53" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVD_SYSTEM_EVDEMB" Comment="EVDEMB DESCR: 2- Common system parameters" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="DC_SupplyEn" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="DC power supply enabling" StringSize="0" Order="1" />
+        <Variable Name="EVD_CanGo" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Enable EVD regulation" StringSize="0" Order="2" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVD_EVDEMB" Comment="EVDEMB DESCR: 1- EVD parameters structure" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="EEV_Config" DataType="DESCR_EVD_EEVCONFIG_EVDEMB" Comment="Valve configuration" StringSize="0" Order="1" />
+        <Variable Name="MainRegulation" DataType="DESCR_EVD_MAINREGULATION_EVDEMB" Comment="Main regulation parameters configuration" StringSize="0" Order="2" />
+        <Variable Name="Regulation" DataType="DESCR_EVD_REGULATION_EVDEMB" Comment="Regulation parameters configuration" StringSize="0" Order="3" />
+        <Variable Name="Alarm" DataType="DESCR_EVD_ALARM_EVDEMB" Comment="Read only alarms" StringSize="0" Order="4" />
+        <Variable Name="Manual" DataType="DESCR_EVD_MANUAL_EVDEMB" Comment="Manual positioner" StringSize="0" Order="5" />
+        <Variable Name="Variables" DataType="DESCR_EVD_VARIABLES_EVDEMB" Comment="Status variables" StringSize="0" Order="6" />
+        <Variable Name="SelfTuning" DataType="DESCR_EVD_SELFTUNING_EVDEMB" Comment="Self tuning variables and parameters" StringSize="0" Order="7" />
+        <Variable Name="AuxRegulation" DataType="DESCR_EVD_AUXREGULATION_EVDEMB" Comment="" StringSize="0" Order="8" />
+        <Variable Name="Configuration" DataType="DESCR_EVD_CONFIGURATION_EVDEMB" Comment="" StringSize="0" Order="9" />
+        <Variable Name="System" DataType="DESCR_EVD_SYSTEM_EVDEMB" Comment="" StringSize="0" Order="10" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_INPUTS_SINGLEPROBE_DATA_EVDEMB" Comment="EVDEMB DESCR: 3- Single probe data for setup" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="IsUsed" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="probe necessary for regulation" StringSize="0" Order="7" />
+        <Variable Name="Val" DataType="DESCR_TYPEDESCR_EVDEMB" Comment="Value" StringSize="0" Order="8" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_INPUTS_EVDEMB" Comment="EVDEMB DESCR: 1- Inputs data" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="S1" DataType="DESCR_INPUTS_SINGLEPROBE_DATA_EVDEMB" Comment="Probe S1" StringSize="0" Order="1" />
+        <Variable Name="S2" DataType="DESCR_INPUTS_SINGLEPROBE_DATA_EVDEMB" Comment="Probe S2" StringSize="0" Order="2" />
+        <Variable Name="S3" DataType="DESCR_INPUTS_SINGLEPROBE_DATA_EVDEMB" Comment="Probe S3" StringSize="0" Order="3" />
+        <Variable Name="S4" DataType="DESCR_INPUTS_SINGLEPROBE_DATA_EVDEMB" Comment="Probe S4" StringSize="0" Order="4" />
+      </Struct>
+    </DataType>
+    <DataType Name="DESCR_EVDEMB" Comment="EVDEMB DESCR: 0- Main Descriptor Structure" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Superparameters" DataType="DESCR_SUPERPARAMETERS_EVDEMB" Comment="Superparameters" StringSize="0" Order="1" />
+        <Variable Name="EVD" DataType="DESCR_EVD_EVDEMB" Comment="EVD parameters" StringSize="0" Order="2" />
+        <Variable Name="Inputs" DataType="DESCR_INPUTS_EVDEMB" Comment="Probes data" StringSize="0" Order="4" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_PID_EVDEMB" Comment="Machine: 1- PID parameters" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="ErrorCurrent" DataType="REAL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="MeasureCurrent" DataType="REAL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="MeasurePrevious" DataType="REAL" Comment="" StringSize="0" Order="3" />
+        <Variable Name="Measure2Previous" DataType="REAL" Comment="" StringSize="0" Order="4" />
+        <Variable Name="Set" DataType="REAL" Comment="" StringSize="0" Order="5" />
+        <Variable Name="Kp" DataType="REAL" Comment="" StringSize="0" Order="6" />
+        <Variable Name="Td" DataType="REAL" Comment="" StringSize="0" Order="7" />
+        <Variable Name="Ti" DataType="REAL" Comment="" StringSize="0" Order="8" />
+        <Variable Name="DeltaDerivativeTerm" DataType="REAL" Comment="" StringSize="0" Order="9" />
+        <Variable Name="DeltaControlTerm" DataType="REAL" Comment="" StringSize="0" Order="10" />
+        <Variable Name="TotalControlTerm" DataType="REAL" Comment="" StringSize="0" Order="11" />
+        <Variable Name="SamplingTimeMemory" DataType="UDINT" Comment="" StringSize="0" Order="12" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_PAR_SHPROT_EVDEMB" Comment="Machine: 2- Parameters for SH protections" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="LOPTi" DataType="REAL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="LOPThreshold" DataType="REAL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="LOPAlarmDelay" DataType="UINT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="MOPTi" DataType="REAL" Comment="" StringSize="0" Order="4" />
+        <Variable Name="MOPThreshold" DataType="REAL" Comment="" StringSize="0" Order="5" />
+        <Variable Name="MOPAlarmDelay" DataType="UINT" Comment="" StringSize="0" Order="6" />
+        <Variable Name="LowSHTi" DataType="REAL" Comment="" StringSize="0" Order="7" />
+        <Variable Name="LowSHThreshold" DataType="REAL" Comment="" StringSize="0" Order="8" />
+        <Variable Name="LowSHAlarmDelay" DataType="UINT" Comment="" StringSize="0" Order="9" />
+        <Variable Name="HiTCondTi" DataType="REAL" Comment="" StringSize="0" Order="10" />
+        <Variable Name="HiTCondThreshold" DataType="REAL" Comment="" StringSize="0" Order="11" />
+        <Variable Name="HiTCondAlarmDelay" DataType="UINT" Comment="" StringSize="0" Order="12" />
+        <Variable Name="ModulatingThermostatSHOffset" DataType="REAL" Comment="" StringSize="0" Order="13" />
+        <Variable Name="ModulatingThermostatDifferential" DataType="REAL" Comment="" StringSize="0" Order="14" />
+        <Variable Name="ModulatingThermostatSet" DataType="REAL" Comment="" StringSize="0" Order="15" />
+        <Variable Name="LowSuctThreshold" DataType="REAL" Comment="" StringSize="0" Order="16" />
+        <Variable Name="LowSuctAlarmDelay" DataType="UINT" Comment="" StringSize="0" Order="17" />
+        <Variable Name="MOPSuctionTemperatureThreshold" DataType="REAL" Comment="" StringSize="0" Order="18" />
+        <Variable Name="MOPThresholdTemporary" DataType="REAL" Comment="" StringSize="0" Order="19" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_PAR_EVDEMB" Comment="Machine: 1- Configurator parameters" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="EEVType" DataType="UINT" Comment="" StringSize="0" Order="1" />
+        <Variable Name="EVDCanGo" DataType="BOOL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="MainRegulation" DataType="UINT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="RegulationType" DataType="UINT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="AuxRegulation" DataType="UINT" Comment="" StringSize="0" Order="5" />
+        <Variable Name="UnitPower" DataType="UINT" Comment="" StringSize="0" Order="10" />
+        <Variable Name="UnitPowerOld" DataType="UINT" Comment="" StringSize="0" Order="11" />
+        <Variable Name="GasType" DataType="UINT" Comment="" StringSize="0" Order="12" />
+        <Variable Name="GasTypeAux" DataType="UINT" Comment="" StringSize="0" Order="13" />
+        <Variable Name="StandbyEEVOpenEnable" DataType="BOOL" Comment="" StringSize="0" Order="14" />
+        <Variable Name="StandbyEEVOpenPosition" DataType="UINT" Comment="" StringSize="0" Order="15" />
+        <Variable Name="StartEEVOpenRatio" DataType="UINT" Comment="" StringSize="0" Order="16" />
+        <Variable Name="ManualPositionEnable" DataType="BOOL" Comment="" StringSize="0" Order="17" />
+        <Variable Name="ManualPositionSteps" DataType="UINT" Comment="" StringSize="0" Order="18" />
+        <Variable Name="DigInMainConfig" DataType="UINT" Comment="" StringSize="0" Order="19" />
+        <Variable Name="DigInMainBackupValue" DataType="BOOL" Comment="" StringSize="0" Order="20" />
+        <Variable Name="DigInAuxConfig" DataType="UINT" Comment="" StringSize="0" Order="21" />
+        <Variable Name="RelayConfig" DataType="UINT" Comment="" StringSize="0" Order="22" />
+        <Variable Name="DefrostDelay" DataType="UINT" Comment="" StringSize="0" Order="23" />
+        <Variable Name="PressureCtrlDirectSet" DataType="REAL" Comment="" StringSize="0" Order="24" />
+        <Variable Name="PressureCtrlReverseSet" DataType="REAL" Comment="" StringSize="0" Order="25" />
+        <Variable Name="TemperatureCtrlReverseSet" DataType="REAL" Comment="" StringSize="0" Order="26" />
+        <Variable Name="CO2a" DataType="REAL" Comment="" StringSize="0" Order="27" />
+        <Variable Name="CO2b" DataType="REAL" Comment="" StringSize="0" Order="28" />
+        <Variable Name="SHset" DataType="REAL" Comment="" StringSize="0" Order="29" />
+        <Variable Name="SHProtections" DataType="MACHINE_DATA_PAR_SHPROT_EVDEMB" Comment="" StringSize="0" Order="30" />
+        <Variable Name="SHFilteringK" DataType="UINT" Comment="" StringSize="0" Order="31" />
+        <Variable Name="EVOTunesEnable" DataType="BOOL" Comment="" StringSize="0" Order="32" />
+        <Variable Name="EVOTunesMethod" DataType="UINT" Comment="" StringSize="0" Order="33" />
+        <Variable Name="DischargeSHset" DataType="REAL" Comment="" StringSize="0" Order="34" />
+        <Variable Name="DischargeTemperatureSet" DataType="REAL" Comment="" StringSize="0" Order="35" />
+        <Variable Name="RegulationSubType" DataType="UINT" Comment="" StringSize="0" Order="36" />
+        <Variable Name="RegulationStartDelay" DataType="UINT" Comment="" StringSize="0" Order="37" />
+        <Variable Name="LiquidLevelSet" DataType="REAL" Comment="" StringSize="0" Order="40" />
+        <Variable Name="DCSupplyEn" DataType="BOOL" Comment="" StringSize="0" Order="41" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_SHVAR_EVDEMB" Comment="Machine: 1- Parameters for SH regulation" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="SuctionTemperature" DataType="REAL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="EvaporationTemperature" DataType="REAL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="EvaporationPressure" DataType="REAL" Comment="" StringSize="0" Order="3" />
+        <Variable Name="CondensingPressure" DataType="REAL" Comment="" StringSize="0" Order="4" />
+        <Variable Name="SBC_CondenserOutPressure" DataType="REAL" Comment="" StringSize="0" Order="5" />
+        <Variable Name="CondensingTemperature" DataType="REAL" Comment="" StringSize="0" Order="6" />
+        <Variable Name="SBC_CondenserBubbleTemperature" DataType="REAL" Comment="" StringSize="0" Order="7" />
+        <Variable Name="ModulatingThermostatTemperature" DataType="REAL" Comment="" StringSize="0" Order="8" />
+        <Variable Name="DischargeTemperature" DataType="REAL" Comment="" StringSize="0" Order="9" />
+        <Variable Name="SBC_LiquidTemperature" DataType="REAL" Comment="" StringSize="0" Order="10" />
+        <Variable Name="DischargeSH" DataType="REAL" Comment="" StringSize="0" Order="11" />
+        <Variable Name="SBC_Subcooling" DataType="REAL" Comment="" StringSize="0" Order="12" />
+        <Variable Name="SHactualSet" DataType="REAL" Comment="" StringSize="0" Order="13" />
+        <Variable Name="SH" DataType="REAL" Comment="" StringSize="0" Order="14" />
+        <Variable Name="dSHsetMop" DataType="REAL" Comment="" StringSize="0" Order="15" />
+        <Variable Name="dSHsetHiTCond" DataType="REAL" Comment="" StringSize="0" Order="16" />
+        <Variable Name="dSHsetModTerm" DataType="REAL" Comment="" StringSize="0" Order="17" />
+        <Variable Name="LOPDeltaControlTerm" DataType="REAL" Comment="" StringSize="0" Order="18" />
+        <Variable Name="MOPDeltaControlTerm" DataType="REAL" Comment="" StringSize="0" Order="19" />
+        <Variable Name="LowSHDeltaControlTerm" DataType="REAL" Comment="" StringSize="0" Order="20" />
+        <Variable Name="HiTCondDeltaControlTerm" DataType="REAL" Comment="" StringSize="0" Order="21" />
+        <Variable Name="EvaporationTemperatureFiltered" DataType="REAL" Comment="" StringSize="0" Order="22" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_DRPTVAR_EVDEMB" Comment="Machine: 1- Parameters for special regulations" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="EPRPressure" DataType="REAL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="HotGasPressure" DataType="REAL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="HotGasTemperature" DataType="REAL" Comment="" StringSize="0" Order="3" />
+        <Variable Name="CO2Pressure" DataType="REAL" Comment="" StringSize="0" Order="4" />
+        <Variable Name="CO2Temperature" DataType="REAL" Comment="" StringSize="0" Order="5" />
+        <Variable Name="CO2PressureSet" DataType="REAL" Comment="" StringSize="0" Order="6" />
+        <Variable Name="TCtrlDirectTemperatureNOTUSED" DataType="REAL" Comment="" StringSize="0" Order="7" />
+        <Variable Name="LiquidLevel" DataType="REAL" Comment="" StringSize="0" Order="8" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_TIMERSCOUNTERS_EVDEMB" Comment="Machine: 1- Timers and counters" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="UnLockCounter" DataType="UDINT" Comment="" StringSize="0" Order="1" />
+        <Variable Name="ExtraStepsCounter" DataType="UDINT" Comment="" StringSize="0" Order="2" />
+        <Variable Name="ExtraStepsTimer1s" DataType="UDINT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="DelayTimer1s" DataType="UDINT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="UnLockTimer1s" DataType="UDINT" Comment="" StringSize="0" Order="5" />
+        <Variable Name="LOPAlarmDelayTimer1s" DataType="UDINT" Comment="" StringSize="0" Order="6" />
+        <Variable Name="MOPAlarmDelayTimer1s" DataType="UDINT" Comment="" StringSize="0" Order="7" />
+        <Variable Name="LowSHAlarmDelayTimer1s" DataType="UDINT" Comment="" StringSize="0" Order="8" />
+        <Variable Name="HiTCondAlarmDelayTimer1s" DataType="UDINT" Comment="" StringSize="0" Order="9" />
+        <Variable Name="LowSuctAlarmDelayTimer1s" DataType="UDINT" Comment="" StringSize="0" Order="10" />
+        <Variable Name="PreviousTimerValue" DataType="UDINT" Comment="" StringSize="0" Order="12" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_HW_HWPROBEDESCR_EVDEMB" Comment="Machine: 2- Inputs" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Value" DataType="REAL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="AlarmEnable" DataType="BOOL" Comment="" StringSize="0" Order="9" />
+        <Variable Name="PressureAndTemperatureProbeStatus" DataType="UINT" Comment="" StringSize="0" Order="14" />
+        <Variable Name="NTCThermalTimeK" DataType="REAL" Comment="" StringSize="0" Order="15" />
+        <Variable Name="NTCThermalTimeKPreviousValue" DataType="REAL" Comment="" StringSize="0" Order="16" />
+        <Variable Name="NTCPreviousCompensatedValue" DataType="REAL" Comment="" StringSize="0" Order="17" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_HW_EVDEMB" Comment="Machine: 1- Inputs structure" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Probe1" DataType="MACHINE_DATA_HW_HWPROBEDESCR_EVDEMB" Comment="" StringSize="0" Order="1" />
+        <Variable Name="Probe2" DataType="MACHINE_DATA_HW_HWPROBEDESCR_EVDEMB" Comment="" StringSize="0" Order="2" />
+        <Variable Name="Probe3" DataType="MACHINE_DATA_HW_HWPROBEDESCR_EVDEMB" Comment="" StringSize="0" Order="3" />
+        <Variable Name="Probe4" DataType="MACHINE_DATA_HW_HWPROBEDESCR_EVDEMB" Comment="" StringSize="0" Order="4" />
+        <Variable Name="Probe5" DataType="MACHINE_DATA_HW_HWPROBEDESCR_EVDEMB" Comment="" StringSize="0" Order="12" />
+        <Variable Name="Probe6" DataType="MACHINE_DATA_HW_HWPROBEDESCR_EVDEMB" Comment="" StringSize="0" Order="13" />
+        <Variable Name="ProbeAlarms" DataType="UINT" Comment="" StringSize="0" Order="14" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_TUNEVAR_SENSE_EVDEMB" Comment="Machine: 2- Reserved" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="SHOscillationEEVStepsMax" DataType="UINT" Comment="" StringSize="0" Order="1" />
+        <Variable Name="SHOscillationEEVStepsMin" DataType="UINT" Comment="" StringSize="0" Order="2" />
+        <Variable Name="SHOscillationSetPointStepsAndTime" DataType="UINT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="SHOscillationPeriodsCounter" DataType="UINT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="AttemptsCounterAndSignCheck" DataType="INT" Comment="" StringSize="0" Order="5" />
+        <Variable Name="SHPeakDetected" DataType="BOOL" Comment="" StringSize="0" Order="6" />
+      </Struct>
+    </DataType>
+    <DataType Name="DeltaSHSamplesVector_EVDEMB" Comment="" Access="ReadOnly">
+      <Array Order="1" DataType="REAL" StringSize="0">
+        <Dimension Lower="0" Upper="59" />
+      </Array>
+    </DataType>
+    <DataType Name="MACHINE_DATA_TUNEVAR_OLID_EVDEMB" Comment="Machine: 2- Reserved" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="SHStartingSet" DataType="REAL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="DeltaSHFiltered" DataType="REAL" Comment="" StringSize="0" Order="3" />
+        <Variable Name="DeltaSHSamplesIndex" DataType="UINT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="DeltaSHSamplesVector" DataType="DeltaSHSamplesVector_EVDEMB" Comment="" StringSize="0" Order="6" />
+        <Variable Name="ModelK" DataType="REAL" Comment="" StringSize="0" Order="7" />
+        <Variable Name="ModelT" DataType="REAL" Comment="" StringSize="0" Order="8" />
+        <Variable Name="ModelTd" DataType="REAL" Comment="" StringSize="0" Order="9" />
+        <Variable Name="UnitStepSizeSteps" DataType="INT" Comment="" StringSize="0" Order="10" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_TUNEVAR_TCOUNT_EVDEMB" Comment="Machine: 2- Reserved" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="AbortTimer1s" DataType="UDINT" Comment="" StringSize="0" Order="1" />
+        <Variable Name="SHTestAndSamplingAndInhibitionTimer1s" DataType="UDINT" Comment="" StringSize="0" Order="2" />
+        <Variable Name="RetriesResetTimer1s" DataType="UDINT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="SamplingTimeMemory" DataType="UDINT" Comment="" StringSize="0" Order="4" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_TUNEVAR_EVDEMB" Comment="Machine: 1- Autotuning parameters structure" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="EVOTunesStatus" DataType="UINT" Comment="" StringSize="0" Order="1" />
+        <Variable Name="EVOTunesSpy" DataType="UINT" Comment="" StringSize="0" Order="2" />
+        <Variable Name="EVOTunesLastResult" DataType="UINT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="EVOTunesRetriesCounter" DataType="UINT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="EEVStepsActualIntegralSum" DataType="REAL" Comment="" StringSize="0" Order="5" />
+        <Variable Name="SHActualIntegralSum" DataType="REAL" Comment="" StringSize="0" Order="6" />
+        <Variable Name="SHRMSPrevious" DataType="REAL" Comment="" StringSize="0" Order="7" />
+        <Variable Name="Sensing" DataType="MACHINE_DATA_TUNEVAR_SENSE_EVDEMB" Comment="" StringSize="0" Order="8" />
+        <Variable Name="OpenLoop" DataType="MACHINE_DATA_TUNEVAR_OLID_EVDEMB" Comment="" StringSize="0" Order="9" />
+        <Variable Name="EVOTunesBestMethodStatus" DataType="UINT" Comment="" StringSize="0" Order="10" />
+        <Variable Name="EVOTunesTimers" DataType="MACHINE_DATA_TUNEVAR_TCOUNT_EVDEMB" Comment="" StringSize="0" Order="11" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DATA_EVDEMB" Comment="Machine: 0- Main structure" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="MachineType" DataType="UINT" Comment="" StringSize="0" Order="1" />
+        <Variable Name="EngineType" DataType="BYTE" Comment="" StringSize="0" Order="2" />
+        <Variable Name="Status" DataType="DINT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="Alarms" DataType="DINT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="Service" DataType="DINT" Comment="" StringSize="0" Order="5" />
+        <Variable Name="PID" DataType="MACHINE_DATA_PID_EVDEMB" Comment="" StringSize="0" Order="6" />
+        <Variable Name="Parameters" DataType="MACHINE_DATA_PAR_EVDEMB" Comment="" StringSize="0" Order="7" />
+        <Variable Name="SHVariables" DataType="MACHINE_DATA_SHVAR_EVDEMB" Comment="" StringSize="0" Order="8" />
+        <Variable Name="DRPTVariables" DataType="MACHINE_DATA_DRPTVAR_EVDEMB" Comment="" StringSize="0" Order="9" />
+        <Variable Name="Counters" DataType="MACHINE_DATA_TIMERSCOUNTERS_EVDEMB" Comment="" StringSize="0" Order="10" />
+        <Variable Name="InputOutput" DataType="MACHINE_DATA_HW_EVDEMB" Comment="" StringSize="0" Order="11" />
+        <Variable Name="EEV" DataType="TEEV" Comment="" StringSize="0" Order="13" />
+        <Variable Name="AnaloguePositioningSteps" DataType="DINT" Comment="" StringSize="0" Order="14" />
+        <Variable Name="EVOTunesVariables" DataType="MACHINE_DATA_TUNEVAR_EVDEMB" Comment="" StringSize="0" Order="15" />
+      </Struct>
+    </DataType>
+    <DataType Name="TFOLPD_EVDEMB" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="K" DataType="REAL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="T" DataType="REAL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="L" DataType="REAL" Comment="" StringSize="0" Order="3" />
+      </Struct>
+    </DataType>
+    <DataType Name="TEEV" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="1" Order="3">
+        <Variable Name="Enable" DataType="BOOL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="PositionToSet" DataType="UINT" Comment="" StringSize="0" Order="2" />
+        <Variable Name="VariationToSet" DataType="INT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="CurrentEstimatedPosition" DataType="UINT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="VariationRemaining" DataType="INT" Comment="" StringSize="0" Order="5" />
+        <Variable Name="MaxSteps" DataType="UINT" Comment="" StringSize="0" Order="6" />
+        <Variable Name="MinSteps" DataType="UINT" Comment="" StringSize="0" Order="7" />
+        <Variable Name="ClosingSteps" DataType="UINT" Comment="" StringSize="0" Order="8" />
+        <Variable Name="NominalCurrent" DataType="UINT" Comment="" StringSize="0" Order="9" />
+        <Variable Name="HoldingCurrent" DataType="UINT" Comment="" StringSize="0" Order="10" />
+        <Variable Name="Speed" DataType="UINT" Comment="" StringSize="0" Order="11" />
+        <Variable Name="DutyCycle" DataType="UINT" Comment="" StringSize="0" Order="12" />
+        <Variable Name="DutyCycleEnable" DataType="BOOL" Comment="" StringSize="0" Order="13" />
+        <Variable Name="OpeningXSteps" DataType="BOOL" Comment="" StringSize="0" Order="14" />
+        <Variable Name="ClosingXSteps" DataType="BOOL" Comment="" StringSize="0" Order="15" />
+        <Variable Name="FastClosingSpeed" DataType="UINT" Comment="" StringSize="0" Order="16" />
+        <Variable Name="FastClosingSpeedEnable" DataType="BOOL" Comment="" StringSize="0" Order="17" />
+        <Variable Name="Alarms" DataType="USINT" Comment="" StringSize="0" Order="18" />
+      </Struct>
+    </DataType>
+    <DataType Name="ALM" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="1" Order="4">
+        <Variable Name="Trigger" DataType="BOOL" Comment="Alarm status Trigger" StringSize="0" Order="1" />
+        <Variable Name="Active" DataType="BOOL" Comment="Alarm status" StringSize="0" Order="2" />
+      </Struct>
+    </DataType>
+  </DataTypes>
+  <Networks>
+    <Network Name="HSD" SingleTextLine="" LocalNet="true" DistributedNet="false" Comment="" UsedForBinding="true" BindingService="false" AllowWorkbenchCommunications="true">
+      <Parameters />
+      <ConnectionParameters />
+      <ResourceParameters>
+        <Parameter Name="ValidityTime" Format="Long" Default="0" Access="UserDefined" SingleTextLine="Produced Variables validity time." LocalNet="false" DistributedNet="false" />
+      </ResourceParameters>
+      <VariableParameters />
+    </Network>
+    <Network Name="ETCP" SingleTextLine="" LocalNet="false" DistributedNet="true" Comment="" UsedForBinding="true" BindingService="false" AllowWorkbenchCommunications="true">
+      <Parameters />
+      <ConnectionParameters>
+        <Parameter Name="IPAddress" Format="String" Default="127.0.0.1" Access="UserDefined" SingleTextLine="IP address or Computer name" LocalNet="false" DistributedNet="true" />
+      </ConnectionParameters>
+      <ResourceParameters>
+        <Parameter Name="TimeOut" Format="Long" Default="10000" Access="UserDefined" SingleTextLine="Maximum allowed time (in ms) to transport a variable" LocalNet="false" DistributedNet="true" />
+      </ResourceParameters>
+      <VariableParameters />
+    </Network>
+    <Network Name="ISARSI" SingleTextLine="" LocalNet="false" DistributedNet="true" Comment="" UsedForBinding="true" BindingService="false" AllowWorkbenchCommunications="true">
+      <Parameters>
+        <Parameter Name="Port" Format="String" Default="COM6" Access="UserDefined" SingleTextLine="Workbench communication port" LocalNet="false" DistributedNet="true" />
+        <Parameter Name="BaudRate" Format="Long" Default="115200" Access="UserDefined" SingleTextLine="Data transfer baud rate" LocalNet="false" DistributedNet="true" />
+        <Parameter Name="Parity" Format="Character" Default="N" Access="UserDefined" SingleTextLine="N: None, E: Even, O: Odd" LocalNet="false" DistributedNet="true" />
+        <Parameter Name="StopBit" Format="Word" Default="1" Access="UserDefined" SingleTextLine="1 or 2 Stop bits" LocalNet="false" DistributedNet="true" />
+        <Parameter Name="HardwareFlowControl" Format="Boolean" Default="FALSE" Access="UserDefined" SingleTextLine="TRUE when using hardware flow control" LocalNet="false" DistributedNet="true" />
+      </Parameters>
+      <ConnectionParameters />
+      <ResourceParameters />
+      <VariableParameters />
+    </Network>
+  </Networks>
+  <NetworkInstances>
+    <NetworkInstance NetworkName="ISARSI" Name="ISARSI1" />
+  </NetworkInstances>
+  <Targets>
+    <Target Name="CAREL_PCO" />
+  </Targets>
+  <Configurations>
+    <Configuration Name="Device1" ElementGuid="e5619c74-aed5-4bfa-87ad-8e4823a88b2d" />
+  </Configurations>
+</Project>

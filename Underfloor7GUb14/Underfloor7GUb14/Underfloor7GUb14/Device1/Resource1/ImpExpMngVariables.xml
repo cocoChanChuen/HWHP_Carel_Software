@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="En_ParamsExp" Comment="Export function enable" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="En_ParamsImp" Comment="Import function enable" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="En_TmpCycle" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="ErrParamImpExp" Comment="Error communication for Import/Export blocks" AccessRights="ReadWrite" DataType="DINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="9" />
+    <Variable Name="ExpParams" Comment="" AccessRights="ReadWrite" DataType="EXPORT_PARAMS" Kind="Var">
+      <Variable Name="DRIVE" DataType="BYTE" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="1 = usb pen drive | 0 = internal public flash" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable export (TRUE=export params, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="FILENAME" DataType="STRING" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Filename to export" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ENABLE_PREV" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="ImpParams" Comment="" AccessRights="ReadWrite" DataType="IMPORT_PARAMS" Kind="Var">
+      <Variable Name="DRIVE" DataType="BYTE" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="1 = usb pen drive | 0 = internal public flash" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable import (TRUE=import params, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="FILENAME" DataType="STRING" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Filename to import" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ENABLE_PREV" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="ParamsImpExpFileName" Comment="Import/Export file name (EXPORT_XX)" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="TmpCycle" Comment="" AccessRights="ReadWrite" DataType="DINT" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+  </Variables>
+</Manifest>

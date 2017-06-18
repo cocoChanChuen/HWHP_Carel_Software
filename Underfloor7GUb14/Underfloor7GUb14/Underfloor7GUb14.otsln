@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# c.strategy Solution File, Format Version 11.00
+Project("{A6F45E2C-46AC-4E2B-9F75-4E058226B5AB}") = "Underfloor7GUb14", "Underfloor7GUb14.acfproj", "{923FFC94-8C72-4BDC-BB0D-85197F801668}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Views", "Solution Views", "{7A90BC75-EA29-401F-88FD-51562EBE2247}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment.isadpl = Deployment.isadpl
+	EndProjectSection
+	ProjectSection(FolderGlobals) = preProject
+		DeploymentSolutionViews = True
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Online|Any CPU = Online|Any CPU
+		Simulation|Any CPU = Simulation|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{923FFC94-8C72-4BDC-BB0D-85197F801668}.Online|Any CPU.ActiveCfg = Online|Any CPU
+		{923FFC94-8C72-4BDC-BB0D-85197F801668}.Online|Any CPU.Build.0 = Online|Any CPU
+		{923FFC94-8C72-4BDC-BB0D-85197F801668}.Simulation|Any CPU.ActiveCfg = Simulation|Any CPU
+		{923FFC94-8C72-4BDC-BB0D-85197F801668}.Simulation|Any CPU.Build.0 = Simulation|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

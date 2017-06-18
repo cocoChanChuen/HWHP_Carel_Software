@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution>
+  <Info ManifestVersion="1.1.0">
+    <Name>DomesticHeatPump7GD15</Name>
+    <Description />
+    <Version />
+    <CreationDate>2017-06-11T23:56:09.7765837Z</CreationDate>
+    <Owner />
+    <StorageToolManaged>false</StorageToolManaged>
+    <CSuiteVersion>4.0.45</CSuiteVersion>
+  </Info>
+</Solution>

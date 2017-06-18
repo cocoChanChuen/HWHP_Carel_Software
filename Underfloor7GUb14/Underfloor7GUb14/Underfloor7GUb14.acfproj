@@ -1,0 +1,23 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{923ffc94-8c72-4bdc-bb0d-85197f801668}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Underfloor7GUb14</RootNamespace>
+    <AssemblyName>Underfloor7GUb14</AssemblyName>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <CAMProjectFile>Underfloor7GUb14\PrjLibrary.mdb</CAMProjectFile>
+    <UniqueProjectId>{923ffc94-8c72-4bdc-bb0d-85197f801668}</UniqueProjectId>
+    <CAMProjectVersion>5.50.2</CAMProjectVersion>
+    <Name>Underfloor7GUb14</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Simulation' ">
+    <OutputPath>bin\Simulation\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Online' ">
+    <OutputPath>bin\Online\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(DevEnvDir)\PackagesToLoad\Targets\ISaGRAF.ISaGRAF5.targets" />
+  <Import Project="$(DevEnvDir)\PackagesToLoad\Targets\Carel.targets" />
+</Project>

@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# c.mask Solution File, Format Version 11.00
+Project("{2BF41244-5A7C-44D7-8A32-177C16C9852B}") = "Underfloor7GUb14.Device1", "Underfloor7GUb14.Device1.ieproj", "{0C3E2772-F265-43BD-B095-2B2417F781D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|pCO = Debug|pCO
+		Release|pCO = Release|pCO
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C3E2772-F265-43BD-B095-2B2417F781D5}.Debug|pCO.ActiveCfg = Debug|pCO
+		{0C3E2772-F265-43BD-B095-2B2417F781D5}.Debug|pCO.Build.0 = Debug|pCO
+		{0C3E2772-F265-43BD-B095-2B2417F781D5}.Release|pCO.ActiveCfg = Release|pCO
+		{0C3E2772-F265-43BD-B095-2B2417F781D5}.Release|pCO.Build.0 = Release|pCO
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

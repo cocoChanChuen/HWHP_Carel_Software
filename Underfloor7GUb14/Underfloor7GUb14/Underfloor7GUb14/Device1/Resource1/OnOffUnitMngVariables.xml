@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="AlrmOnOff" Comment="Unit On/Off by alarms" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="BmsOnOff" Comment="Unit On/Off by BMS" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="true" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="DInOnOff" Comment="Unit On/Off by Digital Input" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="KeybOnOff" Comment="Unit On/Off by keyboard" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="FALSE" />
+    <Variable Name="ManOnOff" Comment="Manual unit On/Off" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="SchedOnOff" Comment="Unit On/Off by scheduler" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+  </Variables>
+</Manifest>

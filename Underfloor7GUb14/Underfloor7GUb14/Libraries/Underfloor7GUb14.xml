@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Libraries LibVersion="1.0.0">
+  <Library Name="Blackout_3" Version="1.0.0" IsSystem="true" ConcreteType="Pou" Moniker="\Libraries\Blackout_3_1_0_0.pp1" GUID="18670567-7c57-4621-afb3-2e49f80b8bf1">
+    <Dependencies />
+  </Library>
+  <Library Name="CAREL_BASIC_LIB" Version="2.3.0" IsSystem="true" ConcreteType="Pou" Moniker="\Libraries\CAREL_BASIC_LIB_2_3_0.pp1" GUID="d42eddb0-530f-4c2b-a2de-4f92b9e7c6f9">
+    <Dependencies />
+  </Library>
+  <Library Name="CheckRetainMem" Version="1.2.0" IsSystem="true" ConcreteType="Pou" Moniker="\Libraries\CheckRetainMem_1_2_0.pp1" GUID="27b869c7-fa4d-4083-8b43-704c92e8ea22">
+    <Dependencies />
+  </Library>
+  <Library Name="EVD_Emb_2" Version="1.4.0" IsSystem="true" ConcreteType="Pou" Moniker="\Libraries\EVD_Emb_2_1_4_0.pp1" GUID="79e37532-b45d-4899-9085-2c359126a2f8">
+    <Dependencies />
+  </Library>
+  <Library Name="TZ_MNG_LIB" Version="1.0.0" IsSystem="true" ConcreteType="Pou" Moniker="\Libraries\TZ_MNG_LIB_1_0_0.pp1" GUID="5e2d7817-30e6-4014-b320-b1904b1b8153">
+    <Dependencies />
+  </Library>
+  <Library Name="VersionChk_2" Version="1.0.0" IsSystem="true" ConcreteType="Pou" Moniker="\Libraries\VersionChk_2_1_0_0.pp1" GUID="9482cbd0-f3cc-43ca-b831-86ea6aaf9b20">
+    <Dependencies />
+  </Library>
+</Libraries>

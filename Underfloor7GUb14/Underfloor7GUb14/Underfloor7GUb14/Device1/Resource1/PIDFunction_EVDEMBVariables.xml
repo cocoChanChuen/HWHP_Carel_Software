@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="DeltaIntegralTerm" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="DeltaProportionalTerm" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="m_K" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="m_tempderivative" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="m_Tl" Comment="" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="pid" Comment="" AccessRights="ReadWrite" DataType="MACHINE_DATA_PID_EVDEMB" Kind="VarOutput">
+      <Variable Name="ErrorCurrent" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="MeasureCurrent" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="MeasurePrevious" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="Measure2Previous" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="Set" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="Kp" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="Td" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="Ti" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="DeltaDerivativeTerm" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="DeltaControlTerm" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="TotalControlTerm" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="SamplingTimeMemory" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="pidIn" Comment="" AccessRights="Read" DataType="MACHINE_DATA_PID_EVDEMB" Kind="VarInput">
+      <Variable Name="ErrorCurrent" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="MeasureCurrent" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="MeasurePrevious" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="Measure2Previous" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="Set" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="Kp" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="Td" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="Ti" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="DeltaDerivativeTerm" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="DeltaControlTerm" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="TotalControlTerm" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="SamplingTimeMemory" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Ts" Comment="" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+  </Variables>
+</Manifest>

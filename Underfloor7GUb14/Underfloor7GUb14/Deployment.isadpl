@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeploymentView>
+  <DVNodeType Location="0 0" IndexName="Node21681426" Type="CategoryStation" MyWidth="200" Name="WorkStation" DataTemplate="Workstation" />
+  <DVNodeType Location="0 330" IndexName="e5619c74-aed5-4bfa-87ad-8e4823a88b2d" Type="CategoryDevice" MyWidth="200" Name="Underfloor7GUb14.Device1" />
+  <DVNodeType Location="30 230" IndexName="Node41470374" Type="CategoryNetwork" MyWidth="364.78669898877018" Name="ISARSI1" MyColor="Green" DataTemplate="Network" />
+  <DVDeviceLinkData From="Node21681426" To="Node41470374" ToSpotX="0.16447968132151408" />
+  <DVDeviceLinkData From="e5619c74-aed5-4bfa-87ad-8e4823a88b2d" To="Node41470374" ToSpotX="0.16447968132151408" />
+</DeploymentView>

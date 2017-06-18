@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Worksheet Name="04_Settings" Version="1.0.0">
+  <Loop Name="DATETIME" X="0" Y="1">
+    <Mask Name="DateTimeChg" Type="Normal" X="0" Y="2" Color="LightCoral">
+      <Fields>
+        <Field Type="Variable" Name="Variable_6" Row="3" Column="14" Content="GeneralMng.DayIn" Class="EnDateChg" Format="io2z" Min="0" Max="31" />
+        <Field Type="Variable" Name="Variable_7" Row="3" Column="17" Content="GeneralMng.MonthIn" Class="EnDateChg" Format="io2z" Min="0" Max="12" />
+        <Field Type="Variable" Name="Variable_8" Row="3" Column="20" Content="GeneralMng.YearIn" Class="EnDateChg" Format="io2z" Min="0" Max="99" />
+        <Field Type="Text" Name="Text_1" Row="3" Column="16" Content="/" />
+        <Field Type="Text" Name="Text_5" Row="3" Column="19" Content="/" />
+        <Field Type="Variable" Name="Variable_9" Row="4" Column="17" Content="GeneralMng.MinuteIn" Class="EnDateChg" Format="io2z" Min="0" Max="59" />
+        <Field Type="Variable" Name="Variable_10" Row="4" Column="14" Content="GeneralMng.HourIn" Class="EnDateChg" Format="io2z" Min="0" Max="24" />
+        <Field Type="Text" Name="Text_6" Row="4" Column="16" Content=":" />
+        <Field Type="Text" Name="Text_7" Row="0" Column="1" Content="Date/Time change" />
+        <Field Type="Text" Name="Text_8" Row="4" Column="19" Content=":" />
+        <Field Type="Variable" Name="Variable_11" Row="4" Column="20" Content="GeneralMng.SecondIn" Class="EnDateChg" Format="io2z" Min="0" Max="59" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="Date:" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="Hour:" />
+        <Field Type="Variable" Name="Variable_1" Row="0" Column="0" Content="dummy" Class="DummyService" Format="ib" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="12" Content="GeneralMng.DayOfWeek" Class="DayOfWeek" Format="o1" Min="0" Max="9" />
+        <Field Type="Text" Name="Text_4" Row="2" Column="0" Content="Format:" />
+        <Field Type="Variable" Name="Variable_3" Row="2" Column="14" Content="GeneralMng.DateFormat" Class="DateFormat" Format="io1" Min="0" Max="2" />
+        <Field Type="Text" Name="Text_9" Row="5" Column="0" Content="Day:" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="DOWN" BindOn="Move_DOWN" />
+        <KeyBinding Key="UP" BindOn="Move_UP" />
+      </KeyBindings>
+    </Mask>
+    <Mask Name="TimeZone" Type="Normal" X="0" Y="3" Color="LightCoral">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="DummyService" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Timezone" />
+        <Field Type="Variable" Name="Variable_1" Row="5" Column="0" Content="TimeZoneTmp" Class="TimeZoneUI" Format="io2" Min="0" Max="94" />
+        <Field Type="Text" Name="Text_1" Row="7" Column="0" Content="Update Timezone:" />
+        <Field Type="Variable" Name="Variable" Row="7" Column="18" Content="SetTimeZoneTmp" Class="SetTimeZone" Format="io1" Min="0" Max="1" />
+        <Field Type="Text" Name="Text" Row="1" Column="0" Content="TEXT" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="TEXT" />
+        <Field Type="Variable" Name="Variable_2" Row="2" Column="0" Content="GeneralMng.Zone_Read" Class="TimeZoneUI" Format="o2" Min="0" Max="94" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="DOWN" BindOn="Move_DOWN" />
+        <KeyBinding Key="UP" BindOn="Move_UP" />
+      </KeyBindings>
+      <ResourceUsedOnBool>
+        <Index Value="0" Content="NO" Type="Text" Font="SimSun" />
+        <Index Value="1" Content="YES" Type="Text" Font="SimSun" />
+      </ResourceUsedOnBool>
+    </Mask>
+  </Loop>
+  <Loop Name="SERIALPORTS" X="1" Y="1">
+    <Mask Name="SerialPorts" Type="Normal" X="1" Y="2" Color="255, 155, 160">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Serial ports" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="SERIAL PORTS" />
+      </Fields>
+    </Mask>
+  </Loop>
+  <Loop Name="PWDMNG" X="2" Y="1">
+    <Mask Name="PwdChg" Type="Normal" X="2" Y="2" Color="255, 190, 192">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Change Password" />
+        <Field Type="Image" Name="Image_2" Row="2" Column="0" Content="Key_36x16.bmp" />
+        <Field Type="Image" Name="Image_3" Row="7" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Variable" Name="Variable_1" Row="2" Column="18" Content="GeneralMng.PwdUser" Class="PwdChgU" Format="io4z" Min="0" Max="9999" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="18" Content="GeneralMng.PwdService" Class="PwdChgS" Format="io4z" Min="0" Max="9999" />
+        <Field Type="Variable" Name="Variable_3" Row="4" Column="18" Content="GeneralMng.PwdManuf" Class="PwdChgM" Format="io4z" Min="0" Max="9999" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="ENTER" BindOn="ChgPwd" />
+        <KeyBinding Key="DOWN" BindOn="DecrDig" />
+        <KeyBinding Key="UP" BindOn="IncrDig" />
+      </KeyBindings>
+    </Mask>
+  </Loop>
+  <Loop Name="INITIALIZATION" X="3" Y="1">
+    <Mask Name="AlrmInit" Type="Normal" X="3" Y="2" Color="MistyRose">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="DummyManuf" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="3" Column="0" Content="Delete alarm logs?" />
+        <Field Type="Variable" Name="Variable_1" Row="4" Column="18" Content="AlrmLogDelete" Class="AlarmLogDelete" Format="iob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Alarm initialization" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="Initialization" />
+        <Field Type="Text" Name="Text_4" Row="5" Column="0" Content="Clear AutoReset " />
+        <Field Type="Text" Name="Text_5" Row="6" Column="0" Content="counters?" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="18" Content="ClrAutoResCounters" Class="ClrAutoResCounters" Format="iob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_6" Row="4" Column="0" Content=" " />
+        <Field Type="Text" Name="Text_7" Row="7" Column="0" Content="Enable buzzer?" />
+        <Field Type="Variable" Name="Variable_3" Row="7" Column="18" Content="GeneralMng.En_Buzz" Class="BoolGenericClass" Format="iob" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+    <Mask Name="Default" Type="Normal" X="3" Y="3" Color="MistyRose">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="DummyManufUnitOff" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Initialization" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="DEFAULT INSTALLATION" />
+        <Field Type="Text" Name="Text" Row="3" Column="0" Content="Wipe retain mem.:" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="Wipe NVRAM mem.:" />
+        <Field Type="Text" Name="Text_4" Row="5" Column="0" Content="Wipe both mem.:" />
+        <Field Type="Variable" Name="Variable" Row="3" Column="18" Content="En_WipeRetain" Class="WipeMem" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="18" Content="En_WipeNVRAM" Class="WipeMem" Format="iob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="18" Content="En_WipeAll" Class="WipeMem" Format="iob" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_2" Row="7" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Variable" Name="Variable_4" Row="7" Column="0" Content="En_WipeRetain" Class="WipeMemConfirm" Format="ob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_5" Row="7" Column="0" Content="En_WipeNVRAM" Class="WipeMemConfirm" Format="ob" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_6" Row="7" Column="0" Content="En_WipeAll" Class="WipeMemConfirm" Format="ob" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+  </Loop>
+  <Mask Name="Settings" Type="Normal" X="0" Y="0" Color="LightGray">
+    <Fields>
+      <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Variable" Name="Variable_7" Row="3" Column="3" Content="IdxMenuMsk" Class="SettingsTxtTOP" Format="o1" Min="0" Max="9" />
+      <Field Type="Variable" Name="Variable_8" Row="5" Column="3" Content="IdxMenuMsk" Class="SettingsTxtMIDDLE" Format="o1" Min="0" Max="9" />
+      <Field Type="Variable" Name="Variable_11" Row="7" Column="3" Content="IdxMenuMsk" Class="SettingsTxtBOTTOM" Format="o1" Min="0" Max="9" />
+      <Field Type="Variable" Name="Variable_12" Row="0" Column="19" Content="CurrItemNo" Class="CL_INT" Format="o1" Min="0" Max="9" />
+      <Field Type="Text" Name="Text_1" Row="0" Column="20" Content="/" />
+      <Field Type="Variable" Name="Variable_13" Row="0" Column="21" Content="MenuItemsNo" Class="CL_INT" Format="o1" Min="0" Max="9" />
+      <Field Type="Variable" Name="Variable_14" Row="2" Column="0" Content="IdxImg1" Class="IdxImgSettings" Format="o1" Min="0" Max="9" />
+      <Field Type="Variable" Name="Variable_15" Row="4" Column="0" Content="IdxImg2" Class="IdxImgSettings" Format="o1" Min="0" Max="9" />
+      <Field Type="Variable" Name="Variable_16" Row="6" Column="0" Content="IdxImg3" Class="IdxImgSettings" Format="o1" Min="0" Max="9" />
+      <Field Type="Text" Name="Text_2" Row="0" Column="0" Content="Settings Menu" />
+      <Field Type="Variable" Name="Variable_1" Row="2" Column="2" Content="BarPos" Class="PosBarMenuTOP" Format="o1" Min="0" Max="9" />
+      <Field Type="Variable" Name="Variable_2" Row="4" Column="2" Content="BarPos" Class="PosBarMenuMIDDLE" Format="o1" Min="0" Max="9" />
+      <Field Type="Variable" Name="Variable_3" Row="6" Column="2" Content="BarPos" Class="PosBarMenuBOTTOM" Format="o1" Min="0" Max="9" />
+    </Fields>
+    <KeyBindings>
+      <KeyBinding Key="DOWN" BindOn="ScrollMenuDown" />
+      <KeyBinding Key="UP" BindOn="ScrollMenuUp" />
+      <KeyBinding Key="ENTER" BindOn="SelSettingsMenu" />
+    </KeyBindings>
+  </Mask>
+  <Loop Name="UOM" X="4" Y="1">
+    <Mask Name="UoM_UI" Type="Normal" X="4" Y="2" Color="253, 243, 243">
+      <Fields>
+        <Field Name="Move" Type="Variable" Content="dummy" Column="0" Row="0" Class="DummyService" Format="ib" Min="0" Max="1" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Unit of Measure" />
+        <Field Type="Text" Name="Text" Row="2" Column="0" Content="UoM zone for mask" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="visualization:" />
+        <Field Type="Variable" Name="Variable" Row="3" Column="15" Content="STD_UOM_ZONE_UI" Class="UoM_Zone_UI" Format="io2" Min="0" Max="6" />
+      </Fields>
+    </Mask>
+    <Mask Name="UoM_tERA_WEB" Type="Normal" X="4" Y="3" Color="253, 243, 243">
+      <Fields>
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="editor:" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="UoM zone for tERA/web" />
+        <Field Type="Text" Name="Text_4" Row="0" Column="1" Content="Unit of Measure" />
+        <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Name="Variable_2" Type="Variable" Content="dummy" Column="0" Row="0" Class="DummyService" Format="ib" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="15" Content="STD_UOM_ZONE_WEB" Class="UoM_Zone_WEB" Format="io2" Min="0" Max="6" />
+      </Fields>
+    </Mask>
+  </Loop>
+</Worksheet>

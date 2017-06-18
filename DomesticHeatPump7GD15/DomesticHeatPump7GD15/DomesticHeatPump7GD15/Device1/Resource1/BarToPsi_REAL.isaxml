@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pou FileVersion="200.00.003" Name="BarToPsi_REAL" ElementGuid="1cc12dc9-d45e-49a4-9e3e-6aa7cd307463" Comment="" SingleTextLine="Converts a value in Bar to a value in Psi" Language="ST" CustomFbd="0" Localization="Prj" GroupName="(User defined)" Password="E4BDBA2BEF6CC4DC" GenDebugInfo="false" UseResPassword="true" GenerateSymbMon="true" Is1499="false">
+  <Function IdentifierNb="0" Keyword="" ConvDirection="NoConversion" DataType="DINT" />
+  <LocalVars>
+    <Variable Name="BarToPsi_REAL" DataType="REAL" InitialValue="" Comment="Value in Psi" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="ReadWrite" StringSize="0" Direction="Output" CommentFields="" Attributes="23825" />
+    <Variable Name="In" DataType="REAL" InitialValue="" Comment="Value in Bar" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+  </LocalVars>
+  <PouBody><![CDATA[gFQnV1NbWi9dZGUTZGofaWwxMzU3g1NLR1dLTk5hhmR2V21RcyibV0FCTgwKA6V3UGxScmkelkBFTzg8SS/uNDAtNzEzdvM2PDgPC0UPgFpCVkxCVAiLSw==]]></PouBody>
+  <PouUIProperties><![CDATA[]]></PouUIProperties>
+</Pou>

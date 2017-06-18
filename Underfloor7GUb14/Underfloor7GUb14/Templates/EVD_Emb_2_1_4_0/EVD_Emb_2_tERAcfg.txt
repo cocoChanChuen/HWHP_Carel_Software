@@ -1,0 +1,289 @@
+Version 1.0 tERASetting
+Settings
+ConfigName	ConfigVersion	Password	UoM_tERA	UoM_Web	Instance
+Demo_EVD_Emb	1.0		0	0	EVD_Emb_mng
+Variables
+Variable	Description	Access	WebAccess
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Alarm.Al_EEV.Val	Data structure - EVD parameters - Read only alarms - EEV motor error	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Alarm.Al_EmergClos.Val	Data structure - EVD parameters - Read only alarms - Forced emergency closing in process	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Alarm.Al_HiTempCond.Val	Data structure - EVD parameters - Read only alarms - HiTcond (high condensing temperature)	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Alarm.Al_IncomplClos.Val	Data structure - EVD parameters - Read only alarms - Last forced emergency closing incomplete	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Alarm.Al_LOP.Val	Data structure - EVD parameters - Read only alarms - LOP (low evaporation temperature)	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Alarm.Al_LowSH.Val	Data structure - EVD parameters - Read only alarms - LowSH (low superheat)	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Alarm.Al_LowSuct.Val	Data structure - EVD parameters - Read only alarms - Low suction temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Alarm.Al_MOP.Val	Data structure - EVD parameters - Read only alarms - MOP (high evaporation temperature)	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Alarm.Al_SelfTuning.Val	Data structure - EVD parameters - Read only alarms - Ineffective adaptative regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.HiTempCondAlrmDT.Dev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - HiTcond (high condensing temperature) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.HiTempCondAlrmDT.EnDev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - HiTcond (high condensing temperature) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.HiTempCondAlrmDT.Val	Data structure - EVD parameters - Auxiliary regulation parameters configuration - HiTcond (high condensing temperature) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.HiTempCondThrsh.Dev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - HiTcond (high condensing temperature) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.HiTempCondThrsh.EnDev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - HiTcond (high condensing temperature) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.HiTempCondThrsh.Val	Data structure - EVD parameters - Auxiliary regulation parameters configuration - HiTcond (high condensing temperature) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.HiTempCondTi.Dev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - HiTcond (high condensing temperature) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.HiTempCondTi.EnDev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - HiTcond (high condensing temperature) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.HiTempCondTi.Val	Data structure - EVD parameters - Auxiliary regulation parameters configuration - HiTcond (high condensing temperature) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.ModThermDiff.Dev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - Modulating thermostat: differential	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.ModThermDiff.EnDev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - Modulating thermostat: differential	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.ModThermDiff.Val	Data structure - EVD parameters - Auxiliary regulation parameters configuration - Modulating thermostat: differential	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.ModThermSet.Dev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - Modulating thermostat: setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.ModThermSet.EnDev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - Modulating thermostat: setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.ModThermSet.Val	Data structure - EVD parameters - Auxiliary regulation parameters configuration - Modulating thermostat: setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.ModThermSH_Offset.Dev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - Modulating thermostat: superheat setpoint offset	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.ModThermSH_Offset.EnDev	Data structure - EVD parameters - Auxiliary regulation parameters configuration - Modulating thermostat: superheat setpoint offset	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.AuxRegulation.ModThermSH_Offset.Val	Data structure - EVD parameters - Auxiliary regulation parameters configuration - Modulating thermostat: superheat setpoint offset	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.DscgSH_Set.Dev	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Discharge superheat setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.DscgSH_Set.EnDev	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Discharge superheat setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.DscgSH_Set.Val	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Discharge superheat setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.DscgTempSet.Dev	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Discharge temperature setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.DscgTempSet.EnDev	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Discharge temperature setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.DscgTempSet.Val	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Discharge temperature setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.GasTypAux.Dev	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Refrigerant for auxiliary regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.GasTypAux.EnDev	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Refrigerant for auxiliary regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.GasTypAux.Val	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Refrigerant for auxiliary regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.S4_ThT_ConstNTC.Dev	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Thermal time constant NTC probe S4	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.S4_ThT_ConstNTC.EnDev	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Thermal time constant NTC probe S4	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Configuration.S4_ThT_ConstNTC.Val	Data structure - EVD parameters - BLDC and auxiliary refrigerant configuration - Thermal time constant NTC probe S4	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.ExtraClosEn.Dev	Data structure - EVD parameters - Valve configuration - EEV closing position synchronization	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.ExtraClosEn.EnDev	Data structure - EVD parameters - Valve configuration - EEV closing position synchronization	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.ExtraClosEn.Val	Data structure - EVD parameters - Valve configuration - EEV closing position synchronization	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.ExtraOpEn.Dev	Data structure - EVD parameters - Valve configuration - EEV opening position synchronization	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.ExtraOpEn.EnDev	Data structure - EVD parameters - Valve configuration - EEV opening position synchronization	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.ExtraOpEn.Val	Data structure - EVD parameters - Valve configuration - EEV opening position synchronization	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.FastClosMoveRate.Dev	Data structure - EVD parameters - Valve configuration - EEV: emergency EEV closing speed	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.FastClosMoveRate.EnDev	Data structure - EVD parameters - Valve configuration - EEV: emergency EEV closing speed	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.FastClosMoveRate.Val	Data structure - EVD parameters - Valve configuration - EEV: emergency EEV closing speed	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.FullClosSteps.Dev	Data structure - EVD parameters - Valve configuration - EEV closing steps	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.FullClosSteps.EnDev	Data structure - EVD parameters - Valve configuration - EEV closing steps	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.FullClosSteps.Val	Data structure - EVD parameters - Valve configuration - EEV closing steps	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.HoldCurr.Dev	Data structure - EVD parameters - Valve configuration - EEV holding current	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.HoldCurr.EnDev	Data structure - EVD parameters - Valve configuration - EEV holding current	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.HoldCurr.Val	Data structure - EVD parameters - Valve configuration - EEV holding current	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.MoveCurr.Dev	Data structure - EVD parameters - Valve configuration - EEV nominal current	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.MoveCurr.EnDev	Data structure - EVD parameters - Valve configuration - EEV nominal current	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.MoveCurr.Val	Data structure - EVD parameters - Valve configuration - EEV nominal current	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.MoveDuty.Dev	Data structure - EVD parameters - Valve configuration - EEV duty cycle	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.MoveDuty.EnDev	Data structure - EVD parameters - Valve configuration - EEV duty cycle	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.MoveDuty.Val	Data structure - EVD parameters - Valve configuration - EEV duty cycle	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.MoveRate.Dev	Data structure - EVD parameters - Valve configuration - EEV step rate	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.MoveRate.EnDev	Data structure - EVD parameters - Valve configuration - EEV step rate	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.MoveRate.Val	Data structure - EVD parameters - Valve configuration - EEV step rate	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.RegMaxPos.Dev	Data structure - EVD parameters - Valve configuration - EEV maximum steps	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.RegMaxPos.EnDev	Data structure - EVD parameters - Valve configuration - EEV maximum steps	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.RegMaxPos.Val	Data structure - EVD parameters - Valve configuration - EEV maximum steps	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.RegMinPos.Dev	Data structure - EVD parameters - Valve configuration - EEV minimum steps	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.RegMinPos.EnDev	Data structure - EVD parameters - Valve configuration - EEV minimum steps	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.EEV_Config.RegMinPos.Val	Data structure - EVD parameters - Valve configuration - EEV minimum steps	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.CtrlDirP_Set.Dev	Data structure - EVD parameters - Main regulation parameters configuration - EPR pressure setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.CtrlDirP_Set.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - EPR pressure setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.CtrlDirP_Set.Val	Data structure - EVD parameters - Main regulation parameters configuration - EPR pressure setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.CtrlRevP_Set.Dev	Data structure - EVD parameters - Main regulation parameters configuration - Hot gas by-pass pressure setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.CtrlRevP_Set.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - Hot gas by-pass pressure setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.CtrlRevP_Set.Val	Data structure - EVD parameters - Main regulation parameters configuration - Hot gas by-pass pressure setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.CtrlRevTempSet.Dev	Data structure - EVD parameters - Main regulation parameters configuration - Hot gas by-pass temperature setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.CtrlRevTempSet.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - Hot gas by-pass temperature setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.CtrlRevTempSet.Val	Data structure - EVD parameters - Main regulation parameters configuration - Hot gas by-pass temperature setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LOP_Thrsh.Dev	Data structure - EVD parameters - Main regulation parameters configuration - LOP (low evaporation temperature) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LOP_Thrsh.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - LOP (low evaporation temperature) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LOP_Thrsh.Val	Data structure - EVD parameters - Main regulation parameters configuration - LOP (low evaporation temperature) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LOP_Ti.Dev	Data structure - EVD parameters - Main regulation parameters configuration - LOP (low evaporation temperature) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LOP_Ti.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - LOP (low evaporation temperature) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LOP_Ti.Val	Data structure - EVD parameters - Main regulation parameters configuration - LOP (low evaporation temperature) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LowSH_Thrsh.Dev	Data structure - EVD parameters - Main regulation parameters configuration - LowSH (low superheat) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LowSH_Thrsh.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - LowSH (low superheat) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LowSH_Thrsh.Val	Data structure - EVD parameters - Main regulation parameters configuration - LowSH (low superheat) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LowSH_Ti.Dev	Data structure - EVD parameters - Main regulation parameters configuration - LowSH (low superheat) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LowSH_Ti.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - LowSH (low superheat) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.LowSH_Ti.Val	Data structure - EVD parameters - Main regulation parameters configuration - LowSH (low superheat) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.MOP_InhibThrsh.Dev	Data structure - EVD parameters - Main regulation parameters configuration - MOP (high evaporation temperature) suction temperature threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.MOP_InhibThrsh.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - MOP (high evaporation temperature) suction temperature threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.MOP_InhibThrsh.Val	Data structure - EVD parameters - Main regulation parameters configuration - MOP (high evaporation temperature) suction temperature threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.MOP_Thrsh.Dev	Data structure - EVD parameters - Main regulation parameters configuration - MOP (high evaporation temperature) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.MOP_Thrsh.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - MOP (high evaporation temperature) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.MOP_Thrsh.Val	Data structure - EVD parameters - Main regulation parameters configuration - MOP (high evaporation temperature) threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.MOP_Ti.Dev	Data structure - EVD parameters - Main regulation parameters configuration - MOP (high evaporation temperature) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.MOP_Ti.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - MOP (high evaporation temperature) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.MOP_Ti.Val	Data structure - EVD parameters - Main regulation parameters configuration - MOP (high evaporation temperature) integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.PID_Kp.Dev	Data structure - EVD parameters - Main regulation parameters configuration - PID proportional gain	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.PID_Kp.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - PID proportional gain	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.PID_Kp.Val	Data structure - EVD parameters - Main regulation parameters configuration - PID proportional gain	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.PID_Td.Dev	Data structure - EVD parameters - Main regulation parameters configuration - PID derivative time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.PID_Td.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - PID derivative time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.PID_Td.Val	Data structure - EVD parameters - Main regulation parameters configuration - PID derivative time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.PID_Ti.Dev	Data structure - EVD parameters - Main regulation parameters configuration - PID integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.PID_Ti.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - PID integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.PID_Ti.Val	Data structure - EVD parameters - Main regulation parameters configuration - PID integral time	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.RegTyp.Dev	Data structure - EVD parameters - Main regulation parameters configuration - Regulation mode	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.RegTyp.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - Regulation mode	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.RegTyp.Val	Data structure - EVD parameters - Main regulation parameters configuration - Regulation mode	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.SH_Set.Dev	Data structure - EVD parameters - Main regulation parameters configuration - Superheat setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.SH_Set.EnDev	Data structure - EVD parameters - Main regulation parameters configuration - Superheat setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.SH_Set.Err	Data structure - EVD parameters - Main regulation parameters configuration - Superheat setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.SH_Set.MskLimMax	Data structure - EVD parameters - Main regulation parameters configuration - Superheat setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.SH_Set.MskLimMin	Data structure - EVD parameters - Main regulation parameters configuration - Superheat setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.MainRegulation.SH_Set.Val	Data structure - EVD parameters - Main regulation parameters configuration - Superheat setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Manual.ManPositEn.Val	Data structure - EVD parameters - Manual positioner - Enable manual valve positioning	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Manual.ManPositSteps.Val	Data structure - EVD parameters - Manual positioner - Manual valve position	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CO2_A.Dev	Data structure - EVD parameters - Regulation parameters configuration - CO2 A coefficient	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CO2_A.EnDev	Data structure - EVD parameters - Regulation parameters configuration - CO2 A coefficient	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CO2_A.Val	Data structure - EVD parameters - Regulation parameters configuration - CO2 A coefficient	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CO2_B.Dev	Data structure - EVD parameters - Regulation parameters configuration - CO2 B coefficient	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CO2_B.EnDev	Data structure - EVD parameters - Regulation parameters configuration - CO2 B coefficient	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CO2_B.Val	Data structure - EVD parameters - Regulation parameters configuration - CO2 B coefficient	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CtrlDirTempSet.Dev	Data structure - EVD parameters - Regulation parameters configuration - Reserved	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CtrlDirTempSet.EnDev	Data structure - EVD parameters - Regulation parameters configuration - Reserved	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CtrlDirTempSet.Val	Data structure - EVD parameters - Regulation parameters configuration - Reserved	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CtrlLiqdSet.Dev	Data structure - EVD parameters - Regulation parameters configuration - flooded evap./cond. liquid level control set-point	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CtrlLiqdSet.EnDev	Data structure - EVD parameters - Regulation parameters configuration - flooded evap./cond. liquid level control set-point	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.CtrlLiqdSet.Val	Data structure - EVD parameters - Regulation parameters configuration - flooded evap./cond. liquid level control set-point	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.GasTyp.Dev	Data structure - EVD parameters - Regulation parameters configuration - Refrigerant	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.GasTyp.EnDev	Data structure - EVD parameters - Regulation parameters configuration - Refrigerant	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.GasTyp.Val	Data structure - EVD parameters - Regulation parameters configuration - Refrigerant	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LOP_AlrmDT.Dev	Data structure - EVD parameters - Regulation parameters configuration - LOP (low evaporating temperature) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LOP_AlrmDT.EnDev	Data structure - EVD parameters - Regulation parameters configuration - LOP (low evaporating temperature) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LOP_AlrmDT.Val	Data structure - EVD parameters - Regulation parameters configuration - LOP (low evaporating temperature) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LowSH_AlrmDT.Dev	Data structure - EVD parameters - Regulation parameters configuration - LowSH (low superheat) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LowSH_AlrmDT.EnDev	Data structure - EVD parameters - Regulation parameters configuration - LowSH (low superheat) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LowSH_AlrmDT.Val	Data structure - EVD parameters - Regulation parameters configuration - LowSH (low superheat) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LowSuctAlrmDT.Dev	Data structure - EVD parameters - Regulation parameters configuration - Low suction temperature alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LowSuctAlrmDT.EnDev	Data structure - EVD parameters - Regulation parameters configuration - Low suction temperature alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LowSuctAlrmDT.Val	Data structure - EVD parameters - Regulation parameters configuration - Low suction temperature alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LowSuctAlrmThrsh.Dev	Data structure - EVD parameters - Regulation parameters configuration - Low suction temperature alarm threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LowSuctAlrmThrsh.EnDev	Data structure - EVD parameters - Regulation parameters configuration - Low suction temperature alarm threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.LowSuctAlrmThrsh.Val	Data structure - EVD parameters - Regulation parameters configuration - Low suction temperature alarm threshold	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.MOP_AlrmDT.Dev	Data structure - EVD parameters - Regulation parameters configuration - MOP (high evaporating temperature) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.MOP_AlrmDT.EnDev	Data structure - EVD parameters - Regulation parameters configuration - MOP (high evaporating temperature) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.MOP_AlrmDT.Val	Data structure - EVD parameters - Regulation parameters configuration - MOP (high evaporating temperature) alarm timeout	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.SH_WaitDT.Dev	Data structure - EVD parameters - Regulation parameters configuration - Regulation starting delay	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.SH_WaitDT.EnDev	Data structure - EVD parameters - Regulation parameters configuration - Regulation starting delay	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.SH_WaitDT.Val	Data structure - EVD parameters - Regulation parameters configuration - Regulation starting delay	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.StandByEEV_OpEn.Dev	Data structure - EVD parameters - Regulation parameters configuration - Valve opened in stand-by	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.StandByEEV_OpEn.EnDev	Data structure - EVD parameters - Regulation parameters configuration - Valve opened in stand-by	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.StandByEEV_OpEn.Val	Data structure - EVD parameters - Regulation parameters configuration - Valve opened in stand-by	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.StandByEEV_OpPos.Dev	Data structure - EVD parameters - Regulation parameters configuration - Standby valve opening position %	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.StandByEEV_OpPos.EnDev	Data structure - EVD parameters - Regulation parameters configuration - Standby valve opening position %	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.StandByEEV_OpPos.Val	Data structure - EVD parameters - Regulation parameters configuration - Standby valve opening position %	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.StartEEV_OpRatio.Dev	Data structure - EVD parameters - Regulation parameters configuration - Valve nominal opening at start-up (EVAP/EEV capacity ratio)	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.StartEEV_OpRatio.EnDev	Data structure - EVD parameters - Regulation parameters configuration - Valve nominal opening at start-up (EVAP/EEV capacity ratio)	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Regulation.StartEEV_OpRatio.Val	Data structure - EVD parameters - Regulation parameters configuration - Valve nominal opening at start-up (EVAP/EEV capacity ratio)	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.SelfTuning.SelfTuningEn.Dev	Data structure - EVD parameters - Self tuning variables and parameters - Reserved	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.SelfTuning.SelfTuningEn.EnDev	Data structure - EVD parameters - Self tuning variables and parameters - Reserved	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.SelfTuning.SelfTuningEn.Val	Data structure - EVD parameters - Self tuning variables and parameters - Reserved	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.SelfTuning.SelfTuningLastResult.Val	Data structure - EVD parameters - Self tuning variables and parameters - Last tuning result	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.SelfTuning.SelfTuningMan.Val	Data structure - EVD parameters - Self tuning variables and parameters - Start manual tuning	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.SelfTuning.SelfTuningMethod.Dev	Data structure - EVD parameters - Self tuning variables and parameters - Tuning method	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.SelfTuning.SelfTuningMethod.EnDev	Data structure - EVD parameters - Self tuning variables and parameters - Tuning method	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.SelfTuning.SelfTuningMethod.Val	Data structure - EVD parameters - Self tuning variables and parameters - Tuning method	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.SelfTuning.SelfTuningStatus.Val	Data structure - EVD parameters - Self tuning variables and parameters - Adaptative regulation status	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.System.DC_SupplyEn.Dev	Data structure - EVD parameters - System configuration - DC power supply enabling	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.System.DC_SupplyEn.EnDev	Data structure - EVD parameters - System configuration - DC power supply enabling	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.System.DC_SupplyEn.Val	Data structure - EVD parameters - System configuration - DC power supply enabling	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.System.EVD_CanGo.Dev	Data structure - EVD parameters - System configuration - Enable EVD regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.System.EVD_CanGo.EnDev	Data structure - EVD parameters - System configuration - Enable EVD regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.System.EVD_CanGo.Val	Data structure - EVD parameters - System configuration - Enable EVD regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CO2_P.Val	Data structure - EVD parameters - Status variables - CO2 gas cooler outlet pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CO2_Set.Val	Data structure - EVD parameters - Status variables - CO2 gas cooler pressure setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CO2_Temp.Val	Data structure - EVD parameters - Status variables - CO2 gas cooler outlet temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondP.Dev	Data structure - EVD parameters - Status variables - Condensing pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondP.EnDev	Data structure - EVD parameters - Status variables - Condensing pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondP.Err	Data structure - EVD parameters - Status variables - Condensing pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondP.MskLimMax	Data structure - EVD parameters - Status variables - Condensing pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondP.MskLimMin	Data structure - EVD parameters - Status variables - Condensing pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondP.Val	Data structure - EVD parameters - Status variables - Condensing pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondTemp.Dev	Data structure - EVD parameters - Status variables - Condensing temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondTemp.EnDev	Data structure - EVD parameters - Status variables - Condensing temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondTemp.Err	Data structure - EVD parameters - Status variables - Condensing temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondTemp.MskLimMax	Data structure - EVD parameters - Status variables - Condensing temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondTemp.MskLimMin	Data structure - EVD parameters - Status variables - Condensing temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CondTemp.Val	Data structure - EVD parameters - Status variables - Condensing temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CtrlDirP_P.Val	Data structure - EVD parameters - Status variables - EPR pressure (back pressure)	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CtrlDirTempTemp.Val	Data structure - EVD parameters - Status variables - Reserved	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CtrlLiqdLev.Val	Data structure - EVD parameters - Status variables - flooded evap./cond. liquid level control percentage	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CtrlRevP_P.Val	Data structure - EVD parameters - Status variables - Hot gas by-pass pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.CtrlRevTempTemp.Val	Data structure - EVD parameters - Status variables - Hot gas by-pass temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgSH.Dev	Data structure - EVD parameters - Status variables - Discharge superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgSH.EnDev	Data structure - EVD parameters - Status variables - Discharge superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgSH.Err	Data structure - EVD parameters - Status variables - Discharge superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgSH.MskLimMax	Data structure - EVD parameters - Status variables - Discharge superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgSH.MskLimMin	Data structure - EVD parameters - Status variables - Discharge superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgSH.Val	Data structure - EVD parameters - Status variables - Discharge superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgTemp.Dev	Data structure - EVD parameters - Status variables - Discharge temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgTemp.EnDev	Data structure - EVD parameters - Status variables - Discharge temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgTemp.Err	Data structure - EVD parameters - Status variables - Discharge temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgTemp.MskLimMax	Data structure - EVD parameters - Status variables - Discharge temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgTemp.MskLimMin	Data structure - EVD parameters - Status variables - Discharge temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.DscgTemp.Val	Data structure - EVD parameters - Status variables - Discharge temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosPercent.Dev	Data structure - EVD parameters - Status variables - Valve opening	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosPercent.EnDev	Data structure - EVD parameters - Status variables - Valve opening	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosPercent.Err	Data structure - EVD parameters - Status variables - Valve opening	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosPercent.MskLimMax	Data structure - EVD parameters - Status variables - Valve opening	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosPercent.MskLimMin	Data structure - EVD parameters - Status variables - Valve opening	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosPercent.Val	Data structure - EVD parameters - Status variables - Valve opening	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosSteps.Dev	Data structure - EVD parameters - Status variables - Valve position	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosSteps.EnDev	Data structure - EVD parameters - Status variables - Valve position	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosSteps.Err	Data structure - EVD parameters - Status variables - Valve position	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosSteps.MskLimMax	Data structure - EVD parameters - Status variables - Valve position	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosSteps.MskLimMin	Data structure - EVD parameters - Status variables - Valve position	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.EEV_PosSteps.Val	Data structure - EVD parameters - Status variables - Valve position	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.ModThermTemp.Val	Data structure - EVD parameters - Status variables - Modulating thermostat temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.MOP_ThrshFastChg.Val	Data structure - EVD parameters - Status variables - MOP (high evaporation temperature) threshold for frequent change	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.PID_In_Cbar.Val	Data structure - EVD parameters - Status variables - Reserved	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.PID_Set_Cbar.Val	Data structure - EVD parameters - Status variables - Regulation Setpoint	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.ProtHiTempCondStatus.Val	Data structure - EVD parameters - Status variables - HiTcond protection status	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.ProtLOP_Status.Val	Data structure - EVD parameters - Status variables - LOP protection status	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.ProtLowSH_Status.Val	Data structure - EVD parameters - Status variables - LowSH protection status	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.ProtMOP_Status.Val	Data structure - EVD parameters - Status variables - MOP protection status	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.ProtStatus.Val	Data structure - EVD parameters - Status variables - Protection status	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.RegStatus.Val	Data structure - EVD parameters - Status variables - EVD status	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.RegSubTyp.Val	Data structure - EVD parameters - Status variables - Secondary regulation mode	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SbC.Val	Data structure - EVD parameters - Status variables - Subcooling	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SbC_BubTemp.Val	Data structure - EVD parameters - Status variables - Condensing bubble temperature for Subcooling measure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SbC_CondP.Val	Data structure - EVD parameters - Status variables - Condensing pressure for Subcooling measure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SbC_LiqdTemp.Val	Data structure - EVD parameters - Status variables - Condensing liquid temperature for Subcooling measure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH.Dev	Data structure - EVD parameters - Status variables - Superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH.EnDev	Data structure - EVD parameters - Status variables - Superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH.Err	Data structure - EVD parameters - Status variables - Superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH.MskLimMax	Data structure - EVD parameters - Status variables - Superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH.MskLimMin	Data structure - EVD parameters - Status variables - Superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH.Val	Data structure - EVD parameters - Status variables - Superheat	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_ActualSet.Val	Data structure - EVD parameters - Status variables - Reserved	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapP.Dev	Data structure - EVD parameters - Status variables - Evaporation pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapP.EnDev	Data structure - EVD parameters - Status variables - Evaporation pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapP.Err	Data structure - EVD parameters - Status variables - Evaporation pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapP.MskLimMax	Data structure - EVD parameters - Status variables - Evaporation pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapP.MskLimMin	Data structure - EVD parameters - Status variables - Evaporation pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapP.Val	Data structure - EVD parameters - Status variables - Evaporation pressure	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapTemp.Dev	Data structure - EVD parameters - Status variables - Evaporation temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapTemp.EnDev	Data structure - EVD parameters - Status variables - Evaporation temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapTemp.Err	Data structure - EVD parameters - Status variables - Evaporation temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapTemp.MskLimMax	Data structure - EVD parameters - Status variables - Evaporation temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapTemp.MskLimMin	Data structure - EVD parameters - Status variables - Evaporation temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_EvapTemp.Val	Data structure - EVD parameters - Status variables - Evaporation temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_FiltK.Val	Data structure - EVD parameters - Status variables - Reserved	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_SuctTemp.Dev	Data structure - EVD parameters - Status variables - Suction temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_SuctTemp.EnDev	Data structure - EVD parameters - Status variables - Suction temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_SuctTemp.Err	Data structure - EVD parameters - Status variables - Suction temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_SuctTemp.MskLimMax	Data structure - EVD parameters - Status variables - Suction temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_SuctTemp.MskLimMin	Data structure - EVD parameters - Status variables - Suction temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_SuctTemp.Val	Data structure - EVD parameters - Status variables - Suction temperature	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.EVD.Variables.SH_UnitCoolCap.Val	Data structure - EVD parameters - Status variables - Actual unit cooling capacity	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Inputs.S1.IsUsed.Val	Data structure - Probes data - Probe S1 - probe necessary for regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Inputs.S2.IsUsed.Val	Data structure - Probes data - Probe S2 - probe necessary for regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Inputs.S3.IsUsed.Val	Data structure - Probes data - Probe S3 - probe necessary for regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Inputs.S4.IsUsed.Val	Data structure - Probes data - Probe S4 - probe necessary for regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Private.DefaultDone	Data structure - Private - Default done flag	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Private.SuperAuxRegulationComOld	Data structure - Private - Auxiliary regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Private.SuperMainRegulationOld	Data structure - Private - Main regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Superparameters.AuxRegulationCom.Dev	Data structure - Superparameters - Auxiliary regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Superparameters.AuxRegulationCom.EnDev	Data structure - Superparameters - Auxiliary regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Superparameters.AuxRegulationCom.Val	Data structure - Superparameters - Auxiliary regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Superparameters.EEVtype.Dev	Data structure - Superparameters - Valve	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Superparameters.EEVtype.EnDev	Data structure - Superparameters - Valve	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Superparameters.EEVtype.Val	Data structure - Superparameters - Valve	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Superparameters.MainRegulation.Dev	Data structure - Superparameters - Main regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Superparameters.MainRegulation.EnDev	Data structure - Superparameters - Main regulation	Disabled	Disabled
+EVD_Emb_mng.Data_EVD_Emb_1.Superparameters.MainRegulation.Val	Data structure - Superparameters - Main regulation	Disabled	Disabled
+EVD_Emb_mng.En_EVD_Emb_1	Enable EVD_Emb function block	Disabled	Disabled
+EVD_Emb_mng.S1_Val	Probe S1	Disabled	Disabled
+EVD_Emb_mng.S2_Val	Probe S2	Disabled	Disabled
+EVD_Emb_mng.S3_Val	Probe S3	Disabled	Disabled
+EVD_Emb_mng.S4_Val	Probe S4	Disabled	Disabled

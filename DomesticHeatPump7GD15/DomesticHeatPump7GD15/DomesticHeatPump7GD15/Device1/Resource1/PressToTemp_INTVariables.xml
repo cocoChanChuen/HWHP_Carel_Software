@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest
+  Version="1.0.0">
+  <Variables>
+    <Variable
+      Name="PGas"
+      Comment="Gas pressure in tenths of bar"
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false"
+      Access="ReadWrite"
+      Decimals="1" />
+    <Variable
+      Name="Gas"
+      Comment="Gas index "
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false"
+      Access="ReadWrite"
+      Decimals="1" />
+    <Variable
+      Name="DewBub"
+      Comment="Type of temperature required (TRUE=Bubble point, FALSE=Dew point)"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false"
+      Access="ReadWrite"
+      Decimals="1" />
+    <Variable
+      Name="PressToTemp_INT"
+      Comment="Gas temperature in tenths of degrees (°C/10)"
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false"
+      Access="ReadWrite"
+      Decimals="1" />
+  </Variables>
+</Manifest>

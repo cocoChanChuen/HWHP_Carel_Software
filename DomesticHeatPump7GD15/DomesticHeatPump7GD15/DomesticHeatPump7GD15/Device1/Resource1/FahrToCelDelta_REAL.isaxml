@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pou FileVersion="200.00.003" Name="FahrToCelDelta_REAL" ElementGuid="384351af-f04d-49b5-8775-673bb017c28d" Comment="" SingleTextLine="Converts a differential in Fahrenheit to a differential in Celsius" Language="ST" CustomFbd="0" Localization="Prj" GroupName="(User defined)" Password="E4BDBA2BEF6CC4DC" GenDebugInfo="false" UseResPassword="true" GenerateSymbMon="true" Is1499="false">
+  <Function IdentifierNb="0" Keyword="" ConvDirection="NoConversion" DataType="DINT" />
+  <LocalVars>
+    <Variable Name="FahrToCelDelta_REAL" DataType="REAL" InitialValue="" Comment="Differential in Celsius" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="ReadWrite" StringSize="0" Direction="Output" CommentFields="" Attributes="23825" />
+    <Variable Name="In" DataType="REAL" InitialValue="" Comment="Differential in Fahrenheit" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+  </LocalVars>
+  <PouBody><![CDATA[4FQnV1NbWi9dZGUTZGofaWwxMzU3g1NLR1dLTk5hgmRscVZuQySoQWFvdmBfE4FESA4IR2EptlFrQGdtRCSocWVcUERBDf44TW0oNC5x6zwqMzkMCgSKQVtFV09DFY1KSg==]]></PouBody>
+  <PouUIProperties><![CDATA[]]></PouUIProperties>
+</Pou>

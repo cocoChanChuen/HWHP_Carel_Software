@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="AlrmExpFileName" Comment="Name of the file for the alarm export" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="Blackout_3_1" Comment="" AccessRights="ReadWrite" DataType="Blackout_3" Kind="Var">
+      <Variable Name="PwrOffDate_BLKO" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Date of the last power off expressed in seconds (Unix Timestamp, seconds from January 1st 1970) " Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="OffMins_BLKO" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Duration of the power off in minutes" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="OffHours_BLKO" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Duration of the power off in hours" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="OffDays_BLKO" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Duration of the power off in days" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="LastOnSec_BLKO" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Last second in which pCO was on" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="LastOnMin_BLKO" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Last minute in which pCO was on" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="LastOnHour_BLKO" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Last hour in which pCO was on" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="LastOnDay_BLKO" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Last day in which pCO was on" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="LastOnMonth_BLKO" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Last month in which pCO was on" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="LastOnYear_BLKO" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Last year in which pCO was on" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="DATE_TO_UINT_1" DataType="DATE_TO_UINT">
+        <Variable Name="DATE_IN" DataType="DATE" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Input date" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="SECOND" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Seconds from date" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MINUTE" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Minutes from date" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="HOUR" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Hours from date" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="DAY" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Days from date" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MONTH" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Months from date" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="YEAR" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Years from date" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="En_Blackout" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="SecondsOff" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Seconds of blackout" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="BoardTemp" Comment="Temperature inside board" AccessRights="ReadWrite" DataType="SYSREAD_VALUEOUT" Kind="Var">
+      <Variable Name="BoardTemp[1]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BoardTemp[2]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BoardTemp[3]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BoardTemp[4]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BoardTemp[5]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="BoardTyp" Comment="Type of board (12 = c.pCO, 13 = uPC, 14 = c.pCO mini) and size (10 = Large, 11 = Medium, 12 = Small, 13 = XL, 20 = Basic, 21 = Enhanced, 22 = High End)" AccessRights="ReadWrite" DataType="SYSREAD_VALUEOUT" Kind="Var">
+      <Variable Name="BoardTyp[1]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BoardTyp[2]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BoardTyp[3]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BoardTyp[4]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BoardTyp[5]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="BootVersion" Comment="" AccessRights="ReadWrite" DataType="SYSREAD_VALUEOUT" Kind="Var">
+      <Variable Name="BootVersion[1]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BootVersion[2]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BootVersion[3]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BootVersion[4]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="BootVersion[5]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="CheckRetainMem_1" Comment="" AccessRights="ReadWrite" DataType="CheckRetainMem" Kind="Var">
+      <Variable Name="CheckT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Period of time to check" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="MaxWritingsNo" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Max number of writings for each CheckT period" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="CountToTrig" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Number of warnings before trigger an error (0 means 1)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="En_CheckRetainMem" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enables the block" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="MemWarning" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="The last sample has shown a number of writings in retain memory greater than MaxWritingsNo" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="MemError" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Error due to too much writings in retain memory" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="MemWritingsNo" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Absolute number of writings in retain memory during the entire device life" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Init" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="SYS_READ_1" DataType="SYS_READ">
+        <Variable Name="PARAM" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Index of parameter to read (SYS_PARAM_xxx)" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable read (TRUE=read parameter, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="VALUE" DataType="UDINT,1-5">
+          <Variable Name="VALUE[1]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+          <Variable Name="VALUE[2]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+          <Variable Name="VALUE[3]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+          <Variable Name="VALUE[4]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+          <Variable Name="VALUE[5]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        </Variable>
+        <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="TON_1" DataType="TON">
+        <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if Rising edge, starts increasing internal timer. If Falling Edge, stops and resets internal timer" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE, programmed time is elapsed" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+        <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="PredSample" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="WarningsCount" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="F_TRIG_Res" DataType="F_TRIG">
+        <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="any boolean variable" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="TRUE when CLK changes from TRUE to FALSE. FALSE if all other cases" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Fedge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Falling edge" Kind="Var" Access="ReadWrite" />
+      </Variable>
+    </Variable>
+    <Variable Name="CurrDateTime_1" Comment="" AccessRights="ReadWrite" DataType="CurrDateTime" Kind="Var">
+      <Variable Name="Second" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current second (0-59)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Minute" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current minute (0-59)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Hour" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current hour (0-23)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Day" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current day (1-31)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Month" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current month (1-12)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Year" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current year" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="DayOfWeek" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current day of the week (between 1 and 7)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="DateToUint" DataType="DATE_TO_UINT">
+        <Variable Name="DATE_IN" DataType="DATE" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Input date" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="SECOND" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Seconds from date" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MINUTE" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Minutes from date" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="HOUR" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Hours from date" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="DAY" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Days from date" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="MONTH" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Months from date" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="YEAR" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Years from date" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+    </Variable>
+    <Variable Name="CurrVer" Comment="Current version of the application according to standard" AccessRights="ReadWrite" DataType="VERSIONCHK_APPVER" Kind="Var">
+      <Variable Name="X" DataType="UINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="X version of the application" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Y" DataType="UINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Y version of the application" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Z" DataType="UINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Z version of the application" Kind="Var" Access="ReadWrite" />
+      <Variable Name="D" DataType="UINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="D version of the application" Kind="Var" Access="ReadWrite" />
+      <Variable Name="IsBeta" DataType="BOOL" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Beta version enable" Kind="Var" Access="ReadWrite" />
+      <Variable Name="IsDemo" DataType="BOOL" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Demo version enable" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="CyclesPerSecond" Comment="Program speed in CyclePerSecond" AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" Min="-99999.9" Max="99999.9" />
+    <Variable Name="DateFormat" Comment="Date format (0: DD/MM/YY; 1: MM/DD/YY; 2: YY/MM/DD)" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="2" />
+    <Variable Name="Day" Comment="Actual day" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="DayIn" Comment="Writing of new day value enabled by EnDate" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="31" />
+    <Variable Name="DayOfWeek" Comment="Day of week " AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="9" />
+    <Variable Name="DefDone" Comment="Default done. Enable for End default mask. If FALSE, default have been succesfully installed" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="FALSE" />
+    <Variable Name="DST" Comment="Show if you are in Daylight Saving Time or not (works with En_DaylightSavingTime = TRUE)" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="En_AlrmExp" Comment="Enable alarm export" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="En_Buzz" Comment="Enable of Buzzer" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="true" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="TRUE" />
+    <Variable Name="En_Date" Comment="Enable for new date/time write" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="FALSE" />
+    <Variable Name="En_DaylightSavingTime" Comment="DaylightSavingTime function block enable " AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="EndDefMsk" Comment="End of default installation mask" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="ErrAlrmExp" Comment="Error code for alarm export operation" AccessRights="ReadWrite" DataType="DINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="9" />
+    <Variable Name="EXPORT_ALARMS_1" Comment="" AccessRights="ReadWrite" DataType="EXPORT_ALARMS" Kind="Var">
+      <Variable Name="DRIVE" DataType="BYTE" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="1 = usb pen drive | 0 = internal public flash" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable export (TRUE=export alarms, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="FILENAME" DataType="STRING" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Filename to export" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ENABLE_PREV" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Hour" Comment="Actual hour" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="HourIn" Comment="Writing of new Hour value enabled by EnDate" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="24" />
+    <Variable Name="ID_Lang" Comment="Language ID (0: English; 1: Italian; 2: German; 3: French; 4: Spanish). ID_Language = -1 after a wipe retain, so Language selection mask is shown" AccessRights="ReadWrite" DataType="DINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="-1" />
+    <Variable Name="LastOnDay" Comment="Saving of last day before blackout" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="LastOnHour" Comment="Saving of last hour before blackout" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="LastOnMinute" Comment="Saving of last minute before blackout" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="LastOnMonth" Comment="Saving of last month before blackout" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="LastOnSecond" Comment="Saving of last second before blackout" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="LastOnYear" Comment="Saving of last year before blackout" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="MemWarning" Comment="Automatically generated" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Minute" Comment="Actual minute" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="MinuteIn" Comment="Writing of new minute value enabled by EnDate" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="59" />
+    <Variable Name="Month" Comment="Actual month" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="MonthIn" Comment="Writing of new month value enabled by EnDate" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="12" />
+    <Variable Name="NotUsed" Comment="Mandatory variable connected to Chip I/O. Remove it when you place new I/O in c.design." AccessRights="ReadWrite" DataType="REAL" Kind="Var" IO="true" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="OffDays" Comment="Number of days since the last blackout" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="999" />
+    <Variable Name="OffHours" Comment="Number of hours since the last blackout" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="OffMinutes" Comment="Numbers of minutes since the last blackout" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="OffTotMinutes" Comment="Time in minutes since the last blackout" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="OsVersion" Comment="Application version " AccessRights="ReadWrite" DataType="SYSREAD_VALUEOUT" Kind="Var">
+      <Variable Name="OsVersion[1]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="OsVersion[2]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="OsVersion[3]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="OsVersion[4]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="OsVersion[5]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="PrgCycleMs" Comment="Program speed in ms" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="9999" />
+    <Variable Name="PwdManuf" Comment="Manufacturer password" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="9999" InitialValue="0066" />
+    <Variable Name="PwdPassepartout" Comment="Passe par tout password" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="PwdService" Comment="Service password" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="9999" InitialValue="0077" />
+    <Variable Name="PwdUser" Comment="User password" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="true" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="9999" />
+    <Variable Name="R_TRIG_1" Comment="" AccessRights="ReadWrite" DataType="R_TRIG" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="any boolean variable" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="TRUE when CLK rises from FALSE to TRUE. False in other cases" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="R_TRIG_2" Comment="" AccessRights="ReadWrite" DataType="R_TRIG" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="any boolean variable" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="TRUE when CLK rises from FALSE to TRUE. False in other cases" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="R_TRIG_3" Comment="" AccessRights="ReadWrite" DataType="R_TRIG" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="any boolean variable" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="TRUE when CLK rises from FALSE to TRUE. False in other cases" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="R_TRIG_4" Comment="" AccessRights="ReadWrite" DataType="R_TRIG" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="any boolean variable" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="TRUE when CLK rises from FALSE to TRUE. False in other cases" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="ReadTimezone" Comment="Read the current time zone (works on the rising edge)" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="TRUE" />
+    <Variable Name="RTC_WRITE_1" Comment="" AccessRights="ReadWrite" DataType="RTC_WRITE" Kind="Var">
+      <Variable Name="CURR_DATE" DataType="DATE" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current Date and time in ISA format" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable write (TRUE=update RTC time, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Second" Comment="Actual second" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="SecondIn" Comment="Writing of new seconds value enabled by EnDate" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="59" />
+    <Variable Name="SetTimezone" Comment="Set the time  zone" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="SYS_READ_1" Comment="" AccessRights="ReadWrite" DataType="SYS_READ" Kind="Var">
+      <Variable Name="PARAM" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Index of parameter to read (SYS_PARAM_xxx)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable read (TRUE=read parameter, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="VALUE" DataType="UDINT,1-5">
+        <Variable Name="VALUE[1]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[2]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[3]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[4]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[5]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="SYS_READ_2" Comment="" AccessRights="ReadWrite" DataType="SYS_READ" Kind="Var">
+      <Variable Name="PARAM" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Index of parameter to read (SYS_PARAM_xxx)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable read (TRUE=read parameter, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="VALUE" DataType="UDINT,1-5">
+        <Variable Name="VALUE[1]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[2]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[3]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[4]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[5]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="SYS_READ_3" Comment="" AccessRights="ReadWrite" DataType="SYS_READ" Kind="Var">
+      <Variable Name="PARAM" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Index of parameter to read (SYS_PARAM_xxx)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable read (TRUE=read parameter, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="VALUE" DataType="UDINT,1-5">
+        <Variable Name="VALUE[1]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[2]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[3]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[4]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[5]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="SYS_READ_4" Comment="" AccessRights="ReadWrite" DataType="SYS_READ" Kind="Var">
+      <Variable Name="PARAM" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Index of parameter to read (SYS_PARAM_xxx)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable read (TRUE=read parameter, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="VALUE" DataType="UDINT,1-5">
+        <Variable Name="VALUE[1]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[2]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[3]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[4]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[5]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="SYS_READ_5" Comment="" AccessRights="ReadWrite" DataType="SYS_READ" Kind="Var">
+      <Variable Name="PARAM" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Index of parameter to read (SYS_PARAM_xxx)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable read (TRUE=read parameter, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="VALUE" DataType="UDINT,1-5">
+        <Variable Name="VALUE[1]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[2]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[3]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[4]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="VALUE[5]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="SYS_WRITE_1" Comment="" AccessRights="ReadWrite" DataType="SYS_WRITE" Kind="Var">
+      <Variable Name="PARAM" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Index of parameter to write (SYS_PARAM_xxx)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="VALUE" DataType="UDINT,1-5">
+        <Variable Name="VALUE[1]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="VALUE[2]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="VALUE[3]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="VALUE[4]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="VALUE[5]" DataType="UDINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable write (TRUE=write parameters, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="__ADI_VALUE" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="ADI hidden parameter for &lt;VALUE&gt; array input" Kind="VarInput" Access="ReadWrite" InitialValue="0" />
+      <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ENABLE_PREV" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="TON_1" Comment="" AccessRights="ReadWrite" DataType="TON" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if Rising edge, starts increasing internal timer. If Falling Edge, stops and resets internal timer" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE, programmed time is elapsed" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="TZ_Read_1" Comment="" AccessRights="ReadWrite" DataType="TZ_Read" Kind="Var">
+      <Variable Name="Read_TZR" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Read the current time zone (works on the edge)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Zone_TZR" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Index of the zone" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Err_TZR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="PosixString" DataType="STRING" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="RTC_TZ_READ_1" DataType="RTC_TZ_READ">
+        <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable read (TRUE=read timezone, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="TIMEZONE" DataType="STRING" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Timezone POSIX.1 string" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="ENABLE_PREV" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      </Variable>
+    </Variable>
+    <Variable Name="TZ_Write_1" Comment="" AccessRights="ReadWrite" DataType="TZ_Write" Kind="Var">
+      <Variable Name="Zone_TZW" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Index of the zone" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Set_TZW" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Set the timezone (works on the edge)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Err_TZW" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="CurrDateTime_1" DataType="CurrDateTime_TZ">
+        <Variable Name="Second" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current second (0-59)" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Minute" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current minute (0-59)" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Hour" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current hour (0-23)" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Day" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current day (1-31)" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Month" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current month (1-12)" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Year" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current year" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="DayOfWeek" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current day of the week (between 1 and 7)" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="DateToUint" DataType="DATE_TO_UINT">
+          <Variable Name="DATE_IN" DataType="DATE" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Input date" Kind="VarInput" Access="ReadWrite" />
+          <Variable Name="SECOND" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Seconds from date" Kind="VarOutput" Access="ReadWrite" />
+          <Variable Name="MINUTE" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Minutes from date" Kind="VarOutput" Access="ReadWrite" />
+          <Variable Name="HOUR" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Hours from date" Kind="VarOutput" Access="ReadWrite" />
+          <Variable Name="DAY" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Days from date" Kind="VarOutput" Access="ReadWrite" />
+          <Variable Name="MONTH" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Months from date" Kind="VarOutput" Access="ReadWrite" />
+          <Variable Name="YEAR" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Years from date" Kind="VarOutput" Access="ReadWrite" />
+        </Variable>
+      </Variable>
+      <Variable Name="Init" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="PrevYear" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="RTC_TZ_WRITE_1" DataType="RTC_TZ_WRITE">
+        <Variable Name="TIMEZONE" DataType="STRING" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Timezone POSIX.1 string" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="ENABLE" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enable write (TRUE=write timezone, FALSE=do nothing)" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="ERROR" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Operation result (ERR_xxx error code)" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="ENABLE_PREV" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="PosixString" DataType="STRING" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="UINT_TO_DATE_1" Comment="" AccessRights="ReadWrite" DataType="UINT_TO_DATE" Kind="Var">
+      <Variable Name="SECOND" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Seconds for date" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="MINUTE" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Minutes for date" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="HOUR" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Hours for date" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="DAY" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Days for date" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="MONTH" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Months for date" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="YEAR" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Years for date" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="DATE_OUT" DataType="DATE" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Resulting date" Kind="VarOutput" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="VerMismatch" Comment="Check the version of the application. If the version has changed, VersionMatch = TRUE (wipe retain required)" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="VersionChk_2_1" Comment="" AccessRights="ReadWrite" DataType="VersionChk_2" Kind="Var">
+      <Variable Name="Version" DataType="VERSIONCHK_APPVER">
+        <Variable Name="X" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="X version of the application" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Y" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Y version of the application" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Z" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Z version of the application" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="D" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="D version of the application" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="IsBeta" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Beta version enable" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="IsDemo" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Demo version enable" Kind="VarInput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="VerMismatch" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Check the application version every startup and inform the user if the version hes been changed (VersionMismatch = TRUE)" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="EnVerChk" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="VersionChk FB enable" Kind="Var" Access="ReadWrite" />
+      <Variable Name="WriteVer" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Comment="Enable the application version write after a wipe retain." Kind="Var" Access="ReadWrite" />
+      <Variable Name="X" DataType="UINT" IO="false" Protocol="true" UI="false" Default="false" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Comment="X version of the application" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Y" DataType="UINT" IO="false" Protocol="true" UI="false" Default="false" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Comment="Y version of the application" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Z" DataType="UINT" IO="false" Protocol="true" UI="false" Default="false" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Comment="Z version of the application" Kind="Var" Access="ReadWrite" />
+      <Variable Name="D" DataType="UINT" IO="false" Protocol="true" UI="false" Default="false" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Comment="D version of the application" Kind="Var" Access="ReadWrite" />
+      <Variable Name="IsBeta" DataType="BOOL" IO="false" Protocol="true" UI="false" Default="false" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Comment="Beta enable" Kind="Var" Access="ReadWrite" />
+      <Variable Name="IsDemo" DataType="BOOL" IO="false" Protocol="true" UI="false" Default="false" LogPV="false" IsRetained="true" Alarm="false" UoM="NoUnits" Comment="Demo enable" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="WipeMem" Comment="" AccessRights="ReadWrite" DataType="SYSWRITE_VALUEIN" Kind="Var">
+      <Variable Name="WipeMem[1]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" InitialValue="1" />
+      <Variable Name="WipeMem[2]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="WipeMem[3]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="WipeMem[4]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="WipeMem[5]" DataType="UDINT" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="WritePwd" Comment="Password write enable" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Year" Comment="Actual year" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="YearIn" Comment="Writing of new year value enabled by EnDate" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="99" />
+    <Variable Name="Zone_Read" Comment="Index of the zone read" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="94" />
+    <Variable Name="Zone_Write" Comment="Index of the zone to write" AccessRights="ReadWrite" DataType="UINT" Kind="Var" IO="false" Protocol="false" UI="true" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Min="0" Max="94" InitialValue="35" />
+  </Variables>
+</Manifest>

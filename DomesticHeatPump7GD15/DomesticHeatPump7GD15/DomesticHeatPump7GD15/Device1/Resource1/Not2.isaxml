@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pou FileVersion="200.00.003" Name="Not2" ElementGuid="8c7396d6-fab9-4d36-9427-0af2b723e8fa" Comment="{\rtf1\ansi\ansicpg1252\deff0\deflang1040{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}&#xD;&#xA;\viewkind4\uc1\pard\f0\fs17\par&#xD;&#xA;}&#xD;&#xA;" SingleTextLine="Make multiple not and avoid to have many small blocks in the sheet" Language="FBD" CustomFbd="0" Localization="Prj" GroupName="(User defined)" Password="E4BDBA2BEF6CC4DC" GenDebugInfo="false" UseResPassword="true" GenerateSymbMon="true" Is1499="false">
+  <FunctionBlock IdentifierNb="0" Keyword="" InitInstance="false" SymbMonExtraBytes="128" />
+  <LocalVars>
+    <Variable Name="In1" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="4096" />
+    <Variable Name="In2" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="4096" />
+    <Variable Name="Out1" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="Write" StringSize="0" Direction="Output" CommentFields="" Attributes="4096" />
+    <Variable Name="Out2" DataType="BOOL" InitialValue="" Comment="" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="Write" StringSize="0" Direction="Output" CommentFields="" Attributes="4096" />
+  </LocalVars>
+  <PouBody><![CDATA[4FQnV1NbWi9dZGUTZGofaWwxMzU3g1NLR1dLTk4ehklLQEkhTi6wNwkJIWhuJ6s4JEVARQ1L52BqZ11obierCA4ga29mLvklS1dKRFJMzlNhcXFoby/5TD4xDwtTIqVpbW1lPFAI7DQoMisMCmKha2Bca29mLskPQU1GXkYUikZQSk1PXwOISkdI]]></PouBody>
+  <PouUIProperties><![CDATA[]]></PouUIProperties>
+</Pou>

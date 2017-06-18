@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="canDeIce" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="compLoadInhibit" Comment="output for forcing unload of compressor whilst swappign valve position" AccessRights="ReadWrite" DataType="BOOL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Deice_SP" Comment="Evap T for De-ice to kick in" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="DeiceStop_SP" Comment="" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="delayBeforeDeIce" Comment="" AccessRights="Read" DataType="INT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="delayBeforeExceeded" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="delayBeforeOutS" Comment="" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="delayBeforeTON" Comment="" AccessRights="ReadWrite" DataType="TON" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if Rising edge, starts increasing internal timer. If Falling Edge, stops and resets internal timer" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE, programmed time is elapsed" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="delayBetween" Comment="" AccessRights="ReadWrite" DataType="TimeCounter_INT" Kind="Var">
+      <Variable Name="In" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enables the count" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Du" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Down/Up, indicate the direction of count" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Reset" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Resets the count" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Enable" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Enables the update of the output" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Out" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Count" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Time_Cont" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Time_Old" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Out_Int" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+      <Variable Name="InOld" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="delayBetweenOutS" Comment="" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="delayT" Comment="" AccessRights="ReadWrite" DataType="TON" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if Rising edge, starts increasing internal timer. If Falling Edge, stops and resets internal timer" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE, programmed time is elapsed" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="delayTExpired" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="ET_1" Comment="current elapsed time" AccessRights="ReadWrite" DataType="TIME" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="ET_2" Comment="current elapsed time" AccessRights="ReadWrite" DataType="TIME" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="ET_3" Comment="current elapsed time" AccessRights="ReadWrite" DataType="TIME" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="ET_4" Comment="Current elapsed time" AccessRights="ReadWrite" DataType="TIME" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="ET_5" Comment="current elapsed time" AccessRights="ReadWrite" DataType="TIME" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="ET_6" Comment="current elapsed time" AccessRights="ReadWrite" DataType="TIME" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Evap_T" Comment="Evaporator Temperature" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="F_TRIG_1" Comment="" AccessRights="ReadWrite" DataType="F_TRIG" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="any boolean variable" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="TRUE when CLK changes from TRUE to FALSE. FALSE if all other cases" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Fedge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Falling edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Heat" Comment="True for Heat, False for Chill" AccessRights="Read" DataType="BOOL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="In1_1" Comment="Value returned if Select = FALSE." AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="internalState" Comment="" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="isDeicing" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="isLeadUnit" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="lastRunCmd" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" InitialValue="FALSE" />
+    <Variable Name="lastState" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="maxDeIceTime" Comment="" AccessRights="ReadWrite" DataType="TON" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if Rising edge, starts increasing internal timer. If Falling Edge, stops and resets internal timer" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE, programmed time is elapsed" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="maxDeIceTimeExpired" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="maxDeiceTimeS" Comment="" AccessRights="Read" DataType="INT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="nextState" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Not2_1" Comment="" AccessRights="ReadWrite" DataType="Not2" Kind="Var">
+      <Variable Name="In1" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="In2" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Out1" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Out2" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="otherDeIcing" Comment="" AccessRights="Read" DataType="BOOL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Out_1" Comment="Count" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Out_2" Comment="Count" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Out_3" Comment="Count" AccessRights="ReadWrite" DataType="INT" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="PT_1" Comment="Maximum programmed time" AccessRights="ReadWrite" DataType="TIME" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Q_1" Comment="if TRUE, programmed time is elapsed" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="R_TRIG_1" Comment="" AccessRights="ReadWrite" DataType="R_TRIG" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="any boolean variable" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="TRUE when CLK rises from FALSE to TRUE. False in other cases" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="R_TRIG_2" Comment="" AccessRights="ReadWrite" DataType="R_TRIG" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="any boolean variable" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="TRUE when CLK rises from FALSE to TRUE. False in other cases" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="runCmd" Comment="" AccessRights="Read" DataType="BOOL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="RVPolarityHeat" Comment="True for RV relay active for Heat" AccessRights="Read" DataType="BOOL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="RVRelay" Comment="RV relay state" AccessRights="ReadWrite" DataType="BOOL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="timeBeforeNext" Comment="" AccessRights="ReadWrite" DataType="INT" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="TimeoutBeforeNext" Comment="" AccessRights="Read" DataType="INT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="TP_1" Comment="" AccessRights="ReadWrite" DataType="TP" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="If Rising edge, starts increasing internal timer (if not already increasing). If FALSE and only if timer is elapsed, resets the internal timer. Any change on IN during counting has no effect." Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="If TRUE: timer is counting" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="unloadTimeS" Comment="" AccessRights="Read" DataType="INT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="unloadTimeT" Comment="" AccessRights="ReadWrite" DataType="TIME" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+  </Variables>
+</Manifest>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pou FileVersion="200.00.003" Name="Eq_REAL" ElementGuid="9c4b3a6d-e848-4f24-9ad0-a5857e736a12" Comment="" SingleTextLine="Checks if the difference between two real is less than an error" Language="ST" CustomFbd="0" Localization="Prj" GroupName="(User defined)" Password="E4BDBA2BEF6CC4DC" GenDebugInfo="false" UseResPassword="true" GenerateSymbMon="true" Is1499="false">
+  <Function IdentifierNb="0" Keyword="" ConvDirection="NoConversion" DataType="DINT" />
+  <LocalVars>
+    <Variable Name="Eq_REAL" DataType="BOOL" InitialValue="" Comment="If the two values are closer than the error" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="ReadWrite" StringSize="0" Direction="Output" CommentFields="" Attributes="23825" />
+    <Variable Name="Value1" DataType="REAL" InitialValue="" Comment="First value" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+    <Variable Name="Value2" DataType="REAL" InitialValue="" Comment="Second value" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+    <Variable Name="Error" DataType="REAL" InitialValue="" Comment="Tollerance (±error) of the function" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+  </LocalVars>
+  <PouBody><![CDATA[wFQnV1NbWi9dZGUTZGofaWwxMzU3g1NLR1dLTk5hgXRbUUdATEzOQHVcUERBDf44RUFRKVYgqHBhMi9XYS2xYDYqPkRyM6t3Pw4IRE4Fm0NRTUFVSQ6K]]></PouBody>
+  <PouUIProperties><![CDATA[]]></PouUIProperties>
+</Pou>

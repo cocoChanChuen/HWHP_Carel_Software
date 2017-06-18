@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest
+  Version="1.0.0">
+  <Variables>
+    <Variable
+      Name="TGas"
+      Comment="Gas dew temperature in tenths of degrees (°C/10)"
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false"
+      Access="ReadWrite"
+      Decimals="1" />
+    <Variable
+      Name="Gas"
+      Comment="Gas index"
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false"
+      Access="ReadWrite"
+      Decimals="1" />
+    <Variable
+      Name="TempToPress_INT"
+      Comment="Gas pressure in  tenths of barg"
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false"
+      Access="ReadWrite"
+      Decimals="1" />
+  </Variables>
+</Manifest>
