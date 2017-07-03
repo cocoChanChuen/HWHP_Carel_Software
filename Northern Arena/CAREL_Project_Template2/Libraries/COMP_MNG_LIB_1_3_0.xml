@@ -1,0 +1,3847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Version="1.0.0"
+  IsLibrary="true">
+  <Pou
+    Name="DevAvblStatus"
+    Moniker="DevAvblStatus.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="CompOn"
+      Comment="Device status (on/off)"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DevAlrm"
+      Comment="Device alarm"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="ManMode"
+      Comment="Manual mode or not"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="FrcOffDev"
+      Comment="Force off device"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="FrcdOffByT"
+      Comment="Forced off by safety time"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="FrcdOnByT"
+      Comment="Forced on by safety time"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PmpDwnRun"
+      Comment="Pump down running"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="AdmitMaxPwr"
+      Comment="power steps limit (0..4 = 0 / 25 / 50 / 75 /100%) "
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="StartUpMode"
+      Comment="Startup mode"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_DevAvbl"
+      Comment="Function enable"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DevAvblStatus"
+      Comment="Device available (0:off, 1:start-up, 2:on or at 25%, 3:at 50%, 4:at 75%, 5:at 100%, 6:force off, 7:limited to 25%, 8:limited to 50%, 9:limited to 75%, 10:off by alarm, 11:off by time, 12:on by time, 13:Manual mode, 14: on by pump-down)"
+      DataType="USINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="FEdge_COMP"
+    Moniker="FEdge_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In"
+      Comment="Input value"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Reset"
+      Comment="Reset"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Out"
+      Comment="Edge"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="In_Old"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Limit_REAL_COMP"
+    Moniker="Limit_REAL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="MinVal"
+      Comment="Minimum value"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="In"
+      Comment="Input value"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="MaxVal"
+      Comment="Maximum value"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Limit_REAL_COMP"
+      Comment="Limited value"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="HysterAdv_REAL_COMP"
+    Moniker="HysterAdv_REAL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In"
+      Comment="Input value"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="SetP"
+      Comment="Setpoint"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DiffLeft"
+      Comment="Differential to the left of the setpoint (extreme included)"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DiffRight"
+      Comment="Differential to the right of the setpoint (extreme included)"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Reverse"
+      Comment="If true, the function is reverted"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Out"
+      Comment="Hysteresis on/off"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Max_REAL_COMP"
+    Moniker="Max_REAL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In1"
+      Comment="Input value 2"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="In2"
+      Comment="Input value 2"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Max_REAL_COMP"
+      Comment="The largest of the two values"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Interpolate_REAL_COMP"
+    Moniker="Interpolate_REAL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="X"
+      Comment="Input value"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="XDot"
+      Comment="Array of x-coordinates of points"
+      DataType="REAL,0-127"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="YDot"
+      Comment="Array of y-coordinates of points"
+      DataType="REAL,0-127"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="MaxIdx"
+      Comment="Number of points"
+      DataType="USINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Out"
+      Comment="Output value"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Index"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Min_INT_COMP"
+    Moniker="Min_INT_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In1"
+      Comment="Input value 1"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="In2"
+      Comment="Input value 2"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Min_INT_COMP"
+      Comment="The smallest of the two values"
+      DataType="INT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="TimeCounter_INT_COMP"
+    Moniker="TimeCounter_INT_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In"
+      Comment="Enables the count"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Du"
+      Comment="Down/Up, indicate the direction of count"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Reset"
+      Comment="Resets the count"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Enable"
+      Comment="Enables the update of the output"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Out"
+      Comment="Count"
+      DataType="INT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Time_Cont"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Time_Old"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Out_Int"
+      Comment=""
+      DataType="INT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="InOld"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Min_REAL_COMP"
+    Moniker="Min_REAL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In1"
+      Comment="Input value 1"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="In2"
+      Comment="Input value 2"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Min_REAL_COMP"
+      Comment="The smallest of the two values"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="DefCompStepless"
+    Moniker="DefCompStepless.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="CfgCompSteplessIn"
+      Comment="Configuration Stepless compressor"
+      DataType="CFG_STEPLESS_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompManuf"
+      Comment="Compressor manufacturer"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompModel"
+      Comment="Compressor model"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_DefCompStepless"
+      Comment="Enable this function block"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CfgCompStepless"
+      Comment="Configuration Steppless compressor"
+      DataType="CFG_STEPLESS_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="En_CompStepless"
+      Comment="Enabling control of the compressor"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DefDone"
+      Comment="Default values of the compressor is loaded"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CurrManuf"
+      Comment="Active manufacturer"
+      DataType="UINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CurrModel"
+      Comment="Active model"
+      DataType="UINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="PressToTemp_REAL_COMP"
+    Moniker="PressToTemp_REAL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="P_ABS"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ka"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="kb"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="kc"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="kd"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ke"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="kf"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Gas_K_Vect"
+      Comment=""
+      DataType="REAL,0-5"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="lnVal"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="lnVal2"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="lnVal3"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="lnVal4"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="lnVal5"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PGas"
+      Comment="Gas pressure in barg"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Gas"
+      Comment="Gas index"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DewBub"
+      Comment="Type of temperature required (TRUE = Bubble point, FALSE = Dew point)"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PressToTemp_REAL_COMP"
+      Comment="Gas temperature in degrees (°C)"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="DefCompStep"
+    Moniker="DefCompStep.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="CfgCompStepIn"
+      Comment="Configuration Step compressor"
+      DataType="CFG_STEP_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompManuf"
+      Comment="Compressor manufacturer"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompModel"
+      Comment="Compressor model"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_DefCompStep"
+      Comment="Enable this function block"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CfgCompStep"
+      Comment="Configuration Step compressor"
+      DataType="CFG_STEP_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="En_CompStep"
+      Comment="Enabling control of the compressor"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DefDone"
+      Comment="Default values of the compressor is loaded"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CurrManuf"
+      Comment="Active manufacturer"
+      DataType="UINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CurrModel"
+      Comment="Active model"
+      DataType="UINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Range_INT_COMP"
+    Moniker="Range_INT_COMP.stf"
+    Language="FBD"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In"
+      Comment="Value to check"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Min_Val"
+      Comment="Minimum value of the interval"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Max_Val"
+      Comment="Maximum value of the interval"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Range_INT_COMP"
+      Comment="If the value is in the range or not"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="DefCompInverter"
+    Moniker="DefCompInverter.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="CfgCompInverterIn"
+      Comment="Configuration Inverter compressor (input)"
+      DataType="CFG_INVERTER_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompManuf"
+      Comment="Compressor manufacturer"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompModel"
+      Comment="Compressor model"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_DefCompInverter"
+      Comment="Enable this function block"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CfgCompInverter"
+      Comment="Configuration Inverter ompressor"
+      DataType="CFG_INVERTER_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="En_CompInverter"
+      Comment="Enabling control of the compressor"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DefDone"
+      Comment="Default done"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CurrManuf"
+      Comment="Active manufacturer"
+      DataType="UINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CurrModel"
+      Comment="Active model"
+      DataType="UINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Range_REAL_COMP"
+    Moniker="Range_REAL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In"
+      Comment="Value to check"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Min_Val"
+      Comment="Minimum value of the interval"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Max_Val"
+      Comment="Maximum value of the interval"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Range_REAL_COMP"
+      Comment="If the value is in the range or not"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="DefCompVlvs"
+    Moniker="DefCompVlvs.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="CfgCompVlvsIn"
+      Comment="Compressor valve parameters (input)"
+      DataType="CFG_VLV_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompManuf"
+      Comment="Compressor manufacturer"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompModel"
+      Comment="Compressor model"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_DefCompVlvs"
+      Comment="Enable this function block"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CfgCompVlvs"
+      Comment="Compressor valve parameters"
+      DataType="CFG_VLV_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DefDone"
+      Comment="Default done"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CurrManuf"
+      Comment="Active manufacturer"
+      DataType="UINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CurrModel"
+      Comment="Active model"
+      DataType="UINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="DefCompEnv"
+    Moniker="DefCompEnv.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="CfgEnvIn"
+      Comment="Envelope parameters (input)"
+      DataType="CFG_ENV_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompManuf"
+      Comment="Compressor manufacturer"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompModel"
+      Comment="Compressor model"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_DefCompEnv"
+      Comment="Enable this function block"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CfgEnv"
+      Comment="Envelop parameters"
+      DataType="CFG_ENV_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RfrgTyp"
+      Comment="Refrigerant type"
+      DataType="INT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DefDone"
+      Comment="Default done"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CurrManuf"
+      Comment="Active manufacturer"
+      DataType="UINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CurrModel"
+      Comment="Active model"
+      DataType="UINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="RealToInt_COMP"
+    Moniker="RealToInt_COMP.stf"
+    Language="FBD"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In"
+      Comment="Input value"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="RealToInt_COMP"
+      Comment="Rounded and casted input"
+      DataType="INT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="EnvPwrSaveIntersectPts_COMP"
+    Moniker="EnvPwrSaveIntersectPts_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="X"
+      Comment=""
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Y"
+      Comment=""
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="IdxIn"
+      Comment=""
+      DataType="DINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="IdxOut"
+      Comment=""
+      DataType="DINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Pts"
+      Comment=""
+      DataType="VERTEX_COMP,0-1"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="InterceptorError"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="RealToDint_COMP"
+    Moniker="RealToDint_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="Var1"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Var2"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="In"
+      Comment="Input value"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="RealToDint_COMP"
+      Comment="Rounded and casted input"
+      DataType="DINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="CompVlvs"
+    Moniker="C:\git\HWHP_cPCO\Northern Arena\CAREL_Project_Template2\NorthernArena\Device1\Resource1\CompVlvs.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="VlvNo"
+      Comment="Valve number"
+      DataType="DINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="SteplessStep"
+      Comment="0: Stepless; 1: Step"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CfgCompVlv"
+      Comment="Configuration valves for screw compressors"
+      DataType="CFG_VLV_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PhRun"
+      Comment="Phase run"
+      DataType="USINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="T_PulseOff"
+      Comment="Valve pulsing off time"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="T_PulseOn_Mul"
+      Comment="Valve pulsing on time multiplier"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_CompVlvs"
+      Comment="Enable this function block"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="VlvPulse"
+      Comment="Valve pulsing"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="VlvDoutInfo"
+      Comment="Valve outputs for I/O"
+      DataType="VLV_OUTPUTS_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="VlvCmd"
+      Comment="Valve cmd"
+      DataType="INT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DevPresent"
+      Comment="Device present"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="En_PulseVariation"
+      Comment="Enable pulsing variation"
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PeriodT"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="F_TRIG_1"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="F_TRIG_2"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PulseVariation"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TON_1"
+      Comment=""
+      DataType="TON"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="RealToUint_COMP"
+    Moniker="RealToUint_COMP.stf"
+    Language="FBD"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In"
+      Comment="Input value"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="RealToUint_COMP"
+      Comment="Rounded and casted input"
+      DataType="UINT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="EnvAlrm"
+    Moniker="EnvAlrm.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="CondTemp"
+      Comment="Condensation temperature"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="EvapTemp"
+      Comment="Evaporation temperature"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DscgTemp"
+      Comment="Discharge temperature"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CfgEnv"
+      Comment="Configuration envelope"
+      DataType="CFG_ENV_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="EconRun"
+      Comment="Economy run"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_EnvAlrm"
+      Comment="Enable this function block"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="ZoneEnv"
+      Comment="Zone envelope"
+      DataType="INT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvP_X"
+      Comment="Envelope vertex points coordinate X"
+      DataType="ENV_COORDINATES_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvP_Y"
+      Comment="Envelope vertex points coordinate Y"
+      DataType="ENV_COORDINATES_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvAlrms"
+      Comment="Envelope alarms"
+      DataType="ENVALRM_ALARMS_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvDataErr"
+      Comment="Error in envelope data (CfgEnv)"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvEvapTempMax"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvCondTempMax"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TmpP1"
+      Comment=""
+      DataType="VERTEX_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TmpP2"
+      Comment=""
+      DataType="VERTEX_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Y_Tmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="X_Tmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="K1_Tmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="K2_Tmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TmpP3"
+      Comment=""
+      DataType="VERTEX_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TmpP4"
+      Comment=""
+      DataType="VERTEX_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Divisor1"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Divisor2"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Round_REAL_COMP"
+    Moniker="Round_REAL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In"
+      Comment="Input value"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Round_REAL_COMP"
+      Comment="Rounded input"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="CompStep"
+    Moniker="CompStep.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="CfgCompStep_STP"
+      Comment="Configuration step compressor"
+      DataType="CFG_STEP_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompReq_STP"
+      Comment="Compressor request"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DevAvbl_STP"
+      Comment="Device available"
+      DataType="USINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="ShOffRes_STP"
+      Comment="Shutoff reset"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_CompStep"
+      Comment="Enable this function block"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompOn_STP"
+      Comment="Compressor on"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrRun_STP"
+      Comment="Power run"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PhStatus_STP"
+      Comment="Phase status"
+      DataType="PH_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HysterAdv_REAL_1"
+      Comment=""
+      DataType="HysterAdv_REAL_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TP_1"
+      Comment=""
+      DataType="TP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TOF_1"
+      Comment=""
+      DataType="TOF"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="FEdge_1"
+      Comment=""
+      DataType="FEdge_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HysterAdv_REAL_2"
+      Comment=""
+      DataType="HysterAdv_REAL_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HysterAdv_REAL_3"
+      Comment=""
+      DataType="HysterAdv_REAL_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HysterAdv_REAL_4"
+      Comment=""
+      DataType="HysterAdv_REAL_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TON_1"
+      Comment=""
+      DataType="TON"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TON_2"
+      Comment=""
+      DataType="TON"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TON_3"
+      Comment=""
+      DataType="TON"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DisStartUp"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnStep3"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnStep4"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompReqTmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompOffRun"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="AlrmComp"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Req"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompReqOn"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TStartUpT"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TShOffT"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="StartUpRun"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CntDwnStartUp"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ShOff"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CntDwnShOff"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RunStep1"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RunStep2"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RunStep3"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RunStep4"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TDTBtwStep1_2"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TDTBtwStep2_3"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TDTBtwStep3_4"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ReqStep2"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ReqStep3"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ReqStep4"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CntDwnStep1_2"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CntDwnStep2_3"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CntDwnStep3_4"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CntDwnTmp"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnStep2"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Scaler_REAL_COMP"
+    Moniker="Scaler_REAL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="X"
+      Comment="Value to convert"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="X1"
+      Comment="X-coordinate of the first point"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="X2"
+      Comment="X-coordinate of the second point"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Y1"
+      Comment="Y-coordinate of the first point"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Y2"
+      Comment="Y-coordinate of the second point"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Scaler_REAL_COMP"
+      Comment="Value converted"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="CompStepless"
+    Moniker="CompStepless.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="CfgCompStepless_STPLS"
+      Comment="Configuration compressor stepless"
+      DataType="CFG_STEPLESS_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompReq_STPLS"
+      Comment="Compressor request"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DevAvbl_STPLS"
+      Comment="Device available"
+      DataType="USINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="VlvPulse_STPLS"
+      Comment="Valve pulsing from FB CompVlvs"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="T_Incr_STPLS"
+      Comment="Time increase for valve pulsing"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="T_Decr_STPLS"
+      Comment="Time decrease for valve pulsing"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DT_MaxPwrAdj_STPLS"
+      Comment="Delaytime maximum power adjust"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="RunPrevent_STPLS"
+      Comment="Prevent run"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="ShOffRes_STPLS"
+      Comment="Shutoff reset"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_CompStepless"
+      Comment="Enable the function block"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompOn_STPLS"
+      Comment="Compressor on"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PulseReq_STPLS"
+      Comment="Pulsing request"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="T_PulseOnMul_STPLS"
+      Comment="Valve pulsing on time multiplier"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompOffReq_STPLS"
+      Comment="Compressor off request"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrRun_STPLS"
+      Comment="Power run"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PhStatus_STPLS"
+      Comment="Phase status"
+      DataType="PH_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="F_TRIG_1"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="R_TRIG_1"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HysterAdv_REAL_1"
+      Comment=""
+      DataType="HysterAdv_REAL_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TP_1"
+      Comment=""
+      DataType="TP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TOF_1"
+      Comment=""
+      DataType="TOF"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TOF_2"
+      Comment=""
+      DataType="TOF"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TOF_3"
+      Comment=""
+      DataType="TOF"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="F_TRIG_2"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PulseTrig"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompReqTmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompOffRun"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="AlrmComp"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Req"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompReqOn"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrReq"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TStartUpT1"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RunStartUp1"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RunStartUp2"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CntDwnStartUp"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CntDwnIncrStartUp"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TStartUpT2"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RunShOff1"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RunShOff2"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CntDwnDecrShOff"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CntDwnShOff"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TShOffT1"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TShOffT2"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="StartStopLowPwr"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="StartStopHiPwr"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RegPhase"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PulseIncrVal"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PulseDecrVal"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ThrshPulseIncr"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ThrshPulseDecr"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="IncrTmp"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DecrTmp"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HoldMaxPwr"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HoldMinPwr"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="BLINK_1"
+      Comment=""
+      DataType="BLINK"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="BLINK_2"
+      Comment=""
+      DataType="BLINK"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="IncrReq"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="StbyReq"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DecrReq"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrChg"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaReq"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrRunOld"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CntDwnPhaseTmp"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="MinPwrDwn"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="MaxDeltaActive"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HysterAdv_REAL_2"
+      Comment=""
+      DataType="HysterAdv_REAL_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HysterAdv_REAL_3"
+      Comment=""
+      DataType="HysterAdv_REAL_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaReq_Tmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnMultiplierCount"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HysterAdv_REAL_4"
+      Comment=""
+      DataType="HysterAdv_REAL_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TimeCounter_INT_1"
+      Comment=""
+      DataType="TimeCounter_INT_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="R_TRIG_2"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Interpolate_REAL_1"
+      Comment=""
+      DataType="Interpolate_REAL_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="X_Tmp"
+      Comment=""
+      DataType="REAL,0-127"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Y_Tmp"
+      Comment=""
+      DataType="REAL,0-127"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Index"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TimeCounter_INT_2"
+      Comment=""
+      DataType="TimeCounter_INT_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RS_1"
+      Comment=""
+      DataType="RS"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TON_1"
+      Comment=""
+      DataType="TON"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="SecToTime_COMP"
+    Moniker="SecToTime_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="Input"
+      Comment=""
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="SecToTime_COMP"
+      Comment=""
+      DataType="TIME"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Sel_BOOL_COMP"
+    Moniker="Sel_BOOL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="Sel1"
+      Comment="Selector"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="In1"
+      Comment="Value returned if Select = FALSE."
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="In2"
+      Comment="Value returned if Select = TRUE."
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Sel_BOOL_COMP"
+      Comment="Value selected"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="MotIgn"
+    Moniker="MotIgn.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="TypIgn"
+      Comment="0:Direct; 1:Part-winding; 2:Star/Delta"
+      DataType="USINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PartwindDT"
+      Comment="Part winding delaytime"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="T_Star"
+      Comment="Star working time"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="StarDeltaDT"
+      Comment="Star delta delaytime"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Delta_PartwindA_Direct"
+      Comment="The excution time for Relay A work as (Delta/partwinding A/direct)"
+      DataType="MOTIGN_TIMES_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Star_PartwindB"
+      Comment="The excution time for Relay B work as (Star/partwinding B)"
+      DataType="MOTIGN_TIMES_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="StarDeltaMode"
+      Comment="Star delta mode"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PartWindMode"
+      Comment="Part winding mode"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Sel_INT_COMP"
+    Moniker="Sel_INT_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="Sel1"
+      Comment="Selector"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="In1"
+      Comment="Value returned if Select = FALSE."
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="In2"
+      Comment="Value returned if Select = TRUE."
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Sel_INT_COMP"
+      Comment="Value selected"
+      DataType="INT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="RequestMNG_COMP"
+    Moniker="RequestMNG_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="CircIdx"
+      Comment="Identification number of circuit (to set prevent List"
+      DataType="DINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="SuctP"
+      Comment="Current suction pressure in Bars (relative value)"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DscgP"
+      Comment="Current discharge pressure in Bars (relative value)"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DscgGasTemp"
+      Comment="Current discharge temperature"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="IsStep"
+      Comment="TRUE: Step, FALSE: other compressor"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="RfrgTyp"
+      Comment="Gas type : see definition on T2P (FBD) help on line"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Zone"
+      Comment="Envelop zone -&gt;  0=Undefined, 1=Envelop zone, 2=EnvHiP_Ratio, 3=EnvHiDscgP, 4=EnvHiCurr, 5=EnvHiSuctP, 6=EnvLowP_Ratio, 7=EnvLowDP, 8=EnvLowDscgP, 9=EnvLowSuctP"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="EnvP_X"
+      Comment="Vertex points of envelop (X values) in degrees C"
+      DataType="ENV_COORDINATES_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="EnvP_Y"
+      Comment="Vertex points of envelop (Y values) in  tenth of degrees C "
+      DataType="ENV_COORDINATES_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CfgEnv"
+      Comment="Segment data of envelope working zones in degrees C"
+      DataType="CFG_ENV_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Cfg_CompStep"
+      Comment="Data of step configurations"
+      DataType="CFG_STEP_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="HeatMode"
+      Comment="Working mode: 0=chiller; 1= HP - used for selection of standard slope of movement"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="InPwr"
+      Comment="Input request"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="GotoPwrSetP"
+      Comment="Set output power value equal to power input value"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PwrRun"
+      Comment=""
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompPh"
+      Comment="Compressor phase :  0=OFF; 1= StartUp; 2=StarUp incr.;3=Increase; 4=StandBy; 5=Decrease;6=unused;7=ShutOffdecr.; 8=ShutOff "
+      DataType="USINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DecelDist"
+      Comment="Distance from envelope limit border in which starts deceleration of power increasing"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="StartUpVal"
+      Comment=""
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="MinPwrCorr"
+      Comment="minimum value of output when correcting to meet envelope conditions"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="UpDeltaMaxPwr"
+      Comment="Maximum request variation percentage per second up"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DwnDeltaMaxPwr"
+      Comment="Maximum request variation per second down"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="HiTemp_PwrStepDwn"
+      Comment="Power step down in case in case of HT"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="HiTemp_ActionWait"
+      Comment="conteggio ritardo in atto inibisce nuova azione per ridurre HT"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DscgGasActZone"
+      Comment="Distance from discharge gas HT limit in which starts deceleration of power increasing"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PreventT"
+      Comment="Time duration of prevent action (reduction /increasing of step power) - def. 120s"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="TransdStart"
+      Comment="Initial condition that inhibites correction of zone 9 (for HP starting -up )"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PreventInfoIn"
+      Comment="Prevent list to Rot_Dev"
+      DataType="PREVENT_INFO_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompReq"
+      Comment="Compressor On status"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="OutPwr"
+      Comment="Output request - considering slide movements (simulated)"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="MOPThrshFastChg"
+      Comment="Current Value of MOP to EVD - Value in degrees C "
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="MOPHold"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RunPrevent"
+      Comment="Prevent action in execution for power reduction or increasing"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PreventInfo"
+      Comment="Prevent list to Rot_Dev"
+      DataType="PREVENT_INFO_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EvapTemp"
+      Comment="Current suction saturated temperature  C"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CondTemp"
+      Comment="Current discharge saturated temperature C"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaP"
+      Comment="Current value of delta pressure [Bars]"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaMinP"
+      Comment="Minumum difference between discharge pressure and suction pressure [Bars]"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RatioP"
+      Comment="current value of pressure ratio"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Distance"
+      Comment="the value of the distance used for the request calculation"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvDirectDistance"
+      Comment="Distance long interpolation line and movement direction to P1 in degrees C"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvOppositeDistance"
+      Comment="Distance long interpolation line and opposite direction to P2 in degrees C"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ZoneDscgTemp"
+      Comment="Discharge gas HT control 0=Unchecked; 1=OK; 2 = Action zone (pwr controlled); 3=HT condition (power limited); 4= Max temp (alarm)"
+      DataType="INT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ZoneMaxCap"
+      Comment="envelope zone with limited max capacity - due to critical lubricating pressure"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HiTempActionDone"
+      Comment="Eseguita riduzione del 10% sulla potenza"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EvapRegTempSetP"
+      Comment="Current value of Evaporating temp. limit (Fan regul. in Pdc) - Value in degrees C"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CondRegTempSetP"
+      Comment="Current value of Condensing temp. limit (Fan regul. in chiller) - Value in degrees C"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DscgHiTempThrsh"
+      Comment="Discharge gas HT limit over which power is reduced  (5K below alarm limit)"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvEvapMaxTemp"
+      Comment="Suction saturated temp high limit - Value  C"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvEvapMinTemp"
+      Comment="Suction saturated temp low limit - Value  C"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvCondMaxTemp"
+      Comment="Discharge saturated temp high limit - Value  C"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvCondMinTemp"
+      Comment="Discharge saturated temp low limit - Value  C"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Ka"
+      Comment="Interpolation line, explicit form coefficient (trend from last 5 recorded temperature points)"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Kb"
+      Comment="Interpolation line, explicit form coefficient (trend from last 5 recorded temperature points)"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Kc"
+      Comment="Interpolation line, explicit form coefficient (trend from last 5 recorded temperature points)"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Km"
+      Comment="Interpolation line, implicit form (slope coefficent)"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Kq"
+      Comment="Interpolation line, implicit form (slope coefficent)"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="P1_X"
+      Comment=""
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="P1_Y"
+      Comment=""
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="P2_X"
+      Comment=""
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="P2_Y"
+      Comment=""
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="InterceptError"
+      Comment=""
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PrevT"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaT"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="StartPhase"
+      Comment="Starting condition that overcomes power control"
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="VertexPt"
+      Comment=""
+      DataType="VERTEX_COMP,0-7"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="SteplessTyp"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="index"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="SuctPAbs"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DscgPAbs"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompRateMax_m"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompRateMax_q"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompRateMaxLn"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="MaxCurr_m"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="MaxCurr_q"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="MaxCurrLn"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompRateMin_m"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompRateMin_q"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompRateMinLn"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaPMin_m"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaPMin_q"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaPMinLn"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvMaxCap"
+      Comment=" min value of condensing setPoint for fan speed control when in max cap zone"
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Count_Var"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EvapTempPrev"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EvapDelta"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CondTempPrev"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CondDelta"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Pts"
+      Comment=""
+      DataType="VERTEX_COMP,0-4"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="IndexPCurr"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="IndexPPrev"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="NoPtsSaved"
+      Comment=""
+      DataType="DINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="KmStd"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="KqStd"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="SumX"
+      Comment="the sum of all the sampled x values"
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="SumY"
+      Comment="the sum of all the sampled y values"
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="SumSquareX"
+      Comment="the sum of all the sampled x^2 values"
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="SumXY"
+      Comment="Sum (Xi*Yi)"
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="X_Tmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Y_Tmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvPwrSaveIntersectPts_1"
+      Comment=""
+      DataType="EnvPwrSaveIntersectPts_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HiCurrZone"
+      Comment="Zone out of envelope - segment of high current -&gt; Zone=4"
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RS_1"
+      Comment=""
+      DataType="RS"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrInMax"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PrevVal"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="AuxVar"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaSPEvap"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaSPCond"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrDMax_Tmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="InitActHiTemp"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrOutMem"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrDMaxHiTemp_Tmp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DscgGasT_Max"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="Ctrl_Bool"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaPwr"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrOutPrevStep"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrReduction"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrUpAct"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="StartT"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrOutPrevStepless"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrOutStep"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrOutStepless"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="Sel_REAL_COMP"
+    Moniker="Sel_REAL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="Sel1"
+      Comment="Selector"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="In1"
+      Comment="Value returned if Select = FALSE."
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="In2"
+      Comment="Value returned if Select = TRUE."
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Sel_REAL_COMP"
+      Comment="Value selected"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="RunStartUpDT_Alrm"
+    Moniker="RunStartUpDT_Alrm.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="Device"
+      Comment="Status of the pump (FALSE: pump off, TRUE: pump on)"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="SaftyIn"
+      Comment="Status of the water flow switch(FALSE: normal condition, TRUE: alarm condition)"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DevicePresent"
+      Comment="Specify whether the pump is enabled for operation (FALSE: pump disabled, TRUE: pump enabled)"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="StartUpDT"
+      Comment="Alarm delay time on pump power-up"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="RunningDT"
+      Comment="Alarm delay time in stable operation"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_RunStartUpDT_Alrm"
+      Comment="Enable the function block"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="AlrmOut"
+      Comment="Alarm status"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TStartUp"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TRunning"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TON_1"
+      Comment=""
+      DataType="TON"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TON_2"
+      Comment=""
+      DataType="TON"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="F_TRIG_1"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="F_TRIG_2"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="SR_1"
+      Comment=""
+      DataType="SR"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DelayOn_1"
+      Comment=""
+      DataType="TON"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DelayOn_2"
+      Comment=""
+      DataType="TON"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="SR_Set"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="TempToPress_REAL_COMP"
+    Moniker="TempToPress_REAL_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="p"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="iGas"
+      Comment=""
+      DataType="SINT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="va_i"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="vb_i"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="vc_i"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="vd_i"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ve_i"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="vf_i"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="T"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TGas"
+      Comment="Gas dew temperature in degrees (°C)"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Gas"
+      Comment="Gas index"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="TempToPress_REAL_COMP"
+      Comment="Gas pressure in barg"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="DwnBottleNeck_COMP"
+    Moniker="DwnBottleNeck_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In"
+      Comment=""
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Step"
+      Comment=""
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Out"
+      Comment=""
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="UpBottleNeck_COMP"
+    Moniker="UpBottleNeck_COMP.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="false"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="In"
+      Comment=""
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Step"
+      Comment=""
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="Out"
+      Comment=""
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+  </Pou>
+  <Pou
+    Name="EnvPwr"
+    Moniker="EnvPwr.stf"
+    Language="FBD"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="B4406BEB85461FA4"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    IsVisible="true"
+    UserEdited="false"
+    Deprecated="false">
+    <Variable
+      Name="PreventInfoIn"
+      Comment="Prevent List"
+      DataType="PREVENT_INFO_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CircIdx"
+      Comment="Circuit index"
+      DataType="DINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PwrReq"
+      Comment="Power request [%]"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PwrRun"
+      Comment="Power run [%]"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="SuctP"
+      Comment="Suction pressure value in Bars (high resolution)"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DscgP"
+      Comment="Discharge pressure value in Bars (high resolution)"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DscgTemp"
+      Comment="Discharge temperature coming from EVD [°C]"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PhRun"
+      Comment="Phase run (0:none, 1:Start 1, 2:Start 2, 3:Increase, 4:Hold, 5:Decrease, 6:Decrease speed, 7:Shutdown 1, 8:Shutdown 2)"
+      DataType="USINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="IsStep"
+      Comment="TRUE: Step, FALSE: other compressor"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="GotoPwrReq"
+      Comment="Go to the requested power"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="ZoneEnv"
+      Comment="Zone envelope"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CtrlEnvLimDstn"
+      Comment="Control envelope limit distance"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="StartupVal"
+      Comment="Forced request value during startup period ( when CompPhase=1 or 2 -&gt; StartPhase = 1 ) [%]"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="StartUpPwr_Perc"
+      Comment="Startup power percentage [%]"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CompMinPwr"
+      Comment="minimum value of output with compressor on"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="MaxPwrDecr"
+      Comment="Maximum power reduction speed"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="MaxPwrIncr"
+      Comment="Maximum power increase speed"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DscgHiTempPwrDecr"
+      Comment="Power reduction value for discharge high temperature reduction cycles"
+      DataType="REAL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DscgTempActPause"
+      Comment="Time between powerreduction cycles in the discharge hi temperature zone"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PreventT"
+      Comment="Prevent time [s]"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="DT_InhibLowSuctP"
+      Comment="start delay to inhibit power limitation for low suction pressure [s]"
+      DataType="UINT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="RfrgTyp"
+      Comment="Refrigerant type"
+      DataType="INT"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CfgEnv"
+      Comment="Configuration envelope"
+      DataType="CFG_ENV_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="EnvP_X"
+      Comment="Envelope vertex points coordinate X"
+      DataType="ENV_COORDINATES_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="EnvP_Y"
+      Comment="Envelope vertex points coordinate Y"
+      DataType="ENV_COORDINATES_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="CfgCompStep"
+      Comment="Configuration step compressor"
+      DataType="CFG_STEP_COMP"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="HeatMode"
+      Comment="Cooling heating"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="En_EnvPwr"
+      Comment="Enable envelope power"
+      DataType="BOOL"
+      Kind="VarInput"
+      AccessRights="Read" />
+    <Variable
+      Name="PreventInfo"
+      Comment="Prevent List"
+      DataType="PREVENT_INFO_COMP"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CtrldPwrReq"
+      Comment="Outlet power request"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CoolCap_EVD"
+      Comment="Cooling capacity sent to EVD"
+      DataType="INT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="MOPThrshFastChg"
+      Comment="Fast change MOP threshold"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RunPrevent"
+      Comment="Prevent running"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CondRegLimTempSetP"
+      Comment="Condensation regulation limit temperature set point"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EvapRegLimTempSetP"
+      Comment="Evaporation regulation limit temperature set point"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaP"
+      Comment="Delta pressure"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DeltaMinP"
+      Comment="Delta minimum pressure"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RatioP"
+      Comment="Ratio pressure"
+      DataType="REAL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ZoneDscgTemp"
+      Comment="Discharge temperature zone"
+      DataType="INT"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ZoneMaxCap"
+      Comment="Maximum capacity zone"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="InterceptErr"
+      Comment="Error in intercept calculation"
+      DataType="BOOL"
+      Kind="VarOutput"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HiTempActionWait"
+      Comment="High temperature action wait"
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HiTempActionDone"
+      Comment="High temperature action done"
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TP_1"
+      Comment=""
+      DataType="TP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HiTempActionWaitT"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HiTempActionWaitRes"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="F_TRIG_1"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HiTempValDelta"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RequestMNG_1"
+      Comment=""
+      DataType="RequestMNG_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="HiTempPwrStepDwn"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TStartDT"
+      Comment=""
+      DataType="TIME"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TON_1"
+      Comment=""
+      DataType="TON"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TransdStart"
+      Comment="Transducer start"
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CompRequest"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="MOPHold"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EvapTemp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CondTemp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EnvEvapMaxTemp"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="EVDStartCmd"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="TP_2"
+      Comment=""
+      DataType="TP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RS_1"
+      Comment=""
+      DataType="RS"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="F_TRIG_2"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DwnBottleNeck_1"
+      Comment=""
+      DataType="DwnBottleNeck_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="F_TRIG_3"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RS_2"
+      Comment=""
+      DataType="RS"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="UpBottleNeck_1"
+      Comment=""
+      DataType="UpBottleNeck_COMP"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="PwrMinCorr"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="CoolCap_EVD_tmp"
+      Comment=""
+      DataType="INT"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="ResetCycle"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="R_TRIG_1"
+      Comment=""
+      DataType="R_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="RS_3"
+      Comment=""
+      DataType="RS"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="F_TRIG_4"
+      Comment=""
+      DataType="F_TRIG"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="WaitCoolCapAct"
+      Comment=""
+      DataType="BOOL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+    <Variable
+      Name="DscgTmpVal"
+      Comment=""
+      DataType="REAL"
+      Kind="Var"
+      AccessRights="ReadWrite" />
+  </Pou>
+</Manifest>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="X" Comment="" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="Y" Comment="" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="IdxIn" Comment="" AccessRights="Read" DataType="DINT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="IdxOut" Comment="" AccessRights="Write" DataType="DINT" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="Pts" Comment="" AccessRights="Write" DataType="VERTEX_COMP,0-1" Modifier="Constant" Kind="VarOutput">
+      <Variable Name="Pts[0]" DataType="VERTEX_COMP">
+        <Variable Name="X" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="Y" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      </Variable>
+      <Variable Name="Pts[1]" DataType="VERTEX_COMP">
+        <Variable Name="X" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="Y" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      </Variable>
+    </Variable>
+    <Variable Name="InterceptorError" Comment="" AccessRights="Write" DataType="BOOL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+  </Variables>
+</Manifest>

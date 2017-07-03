@@ -3336,7 +3336,7 @@ msgstr "SERIAL PORTS"
 #: 02_Main.otws
 msgctxt "[Mask:Set][Field:Text]"
 msgid "Water Temp:          C"
-msgstr "Water Temp:          "
+msgstr "Water Temp SP:       "
 
 #: 02_Main.otws
 msgctxt "[Mask:Set][Field:Text_1]"
@@ -3351,7 +3351,7 @@ msgstr "Mid probe in cylinder"
 #: 02_Main.otws
 msgctxt "[Mask:Set][Field:Text_4]"
 msgid "SET"
-msgstr "Water Temp - heat pump"
+msgstr "Water Temp - Heat Pump"
 
 #: 04_Settings.otws
 msgctxt "[Mask:Settings][Field:Text_1]"

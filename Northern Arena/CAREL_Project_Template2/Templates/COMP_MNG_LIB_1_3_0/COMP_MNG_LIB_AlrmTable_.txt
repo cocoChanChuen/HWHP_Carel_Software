@@ -1,0 +1,11 @@
+Version 1.1 Alarms RepoVersion 3.3.6
+Name	Type	Edge	Description	CounterMax	TimeValue	StorVar1	StorVar2
+Al_DscgHiTemp_COMP	User reset	Positive						
+Al_DscgLowP_COMP	User reset	Positive						
+Al_SuctHiP_COMP	User reset	Positive						
+Al_SuctLowP_COMP	User reset	Positive		3	60			
+Al_HiCurr_COMP	User reset	Positive						
+Al_HiRatioP_COMP	User reset	Positive						
+Al_LowRatioP_COMP	User reset	Positive						
+Al_LowDeltaP_COMP	User reset	Positive						
+Al_DscgHiP_COMP	User reset	Positive						

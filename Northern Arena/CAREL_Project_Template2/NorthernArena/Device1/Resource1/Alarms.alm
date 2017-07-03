@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Alarms UnitConversionZone="NoConversion">
+  <Alarm Name="Al_retain" Type="ManualReset" Trigger="Al_retain.Trigger" Active="Al_retain.Active" StorVar1="MemWritingsNo" Description="Error in the number of retain memory writings" />
+  <Alarm Name="Al_Err_retain_write" Type="ManualReset" Trigger="Al_Err_retain_write.Trigger" Active="Al_Err_retain_write.Active" Description="Error in retain memory writings" />
+  <Alarm Name="ProbeALM1" Type="ManualReset" Trigger="ProbeALM1.Trigger" Active="ProbeALM1.Active" Description="Error in Training Pool Temp Probe" />
+  <Alarm Name="ProbeALM2" Type="ManualReset" Trigger="ProbeALM2.Trigger" Active="ProbeALM2.Active" Description="Error in Teaching Pool Temp Probe" />
+  <Alarm Name="ProbeALM3" Type="ManualReset" Trigger="ProbeALM3.Trigger" Active="ProbeALM3.Active" Description="Error in Combined Pool Temp Probe" />
+  <Alarm Name="AuxContactUnit1Comp1_AL" Type="AutoReset" Trigger="AuxContactUnit1Comp1_AL.Trigger" Active="AuxContactUnit1Comp1_AL.Active" />
+  <Alarm Name="AuxContactUnit1Comp2_AL" Type="AutoReset" Trigger="AuxContactUnit1Comp2_AL.Trigger" Active="AuxContactUnit1Comp2_AL.Active" />
+  <Alarm Name="AuxContactUnit2Comp1_AL" Type="AutoReset" Trigger="AuxContactUnit2Comp1_AL.Trigger" Active="AuxContactUnit2Comp1_AL.Active" />
+  <Alarm Name="AuxContactUnit2Comp2_AL" Type="AutoReset" Trigger="AuxContactUnit2Comp2_AL.Trigger" Active="AuxContactUnit2Comp2_AL.Active" />
+  <Alarm Name="AL_TrainingUnderT" Type="AutoReset" Trigger="AL_TrainingUnderT.Trigger" Active="AL_TrainingUnderT.Active" />
+  <Alarm Name="AL_Teaching_UnderT" Type="AutoReset" Trigger="AL_Teaching_UnderT.Trigger" Active="AL_Teaching_UnderT.Active" />
+  <Alarm Name="AL_Combined_UnderT" Type="AutoReset" Trigger="AL_Combined_UnderT.Trigger" Active="AL_Combined_UnderT.Active" />
+</Alarms>

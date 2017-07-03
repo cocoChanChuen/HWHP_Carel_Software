@@ -1,0 +1,3537 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 14/04/2014 16:44:51\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ES\n"
+"Language-Id: 4\n"
+
+#: Classes.otsf
+msgctxt "[Class:AlarmLogDelete][Resource:0]"
+msgid "  NO"
+msgstr "  NO"
+
+#: Classes.otsf
+msgctxt "[Class:AlarmLogDelete][Resource:1]"
+msgid " YES"
+msgstr "  SI"
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:0]"
+msgid "Too many mem writings"
+msgstr "Demasiados registros  en la memoria"
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:1]"
+msgid "Retain mem write error"
+msgstr "Error escritur.memoria"
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:2]"
+msgid "Probe1 Error Training"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:3]"
+msgid "Probe2 Error Teaching"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:4]"
+msgid "Probe3 Error Combined"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:5]"
+msgid "Unit1 Comp1 Error"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:6]"
+msgid "Unit1 Comp2 Error"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:7]"
+msgid "Unit2 Comp1 Error"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:8]"
+msgid "Unit2 Comp2 Error"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:9]"
+msgid "Training Pool Temp"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:10]"
+msgid "Teaching Pool Temp"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmDescr][Resource:11]"
+msgid "Combined Pool Temp"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmLogEvent][Resource:0]"
+msgid "Start"
+msgstr "Start"
+
+#: Classes.otsf
+msgctxt "[Class:AlrmLogEvent][Resource:1]"
+msgid " Stop"
+msgstr "Stop"
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:0]"
+msgid "AL*01"
+msgstr "AL*01"
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:1]"
+msgid "AL*02"
+msgstr "AL*02"
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:2]"
+msgid "AL*03"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:3]"
+msgid "AL*04"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:4]"
+msgid "AL*05"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:5]"
+msgid "AL*06"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:6]"
+msgid "AL*07"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:7]"
+msgid "AL*08"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:8]"
+msgid "AL*09"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:9]"
+msgid "AL*10"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:10]"
+msgid "AL*11"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:AlrmNo][Resource:11]"
+msgid "AL*12"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:Beta][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:Beta][Resource:1]"
+msgid "B"
+msgstr "B"
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:1]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:2]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:3]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:4]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:5]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:6]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:7]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:8]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:9]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:10]"
+msgid "     Large"
+msgstr "     Large"
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:11]"
+msgid "    Medium"
+msgstr "    Medium"
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:12]"
+msgid "     Small"
+msgstr "     Small"
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:13]"
+msgid "        XL"
+msgstr "        XL"
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:14]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:15]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:16]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:17]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:18]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:19]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:20]"
+msgid "     Basic"
+msgstr "     Basic"
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:21]"
+msgid "  Enhanced"
+msgstr "  Enhanced"
+
+#: Classes.otsf
+msgctxt "[Class:BoardType][Resource:22]"
+msgid "  High End"
+msgstr "  High End"
+
+#: Classes.otsf
+msgctxt "[Class:Bool_TF][Resource:0]"
+msgid "FALSE"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:Bool_TF][Resource:1]"
+msgid "TRUE"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Copy_BoolGenericClass][Resource:0]"
+msgctxt "[Class:BoolGenericClass][Resource:0]"
+msgid "  NO"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Copy_BoolGenericClass][Resource:1]"
+msgctxt "[Class:BoolGenericClass][Resource:1]"
+msgid " YES"
+msgstr "  SI"
+
+#: Classes.otsf
+msgctxt "[Class:ClrAutoResCounters][Resource:0]"
+msgid "  NO"
+msgstr "  NO"
+
+#: Classes.otsf
+msgctxt "[Class:ClrAutoResCounters][Resource:1]"
+msgid " YES"
+msgstr "  SI"
+
+#: Classes.otsf
+msgctxt "[Class:DateFormat][Resource:0]"
+msgid "DD/MM/YY"
+msgstr "DD/MM/YY"
+
+#: Classes.otsf
+msgctxt "[Class:DateFormat][Resource:1]"
+msgid "MM/DD/YY"
+msgstr "MM/DD/YY"
+
+#: Classes.otsf
+msgctxt "[Class:DateFormat][Resource:2]"
+msgid "YY/MM/DD"
+msgstr "YY/MM/DD"
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeek][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeek][Resource:1]"
+msgid "   Monday"
+msgstr "     Lunes"
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeek][Resource:2]"
+msgid "  Tuesday"
+msgstr "    Martes"
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeek][Resource:3]"
+msgid "Wednesday"
+msgstr " Miercoles"
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeek][Resource:4]"
+msgid " Thursday"
+msgstr "    Jueves"
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeek][Resource:5]"
+msgid "   Friday"
+msgstr "   Viernes"
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeek][Resource:6]"
+msgid " Saturday"
+msgstr "    Sabado"
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeek][Resource:7]"
+msgid "   Sunday"
+msgstr "   Domingo"
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeekShort][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeekShort][Resource:1]"
+msgid "Mon"
+msgstr "Lun"
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeekShort][Resource:2]"
+msgid "Tue"
+msgstr "Mart "
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeekShort][Resource:3]"
+msgid "Wed"
+msgstr "Mierc "
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeekShort][Resource:4]"
+msgid "Thu"
+msgstr "Jue "
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeekShort][Resource:5]"
+msgid "Fri"
+msgstr "Vier "
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeekShort][Resource:6]"
+msgid "Sat"
+msgstr "Sab "
+
+#: Classes.otsf
+msgctxt "[Class:DayOfWeekShort][Resource:7]"
+msgid "Sun"
+msgstr "Dom "
+
+#: Classes.otsf
+msgctxt "[Class:Demo][ClassText:Text]"
+msgid "."
+msgstr "."
+
+#: Classes.otsf
+msgctxt "[Class:DriveType][Resource:0]"
+msgid "INTERNAL FLASH MEMORY"
+msgstr "MEMORIA FLASH INTERNA"
+
+#: Classes.otsf
+msgctxt "[Class:DriveType][Resource:1]"
+msgid "USB "
+msgstr "USB"
+
+#: Classes.otsf
+msgctxt "[Class:DSTEn][Resource:0]"
+msgid "DISABLE"
+msgstr "Deshabilitado"
+
+#: Classes.otsf
+msgctxt "[Class:DSTEn][Resource:1]"
+msgid " ENABLE"
+msgstr "Habilitado"
+
+#: Classes.otsf
+msgctxt "[Class:DummyManuf][ClassText:Text]"
+msgid "M"
+msgstr "F"
+
+#: Classes.otsf
+msgctxt "[Class:DummyManufUnitOff][ClassText:Text]"
+msgid "M"
+msgstr "F"
+
+#: Classes.otsf
+msgctxt "[Class:DummyService][ClassText:Text]"
+msgid "S"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:AlrmExpEn][Resource:0]"
+msgctxt "[Class:EnAlrmExp][Resource:0]"
+msgid "NO"
+msgstr "  NO"
+
+#: Classes.otsf
+#| msgctxt "[Class:AlrmExpEn][Resource:1]"
+msgctxt "[Class:EnAlrmExp][Resource:1]"
+msgid "YES"
+msgstr "  SI"
+
+#: Classes.otsf
+#| msgctxt "[Class:ImpExpEn][Resource:0]"
+msgctxt "[Class:EnParamsImpExp][Resource:0]"
+msgid "NO"
+msgstr "NO"
+
+#: Classes.otsf
+#| msgctxt "[Class:ImpExpEn][Resource:1]"
+msgctxt "[Class:EnParamsImpExp][Resource:1]"
+msgid "YES"
+msgstr "SI"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:0]"
+msgctxt "[Class:ErrImpExp][Resource:0]"
+msgid "Operation done"
+msgstr "Operacion hecha"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:1]"
+msgctxt "[Class:ErrImpExp][Resource:1]"
+msgid "Filename is not valid"
+msgstr "Nombre archivo incorr."
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:2]"
+msgctxt "[Class:ErrImpExp][Resource:2]"
+msgid "Cannot access disk"
+msgstr "Disco no accesible"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:3]"
+msgctxt "[Class:ErrImpExp][Resource:3]"
+msgid "Cannot access file"
+msgstr "Archivo no accesible"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:4]"
+msgctxt "[Class:ErrImpExp][Resource:4]"
+msgid "File I/O error"
+msgstr "Error archivo I/O"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:5]"
+msgctxt "[Class:ErrImpExp][Resource:5]"
+msgid "File is not valid"
+msgstr "Archivo invalido"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:6]"
+msgctxt "[Class:ErrImpExp][Resource:6]"
+msgid "Value is not valid"
+msgstr "Valor invalido"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:7]"
+msgctxt "[Class:ErrImpExp][Resource:7]"
+msgid "Memory buffer is too small"
+msgstr "Buffer memoria insufi."
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:8]"
+msgctxt "[Class:ErrImpExp][Resource:8]"
+msgid "File is empty"
+msgstr "Archivo vacio"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:9]"
+msgctxt "[Class:ErrImpExp][Resource:9]"
+msgid "Time parameters are not correct"
+msgstr "Param.tiemp.incorrecto"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:10]"
+msgctxt "[Class:ErrImpExp][Resource:10]"
+msgid "Module is currently busy – retry is required"
+msgstr "Modulo ocupado - Se requiere un reintento"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:11]"
+msgctxt "[Class:ErrImpExp][Resource:11]"
+msgid "Logger is not running"
+msgstr "Logger no en ejecuci."
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:12]"
+msgctxt "[Class:ErrImpExp][Resource:12]"
+msgid "Log exporting failed"
+msgstr "Fallo en export log"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:13]"
+msgctxt "[Class:ErrImpExp][Resource:13]"
+msgid "Input parameter value is not valid"
+msgstr "Param.entrada invalido"
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:14]"
+msgctxt "[Class:ErrImpExp][Resource:14]"
+msgid "Function not implemented on the target"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:15]"
+msgctxt "[Class:ErrImpExp][Resource:15]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:16]"
+msgctxt "[Class:ErrImpExp][Resource:16]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:17]"
+msgctxt "[Class:ErrImpExp][Resource:17]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:18]"
+msgctxt "[Class:ErrImpExp][Resource:18]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:19]"
+msgctxt "[Class:ErrImpExp][Resource:19]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:20]"
+msgctxt "[Class:ErrImpExp][Resource:20]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:21]"
+msgctxt "[Class:ErrImpExp][Resource:21]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:22]"
+msgctxt "[Class:ErrImpExp][Resource:22]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:23]"
+msgctxt "[Class:ErrImpExp][Resource:23]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:24]"
+msgctxt "[Class:ErrImpExp][Resource:24]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:25]"
+msgctxt "[Class:ErrImpExp][Resource:25]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:26]"
+msgctxt "[Class:ErrImpExp][Resource:26]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:27]"
+msgctxt "[Class:ErrImpExp][Resource:27]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:28]"
+msgctxt "[Class:ErrImpExp][Resource:28]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:29]"
+msgctxt "[Class:ErrImpExp][Resource:29]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:30]"
+msgctxt "[Class:ErrImpExp][Resource:30]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:31]"
+msgctxt "[Class:ErrImpExp][Resource:31]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:32]"
+msgctxt "[Class:ErrImpExp][Resource:32]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:33]"
+msgctxt "[Class:ErrImpExp][Resource:33]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:34]"
+msgctxt "[Class:ErrImpExp][Resource:34]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:35]"
+msgctxt "[Class:ErrImpExp][Resource:35]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:36]"
+msgctxt "[Class:ErrImpExp][Resource:36]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:37]"
+msgctxt "[Class:ErrImpExp][Resource:37]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:38]"
+msgctxt "[Class:ErrImpExp][Resource:38]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:39]"
+msgctxt "[Class:ErrImpExp][Resource:39]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:40]"
+msgctxt "[Class:ErrImpExp][Resource:40]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:41]"
+msgctxt "[Class:ErrImpExp][Resource:41]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:42]"
+msgctxt "[Class:ErrImpExp][Resource:42]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:43]"
+msgctxt "[Class:ErrImpExp][Resource:43]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:44]"
+msgctxt "[Class:ErrImpExp][Resource:44]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:45]"
+msgctxt "[Class:ErrImpExp][Resource:45]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:46]"
+msgctxt "[Class:ErrImpExp][Resource:46]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:47]"
+msgctxt "[Class:ErrImpExp][Resource:47]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:48]"
+msgctxt "[Class:ErrImpExp][Resource:48]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:49]"
+msgctxt "[Class:ErrImpExp][Resource:49]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:50]"
+msgctxt "[Class:ErrImpExp][Resource:50]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:51]"
+msgctxt "[Class:ErrImpExp][Resource:51]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:52]"
+msgctxt "[Class:ErrImpExp][Resource:52]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:53]"
+msgctxt "[Class:ErrImpExp][Resource:53]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:54]"
+msgctxt "[Class:ErrImpExp][Resource:54]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:55]"
+msgctxt "[Class:ErrImpExp][Resource:55]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:56]"
+msgctxt "[Class:ErrImpExp][Resource:56]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:57]"
+msgctxt "[Class:ErrImpExp][Resource:57]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:58]"
+msgctxt "[Class:ErrImpExp][Resource:58]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:59]"
+msgctxt "[Class:ErrImpExp][Resource:59]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:60]"
+msgctxt "[Class:ErrImpExp][Resource:60]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:61]"
+msgctxt "[Class:ErrImpExp][Resource:61]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:62]"
+msgctxt "[Class:ErrImpExp][Resource:62]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:63]"
+msgctxt "[Class:ErrImpExp][Resource:63]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:64]"
+msgctxt "[Class:ErrImpExp][Resource:64]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:65]"
+msgctxt "[Class:ErrImpExp][Resource:65]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:66]"
+msgctxt "[Class:ErrImpExp][Resource:66]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:67]"
+msgctxt "[Class:ErrImpExp][Resource:67]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:68]"
+msgctxt "[Class:ErrImpExp][Resource:68]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:69]"
+msgctxt "[Class:ErrImpExp][Resource:69]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:70]"
+msgctxt "[Class:ErrImpExp][Resource:70]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:71]"
+msgctxt "[Class:ErrImpExp][Resource:71]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:72]"
+msgctxt "[Class:ErrImpExp][Resource:72]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:73]"
+msgctxt "[Class:ErrImpExp][Resource:73]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:74]"
+msgctxt "[Class:ErrImpExp][Resource:74]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:75]"
+msgctxt "[Class:ErrImpExp][Resource:75]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:76]"
+msgctxt "[Class:ErrImpExp][Resource:76]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:77]"
+msgctxt "[Class:ErrImpExp][Resource:77]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:78]"
+msgctxt "[Class:ErrImpExp][Resource:78]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:79]"
+msgctxt "[Class:ErrImpExp][Resource:79]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:80]"
+msgctxt "[Class:ErrImpExp][Resource:80]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:81]"
+msgctxt "[Class:ErrImpExp][Resource:81]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:82]"
+msgctxt "[Class:ErrImpExp][Resource:82]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:83]"
+msgctxt "[Class:ErrImpExp][Resource:83]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:84]"
+msgctxt "[Class:ErrImpExp][Resource:84]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:85]"
+msgctxt "[Class:ErrImpExp][Resource:85]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:86]"
+msgctxt "[Class:ErrImpExp][Resource:86]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:87]"
+msgctxt "[Class:ErrImpExp][Resource:87]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:88]"
+msgctxt "[Class:ErrImpExp][Resource:88]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:89]"
+msgctxt "[Class:ErrImpExp][Resource:89]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:90]"
+msgctxt "[Class:ErrImpExp][Resource:90]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:91]"
+msgctxt "[Class:ErrImpExp][Resource:91]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:92]"
+msgctxt "[Class:ErrImpExp][Resource:92]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:93]"
+msgctxt "[Class:ErrImpExp][Resource:93]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:94]"
+msgctxt "[Class:ErrImpExp][Resource:94]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:95]"
+msgctxt "[Class:ErrImpExp][Resource:95]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:96]"
+msgctxt "[Class:ErrImpExp][Resource:96]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:97]"
+msgctxt "[Class:ErrImpExp][Resource:97]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:98]"
+msgctxt "[Class:ErrImpExp][Resource:98]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:ErrParamImpExp][Resource:99]"
+msgctxt "[Class:ErrImpExp][Resource:99]"
+msgid "Unknown/uncategorized error"
+msgstr "Error desconocido"
+
+#: Classes.otsf
+msgctxt "[Class:IdxImgQM][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:ImpExpSel][Resource:0]"
+msgid "IMPORT"
+msgstr "IMPORTAR"
+
+#: Classes.otsf
+msgctxt "[Class:ImpExpSel][Resource:1]"
+msgid "EXPORT"
+msgstr "EXPORTAR"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtBOTTOM][Resource:0]"
+msgid "C. Device n"
+msgstr "C.Dispositivo n"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtBOTTOM][Resource:1]"
+msgid "D. Unit Config"
+msgstr "D.Config unidad"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtBOTTOM][Resource:2]"
+msgid "E. Alarm logs"
+msgstr "E.Alarmas logs"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtBOTTOM][Resource:3]"
+msgid "F. Settings"
+msgstr "F.Configuracion"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtBOTTOM][Resource:4]"
+msgid "G. Logout"
+msgstr "G.Salir"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtBOTTOM][Resource:5]"
+msgid "Logout"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtMIDDLE][Resource:0]"
+msgid "B. Device 2"
+msgstr "B.Dispositivo 2"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtMIDDLE][Resource:1]"
+msgid "C. Device n"
+msgstr "C.Dispositivo n"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtMIDDLE][Resource:2]"
+msgid "D. Unit Config"
+msgstr "D.Config unidad"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtMIDDLE][Resource:3]"
+msgid "E. Alarm logs"
+msgstr "E.Alarmas logs"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtMIDDLE][Resource:4]"
+msgid "F. Settings"
+msgstr "F.Configuracion"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtMIDDLE][Resource:5]"
+msgid "G. Logout"
+msgstr "G.Salir"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtMIDDLE][Resource:6]"
+msgid "Logout"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtTOP][Resource:0]"
+msgid "A. Device 1"
+msgstr "A.Dispositivo 1"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtTOP][Resource:1]"
+msgid "B. Device 2"
+msgstr "B.Dispositivo 2"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtTOP][Resource:2]"
+msgid "C. Device n"
+msgstr "C.Dispositivo n"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtTOP][Resource:3]"
+msgid "D. Unit Config"
+msgstr "D.Config unidad"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtTOP][Resource:4]"
+msgid "E. Alarm logs"
+msgstr "E.Alarmas logs"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtTOP][Resource:5]"
+msgid "F. Settings"
+msgstr "F.Configuracion"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtTOP][Resource:6]"
+msgid "G. Logout"
+msgstr "G.Salir"
+
+#: Classes.otsf
+msgctxt "[Class:MainTxtTOP][Resource:7]"
+msgid "Logout"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:1]"
+msgid "JANUARY"
+msgstr "ENERO"
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:2]"
+msgid "FEBRUARY"
+msgstr "FEBRERO"
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:3]"
+msgid "MARCH"
+msgstr "MARZO"
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:4]"
+msgid "APRIL"
+msgstr "ABRIL"
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:5]"
+msgid "MAY"
+msgstr "MAYO"
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:6]"
+msgid "JUNE"
+msgstr "JUNIO"
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:7]"
+msgid "JULY"
+msgstr "JULIO"
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:8]"
+msgid "AUGUST"
+msgstr "AGOSTO"
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:9]"
+msgid "SEPTEMBER"
+msgstr "SEPTIEMBRE"
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:10]"
+msgid "OCTOBER"
+msgstr "OCTUBRE"
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:11]"
+msgid "NOVEMBER"
+msgstr "NOVIEMBRE"
+
+#: Classes.otsf
+msgctxt "[Class:Month][Resource:12]"
+msgid "DICEMBER"
+msgstr "DICIEMBRE"
+
+#: Classes.otsf
+msgctxt "[Class:NameVar1][Resource:0]"
+msgid "Memory writes:"
+msgstr "Escritura mem:"
+
+#: Classes.otsf
+msgctxt "[Class:NameVar1][Resource:1]"
+msgid "Example1:"
+msgstr "Ejemplo1:"
+
+#: Classes.otsf
+msgctxt "[Class:NameVar1][Resource:2]"
+msgid "Example1:"
+msgstr "Ejemplo1:"
+
+#: Classes.otsf
+msgctxt "[Class:NameVar1][Resource:3]"
+msgid "Example1:"
+msgstr "Ejemplo1:"
+
+#: Classes.otsf
+msgctxt "[Class:NameVar1][Resource:4]"
+msgid "Example1:"
+msgstr "Ejemplo1:"
+
+#: Classes.otsf
+msgctxt "[Class:NameVar2][Resource:0]"
+msgid "Example2:"
+msgstr "Ejemplo2:"
+
+#: Classes.otsf
+msgctxt "[Class:NameVar2][Resource:1]"
+msgid "Example2:"
+msgstr "Ejemplo2:"
+
+#: Classes.otsf
+msgctxt "[Class:NameVar2][Resource:2]"
+msgid "Example2:"
+msgstr "Ejemplo2:"
+
+#: Classes.otsf
+msgctxt "[Class:NameVar2][Resource:3]"
+msgid "Example2:"
+msgstr "Ejemplo2:"
+
+#: Classes.otsf
+msgctxt "[Class:NameVar2][Resource:4]"
+msgid "Example2:"
+msgstr "Ejemplo2:"
+
+#: Classes.otsf
+msgctxt "[Class:Parity][Resource:0]"
+msgid "None"
+msgstr "None"
+
+#: Classes.otsf
+msgctxt "[Class:Parity][Resource:1]"
+msgid "Odd"
+msgstr "Odd"
+
+#: Classes.otsf
+msgctxt "[Class:Parity][Resource:2]"
+msgid "Even"
+msgstr "Even"
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:1]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:2]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:3]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:4]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:5]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:6]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:7]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:8]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:9]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:10]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:11]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:12]"
+msgid "     c.pCO"
+msgstr "     c.pCO"
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:13]"
+msgid ""
+msgstr "       uPC"
+
+#: Classes.otsf
+msgctxt "[Class:pCO_Type][Resource:14]"
+msgid "c.pCO mini"
+msgstr "c.pCO mini"
+
+#: Classes.otsf
+#| msgctxt "[Class:Pressure_UoM][Resource:0]"
+msgctxt "[Class:Pressure_bar_UoM][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Pressure_UoM][Resource:1]"
+msgctxt "[Class:Pressure_bar_UoM][Resource:1]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Pressure_UoM][Resource:2]"
+msgctxt "[Class:Pressure_bar_UoM][Resource:2]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Pressure_UoM][Resource:3]"
+msgctxt "[Class:Pressure_bar_UoM][Resource:3]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Pressure_UoM][Resource:4]"
+msgctxt "[Class:Pressure_bar_UoM][Resource:4]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Pressure_UoM][Resource:5]"
+msgctxt "[Class:Pressure_bar_UoM][Resource:5]"
+msgid "-"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Pressure_UoM][Resource:6]"
+msgctxt "[Class:Pressure_bar_UoM][Resource:6]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:PwdChgM][ClassText:Text]"
+msgid "Manufact:"
+msgstr "Fabricante:"
+
+#: Classes.otsf
+msgctxt "[Class:PwdChgS][ClassText:Text]"
+msgid "Service:"
+msgstr "Servicio:"
+
+#: Classes.otsf
+msgctxt "[Class:PwdChgU][ClassText:Text]"
+msgid "User:"
+msgstr "Usuario:"
+
+#: Classes.otsf
+msgctxt "[Class:PwdRes][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:PwdRes][Resource:1]"
+msgid "Wrong Password! "
+msgstr "Contrasena incorrecta!"
+
+#: Classes.otsf
+msgctxt "[Class:PwdType][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:PwdType][Resource:1]"
+msgid "user"
+msgstr "usuario"
+
+#: Classes.otsf
+msgctxt "[Class:PwdType][Resource:2]"
+msgid "service"
+msgstr "servicio"
+
+#: Classes.otsf
+msgctxt "[Class:PwdType][Resource:3]"
+msgid "manufacturer"
+msgstr "fabricante"
+
+#: Classes.otsf
+msgctxt "[Class:SetTimeZone][Resource:0]"
+msgid " NO"
+msgstr "  NO"
+
+#: Classes.otsf
+msgctxt "[Class:SetTimeZone][Resource:1]"
+msgid "YES"
+msgstr "  SI"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtBOTTOM][Resource:0]"
+msgid "Serial Ports"
+msgstr "Puertos seriales"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtBOTTOM][Resource:1]"
+msgid "Pwd Change"
+msgstr "Cambiar contraseîa"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtBOTTOM][Resource:2]"
+msgid "Initilization"
+msgstr "Inicializacion"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtBOTTOM][Resource:3]"
+msgid "UoM"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtMIDDLE][Resource:0]"
+msgid "Language"
+msgstr "Idioma"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtMIDDLE][Resource:1]"
+msgid "Serial Ports"
+msgstr "Puertos seriales"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtMIDDLE][Resource:2]"
+msgid "Pwd Change"
+msgstr "Cambiar contraseîa"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtMIDDLE][Resource:3]"
+msgid "Initilization"
+msgstr "Inicializacion"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtMIDDLE][Resource:4]"
+msgid "UoM"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtTOP][Resource:0]"
+msgid "Date/Time"
+msgstr "Fecha/Hora"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtTOP][Resource:1]"
+msgid "Language"
+msgstr "Idioma"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtTOP][Resource:2]"
+msgid "Serial Ports"
+msgstr "Puertos seriales"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtTOP][Resource:3]"
+msgid "Pwd Change"
+msgstr "Cambiar contraseîa"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtTOP][Resource:4]"
+msgid "Initilization"
+msgstr "Inicializacion"
+
+#: Classes.otsf
+msgctxt "[Class:SettingsTxtTOP][Resource:5]"
+msgid "UoM"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:StopBit][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:StopBit][Resource:1]"
+msgid "1"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:StopBit][Resource:2]"
+msgid "2"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Temperature_UoM][Resource:0]"
+msgctxt "[Class:Temperature_C_UoM][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Temperature_UoM][Resource:1]"
+msgctxt "[Class:Temperature_C_UoM][Resource:1]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Temperature_UoM][Resource:2]"
+msgctxt "[Class:Temperature_C_UoM][Resource:2]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Temperature_UoM][Resource:3]"
+msgctxt "[Class:Temperature_C_UoM][Resource:3]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Temperature_UoM][Resource:4]"
+msgctxt "[Class:Temperature_C_UoM][Resource:4]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Temperature_UoM][Resource:5]"
+msgctxt "[Class:Temperature_C_UoM][Resource:5]"
+msgid "-"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Temperature_UoM][Resource:6]"
+msgctxt "[Class:Temperature_C_UoM][Resource:6]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:0]"
+msgctxt "[Class:TimeZoneUI][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:1]"
+msgctxt "[Class:TimeZoneUI][Resource:1]"
+msgid "GMT+12"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:2]"
+msgctxt "[Class:TimeZoneUI][Resource:2]"
+msgid "GMT+11"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:3]"
+msgctxt "[Class:TimeZoneUI][Resource:3]"
+msgid "HONOLULU"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:4]"
+msgctxt "[Class:TimeZoneUI][Resource:4]"
+msgid "ANCHORAGE"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:5]"
+msgctxt "[Class:TimeZoneUI][Resource:5]"
+msgid "SANTA ISABEL"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:6]"
+msgctxt "[Class:TimeZoneUI][Resource:6]"
+msgid "LOS ANGELES"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:7]"
+msgctxt "[Class:TimeZoneUI][Resource:7]"
+msgid "PHOENIX"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:8]"
+msgctxt "[Class:TimeZoneUI][Resource:8]"
+msgid "CHIHUAHUA"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:9]"
+msgctxt "[Class:TimeZoneUI][Resource:9]"
+msgid "DENVER"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:10]"
+msgctxt "[Class:TimeZoneUI][Resource:10]"
+msgid "GUATEMALA"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:11]"
+msgctxt "[Class:TimeZoneUI][Resource:11]"
+msgid "CHICAGO"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:12]"
+msgctxt "[Class:TimeZoneUI][Resource:12]"
+msgid "MEXICO CITY"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:13]"
+msgctxt "[Class:TimeZoneUI][Resource:13]"
+msgid "REGINA"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:14]"
+msgctxt "[Class:TimeZoneUI][Resource:14]"
+msgid "BOGOTA"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:15]"
+msgctxt "[Class:TimeZoneUI][Resource:15]"
+msgid "NEW YORK"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:16]"
+msgctxt "[Class:TimeZoneUI][Resource:16]"
+msgid "INDIANAPOLIS"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:17]"
+msgctxt "[Class:TimeZoneUI][Resource:17]"
+msgid "CARACAS"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:18]"
+msgctxt "[Class:TimeZoneUI][Resource:18]"
+msgid "ASUNCION"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:19]"
+msgctxt "[Class:TimeZoneUI][Resource:19]"
+msgid "HALIFAX"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:20]"
+msgctxt "[Class:TimeZoneUI][Resource:20]"
+msgid "CUIABA"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:21]"
+msgctxt "[Class:TimeZoneUI][Resource:21]"
+msgid "LA PAZ"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:22]"
+msgctxt "[Class:TimeZoneUI][Resource:22]"
+msgid "SANTIAGO"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:23]"
+msgctxt "[Class:TimeZoneUI][Resource:23]"
+msgid "ST JOHNS"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:24]"
+msgctxt "[Class:TimeZoneUI][Resource:24]"
+msgid "SAO PAULO"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:25]"
+msgctxt "[Class:TimeZoneUI][Resource:25]"
+msgid "BUENOS AIRES"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:26]"
+msgctxt "[Class:TimeZoneUI][Resource:26]"
+msgid "CAYENNE"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:27]"
+msgctxt "[Class:TimeZoneUI][Resource:27]"
+msgid "GODTHAB"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:28]"
+msgctxt "[Class:TimeZoneUI][Resource:28]"
+msgid "MONTEVIDEO"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:29]"
+msgctxt "[Class:TimeZoneUI][Resource:29]"
+msgid "BAHIA"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:30]"
+msgctxt "[Class:TimeZoneUI][Resource:30]"
+msgid "GMT+2"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:31]"
+msgctxt "[Class:TimeZoneUI][Resource:31]"
+msgid "MID-ATLANTIC STANDARD TIME"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:32]"
+msgctxt "[Class:TimeZoneUI][Resource:32]"
+msgid "AZORES"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:33]"
+msgctxt "[Class:TimeZoneUI][Resource:33]"
+msgid "CAPE VERDE"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:34]"
+msgctxt "[Class:TimeZoneUI][Resource:34]"
+msgid "CASABLANCA"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:35]"
+msgctxt "[Class:TimeZoneUI][Resource:35]"
+msgid "GMT"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:36]"
+msgctxt "[Class:TimeZoneUI][Resource:36]"
+msgid "LONDON"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:37]"
+msgctxt "[Class:TimeZoneUI][Resource:37]"
+msgid "REYKJAVIK"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:38]"
+msgctxt "[Class:TimeZoneUI][Resource:38]"
+msgid "BERLIN"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:39]"
+msgctxt "[Class:TimeZoneUI][Resource:39]"
+msgid "BUDAPEST"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:40]"
+msgctxt "[Class:TimeZoneUI][Resource:40]"
+msgid "PARIS"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:41]"
+msgctxt "[Class:TimeZoneUI][Resource:41]"
+msgid "WARSAW"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:42]"
+msgctxt "[Class:TimeZoneUI][Resource:42]"
+msgid "LAGOS"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:43]"
+msgctxt "[Class:TimeZoneUI][Resource:43]"
+msgid "WINDHOEK"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:44]"
+msgctxt "[Class:TimeZoneUI][Resource:44]"
+msgid "AMMAN"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:45]"
+msgctxt "[Class:TimeZoneUI][Resource:45]"
+msgid "BUCHAREST"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:46]"
+msgctxt "[Class:TimeZoneUI][Resource:46]"
+msgid "BEIRUT"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:47]"
+msgctxt "[Class:TimeZoneUI][Resource:47]"
+msgid "CAIRO"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:48]"
+msgctxt "[Class:TimeZoneUI][Resource:48]"
+msgid "DAMASCUS"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:49]"
+msgctxt "[Class:TimeZoneUI][Resource:49]"
+msgid "E.EUROPE STANDARD TIME"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:50]"
+msgctxt "[Class:TimeZoneUI][Resource:50]"
+msgid "JOHANNESBURG"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:51]"
+msgctxt "[Class:TimeZoneUI][Resource:51]"
+msgid "KIEV"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:52]"
+msgctxt "[Class:TimeZoneUI][Resource:52]"
+msgid "ISTANBUL"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:53]"
+msgctxt "[Class:TimeZoneUI][Resource:53]"
+msgid "JERUSALEM"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:54]"
+msgctxt "[Class:TimeZoneUI][Resource:54]"
+msgid "TRIPOLI"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:55]"
+msgctxt "[Class:TimeZoneUI][Resource:55]"
+msgid "BAGHDAD"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:56]"
+msgctxt "[Class:TimeZoneUI][Resource:56]"
+msgid "KALININGRAD"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:57]"
+msgctxt "[Class:TimeZoneUI][Resource:57]"
+msgid "RIYADH"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:58]"
+msgctxt "[Class:TimeZoneUI][Resource:58]"
+msgid "NAIROBI"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:59]"
+msgctxt "[Class:TimeZoneUI][Resource:59]"
+msgid "TEHRAN"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:60]"
+msgctxt "[Class:TimeZoneUI][Resource:60]"
+msgid "DUBAI"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:61]"
+msgctxt "[Class:TimeZoneUI][Resource:61]"
+msgid "BAKU"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:62]"
+msgctxt "[Class:TimeZoneUI][Resource:62]"
+msgid "MOSCOW"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:63]"
+msgctxt "[Class:TimeZoneUI][Resource:63]"
+msgid "MAURITIUS"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:64]"
+msgctxt "[Class:TimeZoneUI][Resource:64]"
+msgid "TBILISI"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:65]"
+msgctxt "[Class:TimeZoneUI][Resource:65]"
+msgid "YEREVAN"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:66]"
+msgctxt "[Class:TimeZoneUI][Resource:66]"
+msgid "KABUL"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:67]"
+msgctxt "[Class:TimeZoneUI][Resource:67]"
+msgid "TASHKENT"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:68]"
+msgctxt "[Class:TimeZoneUI][Resource:68]"
+msgid "KARACHI"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:69]"
+msgctxt "[Class:TimeZoneUI][Resource:69]"
+msgid "CALCUTTA"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:70]"
+msgctxt "[Class:TimeZoneUI][Resource:70]"
+msgid "COLOMBO"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:71]"
+msgctxt "[Class:TimeZoneUI][Resource:71]"
+msgid "KATMANDU"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:72]"
+msgctxt "[Class:TimeZoneUI][Resource:72]"
+msgid "ALMATY"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:73]"
+msgctxt "[Class:TimeZoneUI][Resource:73]"
+msgid "DHAKA"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:74]"
+msgctxt "[Class:TimeZoneUI][Resource:74]"
+msgid "YEKATERINBURG"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:75]"
+msgctxt "[Class:TimeZoneUI][Resource:75]"
+msgid "RANGOON"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:76]"
+msgctxt "[Class:TimeZoneUI][Resource:76]"
+msgid "BANGKOK"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:77]"
+msgctxt "[Class:TimeZoneUI][Resource:77]"
+msgid "NOVOSIBIRSK"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:78]"
+msgctxt "[Class:TimeZoneUI][Resource:78]"
+msgid "SHANGHAI"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:79]"
+msgctxt "[Class:TimeZoneUI][Resource:79]"
+msgid "KRASNOYARSK"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:80]"
+msgctxt "[Class:TimeZoneUI][Resource:80]"
+msgid "SINGAPORE"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:81]"
+msgctxt "[Class:TimeZoneUI][Resource:81]"
+msgid "PERTH"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:82]"
+msgctxt "[Class:TimeZoneUI][Resource:82]"
+msgid "TAIPEI"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:83]"
+msgctxt "[Class:TimeZoneUI][Resource:83]"
+msgid "ULAANBAATAR"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:84]"
+msgctxt "[Class:TimeZoneUI][Resource:84]"
+msgid "IRKUTSK"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:85]"
+msgctxt "[Class:TimeZoneUI][Resource:85]"
+msgid "TOKYO"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:86]"
+msgctxt "[Class:TimeZoneUI][Resource:86]"
+msgid "SEOUL"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:87]"
+msgctxt "[Class:TimeZoneUI][Resource:87]"
+msgid "ADELAIDE"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:88]"
+msgctxt "[Class:TimeZoneUI][Resource:88]"
+msgid "DARWIN"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:89]"
+msgctxt "[Class:TimeZoneUI][Resource:89]"
+msgid "BRISBANE"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:90]"
+msgctxt "[Class:TimeZoneUI][Resource:90]"
+msgid "SYDNEY"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:91]"
+msgctxt "[Class:TimeZoneUI][Resource:91]"
+msgid "PORT MORESBY"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:92]"
+msgctxt "[Class:TimeZoneUI][Resource:92]"
+msgid "HOBART"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:93]"
+msgctxt "[Class:TimeZoneUI][Resource:93]"
+msgid "YAKUTSK"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:TimeZoneUI_1][Resource:94]"
+msgctxt "[Class:TimeZoneUI][Resource:94]"
+msgid "GUADALCANAL"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:UnitStatus][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:UnitStatus][Resource:1]"
+msgid "ON"
+msgstr "ON"
+
+#: Classes.otsf
+msgctxt "[Class:UnitStatus][Resource:2]"
+msgid "OFF BY ALARM"
+msgstr "OFF POR ALARMA"
+
+#: Classes.otsf
+msgctxt "[Class:UnitStatus][Resource:3]"
+msgid "OFF BY BMS"
+msgstr "OFF POR BMS"
+
+#: Classes.otsf
+msgctxt "[Class:UnitStatus][Resource:4]"
+msgid "OFF BY SCHED"
+msgstr "OFF POR PROGRAM."
+
+#: Classes.otsf
+msgctxt "[Class:UnitStatus][Resource:5]"
+msgid "OFF BY DI"
+msgstr "OFF POR DI"
+
+#: Classes.otsf
+msgctxt "[Class:UnitStatus][Resource:6]"
+msgid "OFF BY KEYBOARD"
+msgstr "OFF POR TECLADO"
+
+#: Classes.otsf
+msgctxt "[Class:UnitStatus][Resource:7]"
+msgid "IN MANUAL MODE"
+msgstr "EN MODO MANUAL"
+
+#: Classes.otsf
+#| msgctxt "[Class:UoM_Zone][Resource:0]"
+msgctxt "[Class:UoM_Zone_UI][Resource:0]"
+msgid "     No"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:UoM_Zone][Resource:1]"
+msgctxt "[Class:UoM_Zone_UI][Resource:1]"
+msgid "     SI"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:UoM_Zone][Resource:2]"
+msgctxt "[Class:UoM_Zone_UI][Resource:2]"
+msgid "    USA"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:UoM_Zone][Resource:3]"
+msgctxt "[Class:UoM_Zone_UI][Resource:3]"
+msgid "     UK"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:UoM_Zone][Resource:4]"
+msgctxt "[Class:UoM_Zone_UI][Resource:4]"
+msgid "    CAN"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:UoM_Zone][Resource:5]"
+msgctxt "[Class:UoM_Zone_UI][Resource:5]"
+msgid "    Lon"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:UoM_Zone][Resource:6]"
+msgctxt "[Class:UoM_Zone_UI][Resource:6]"
+msgid "SI(bar)"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Copy_UoM_Zone][Resource:0]"
+msgctxt "[Class:UoM_Zone_WEB][Resource:0]"
+msgid "     No"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Copy_UoM_Zone][Resource:1]"
+msgctxt "[Class:UoM_Zone_WEB][Resource:1]"
+msgid "     SI"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Copy_UoM_Zone][Resource:2]"
+msgctxt "[Class:UoM_Zone_WEB][Resource:2]"
+msgid "    USA"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Copy_UoM_Zone][Resource:3]"
+msgctxt "[Class:UoM_Zone_WEB][Resource:3]"
+msgid "     UK"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Copy_UoM_Zone][Resource:4]"
+msgctxt "[Class:UoM_Zone_WEB][Resource:4]"
+msgid "    CAN"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Copy_UoM_Zone][Resource:5]"
+msgctxt "[Class:UoM_Zone_WEB][Resource:5]"
+msgid "    Lon"
+msgstr ""
+
+#: Classes.otsf
+#| msgctxt "[Class:Copy_UoM_Zone][Resource:6]"
+msgctxt "[Class:UoM_Zone_WEB][Resource:6]"
+msgid "SI(bar)"
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:UserAccesMenu][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:UserAccesMenu][Resource:1]"
+msgid "User Password"
+msgstr "Contraseîa usuario"
+
+#: Classes.otsf
+msgctxt "[Class:UserAccesMenu][Resource:2]"
+msgid "Service Password"
+msgstr "Contraseîa servicio"
+
+#: Classes.otsf
+msgctxt "[Class:UserAccesMenu][Resource:3]"
+msgid "Manufacturer Password"
+msgstr "Contraseîa fabricante"
+
+#: Classes.otsf
+msgctxt "[Class:WeekD][Resource:0]"
+msgid "***"
+msgstr "***"
+
+#: Classes.otsf
+msgctxt "[Class:WeekD][Resource:1]"
+msgid "MONDAY"
+msgstr "LUNES"
+
+#: Classes.otsf
+msgctxt "[Class:WeekD][Resource:2]"
+msgid "TUESDAY"
+msgstr "MARTES"
+
+#: Classes.otsf
+msgctxt "[Class:WeekD][Resource:3]"
+msgid "WEDNESDAY"
+msgstr "MIERCOLES"
+
+#: Classes.otsf
+msgctxt "[Class:WeekD][Resource:4]"
+msgid "THURSDAY"
+msgstr "JUEVES"
+
+#: Classes.otsf
+msgctxt "[Class:WeekD][Resource:5]"
+msgid "FRIDAY"
+msgstr "VIERNES"
+
+#: Classes.otsf
+msgctxt "[Class:WeekD][Resource:6]"
+msgid "SATURDAY"
+msgstr "SABADO"
+
+#: Classes.otsf
+msgctxt "[Class:WeekD][Resource:7]"
+msgid "SUNDAY"
+msgstr "DOMINGO"
+
+#: Classes.otsf
+msgctxt "[Class:WeekM][Resource:0]"
+msgid "  LAST"
+msgstr " ULTIMO"
+
+#: Classes.otsf
+msgctxt "[Class:WeekM][Resource:1]"
+msgid " FIRST"
+msgstr "PRIMERO"
+
+#: Classes.otsf
+msgctxt "[Class:WeekM][Resource:2]"
+msgid "SECOND"
+msgstr "SEGUNDO"
+
+#: Classes.otsf
+msgctxt "[Class:WeekM][Resource:3]"
+msgid " THIRD"
+msgstr "TERCERO"
+
+#: Classes.otsf
+msgctxt "[Class:WeekM][Resource:4]"
+msgid "FOURTH"
+msgstr " CUARTO"
+
+#: Classes.otsf
+msgctxt "[Class:WipeMem][Resource:0]"
+msgid " NO"
+msgstr "  NO"
+
+#: Classes.otsf
+msgctxt "[Class:WipeMem][Resource:1]"
+msgid "YES"
+msgstr "  SI"
+
+#: Classes.otsf
+msgctxt "[Class:WipeMemConfirm][Resource:0]"
+msgid ""
+msgstr ""
+
+#: Classes.otsf
+msgctxt "[Class:WipeMemConfirm][Resource:1]"
+msgid "Press ENTER to confirm"
+msgstr "Prensa ENTER para camb"
+
+#: 03_Devices.otws
+msgctxt "[Mask:AlrmExp][Field:Text_3]"
+msgid "Memory type:"
+msgstr "Tipo de memoria:"
+
+#: 03_Devices.otws
+msgctxt "[Mask:AlrmExp][Field:Text_4]"
+msgid "File name:"
+msgstr "Nombre:"
+
+#: 03_Devices.otws
+msgctxt "[Mask:AlrmExp][Field:Text_5]"
+msgid "Confirm:"
+msgstr "Confirmar?"
+
+#: 03_Devices.otws
+msgctxt "[Mask:AlrmExp][Field:Text_6]"
+msgid "AL_EXPORT_"
+msgstr "AL_EXPORT_"
+
+#: 03_Devices.otws
+msgctxt "[Mask:AlrmExp][Field:Text_7]"
+msgid "Alarm Export"
+msgstr "Exportación alarma"
+
+#: 03_Devices.otws
+msgctxt "[Mask:AlrmExp][Field:Text_8]"
+msgid "Unit configuration"
+msgstr "Configuración unidad"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfgRes_Clone_1][Field:Text_1]"
+msgctxt "[Mask:AlrmExpRes][Field:Text_1]"
+msgid "Press ESC to back"
+msgstr "ESC para retroceder"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfgRes_Clone_1][Field:Text_2]"
+msgctxt "[Mask:AlrmExpRes][Field:Text_2]"
+msgid "Imp/Exp result"
+msgstr "Resultado de la operación"
+
+#: 04_Settings.otws
+msgctxt "[Mask:AlrmInit][Field:Text_1]"
+msgid "Delete alarm logs?"
+msgstr "Borrar logs alarmas?"
+
+#: 04_Settings.otws
+msgctxt "[Mask:AlrmInit][Field:Text_2]"
+msgid "Alarm initialization"
+msgstr "Inicializacion alarma"
+
+#: 04_Settings.otws
+msgctxt "[Mask:AlrmInit][Field:Text_3]"
+msgid "Initialization"
+msgstr "Inicializacion"
+
+#: 04_Settings.otws
+msgctxt "[Mask:AlrmInit][Field:Text_4]"
+msgid "Clear AutoReset "
+msgstr "Limpiar contadores "
+
+#: 04_Settings.otws
+msgctxt "[Mask:AlrmInit][Field:Text_5]"
+msgid "counters?"
+msgstr "AutoReset?"
+
+#: 04_Settings.otws
+msgctxt "[Mask:AlrmInit][Field:Text_6]"
+msgid " "
+msgstr ""
+
+#: 04_Settings.otws
+msgctxt "[Mask:AlrmInit][Field:Text_7]"
+msgid "Enable buzzer?"
+msgstr "Permitir zumbador?"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alarms_Active][Field:Field_1]"
+msgctxt "[Mask:Alrms_Active][Field:Field_1]"
+msgid "Alarms             /"
+msgstr "Alarmas            /"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alarms_Active][Field:Field_4]"
+msgctxt "[Mask:Alrms_Active][Field:Field_4]"
+msgid ":     /  /"
+msgstr ":     /  /"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alarms_Log][Field:Data_logger_1]"
+msgctxt "[Mask:Alrms_Log][Field:Data_logger_1]"
+msgid "  Record:"
+msgstr "Registro:"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alarms_Log][Field:Field_1]"
+msgctxt "[Mask:Alrms_Log][Field:Field_1]"
+msgid "Event:"
+msgstr "Evento:"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alarms_Log][Field:Field_5]"
+msgctxt "[Mask:Alrms_Log][Field:Field_5]"
+msgid "Data logger"
+msgstr "Reg. datos"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alarms_Log][Field:Text_1]"
+msgctxt "[Mask:Alrms_Log][Field:Text_1]"
+msgid " :     /  /"
+msgstr " :     /  /"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alarms_NoAlarms][Field:Field_1]"
+msgctxt "[Mask:Alrms_NoAlrms][Field:Field_1]"
+msgid "NO ALARMS"
+msgstr "NO ALARMAS"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alarms_NoAlarms][Field:Press_ENTER_1]"
+msgctxt "[Mask:Alrms_NoAlrms][Field:Press_ENTER_1]"
+msgid "Press ENTER"
+msgstr "Pulsar ENTER"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alarms_NoAlarms][Field:to_DATA_LOGGER_1]"
+msgctxt "[Mask:Alrms_NoAlrms][Field:to_DATA_LOGGER_1]"
+msgid "to DATA LOGGER"
+msgstr "para LOGGER DATOS"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alarms_NoLog][Field:Field_1]"
+msgctxt "[Mask:Alrms_NoLog][Field:Field_1]"
+msgid "Alarms History"
+msgstr "Historia alarmas"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alarms_NoLog][Field:NO_ACTIVE_ALAMRS_1]"
+msgctxt "[Mask:Alrms_NoLog][Field:NO_ACTIVE_ALAMRS_1]"
+msgid "NO LOGS"
+msgstr "NO LOGS"
+
+#: 01_Alrms.otws
+msgctxt "[Mask:Alrms_NoLog][Field:Text_1]"
+msgid " "
+msgstr ""
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alrms_DataLogger][Field:Field_1]"
+msgctxt "[Mask:Alrms_Res][Field:Field_1]"
+msgid "Press ALARM for 3s"
+msgstr "Pulsar ALARM durant"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alrms_DataLogger][Field:Field_2]"
+msgctxt "[Mask:Alrms_Res][Field:Field_2]"
+msgid "to reset all alarms"
+msgstr "3s para reset "
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alrms_DataLogger][Field:Field_3]"
+msgctxt "[Mask:Alrms_Res][Field:Field_3]"
+msgid "Alarms"
+msgstr "Alarmas"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alrms_DataLogger][Field:Press_ENTER_2]"
+msgctxt "[Mask:Alrms_Res][Field:Press_ENTER_2]"
+msgid "Press ENTER"
+msgstr "Pulsar ENTER"
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alrms_DataLogger][Field:Text_1]"
+msgctxt "[Mask:Alrms_Res][Field:Text_1]"
+msgid " "
+msgstr "alarmas "
+
+#: 01_Alrms.otws
+#| msgctxt "[Mask:Alrms_DataLogger][Field:to_DATA_LOGGER_2]"
+msgctxt "[Mask:Alrms_Res][Field:to_DATA_LOGGER_2]"
+msgid "to DATA LOGGER"
+msgstr "para registr. datos"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_1]"
+msgid "PowerOff time:"
+msgstr "Tiempo de apagado:"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_2]"
+msgid "/"
+msgstr "/"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_3]"
+msgid "/"
+msgstr "/"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_4]"
+msgid "Length last time off:"
+msgstr "Duracion ultimo off:"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_5]"
+msgid ":"
+msgstr ":"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_6]"
+msgid "Days    Hrs    Min"
+msgstr "Dias    Horas   Min"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_7]"
+msgid ":"
+msgstr ":"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_8]"
+msgid "Info"
+msgstr "Info"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_9]"
+msgid ":"
+msgstr ":"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_10]"
+msgid "/"
+msgstr "/"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_11]"
+msgid "/"
+msgstr "/"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_12]"
+msgid ":"
+msgstr ":"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_13]"
+msgid "Current time:"
+msgstr "Hora actual:"
+
+#: 02_Main.otws
+msgctxt "[Mask:Blackout][Field:Text_14]"
+msgid "Blackout info"
+msgstr "Info blackout"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:SetPoolTemp_Clone_2][Field:Text_1]"
+msgctxt "[Mask:Combine][Field:Text_1]"
+msgid "Set Pool Temperature"
+msgstr "Fijar"
+
+#: 02_Main.otws
+msgctxt "[Mask:Combine][Field:Text_2]"
+msgid "Higher Diff:       C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+msgctxt "[Mask:Combine][Field:Text_3]"
+msgid "Lower Diff:        C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+msgctxt "[Mask:Combine][Field:Text_4]"
+msgid "Set Point:         C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+msgctxt "[Mask:Combine][Field:Text_6]"
+msgid "On / Off : "
+msgstr "FIJAR"
+
+#: 03_Devices.otws
+msgctxt "[Mask:CombinedPool][Field:Text]"
+msgid "Pool Temp:           c"
+msgstr ""
+
+#: 03_Devices.otws
+msgctxt "[Mask:CombinedPool][Field:Text_2]"
+msgid "Probe OffSet:        C"
+msgstr ""
+
+#: 03_Devices.otws
+msgctxt "[Mask:CombinedPool][Field:Text_3]"
+msgid "Teaching Pool Probe"
+msgstr "Dispositivo 1"
+
+#: 03_Devices.otws
+msgctxt "[Mask:CompSettings][Field:Text]"
+msgid "Min Run Time:        s"
+msgstr ""
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:TrainingPool_Clone_2][Field:Text_2]"
+msgctxt "[Mask:CompSettings][Field:Text_2]"
+msgid "Training Pool Probe"
+msgstr "Dispositivo 1"
+
+#: 03_Devices.otws
+msgctxt "[Mask:CompSettings][Field:Text_3]"
+msgid "Min Stop Time:       s"
+msgstr ""
+
+#: 03_Devices.otws
+msgctxt "[Mask:CompSettings][Field:Text_4]"
+msgid "Load Time Delay:     s"
+msgstr ""
+
+#: 03_Devices.otws
+msgctxt "[Mask:CompSettings][Field:Text_5]"
+msgid "Unit1 Staging:"
+msgstr ""
+
+#: 03_Devices.otws
+msgctxt "[Mask:CompSettings][Field:Text_6]"
+msgid "Unit2 Staging:"
+msgstr ""
+
+#: 03_Devices.otws
+msgctxt "[Mask:CompSettings][Field:Text_7]"
+msgid "Alarm Delay"
+msgstr ""
+
+#: 04_Settings.otws
+msgctxt "[Mask:DateTimeChg][Field:Text_1]"
+msgid "/"
+msgstr "/"
+
+#: 04_Settings.otws
+msgctxt "[Mask:DateTimeChg][Field:Text_2]"
+msgid "Date:"
+msgstr "Fecha:"
+
+#: 04_Settings.otws
+msgctxt "[Mask:DateTimeChg][Field:Text_3]"
+msgid "Hour:"
+msgstr "Hora:"
+
+#: 04_Settings.otws
+msgctxt "[Mask:DateTimeChg][Field:Text_4]"
+msgid "Format:"
+msgstr "Formato:"
+
+#: 04_Settings.otws
+msgctxt "[Mask:DateTimeChg][Field:Text_5]"
+msgid "/"
+msgstr "/"
+
+#: 04_Settings.otws
+msgctxt "[Mask:DateTimeChg][Field:Text_6]"
+msgid ":"
+msgstr ":"
+
+#: 04_Settings.otws
+msgctxt "[Mask:DateTimeChg][Field:Text_7]"
+msgid "Date/Time change"
+msgstr "Fecha/Hora cambiar "
+
+#: 04_Settings.otws
+msgctxt "[Mask:DateTimeChg][Field:Text_8]"
+msgid ":"
+msgstr ":"
+
+#: 04_Settings.otws
+msgctxt "[Mask:DateTimeChg][Field:Text_9]"
+msgid "Day:"
+msgstr "Dia:"
+
+#: 04_Settings.otws
+msgctxt "[Mask:Default][Field:Text]"
+msgid "Wipe retain mem.:"
+msgstr "Limp. mem. retain:"
+
+#: 04_Settings.otws
+msgctxt "[Mask:Default][Field:Text_1]"
+msgid "Initialization"
+msgstr "Inicializacion"
+
+#: 04_Settings.otws
+msgctxt "[Mask:Default][Field:Text_2]"
+msgid "DEFAULT INSTALLATION"
+msgstr "INSTALACION DEFAULT"
+
+#: 04_Settings.otws
+msgctxt "[Mask:Default][Field:Text_3]"
+msgid "Wipe NVRAM mem.:"
+msgstr "Limp. mem. NVRAM:"
+
+#: 04_Settings.otws
+msgctxt "[Mask:Default][Field:Text_4]"
+msgid "Wipe both mem.:"
+msgstr "Limp. ambos mem.:"
+
+#: 02_Main.otws
+msgctxt "[Mask:EndDefault][Field:Text_1]"
+msgid " INITIALIZATION"
+msgstr "INICIALIZACION"
+
+#: 02_Main.otws
+msgctxt "[Mask:EndDefault][Field:Text_2]"
+msgid "  COMPLETED"
+msgstr "COMPLETADO"
+
+#: 02_Main.otws
+msgctxt "[Mask:EndDefault][Field:Text_3]"
+msgid " Wait for automatic "
+msgstr "Espera para inicio "
+
+#: 02_Main.otws
+msgctxt "[Mask:EndDefault][Field:Text_4]"
+msgid "  application startup"
+msgstr "automatico aplicacion"
+
+#: 02_Main.otws
+msgctxt "[Mask:EndDefault][Field:Text_5]"
+msgid "ATTENTION!"
+msgstr "ATENCION!"
+
+#: 02_Main.otws
+msgctxt "[Mask:InsertManuf][Field:Text_1]"
+msgid "Access rights"
+msgstr "Derechos de acceso"
+
+#: 02_Main.otws
+msgctxt "[Mask:InsertManuf][Field:Text_2]"
+msgid "Insert Manufacturer"
+msgstr "Introducir contrasena"
+
+#: 02_Main.otws
+msgctxt "[Mask:InsertManuf][Field:Text_3]"
+msgid "password to modify"
+msgstr "fabrica.para modificar"
+
+#: 02_Main.otws
+msgctxt "[Mask:InsertManuf][Field:Text_4]"
+msgid "Manuf parameters"
+msgstr "parametros fabricante"
+
+#: 02_Main.otws
+msgctxt "[Mask:InsertManuf][Field:Text_5]"
+msgid "Press ESC to back"
+msgstr "ESC para retroceder"
+
+#: 02_Main.otws
+msgctxt "[Mask:InsertManuf][Field:Text_6]"
+msgid " "
+msgstr ""
+
+#: 02_Main.otws
+msgctxt "[Mask:InsertService][Field:Text_1]"
+msgid "Access rights"
+msgstr "Derechos de acceso"
+
+#: 02_Main.otws
+msgctxt "[Mask:InsertService][Field:Text_2]"
+msgid "Insert Service"
+msgstr "Introducir contraseña"
+
+#: 02_Main.otws
+msgctxt "[Mask:InsertService][Field:Text_3]"
+msgid "password to modify"
+msgstr "servicio para modifica"
+
+#: 02_Main.otws
+msgctxt "[Mask:InsertService][Field:Text_4]"
+msgid "Service parameters"
+msgstr "parametros servicio"
+
+#: 02_Main.otws
+msgctxt "[Mask:InsertService][Field:Text_5]"
+msgid "Press ESC to back"
+msgstr "ESC para retroceder"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Language_01][Field:Text_1]"
+msgctxt "[Mask:Language][Field:Text_1]"
+msgid "Language"
+msgstr "Idioma:"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Language_01][Field:Text_2]"
+msgctxt "[Mask:Language][Field:Text_2]"
+msgid "Language:"
+msgstr "Idioma:"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Language_01][Field:Text_3]"
+msgctxt "[Mask:Language][Field:Text_3]"
+msgid "ENGLISH"
+msgstr "Espaîol"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Language_01][Field:Text_4]"
+msgctxt "[Mask:Language][Field:Text_4]"
+msgid "ENTER to change"
+msgstr "ENTER para cambiar"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Language_01][Field:Text_5]"
+msgctxt "[Mask:Language][Field:Text_5]"
+msgid "ESC to confirm"
+msgstr "ESC para confirmar"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Language_01][Field:Text_6]"
+msgctxt "[Mask:Language][Field:Text_6]"
+msgid "Show mask time"
+msgstr "Mostrar hora mascara"
+
+#: 02_Main.otws
+msgctxt "[Mask:Main][Field:Text]"
+msgid "U1     U2"
+msgstr ""
+
+#: 02_Main.otws
+#| msgctxt "[Mask:m_Main][Field:Text_1]"
+msgctxt "[Mask:Main][Field:Text_1]"
+msgid "MAIN PAGE"
+msgstr "PAGINA PRINCIPAL"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:m_Main][Field:Text_2]"
+msgctxt "[Mask:Main][Field:Text_2]"
+msgid "/"
+msgstr "/"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:m_Main][Field:Text_3]"
+msgctxt "[Mask:Main][Field:Text_3]"
+msgid "/"
+msgstr "/"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:m_Main][Field:Text_4]"
+msgctxt "[Mask:Main][Field:Text_4]"
+msgid ":"
+msgstr ":"
+
+#: 02_Main.otws
+msgctxt "[Mask:Main][Field:Text_5]"
+msgid "Unit status:"
+msgstr "Estado unidad:"
+
+#: 02_Main.otws
+msgctxt "[Mask:Main][Field:Text_6]"
+msgid "Pool 1 :        C"
+msgstr "PAGINA PRINCIPAL"
+
+#: 02_Main.otws
+msgctxt "[Mask:Main][Field:Text_7]"
+msgid "Pool 1 :        C"
+msgstr "PAGINA PRINCIPAL"
+
+#: 03_Devices.otws
+msgctxt "[Mask:Menu_Main][Field:Text_1]"
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: 03_Devices.otws
+msgctxt "[Mask:Menu_Main][Field:Text_7]"
+msgid "/"
+msgstr "/"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfg][Field:Text_1]"
+msgctxt "[Mask:ParamsImpExp][Field:Text_1]"
+msgid "Params Import/Export"
+msgstr "Import./Export. paràm"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfg][Field:Text_2]"
+msgctxt "[Mask:ParamsImpExp][Field:Text_2]"
+msgid "Unit configuration"
+msgstr "Configuración unidad"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfg][Field:Text_4]"
+msgctxt "[Mask:ParamsImpExp][Field:Text_4]"
+msgid "Import/Export:"
+msgstr "Importar/Exportar:"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfg][Field:Text_5]"
+msgctxt "[Mask:ParamsImpExp][Field:Text_5]"
+msgid "Memory type:"
+msgstr "Tipo de memoria:"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfg][Field:Text_6]"
+msgctxt "[Mask:ParamsImpExp][Field:Text_6]"
+msgid "File name:"
+msgstr "Nombre arch:"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfg][Field:Text_7]"
+msgctxt "[Mask:ParamsImpExp][Field:Text_7]"
+msgid "Confirm:"
+msgstr "Confirmar?"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfg][Field:Text_8]"
+msgctxt "[Mask:ParamsImpExp][Field:Text_8]"
+msgid "EXPORT_"
+msgstr "EXPORT_"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfgErr][Field:Text_1]"
+msgctxt "[Mask:ParamsImpExpErr][Field:Text_1]"
+msgid "Press ESC to back"
+msgstr "ESC para retroceder"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfgErr][Field:Text_2]"
+msgctxt "[Mask:ParamsImpExpErr][Field:Text_2]"
+msgid "ATTENTION!"
+msgstr "ATENCION!"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfgErr][Field:Text_3]"
+msgctxt "[Mask:ParamsImpExpErr][Field:Text_3]"
+msgid "Imp/Exp parameters"
+msgstr "Imp/Exp parmetros"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfgErr][Field:Text_4]"
+msgctxt "[Mask:ParamsImpExpErr][Field:Text_4]"
+msgid "is not allowed"
+msgstr "no está permitido "
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfgErr][Field:Text_5]"
+msgctxt "[Mask:ParamsImpExpErr][Field:Text_5]"
+msgid "with the unit on"
+msgstr "con la unidad activada"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfgRes][Field:Text_1]"
+msgctxt "[Mask:ParamsImpExpRes][Field:Text_1]"
+msgid "Press ESC to back"
+msgstr "ESC para retroceder"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:UnitCfgRes][Field:Text_2]"
+msgctxt "[Mask:ParamsImpExpRes][Field:Text_2]"
+msgid "Imp/Exp result"
+msgstr "Resultado de la operación"
+
+#: 03_Devices.otws
+msgctxt "[Mask:Pwd_LogIn][Field:Text_1]"
+msgid "Insert password:"
+msgstr "Contraseîa:"
+
+#: 03_Devices.otws
+msgctxt "[Mask:Pwd_LogIn][Field:Text_2]"
+msgid "Login"
+msgstr ""
+
+#: 03_Devices.otws
+msgctxt "[Mask:Pwd_LogOut][Field:Text_1]"
+msgid "Press ENTER"
+msgstr "Pulsar ENTER"
+
+#: 03_Devices.otws
+msgctxt "[Mask:Pwd_LogOut][Field:Text_2]"
+msgid "LogOut"
+msgstr "Salir"
+
+#: 03_Devices.otws
+msgctxt "[Mask:Pwd_LogOut][Field:Text_3]"
+msgid "to Log Out"
+msgstr "para salir"
+
+#: 03_Devices.otws
+msgctxt "[Mask:Pwd_LogOut][Field:Text_4]"
+msgid "You are"
+msgstr "Ha iniciado"
+
+#: 03_Devices.otws
+msgctxt "[Mask:Pwd_LogOut][Field:Text_5]"
+msgid "logged as"
+msgstr "sesión como"
+
+#: 04_Settings.otws
+msgctxt "[Mask:PwdChg][Field:Text_1]"
+msgid "Change Password"
+msgstr "Cambiar contraseña"
+
+#: 04_Settings.otws
+msgctxt "[Mask:SerialPorts][Field:Text_1]"
+msgid "Serial ports"
+msgstr "Puertos seriales"
+
+#: 04_Settings.otws
+msgctxt "[Mask:SerialPorts][Field:Text_2]"
+msgid "SERIAL PORTS"
+msgstr "PUERTOS SERIALES"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Train_Clone_2][Field:Text]"
+msgctxt "[Mask:Setpoints][Field:Text]"
+msgid "Lower Limit:         c"
+msgstr ""
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Train_Clone_2][Field:Text_1]"
+msgctxt "[Mask:Setpoints][Field:Text_1]"
+msgid "Training Pool Temp"
+msgstr "Unidad On/Off"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Train_Clone_2][Field:Text_2]"
+msgctxt "[Mask:Setpoints][Field:Text_2]"
+msgid "Set Point:         C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Train_Clone_2][Field:Text_3]"
+msgctxt "[Mask:Setpoints][Field:Text_3]"
+msgid "Lower Diff:        C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Train_Clone_2][Field:Text_4]"
+msgctxt "[Mask:Setpoints][Field:Text_4]"
+msgid "Higher Diff:       C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Train_Clone_2][Field:Text_5]"
+msgctxt "[Mask:Setpoints][Field:Text_5]"
+msgid "Upper Limit:         c"
+msgstr ""
+
+#: 04_Settings.otws
+msgctxt "[Mask:Settings][Field:Text_1]"
+msgid "/"
+msgstr "/"
+
+#: 04_Settings.otws
+msgctxt "[Mask:Settings][Field:Text_2]"
+msgid "Settings Menu"
+msgstr "Menu configuracion"
+
+#: 02_Main.otws
+msgctxt "[Mask:SwInfo][Field:Text]"
+msgid "BOOT ver.:"
+msgstr "Vers. BOOT:"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info][Field:Text_1]"
+msgctxt "[Mask:SwInfo][Field:Text_1]"
+msgid "*PLACE COMPANY NAME*"
+msgstr "*NOMBRE EMPRESA*"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info][Field:Text_2]"
+msgctxt "[Mask:SwInfo][Field:Text_2]"
+msgid "SW ver.:"
+msgstr "Vers. SW:"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info][Field:Text_3]"
+msgctxt "[Mask:SwInfo][Field:Text_3]"
+msgid "Info"
+msgstr "Info"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info][Field:Text_4]"
+msgctxt "[Mask:SwInfo][Field:Text_4]"
+msgid "Code:"
+msgstr "Codigo:"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info][Field:Text_5]"
+msgctxt "[Mask:SwInfo][Field:Text_5]"
+msgid "OS ver.:"
+msgstr "Vers. OS:"
+
+#: 02_Main.otws
+msgctxt "[Mask:SwInfo][Field:Text_6]"
+msgid "."
+msgstr ""
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info][Field:Text_7]"
+msgctxt "[Mask:SwInfo][Field:Text_7]"
+msgid "."
+msgstr "."
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info][Field:Text_8]"
+msgctxt "[Mask:SwInfo][Field:Text_8]"
+msgid "."
+msgstr "."
+
+#: 02_Main.otws
+msgctxt "[Mask:SwInfo][Field:Text_9]"
+msgid "."
+msgstr ""
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info][Field:Text_11]"
+msgctxt "[Mask:SwInfo][Field:Text_11]"
+msgid ". ."
+msgstr ". ."
+
+#: 02_Main.otws
+msgctxt "[Mask:SwInfo_Clone_2][Field:Text]"
+msgid "Unit 1:"
+msgstr ""
+
+#: 02_Main.otws
+msgctxt "[Mask:SwInfo_Clone_2][Field:Text_2]"
+msgid "Comp1 Hours"
+msgstr ""
+
+#: 02_Main.otws
+msgctxt "[Mask:SwInfo_Clone_2][Field:Text_3]"
+msgid "Info"
+msgstr "Info"
+
+#: 02_Main.otws
+msgctxt "[Mask:SwInfo_Clone_2][Field:Text_4]"
+msgid "Comp2 Hours"
+msgstr ""
+
+#: 02_Main.otws
+msgctxt "[Mask:SwInfo_Clone_2][Field:Text_5]"
+msgid "Unit2"
+msgstr ""
+
+#: 02_Main.otws
+msgctxt "[Mask:SwInfo_Clone_2][Field:Text_6]"
+msgid "Comp1 Hours"
+msgstr ""
+
+#: 02_Main.otws
+msgctxt "[Mask:SwInfo_Clone_2][Field:Text_7]"
+msgid "Comp2 Hours"
+msgstr ""
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info2][Field:Text_1]"
+msgctxt "[Mask:SysInfo][Field:Text_1]"
+msgid "Info"
+msgstr "Info"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info2][Field:Text_2]"
+msgctxt "[Mask:SysInfo][Field:Text_2]"
+msgid "Board type:"
+msgstr "Tipo tarjeta:"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info2][Field:Text_3]"
+msgctxt "[Mask:SysInfo][Field:Text_3]"
+msgid "Cycle/s"
+msgstr "Ciclo/s"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info2][Field:Text_4]"
+msgctxt "[Mask:SysInfo][Field:Text_4]"
+msgid "ms"
+msgstr "ms"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info2][Field:Text_5]"
+msgctxt "[Mask:SysInfo][Field:Text_5]"
+msgid "Board size:"
+msgstr "Tamaîo:"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info2][Field:Text_6]"
+msgctxt "[Mask:SysInfo][Field:Text_6]"
+msgid "Board temp:"
+msgstr "Temp. tarjeta:"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info2][Field:Text_7]"
+msgctxt "[Mask:SysInfo][Field:Text_7]"
+msgid "Main task:"
+msgstr "Tarea principal:"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info2][Field:Text_8]"
+msgctxt "[Mask:SysInfo][Field:Text_8]"
+msgid ""
+msgstr ""
+
+#: 02_Main.otws
+#| msgctxt "[Mask:Info2][Field:Text_9]"
+msgctxt "[Mask:SysInfo][Field:Text_9]"
+msgid "Ret mem writes:"
+msgstr "Escrit.memoria:"
+
+#: 02_Main.otws
+msgctxt "[Mask:SysInfo][Field:Text_10]"
+msgid "System info"
+msgstr "Info sistema"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:SetPoolTemp][Field:Text_1]"
+msgctxt "[Mask:Teach][Field:Text_1]"
+msgid "Set"
+msgstr "Fijar"
+
+#: 02_Main.otws
+msgctxt "[Mask:Teach][Field:Text_2]"
+msgid "Higher Diff:       C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+msgctxt "[Mask:Teach][Field:Text_3]"
+msgid "Lower Diff:        C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+msgctxt "[Mask:Teach][Field:Text_4]"
+msgid "Set Point:         C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+msgctxt "[Mask:Teach][Field:Text_6]"
+msgid "Tandem Staging: "
+msgstr "FIJAR"
+
+#: 03_Devices.otws
+msgctxt "[Mask:TeachingPool][Field:Text]"
+msgid "Pool Temp:           c"
+msgstr ""
+
+#: 03_Devices.otws
+msgctxt "[Mask:TeachingPool][Field:Text_2]"
+msgid "Probe OffSet:        C"
+msgstr ""
+
+#: 03_Devices.otws
+msgctxt "[Mask:TeachingPool][Field:Text_3]"
+msgid "Combined Pool Probe"
+msgstr "Dispositivo 1"
+
+#: 04_Settings.otws
+msgctxt "[Mask:TimeZone][Field:Text]"
+msgid "TEXT"
+msgstr "Actual:"
+
+#: 04_Settings.otws
+#| msgctxt "[Mask:Timezone][Field:Text_1]"
+msgctxt "[Mask:TimeZone][Field:Text_1]"
+msgid "Update Timezone:"
+msgstr "Act. zona horaria:"
+
+#: 04_Settings.otws
+#| msgctxt "[Mask:Timezone][Field:Text_2]"
+msgctxt "[Mask:TimeZone][Field:Text_2]"
+msgid "Timezone"
+msgstr ""
+
+#: 04_Settings.otws
+msgctxt "[Mask:TimeZone][Field:Text_3]"
+msgid "TEXT"
+msgstr "Nueva zona horaria:"
+
+#: 04_Settings.otws
+#| msgctxt "[Mask:TimeZone][Resource:0]"
+msgctxt "[Mask:TimeZone][ResourceUseOnBool:0]"
+msgid "NO"
+msgstr ""
+
+#: 04_Settings.otws
+#| msgctxt "[Mask:TimeZone][Resource:1]"
+msgctxt "[Mask:TimeZone][ResourceUseOnBool:1]"
+msgid "YES"
+msgstr ""
+
+#: 02_Main.otws
+#| msgctxt "[Mask:OnOff][Field:Text_1]"
+msgctxt "[Mask:Train][Field:Text_1]"
+msgid "Unit On/Off"
+msgstr "Unidad On/Off"
+
+#: 02_Main.otws
+msgctxt "[Mask:Train][Field:Text_2]"
+msgid "Training (P1):      C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+msgctxt "[Mask:Train][Field:Text_3]"
+msgid "Set Point:       C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+msgctxt "[Mask:Train][Field:Text_4]"
+msgid "Lower Diff:       C"
+msgstr "FIJAR"
+
+#: 02_Main.otws
+msgctxt "[Mask:Train][Field:Text_6]"
+msgid "Tandem Staging: "
+msgstr "FIJAR"
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:Device1][Field:Text]"
+msgctxt "[Mask:TrainingPool][Field:Text]"
+msgid "Lower Limit:"
+msgstr ""
+
+#: 03_Devices.otws
+#| msgctxt "[Mask:Device1][Field:Text_2]"
+msgctxt "[Mask:TrainingPool][Field:Text_2]"
+msgid "Device 1"
+msgstr "Dispositivo 1"
+
+#: 03_Devices.otws
+msgctxt "[Mask:TrainingPool][Field:Text_3]"
+msgid "Pool temp:           c"
+msgstr ""
+
+#: 02_Main.otws
+msgctxt "[Mask:TurnOffUnit][Field:Text]"
+msgid "Turn off the unit"
+msgstr "Apague la unidad para"
+
+#: 02_Main.otws
+msgctxt "[Mask:TurnOffUnit][Field:Text_2]"
+msgid "to change unit"
+msgstr "cambiar la config."
+
+#: 02_Main.otws
+msgctxt "[Mask:TurnOffUnit][Field:Text_3]"
+msgid "settings"
+msgstr "de la unidad"
+
+#: 02_Main.otws
+msgctxt "[Mask:TurnOffUnit][Field:Text_4]"
+msgid "Press ESC to back"
+msgstr "ESC para retroceder"
+
+#: 02_Main.otws
+msgctxt "[Mask:TurnOffUnit][Field:Text_5]"
+msgid "ATTENTION!"
+msgstr "ATENCION!"
+
+#: 04_Settings.otws
+msgctxt "[Mask:UoM_tERA_WEB][Field:Text_2]"
+msgid "visualization:"
+msgstr ""
+
+#: 04_Settings.otws
+msgctxt "[Mask:UoM_tERA_WEB][Field:Text_3]"
+msgid "UoM zone for web"
+msgstr ""
+
+#: 04_Settings.otws
+msgctxt "[Mask:UoM_tERA_WEB][Field:Text_4]"
+msgid "Unit of Measure"
+msgstr ""
+
+#: 04_Settings.otws
+#| msgctxt "[Mask:UoM_Mng][Field:Text]"
+msgctxt "[Mask:UoM_UI][Field:Text]"
+msgid "TEXT"
+msgstr ""
+
+#: 04_Settings.otws
+#| msgctxt "[Mask:UoM_Mng][Field:Text_1]"
+msgctxt "[Mask:UoM_UI][Field:Text_1]"
+msgid "Serial ports"
+msgstr "Puertos seriales"
+
+#: 04_Settings.otws
+#| msgctxt "[Mask:UoM_Mng][Field:Text_2]"
+msgctxt "[Mask:UoM_UI][Field:Text_2]"
+msgid "TEXT"
+msgstr ""
+
+#: 02_Main.otws
+msgctxt "[Mask:WorkHours][Field:Text_1]"
+msgid "Work hours"
+msgstr "Horas trabajo"
+
+#: 02_Main.otws
+msgctxt "[Mask:WorkHours][Field:Text_2]"
+msgid "Unit:                h"
+msgstr "Unidad:              h"
+
+#: 02_Main.otws
+msgctxt "[Mask:WorkHours][Field:Text_3]"
+msgid "Info"
+msgstr "Info"
+
+#: 02_Main.otws
+msgctxt "[Mask:WorkHours][Field:Text_4]"
+msgid "Unit1Comp1:          h"
+msgstr "Unidad:              h"
+
+#: 02_Main.otws
+msgctxt "[Mask:WorkHours][Field:Text_5]"
+msgid "Unit1Comp1:          h"
+msgstr "Unidad:              h"
+
+#: 02_Main.otws
+msgctxt "[Mask:WorkHours][Field:Text_6]"
+msgid "Unit1Comp1:          h"
+msgstr "Unidad:              h"
+

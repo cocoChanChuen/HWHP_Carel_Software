@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pou FileVersion="200.00.003" Name="TIMER_SET_PT_DEVROT" ElementGuid="a48222f6-6dd8-42f3-a49d-416b913c597f" Comment="" SingleTextLine="" Language="ST" CustomFbd="0" Localization="Prj" GroupName="(User defined)" Password="E4BDBA2BEF6CC4DC" GenDebugInfo="false" UseResPassword="true" GenerateSymbMon="true" Is1499="false">
+  <FunctionBlock IdentifierNb="0" Keyword="" InitInstance="false" SymbMonExtraBytes="128" />
+  <LocalVars>
+    <Variable Name="PTp" DataType="UDINT" InitialValue="" Comment="" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+    <Variable Name="timIn" DataType="TIMER_DEVROT" InitialValue="" Comment="" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+    <Variable Name="tim" DataType="TIMER_DEVROT" InitialValue="" Comment="" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="Write" StringSize="0" Direction="Output" CommentFields="" Attributes="0" />
+  </LocalVars>
+  <PouBody><![CDATA[gFQnV1NbWi9dZGUTZGofaWwxMzU3g1NLR1dLTk4ehklLQEkhVAiJQFZcUURUHpRRW0dHV1IOkAgOKyghVgCWWk1NXU5VFeRoZW1jZmUsoWtwIygoDUuwbGk5P3VpLI1rPw4IKSph6SgpLi8sLWzpKCkuLywtbOkoKS4vISpoyQ8JCXZobW+UUXQ5PyFQFbQ+CQlHT0QeglBKQFZITw+bR0hMQUo=]]></PouBody>
+  <PouUIProperties><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxSb290IFZlcnNpb249IjYiPg0KICA8TGFuZ3VhZ2VDb250YWluZXJTdHlsZSBDb21tZW50VGV4dENvbG9yPSJHcmVlbiIgQ29tbWVudEZvbnQ9IkNvdXJpZXIgTmV3LCAxMHB0IiBQb25jdHVhdGlvblRleHRDb2xvcj0iQmxhY2siIFBvbmN0dWF0aW9uRm9udD0iQ291cmllciBOZXcsIDEwcHQiIElkZW50aWZpZXJUZXh0Q29sb3I9IkJsYWNrIiBJZGVudGlmaWVyRm9udD0iQ291cmllciBOZXcsIDEwcHQiIE9wZXJhdG9yVGV4dENvbG9yPSJCbGFjayIgT3BlcmF0b3JGb250PSJDb3VyaWVyIE5ldywgMTBwdCIgUmVzZXJ2ZWRXb3JkVGV4dENvbG9yPSJGdWNoc2lhIiBSZXNlcnZlZFdvcmRGb250PSJDb3VyaWVyIE5ldywgMTBwdCIgUG91VGV4dENvbG9yPSJCbHVlVmlvbGV0IiBQb3VGb250PSJDb3VyaWVyIE5ldywgMTBwdCIgTnVtYmVyVGV4dENvbG9yPSJGaXJlYnJpY2siIE51bWJlckZvbnQ9IkNvdXJpZXIgTmV3LCAxMHB0IiBTdHJpbmdUZXh0Q29sb3I9IkdyYXkiIFN0cmluZ0ZvbnQ9IkNvdXJpZXIgTmV3LCAxMHB0IiBFZGl0b3JUZXh0QXJlYUJhY2tncm91bmRDb2xvcj0iV2hpdGUiIEVkaXRvckZvbnQ9IkNvdXJpZXIgTmV3LCAxMHB0IiBJbmRleD0iMCIgLz4NCjwvUm9vdD4=]]></PouUIProperties>
+</Pou>

@@ -90,7 +90,7 @@
         <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="Temp Low Diff:       " />
         <Field Type="Text" Name="Text_4" Row="3" Column="0" Content="Temp High Diff:      " />
         <Field Type="Variable" Name="Variable" Row="1" Column="14" Content="TopCylinder_T_SP" Min="10.0" Max="40.0" Class="CL_REAL_1" Format="io+3.1" />
-        <Field Type="Variable" Name="Variable_2" Row="2" Column="15" Content="TopCylinder_T_DiffLow" Min="0.0" Max="7.0" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Type="Variable" Name="Variable_2" Row="2" Column="15" Content="TopCylinder_T_DiffLow" Min="0.0" Max="30.0" Class="CL_REAL_1" Format="io+3.1" />
         <Field Type="Variable" Name="Variable_3" Row="3" Column="15" Content="TopCylinder_T_DiffHigh" Min="0.0" Max="7.0" Class="CL_REAL_1" Format="io+3.1" />
         <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="Current Temp:        " />
         <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Probe Offset:        " />
@@ -209,9 +209,9 @@
         <Field Type="Variable" Name="Variable_2" Row="5" Column="14" Content="MIdCylinder_T" Class="CL_REAL_1" Format="o+3.1" Min="-999.9" Max="999.9" />
         <Field Type="Variable" Name="Variable_3" Row="6" Column="14" Content="MidCylinder_T_Offset" Class="CL_REAL_1" Format="io+3.1" Min="-999.9" Max="999.9" />
         <Field Type="Text" Name="Text_5" Row="3" Column="0" Content="Temp High Diff:      " />
-        <Field Type="Variable" Name="Variable_4" Row="3" Column="15" Content="MidCylinder_T_DiffHigh" Min="0.0" Max="7.0" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="15" Content="MidCylinder_T_DiffHigh" Min="0.0" Max="30.0" Class="CL_REAL_1" Format="io+3.1" />
         <Field Type="Text" Name="Text_6" Row="2" Column="0" Content="Temp Low Diff:       " />
-        <Field Type="Variable" Name="Variable_5" Row="2" Column="15" Content="MidCylinder_T_DiffLow" Min="0.0" Max="7.0" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Type="Variable" Name="Variable_5" Row="2" Column="15" Content="MidCylinder_T_DiffLow" Min="0.0" Max="30.0" Class="CL_REAL_1" Format="io+3.1" />
         <Field Type="Text" Name="Text_7" Row="1" Column="0" Content="Temp SP:             " />
         <Field Type="Variable" Name="Variable_6" Row="1" Column="14" Content="MidCylinder_T_SP" Min="50.0" Max="75.0" Class="CL_REAL_1" Format="io+3.1" />
       </Fields>
@@ -226,9 +226,9 @@
         <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
         <Field Type="Text" Name="Text_2" Row="0" Column="1" Content="Legionella (Bot)" />
         <Field Name="Variable_1" Type="Variable" Content="dummy" Column="0" Row="0" Class="CL_Move" Format="ib" Min="0" Max="1" />
-        <Field Type="Variable" Name="Variable_4" Row="1" Column="15" Content="BotCylinder_T_SP" Min="10.0" Max="40.0" Class="CL_REAL_1" Format="io+3.1" />
-        <Field Type="Variable" Name="Variable_5" Row="2" Column="15" Content="BotCylinder_T_DiffLow" Min="0.0" Max="7.0" Class="CL_REAL_1" Format="io+3.1" />
-        <Field Type="Variable" Name="Variable_6" Row="3" Column="15" Content="BotCylinder_T_DiffHigh" Min="0.0" Max="7.0" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Type="Variable" Name="Variable_4" Row="1" Column="15" Content="BotCylinder_T_SP" Min="60.0" Max="75.0" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Type="Variable" Name="Variable_5" Row="2" Column="15" Content="BotCylinder_T_DiffLow" Min="0.0" Max="30.0" Class="CL_REAL_1" Format="io+3.1" />
+        <Field Type="Variable" Name="Variable_6" Row="3" Column="15" Content="BotCylinder_T_DiffHigh" Min="0.0" Max="30.0" Class="CL_REAL_1" Format="io+3.1" />
         <Field Type="Text" Name="Text_3" Row="6" Column="0" Content="Probe Offset:        " />
         <Field Type="Text" Name="Text_4" Row="5" Column="0" Content="Current Temp:        " />
         <Field Type="Text" Name="Text_5" Row="3" Column="0" Content="Temp High Diff:      " />

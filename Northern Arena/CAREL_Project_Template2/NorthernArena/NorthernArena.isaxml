@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Name="NorthernArena" ElementGuid="0d779997-876c-45fc-86bf-eb6ce0842c2f" FileVersion="200.00.003" Comment="" SingleTextLine="template" DbVersion="05.50.02" LibraryType="Project" LegacyBinding="true" Password="E4BDBA2BEF6CC4DC" ReadOnly="false">
+  <FileHeader CompanyName="Rockwell Automation Canada, Ltd." ProductName="CAM ISaGRAF 5" CompanyUrl="http://www.isagraf.com" ProductVersion="0" />
+  <Libraries />
+  <DefineWords>
+    <DefineWord Name="ERR_FILE_ACCESS" Define="-3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_FILE_INVALID" Define="-5" Comment="" Access="ReadOnly" />
+    <DefineWord Name="COM_CHANNEL_BMS2" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_NETWORK_SETTINGS" Define="13" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_BOARD_INFO" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_BUSY" Define="-10" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_VALUE_INVALID" Define="-6" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_POWER_SUPPLY_VOLT" Define="5" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_RETAINED_ERRORS" Define="8" Comment="" Access="ReadOnly" />
+    <DefineWord Name="COM_CHANNEL_FB1" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_DISK_ACCESS" Define="-2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_SUCCESS" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="COM_CHANNEL_FB2" Define="4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_USB_STATUS" Define="16" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_GET_RETAIN_WRITE_HITS" Define="11" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_BUILTIN_DISPLAY_INFO" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_DISK_INTERNAL" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_FILE_EMPTY" Define="-8" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_NOT_IMPLEMENTED" Define="-14" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_REMOTE_DISPLAY_3_INFO" Define="4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_EXPORT_LOG" Define="-12" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_ERROR_ON_DIV_BY_ZERO" Define="9" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_REMOTE_DISPLAY_2_INFO" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_POWER_SUPPLY_FREQ" Define="6" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_BOARD_TEMP" Define="7" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_REMOTE_DISPLAY_1_INFO" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_PARAM_INVALID" Define="-13" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_FNAME_INVALID" Define="-1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_OS_VERSION" Define="14" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_NO_LOGGER" Define="-11" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_UNKNOWN" Define="-99" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_DATE_FILTER" Define="-9" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_DISK_USB" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_VALUE_WIPE_NVRAM" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_BUFFER_SMALL" Define="-7" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_VALUE_WIPE_ALL" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_RESTART_ON_FATAL_ERROR" Define="10" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_FILE_IO" Define="-4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_PLAN_INFO" Define="15" Comment="" Access="ReadOnly" />
+    <DefineWord Name="COM_CHANNEL_BMS1" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_VM_QUIT" Define="12" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_NO_ERR" Define="10" Comment="Result is a valid value" Access="UserDefined" />
+    <DefineWord Name="SYS_FMODE_OVERWRITE" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_UNKNOWN" Define="0" Comment="Default value" Access="UserDefined" />
+    <DefineWord Name="SYS_PARAM_IS_WATCHDOG_RESTART" Define="25" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_OPEN" Define="-1" Comment="NTC/PTC input is open" Access="UserDefined" />
+    <DefineWord Name="IO_ERR_SHORT" Define="-2" Comment="NTC/PTC input is shorted" Access="UserDefined" />
+    <DefineWord Name="IO_ERR_OVERFLOW" Define="-3" Comment="Voltage input exceed max allowed value" Access="UserDefined" />
+    <DefineWord Name="IO_ERR_UNDERFLOW" Define="-4" Comment="Voltage input exceed min allowed value" Access="UserDefined" />
+    <DefineWord Name="IO_ERR_INVALID_PARAM" Define="-5" Comment="Channel is out of range" Access="UserDefined" />
+    <DefineWord Name="SYS_PARAM_SET_PLAN_ADDR" Define="32" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_CHANNEL_NOTFREE" Define="-6" Comment="Channel is not readable due to previous bi-channel probe" Access="UserDefined" />
+    <DefineWord Name="SYS_PARAM_WIPE_MEMORIES" Define="29" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_INTERNAL_TABLE" Define="-8" Comment="Only ISAI when scaling variable reference are invalid" Access="UserDefined" />
+    <DefineWord Name="SYS_PARAM_LIC_SNMP" Define="36" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_INVALID_PROBE_TYPE" Define="-9" Comment="Out of range probe type selected" Access="UserDefined" />
+    <DefineWord Name="IO_ERR_CHIPIO_CONFIG_COMM" Define="-100" Comment="Io system has not started due to a severe error" Access="UserDefined" />
+    <DefineWord Name="SYS_PARAM_GET_PHYSICAL_RAM_SIZE" Define="27" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_7SEG_MNG" Define="33" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_SYSTEM_POWERDOWN" Define="18" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_VALUE_RTC_SRC_NTP" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_SYSTEM_REBOOT" Define="17" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_VALUE_WIPE_RETAIN" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_CFG" Define="-15" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_RTC_SRC" Define="20" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PASSWORD_1" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PERMISSION_LOCK_1" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PASSWORD_2" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="IO_ERR_INTERNAL_FULL" Define="-10" Comment="Linked variable already used in timed relays or no more timed relays free" Access="UserDefined" />
+    <DefineWord Name="SYS_VALUE_RTC_SRC_TERA" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PERMISSION_LOCK_2" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PASSWORD_3" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_GET_UID" Define="28" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_GET_JST_INPUT" Define="26" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PERMISSION_LOCK_3" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PASSWORD_NONE" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PERMISSION_NO_LOCK" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="NFC_PERMISSION_LOCK_4" Define="4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_TICKS" Define="19" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_VALUE_RTC_SRC_MANUAL" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_LIC_BACNET" Define="35" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_MEM_FREE" Define="31" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_MEM_USED" Define="30" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_FMODE_MODIFY" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_PARAM_BOOT_VERSION" Define="34" Comment="" Access="ReadOnly" />
+    <DefineWord Name="SYS_TRANSFER_PATH" Define="HTTP\TRANSFER\" Comment="" Access="ReadOnly" />
+    <DefineWord Name="STARTUP_JMP_T" Define="T#10s" Comment="Starup jump time" Access="UserDefined" />
+    <DefineWord Name="INST_DEF_T" Define="T#5s" Comment="Default installation time" Access="UserDefined" />
+    <DefineWord Name="ATMOSPHERIC_PRESSURE" Define="1.01325" Comment="Atmospheric pressure in bar" Access="ReadOnly" />
+    <DefineWord Name="e" Define="2.7182818284590452353602874713526624977572470936999595749" Comment="Euler's number" Access="ReadOnly" />
+    <DefineWord Name="GAS_NUMBER" Define="27" Comment="Number of gas supported by thermodynamic functions (indexes from 0 to GAS_NUMBER-1)" Access="ReadOnly" />
+    <DefineWord Name="ATMOSPHERIC_PRESSURE_COMP" Define="1.01325" Comment="Atmospheric pressure in bar" Access="ReadOnly" />
+    <DefineWord Name="e_COMP" Define="2.7182818284590452353602874713526624977572470936999595749" Comment="Euler's number" Access="ReadOnly" />
+    <DefineWord Name="GAS_NUMBER_COMP" Define="27" Comment="Number of gas supported by thermodynamic functions (indexes from 0 to GAS_NUMBER-1)" Access="ReadOnly" />
+    <DefineWord Name="EPSILON_COMP" Define="0.1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="COMP_OFF" Define="0" Comment="Compressor off" Access="ReadOnly" />
+    <DefineWord Name="COMP_VLV_NEG_PULSE" Define="5" Comment="comp vlv cmd is negative pulse variation" Access="ReadOnly" />
+    <DefineWord Name="COMP_STARTUP" Define="1" Comment="Compressor start-up" Access="ReadOnly" />
+    <DefineWord Name="COMP_ON_25PERCENT" Define="2" Comment="Compressor on or at 25%" Access="ReadOnly" />
+    <DefineWord Name="COMP_50PERCENT" Define="3" Comment="Compressor at 50%" Access="ReadOnly" />
+    <DefineWord Name="COMP_75PERCENT" Define="4" Comment="Compressor at 75%" Access="ReadOnly" />
+    <DefineWord Name="COMP_VLV_DSBL" Define="0" Comment="comp vlv cmd is disable" Access="ReadOnly" />
+    <DefineWord Name="COMP_VLV_OPEN" Define="1" Comment="comp vlv cmd is open" Access="ReadOnly" />
+    <DefineWord Name="COMP_VLV_CLOSE" Define="2" Comment="comp vlv cmd is close" Access="ReadOnly" />
+    <DefineWord Name="COMP_VLV_INTERMIT" Define="3" Comment="comp vlv cmd is intermit in standard way" Access="ReadOnly" />
+    <DefineWord Name="COMP_VLV_PULSE" Define="4" Comment="comp vlv cmd is pulse variation" Access="ReadOnly" />
+    <DefineWord Name="COMP_100PERCENT" Define="5" Comment="Compressor at 100%" Access="ReadOnly" />
+    <DefineWord Name="COMP_FORCEOFF" Define="6" Comment="Compressor force off" Access="ReadOnly" />
+    <DefineWord Name="COMP_25PERCENT_LIMIT" Define="7" Comment="Compressor limited to 25%" Access="ReadOnly" />
+    <DefineWord Name="COMP_50PERCENT_LIMIT" Define="8" Comment="Compressor limited to 50%" Access="ReadOnly" />
+    <DefineWord Name="COMP_75PERCENT_LIMIT" Define="9" Comment="Compressor limited to 75%" Access="ReadOnly" />
+    <DefineWord Name="COMP_OFF_ALARM" Define="10" Comment="Compressor off by alarm" Access="ReadOnly" />
+    <DefineWord Name="COMP_OFF_MINTIME" Define="11" Comment="Compressor off by time" Access="ReadOnly" />
+    <DefineWord Name="COMP_ON_MINTIME" Define="12" Comment="Compressor on by time" Access="ReadOnly" />
+    <DefineWord Name="COMP_MANUALMODE" Define="13" Comment="Manual mode" Access="ReadOnly" />
+    <DefineWord Name="COMP_ON_PUMPDWN" Define="14" Comment="Compressor on by pump-down" Access="ReadOnly" />
+    <DefineWord Name="DSCGTEMPDELTAACTPAUSERES_COMP" Define="0.5" Comment="" Access="ReadOnly" />
+    <DefineWord Name="DSCGTEMPLIMDSTN_COMP" Define="10.0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ZERO_EPSILON_COMP" Define="0.01" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Id_ErrMax_DEVROT" Define="20" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_Calc_Power_Max_DEVROT" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_Calc_Power_Stage_DEVROT" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_Calc_Stage_Max_DEVROT" Define="4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_COMPRESSOR_Calc_Info_DEVROT" Define="5" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_COMPRESSOR_CalcInfInv_DEVROT" Define="6" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_Set_DEVROT" Define="7" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_ResetTimerUP_DEVROT" Define="8" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_ResetTimerDW_DEVROT" Define="9" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_ReadTimer_DEVROT" Define="10" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_Comp_Mng_DEVROT" Define="11" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_CalcCompsInfo_DEVROT" Define="12" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_COMPRESSOR_Value_DEVROT" Define="13" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_CompSel_DEVROT" Define="14" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_CIRCUIT_Value_DEVROT" Define="15" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_CircSel_DEVROT" Define="16" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_Grad_DevRot_DEVROT" Define="17" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_Set_Comp_Out_DEVROT" Define="18" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_SetCompOutDisable_DEVROT" Define="19" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_Forestall_DEVROT" Define="20" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_ForceOn_DEVROT" Define="21" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_ForceRot_DEVROT" Define="22" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_Termoreg_DEVROT" Define="23" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_CascadeOptim_DEVROT" Define="24" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_NextDevice_DEVROT" Define="25" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_StepReq_DEVROT" Define="26" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_DevRotation_DEVROT" Define="27" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_VerifyInp_DEVROT" Define="28" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Id_CompMin_DEVROT" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Id_CompMax_DEVROT" Define="31" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Id_CircMin_DEVROT" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Id_CircMax_DEVROT" Define="31" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Id_PrevMin_DEVROT" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Id_PrevMax_DEVROT" Define="31" Comment="must be equal to IdCircMax" Access="ReadOnly" />
+    <DefineWord Name="RANGEMINHINSTINV_DEVROT" Define="0.2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Action_Increase_DEVROT" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Action_Decrease_DEVROT" Define="-1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Action_On_DEVROT" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Action_Off_DEVROT" Define="-2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Action_Set_DEVROT" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Action_None_DEVROT" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Mode_Comp_Set_DEVROT" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Mode_CompVerificForce_DEVROT" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Mode_Comp_SetForce_DEVROT" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="PDW_None_DEVROT" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="PDW_On_Request_DEVROT" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="PDW_On_Running_DEVROT" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="PDW_On_Finish_DEVROT" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="PDW_Off_Request_DEVROT" Define="4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="PDW_Off_Running_DEVROT" Define="5" Comment="" Access="ReadOnly" />
+    <DefineWord Name="PDW_off_Finish_DEVROT" Define="6" Comment="" Access="ReadOnly" />
+    <DefineWord Name="MINDINT_DEVROT" Define="-2147483647" Comment="" Access="ReadOnly" />
+    <DefineWord Name="MAXUDINT_DEVROT" Define="4294967295" Comment="" Access="ReadOnly" />
+    <DefineWord Name="MAXINT_DEVROT" Define="32767" Comment="" Access="ReadOnly" />
+    <DefineWord Name="MININT_DEVROT" Define="-32768" Comment="" Access="ReadOnly" />
+    <DefineWord Name="POWER_MOD_MAX_DEVROT" Define="1000" Comment="" Access="ReadOnly" />
+    <DefineWord Name="MAX_CNTDWN_SAFETY_TIME_DEVROT" Define="32000" Comment="" Access="ReadOnly" />
+    <DefineWord Name="MAX_CNTDWN_FORCEON_TIME_DEVROT" Define="32000" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_Rotaz_Step1_DEVROT" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_Rotaz_Step2_DEVROT" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_Rotaz_Step3_DEVROT" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_Rotaz_Step4_DEVROT" Define="4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_G_Warning_DEVROT" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_G_Error_DEVROT" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_T_INPUT_DEVROT" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_T_PREVENT_N_MAX_CIRC_DEVROT" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_T_INPUT_CIRCUIT_DEVROT" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_T_INPUT_COMPSCIRC_DEVROT" Define="4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_T_INPUT_PDownType_DEVROT" Define="5" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_T_INPUT_RotType_DEVROT" Define="6" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_T_INPUT_DevUnloadSeq_DEVROT" Define="7" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_T_INPUT_InvPwrMin_DEVROT" Define="8" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Id_CompStep_DEVROT" Define="10" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Mode_Rotaz_Normal_DEVROT" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Mode_Rot2CompAlwaysOn_DEVROT" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="Mode_Rotaz_StepReq_DEVROT" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="LVL_NONE_DEVROT" Define="-1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="LVL_OFF_DEVROT" Define="0" Comment="" Access="ReadOnly" />
+    <DefineWord Name="LVL_MIN_DEVROT" Define="1" Comment="" Access="ReadOnly" />
+    <DefineWord Name="LVL_ON_DEVROT" Define="2" Comment="" Access="ReadOnly" />
+    <DefineWord Name="LVL_MAX_DEVROT" Define="3" Comment="" Access="ReadOnly" />
+    <DefineWord Name="LVL_INI_DEVROT" Define="4" Comment="" Access="ReadOnly" />
+    <DefineWord Name="LVL_DIS_DEVROT" Define="5" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_F_MACHINE_ThRegStepReq_DEVROT" Define="29" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_T_INPUT_CompPwrMin_DEVROT" Define="9" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_T_INPUT_CompPwrMax_DEVROT" Define="10" Comment="" Access="ReadOnly" />
+    <DefineWord Name="ERR_T_INPUT_Mode_DEVROT" Define="11" Comment="" Access="ReadOnly" />
+  </DefineWords>
+  <DataTypes>
+    <DataType Name="SYSREAD_VALUEOUT" Comment="" Access="UserDefined">
+      <Array Order="1" DataType="UDINT" StringSize="0">
+        <Dimension Lower="1" Upper="5" />
+      </Array>
+    </DataType>
+    <DataType Name="VERSIONCHK_APPVER" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="X" DataType="UINT" Comment="X version of the application" StringSize="0" Order="1" />
+        <Variable Name="Y" DataType="UINT" Comment="Y version of the application" StringSize="0" Order="2" />
+        <Variable Name="Z" DataType="UINT" Comment="Z version of the application" StringSize="0" Order="3" />
+        <Variable Name="D" DataType="UINT" Comment="D version of the application" StringSize="0" Order="4" />
+        <Variable Name="IsBeta" DataType="BOOL" Comment="Beta version enable" StringSize="0" Order="5" />
+        <Variable Name="IsDemo" DataType="BOOL" Comment="Demo version enable" StringSize="0" Order="6" />
+      </Struct>
+    </DataType>
+    <DataType Name="SYSWRITE_VALUEIN" Comment="" Access="UserDefined">
+      <Array Order="1" DataType="UDINT" StringSize="0">
+        <Dimension Lower="1" Upper="5" />
+      </Array>
+    </DataType>
+    <DataType Name="CFG_STEPLESS_COMP" Comment="Configuration stepless compressor" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="StartUpT1" DataType="UINT" Comment="Startup time 1" StringSize="0" Order="1" />
+        <Variable Name="StartUpT2" DataType="UINT" Comment="Startup time 2" StringSize="0" Order="2" />
+        <Variable Name="ShOffT1" DataType="UINT" Comment="Shutoff time 1" StringSize="0" Order="3" />
+        <Variable Name="ShOffT2" DataType="UINT" Comment="Shutoff time 2" StringSize="0" Order="4" />
+        <Variable Name="StartStopPwr" DataType="REAL" Comment="Start/Stop power" StringSize="0" Order="5" />
+        <Variable Name="MinPwr" DataType="REAL" Comment="Minimum power" StringSize="0" Order="6" />
+        <Variable Name="DT_MinPwr" DataType="UINT" Comment="Delay time in minimum power" StringSize="0" Order="7" />
+        <Variable Name="DT_MaxPwr" DataType="UINT" Comment="Delay time in maximum power" StringSize="0" Order="8" />
+        <Variable Name="En_ModulLimPwr" DataType="UINT" Comment="Enable modulate in limited power" StringSize="0" Order="9" />
+        <Variable Name="DT_BelowMinPwr" DataType="UINT" Comment="Delay time  below minimum power" StringSize="0" Order="10" />
+        <Variable Name="MinMinT_On" DataType="UINT" Comment="Min. value for minimum on time" StringSize="0" Order="11" />
+        <Variable Name="MinMinT_Off" DataType="UINT" Comment="Min. value for minimum off time" StringSize="0" Order="12" />
+        <Variable Name="MInMinT_OnOnSame" DataType="UINT" Comment="Min. value for minimum time between the same compressor on" StringSize="0" Order="13" />
+      </Struct>
+    </DataType>
+    <DataType Name="CFG_STEP_COMP" Comment="Configuration step compressor" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="StepNo" DataType="UINT" Comment="Step number" StringSize="0" Order="1" />
+        <Variable Name="StartUpT" DataType="UINT" Comment="Startup time" StringSize="0" Order="2" />
+        <Variable Name="ShOffT" DataType="UINT" Comment="Shutoff time" StringSize="0" Order="3" />
+        <Variable Name="StartStopPwr" DataType="REAL" Comment="Start/Stop power" StringSize="0" Order="4" />
+        <Variable Name="Step1_Pwr" DataType="REAL" Comment="Step 1 power" StringSize="0" Order="5" />
+        <Variable Name="Step2_Pwr" DataType="REAL" Comment="Step 2 power" StringSize="0" Order="6" />
+        <Variable Name="Step3_Pwr" DataType="REAL" Comment="Step 3 power" StringSize="0" Order="7" />
+        <Variable Name="DTBtwStep1_2" DataType="UINT" Comment="Delaytime between step 1 and 2" StringSize="0" Order="8" />
+        <Variable Name="DTBtwStep2_3" DataType="UINT" Comment="Delaytime between step 2 and 3" StringSize="0" Order="9" />
+        <Variable Name="DTBtwStep3_4" DataType="UINT" Comment="Delaytime between step 3 and 4" StringSize="0" Order="10" />
+        <Variable Name="MinMinT_On" DataType="UINT" Comment="Min. value for minimum on time" StringSize="0" Order="11" />
+        <Variable Name="MinMinT_Off" DataType="UINT" Comment="Min. value for minimum off time" StringSize="0" Order="12" />
+        <Variable Name="MinMinT_OnOnSame" DataType="UINT" Comment="Min. value for minimum time between the same compressor on" StringSize="0" Order="13" />
+      </Struct>
+    </DataType>
+    <DataType Name="CFG_INVERTER_COMP" Comment="Configuration Inverter compressor" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="MinPwr" DataType="REAL" Comment="Minimum power" StringSize="0" Order="1" />
+        <Variable Name="MaxPwr" DataType="REAL" Comment="Maximum power" StringSize="0" Order="2" />
+        <Variable Name="StepNo" DataType="UINT" Comment="Stage number" StringSize="0" Order="3" />
+        <Variable Name="PR_ThrshStep1Step2" DataType="REAL" Comment="Pressure ratio threshold step 1-2" StringSize="0" Order="4" />
+        <Variable Name="PR_ThrshStep2Step3" DataType="REAL" Comment="Pressure ratio threshold step 2-3" StringSize="0" Order="5" />
+        <Variable Name="PR_ThrshStep3Step4" DataType="REAL" Comment="Pressure ratio threshold step 3-4" StringSize="0" Order="6" />
+        <Variable Name="MinMinOnT" DataType="UINT" Comment="Delay between step 1 --&gt; step 2" StringSize="0" Order="7" />
+        <Variable Name="MinMinOffT" DataType="UINT" Comment="Delay between step 2 --&gt; step 3" StringSize="0" Order="8" />
+        <Variable Name="MinMinOnOnSameT" DataType="UINT" Comment="Delay between step 3 --&gt; step 4" StringSize="0" Order="9" />
+        <Variable Name="DTStep1Step2" DataType="UINT" Comment="Minim limit min time compressor ON" StringSize="0" Order="10" />
+        <Variable Name="DTStep2Step3" DataType="UINT" Comment="Minim limit min time compressor OFF" StringSize="0" Order="11" />
+        <Variable Name="DTStep3Step4" DataType="UINT" Comment="Minim limit ON ON same compressor" StringSize="0" Order="12" />
+      </Struct>
+    </DataType>
+    <DataType Name="VLV_CMD_CASES_COMP" Comment="Valve commands for all cases according to compressor phases" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Off" DataType="INT" Comment="OFF" StringSize="0" Order="1" />
+        <Variable Name="StartUp1" DataType="INT" Comment="START UP 1" StringSize="0" Order="2" />
+        <Variable Name="StartUp2" DataType="INT" Comment="START UP 2" StringSize="0" Order="3" />
+        <Variable Name="Ph1" DataType="INT" Comment="PHASE 1" StringSize="0" Order="4" />
+        <Variable Name="Ph2" DataType="INT" Comment="PHASE 2" StringSize="0" Order="5" />
+        <Variable Name="Ph3" DataType="INT" Comment="PHASE 3" StringSize="0" Order="6" />
+        <Variable Name="Ph4" DataType="INT" Comment="PHASE 4" StringSize="0" Order="7" />
+        <Variable Name="ShOff1" DataType="INT" Comment="SHUT OFF 1" StringSize="0" Order="8" />
+        <Variable Name="ShOff2" DataType="INT" Comment="SHUT OFF 2" StringSize="0" Order="9" />
+      </Struct>
+    </DataType>
+    <DataType Name="VLV_CMD_INFO_COMP" Comment="Valve commands for all the 4 valves for screw compressors" Access="ReadOnly">
+      <Array Order="1" DataType="VLV_CMD_CASES_COMP" StringSize="0">
+        <Dimension Lower="1" Upper="4" />
+      </Array>
+    </DataType>
+    <DataType Name="CFG_VLV_COMP" Comment="Configuration valves for screw compressors" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="VlvNo" DataType="INT" Comment="Valve number" StringSize="0" Order="1" />
+        <Variable Name="TBlink" DataType="UINT" Comment="Time blink" StringSize="0" Order="2" />
+        <Variable Name="T_PulseIncr" DataType="UINT" Comment="Time pulsing increase" StringSize="0" Order="3" />
+        <Variable Name="T_PulseDecr" DataType="UINT" Comment="Time pulsing decrease" StringSize="0" Order="4" />
+        <Variable Name="VlvCmd" DataType="VLV_CMD_INFO_COMP" Comment="Valve commands for all the 4 valves for screw compressors" StringSize="0" Order="5" />
+      </Struct>
+    </DataType>
+    <DataType Name="CFG_ENV_COMP" Comment="Configuration envelope" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="EvapMinTemp" DataType="REAL" Comment="Evaporation minimum temperature" StringSize="0" Order="1" />
+        <Variable Name="EvapMaxTemp" DataType="REAL" Comment="Evaporation minimum temperature" StringSize="0" Order="2" />
+        <Variable Name="EvapEconMaxTemp" DataType="REAL" Comment="Economy evaporation maximum temperature" StringSize="0" Order="3" />
+        <Variable Name="CurrX1" DataType="REAL" Comment="Current position 1 coordinate X" StringSize="0" Order="4" />
+        <Variable Name="CurrX2" DataType="REAL" Comment="Current position 2 coordinate X" StringSize="0" Order="5" />
+        <Variable Name="CompMinRateX1" DataType="REAL" Comment="Minimum compression rate position 1 coordinate X" StringSize="0" Order="6" />
+        <Variable Name="CompMinRateX2" DataType="REAL" Comment="Minimum compression rate position 2 coordinate X" StringSize="0" Order="7" />
+        <Variable Name="CompDeltaMinX1" DataType="REAL" Comment="Minimum compression differatial position 1 coordinate X" StringSize="0" Order="8" />
+        <Variable Name="CompDeltaMinX2" DataType="REAL" Comment="Minimum compression differatial position 2 coordinate X" StringSize="0" Order="9" />
+        <Variable Name="CompMaxRateX1" DataType="REAL" Comment="Maximum compression rate position 1 coordinate X" StringSize="0" Order="10" />
+        <Variable Name="CompMaxRateX2" DataType="REAL" Comment="Maximum compression rate position 1 coordinate X" StringSize="0" Order="11" />
+        <Variable Name="MaxCapX1" DataType="REAL" Comment="Maximum capacity position 1 coordinate X" StringSize="0" Order="12" />
+        <Variable Name="MaxCapX2" DataType="REAL" Comment="Maximum capacity position 2 coordinate X" StringSize="0" Order="13" />
+        <Variable Name="CondMinTemp" DataType="REAL" Comment="Condensation minimum temperature" StringSize="0" Order="14" />
+        <Variable Name="CondMaxTemp" DataType="REAL" Comment="Condensation maximum temperature" StringSize="0" Order="15" />
+        <Variable Name="CondEconMaxTemp" DataType="REAL" Comment="Economy condensation maximum temperature" StringSize="0" Order="16" />
+        <Variable Name="CurrY1" DataType="REAL" Comment="Current position 1 coordinate Y" StringSize="0" Order="17" />
+        <Variable Name="CurrY2" DataType="REAL" Comment="Current position 2 coordinate Y" StringSize="0" Order="18" />
+        <Variable Name="CompMinRateY1" DataType="REAL" Comment="Minimum compression rate position 1 coordinate Y" StringSize="0" Order="19" />
+        <Variable Name="CompMinRateY2" DataType="REAL" Comment="Minimum compression rate position 2 coordinate Y" StringSize="0" Order="20" />
+        <Variable Name="CompDeltaMinY1" DataType="REAL" Comment="Minimum compression differatial position 1 coordinate Y" StringSize="0" Order="21" />
+        <Variable Name="CompDeltaMinY2" DataType="REAL" Comment="Minimum compression differatial position 2 coordinate Y" StringSize="0" Order="22" />
+        <Variable Name="CompMaxRateY1" DataType="REAL" Comment="Maximum compression rate position 1 coordinate Y" StringSize="0" Order="23" />
+        <Variable Name="CompMaxRateY2" DataType="REAL" Comment="Maximum compression rate position 2 coordinate Y" StringSize="0" Order="24" />
+        <Variable Name="MaxCapY1" DataType="REAL" Comment="Maximum capacity position 1 coordinate Y" StringSize="0" Order="25" />
+        <Variable Name="MaxCapY2" DataType="REAL" Comment="Maximum capacity position 2 coordinate Y" StringSize="0" Order="26" />
+        <Variable Name="DscgMinTemp" DataType="REAL" Comment="Discharge minimum temperature" StringSize="0" Order="27" />
+        <Variable Name="DscgMaxTemp" DataType="REAL" Comment="Discharge maximum temperature" StringSize="0" Order="28" />
+        <Variable Name="MaxLimCap" DataType="REAL" Comment="Maximum capacity limit" StringSize="0" Order="29" />
+      </Struct>
+    </DataType>
+    <DataType Name="VERTEX_COMP" Comment="Coordinate" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="X" DataType="REAL" Comment="Coordinate X" StringSize="0" Order="1" />
+        <Variable Name="Y" DataType="REAL" Comment="Coordinate Y" StringSize="0" Order="2" />
+      </Struct>
+    </DataType>
+    <DataType Name="VLV_OUTPUTS_COMP" Comment="Valve outputs for I/O" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="OnOff" DataType="BOOL" Comment="Request of the relay" StringSize="0" Order="1" />
+        <Variable Name="DT_On" DataType="UINT" Comment="Delaytime on" StringSize="0" Order="2" />
+        <Variable Name="DT_Off" DataType="UINT" Comment="Delaytime off" StringSize="0" Order="3" />
+        <Variable Name="DoutTyp" DataType="UINT" Comment="DOUT TYPE" StringSize="0" Order="4" />
+      </Struct>
+    </DataType>
+    <DataType Name="ENV_COORDINATES_COMP" Comment="Coordinate X or Y for envelope vertexs" Access="ReadOnly">
+      <Array Order="1" DataType="REAL" StringSize="0">
+        <Dimension Lower="0" Upper="7" />
+      </Array>
+    </DataType>
+    <DataType Name="ENVALRM_ALARMS_COMP" Comment="Envelope alarms" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="DscgHiP" DataType="BOOL" Comment="Discharge high pressure" StringSize="0" Order="1" />
+        <Variable Name="DscgLowP" DataType="BOOL" Comment="Discharge low pressure" StringSize="0" Order="2" />
+        <Variable Name="SuctHiP" DataType="BOOL" Comment="Suction high pressure" StringSize="0" Order="3" />
+        <Variable Name="SuctLowP" DataType="BOOL" Comment="Suction low pressure" StringSize="0" Order="4" />
+        <Variable Name="HiCurr" DataType="BOOL" Comment="High current" StringSize="0" Order="5" />
+        <Variable Name="HiRatioP" DataType="BOOL" Comment="High ratio pressure" StringSize="0" Order="6" />
+        <Variable Name="LowRatioP" DataType="BOOL" Comment="Low ratio pressure" StringSize="0" Order="7" />
+        <Variable Name="LowDeltaP" DataType="BOOL" Comment="Low delta pressure" StringSize="0" Order="8" />
+        <Variable Name="DscgHiTemp" DataType="BOOL" Comment="Discharge high temperature" StringSize="0" Order="9" />
+      </Struct>
+    </DataType>
+    <DataType Name="PH_COMP" Comment="Compressor phase" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Run" DataType="USINT" Comment="compressor phase, different between step and stepless compressors" StringSize="0" Order="1" />
+        <Variable Name="InCntDwn" DataType="BOOL" Comment="in count down or not" StringSize="0" Order="2" />
+        <Variable Name="CntDwn" DataType="UINT" Comment="count down time" StringSize="0" Order="3" />
+      </Struct>
+    </DataType>
+    <DataType Name="MOTIGN_TIMES_COMP" Comment="Motor ignition times" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="DT_On" DataType="UINT" Comment="Delay on time" StringSize="0" Order="1" />
+        <Variable Name="DT_Off" DataType="UINT" Comment="Delay off time" StringSize="0" Order="2" />
+      </Struct>
+    </DataType>
+    <DataType Name="PREVENT_INFO_COMP" Comment="Prevent status " Access="ReadOnly">
+      <Array Order="1" DataType="INT" StringSize="0">
+        <Dimension Lower="0" Upper="31" />
+      </Array>
+    </DataType>
+    <DataType Name="CIRCUIT_DEVROT" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="CountDown_Safety_Time_Min" DataType="UINT" Comment="" StringSize="0" Order="1" />
+        <Variable Name="Power_Act" DataType="DINT" Comment="Circuit Actual Power" StringSize="0" Order="2" />
+        <Variable Name="Power_Act_Min" DataType="DINT" Comment="Circuit Power Min" StringSize="0" Order="3" />
+        <Variable Name="Power_Act_Max" DataType="DINT" Comment="Circuit Power Max" StringSize="0" Order="4" />
+        <Variable Name="Inverter" DataType="BOOL" Comment="True on the circuit there is a Inverter" StringSize="0" Order="5" />
+        <Variable Name="Stage_Act" DataType="INT" Comment="compressors stage sum  " StringSize="0" Order="6" />
+        <Variable Name="Stage_Act_T" DataType="INT" Comment="at the beginin of the call is equivalent to Stage_Act but after contemple the request made to increse or decrease" StringSize="0" Order="7" />
+        <Variable Name="Stage_Act_T_Old" DataType="INT" Comment="Is is Stage_Act_T of the call before" StringSize="0" Order="8" />
+        <Variable Name="Stage_Max" DataType="INT" Comment="compressors max stage sum" StringSize="0" Order="9" />
+        <Variable Name="Stage_Min" DataType="INT" Comment="compressors min stage sum" StringSize="0" Order="10" />
+        <Variable Name="State_PDW_On" DataType="BOOL" Comment="true when the circuit is in pomp down on" StringSize="0" Order="11" />
+        <Variable Name="State_PDW_Off" DataType="BOOL" Comment="true when the circuit is in pomp down off" StringSize="0" Order="12" />
+        <Variable Name="Time_Start" DataType="UDINT" Comment="time when the circuit start last time" StringSize="0" Order="13" />
+        <Variable Name="Time_Stop" DataType="UDINT" Comment="time when the circuit stop last time" StringSize="0" Order="14" />
+        <Variable Name="Time_Stop_Min" DataType="UDINT" Comment="min stop time of compressor on the circuit" StringSize="0" Order="15" />
+        <Variable Name="Time_Decrease" DataType="UDINT" Comment="" StringSize="0" Order="16" />
+        <Variable Name="WorkingTime_Max" DataType="UDINT" Comment="" StringSize="0" Order="17" />
+        <Variable Name="WorkingTime_Min" DataType="UDINT" Comment="" StringSize="0" Order="18" />
+        <Variable Name="Custom_Rot_On" DataType="INT" Comment="" StringSize="0" Order="19" />
+        <Variable Name="Custom_Rot_Off" DataType="INT" Comment="" StringSize="0" Order="20" />
+        <Variable Name="CountDown_ForceOn_Time_Min" DataType="UINT" Comment="" StringSize="0" Order="21" />
+        <Variable Name="Comp_On_Max" DataType="INT" Comment="" StringSize="0" Order="22" />
+        <Variable Name="Comp_On_Act" DataType="INT" Comment="" StringSize="0" Order="23" />
+        <Variable Name="First_Comp_Circuit_Priority_Lvl" DataType="INT" Comment="" StringSize="0" Order="24" />
+      </Struct>
+    </DataType>
+    <DataType Name="CIRCUIT_ARRAY_DEVROT" Comment="" Access="ReadOnly">
+      <Array Order="1" DataType="CIRCUIT_DEVROT" StringSize="0">
+        <Dimension Lower="0" Upper="31" />
+      </Array>
+    </DataType>
+    <DataType Name="COMPRESSOR_DEVROT" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="CountDown_Safety_Time" DataType="UINT" Comment="" StringSize="0" Order="1" />
+        <Variable Name="Power_Act" DataType="DINT" Comment="" StringSize="0" Order="2" />
+        <Variable Name="Power_Min_Mod" DataType="INT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="Power_Max" DataType="DINT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="Inverter" DataType="BOOL" Comment="" StringSize="0" Order="5" />
+        <Variable Name="Power_Mod" DataType="INT" Comment="" StringSize="0" Order="6" />
+        <Variable Name="Power_Inc" DataType="DINT" Comment="" StringSize="0" Order="7" />
+        <Variable Name="Power_Dec" DataType="DINT" Comment="" StringSize="0" Order="8" />
+        <Variable Name="Stage_Act" DataType="INT" Comment="" StringSize="0" Order="9" />
+        <Variable Name="Stage_Act_Old" DataType="INT" Comment="" StringSize="0" Order="10" />
+        <Variable Name="Stage_Max" DataType="INT" Comment="" StringSize="0" Order="11" />
+        <Variable Name="Stage_Min" DataType="INT" Comment="" StringSize="0" Order="12" />
+        <Variable Name="State_PDW" DataType="INT" Comment="" StringSize="0" Order="13" />
+        <Variable Name="Time_Start" DataType="UDINT" Comment="" StringSize="0" Order="14" />
+        <Variable Name="Time_Stop" DataType="UDINT" Comment="" StringSize="0" Order="15" />
+        <Variable Name="Time_Decrease" DataType="UDINT" Comment="" StringSize="0" Order="16" />
+        <Variable Name="WorkingTime" DataType="UDINT" Comment="" StringSize="0" Order="17" />
+        <Variable Name="Custom_Rot_On" DataType="INT" Comment="" StringSize="0" Order="18" />
+        <Variable Name="Custom_Rot_Off" DataType="INT" Comment="" StringSize="0" Order="19" />
+        <Variable Name="Stage_Conf" DataType="INT" Comment="" StringSize="0" Order="20" />
+        <Variable Name="CountDown_ForceOn_Time" DataType="UINT" Comment="" StringSize="0" Order="21" />
+        <Variable Name="First_Comp_Circuit_Priority_Lvl" DataType="INT" Comment="" StringSize="0" Order="22" />
+      </Struct>
+    </DataType>
+    <DataType Name="COMPRESSOR_ARRAY_DEVROT" Comment="" Access="ReadOnly">
+      <Array Order="1" DataType="COMPRESSOR_DEVROT" StringSize="0">
+        <Dimension Lower="0" Upper="31" />
+      </Array>
+    </DataType>
+    <DataType Name="TIMER_DEVROT" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="PTp" DataType="UDINT" Comment="" StringSize="0" Order="1" />
+        <Variable Name="Qp" DataType="BOOL" Comment="" StringSize="0" Order="2" />
+        <Variable Name="START_TIME" DataType="UDINT" Comment="" StringSize="0" Order="3" />
+      </Struct>
+    </DataType>
+    <DataType Name="MACHINE_DEVROT" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Power_Max" DataType="REAL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="EtUp" DataType="UDINT" Comment="" StringSize="0" Order="2" />
+        <Variable Name="QUp" DataType="BOOL" Comment="" StringSize="0" Order="3" />
+        <Variable Name="EtDW" DataType="UDINT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="QDw" DataType="BOOL" Comment="" StringSize="0" Order="5" />
+        <Variable Name="EtSt" DataType="UDINT" Comment="" StringSize="0" Order="6" />
+        <Variable Name="QSt" DataType="BOOL" Comment="" StringSize="0" Order="7" />
+        <Variable Name="Tsec_Dw" DataType="INT" Comment="" StringSize="0" Order="8" />
+        <Variable Name="Tsec_Up" DataType="INT" Comment="" StringSize="0" Order="9" />
+        <Variable Name="TSec_St" DataType="INT" Comment="" StringSize="0" Order="10" />
+        <Variable Name="State_PDW_On" DataType="BOOL" Comment="" StringSize="0" Order="11" />
+        <Variable Name="State_PDW_Off" DataType="BOOL" Comment="" StringSize="0" Order="12" />
+        <Variable Name="Pump_Down_On" DataType="BOOL" Comment="" StringSize="0" Order="13" />
+        <Variable Name="Pump_Down_Off" DataType="BOOL" Comment="" StringSize="0" Order="14" />
+        <Variable Name="Prevent_Result" DataType="INT" Comment="" StringSize="0" Order="15" />
+        <Variable Name="N_Circ" DataType="INT" Comment="" StringSize="0" Order="16" />
+        <Variable Name="N_CompsCirc" DataType="INT" Comment="" StringSize="0" Order="17" />
+        <Variable Name="N_CompsCircMax" DataType="INT" Comment="" StringSize="0" Order="18" />
+        <Variable Name="Eq_Circ" DataType="INT" Comment="" StringSize="0" Order="19" />
+        <Variable Name="Rotation_Type" DataType="INT" Comment="" StringSize="0" Order="20" />
+        <Variable Name="Devices_Unload_Sequence" DataType="INT" Comment="" StringSize="0" Order="21" />
+        <Variable Name="Power_Act" DataType="REAL" Comment="" StringSize="0" Order="22" />
+        <Variable Name="Power_Act_Min" DataType="REAL" Comment="" StringSize="0" Order="23" />
+        <Variable Name="Power_Act_Max" DataType="REAL" Comment="" StringSize="0" Order="24" />
+        <Variable Name="Inverter" DataType="BOOL" Comment="" StringSize="0" Order="25" />
+        <Variable Name="Comp_Next_On" DataType="INT" Comment="" StringSize="0" Order="27" />
+        <Variable Name="Circ_Next_On" DataType="INT" Comment="" StringSize="0" Order="28" />
+        <Variable Name="Comp_Next_Off" DataType="INT" Comment="" StringSize="0" Order="29" />
+        <Variable Name="Circ_Next_Off" DataType="INT" Comment="" StringSize="0" Order="30" />
+        <Variable Name="Stage_Max" DataType="INT" Comment="" StringSize="0" Order="31" />
+        <Variable Name="Stage_Req" DataType="INT" Comment="" StringSize="0" Order="32" />
+        <Variable Name="Stage_Act" DataType="INT" Comment="" StringSize="0" Order="33" />
+        <Variable Name="Pump_Down_Type" DataType="INT" Comment="" StringSize="0" Order="34" />
+        <Variable Name="ReqDecrease" DataType="BOOL" Comment="" StringSize="0" Order="35" />
+        <Variable Name="Lst_Circs_Info" DataType="CIRCUIT_ARRAY_DEVROT" Comment="" StringSize="0" Order="36" />
+        <Variable Name="Lst_Comps_Info" DataType="COMPRESSOR_ARRAY_DEVROT" Comment="" StringSize="0" Order="37" />
+        <Variable Name="TUp" DataType="TIMER_DEVROT" Comment="" StringSize="0" Order="38" />
+        <Variable Name="TDw" DataType="TIMER_DEVROT" Comment="" StringSize="0" Order="39" />
+        <Variable Name="Tst" DataType="TIMER_DEVROT" Comment="" StringSize="0" Order="40" />
+        <Variable Name="Mode" DataType="INT" Comment="" StringSize="0" Order="44" />
+        <Variable Name="Comp_Power_Min_Mill" DataType="INT" Comment="" StringSize="0" Order="45" />
+        <Variable Name="Comp_Power_Max_Mill" DataType="INT" Comment="" StringSize="0" Order="46" />
+        <Variable Name="First_Comp_Circuit_Priority" DataType="BOOL" Comment="" StringSize="0" Order="47" />
+      </Struct>
+    </DataType>
+    <DataType Name="COMPSTEP_DEVROT" Comment="0..Id_CompStep_DEVROT*4-1" Access="ReadOnly">
+      <Array Order="1" DataType="INT" StringSize="0">
+        <Dimension Lower="0" Upper="39" />
+      </Array>
+    </DataType>
+    <DataType Name="ERROR_DEVROT" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="Func" DataType="USINT" Comment="Identifier of the function in which error has happen" StringSize="0" Order="1" />
+        <Variable Name="Step" DataType="USINT" Comment="In which step of the algorithm the error has happen" StringSize="0" Order="2" />
+        <Variable Name="Gravity" DataType="USINT" Comment="Gravity of the error (1=warning, 2=error)" StringSize="0" Order="3" />
+        <Variable Name="Typ" DataType="USINT" Comment="Type of the error" StringSize="0" Order="4" />
+      </Struct>
+    </DataType>
+    <DataType Name="ERROR_ARRAY_DEVROT" Comment="Max dimension must be equal to IdErrMax_DEVROT" Access="ReadOnly">
+      <Array Order="1" DataType="ERROR_DEVROT" StringSize="0">
+        <Dimension Lower="0" Upper="20" />
+      </Array>
+    </DataType>
+    <DataType Name="ERROR_BOX_DEVROT" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="ErrNo" DataType="UINT" Comment="Number of errors happened" StringSize="0" Order="1" />
+        <Variable Name="Errors" DataType="ERROR_ARRAY_DEVROT" Comment="Errors array" StringSize="0" Order="2" />
+      </Struct>
+    </DataType>
+    <DataType Name="USINT_DEVROT" Comment="" Access="ReadOnly">
+      <Array Order="1" DataType="USINT" StringSize="0">
+        <Dimension Lower="0" Upper="31" />
+      </Array>
+    </DataType>
+    <DataType Name="UDINT_DEVROT" Comment="" Access="ReadOnly">
+      <Array Order="1" DataType="UDINT" StringSize="0">
+        <Dimension Lower="0" Upper="31" />
+      </Array>
+    </DataType>
+    <DataType Name="UINT_DEVROT" Comment="" Access="ReadOnly">
+      <Array Order="1" DataType="UINT" StringSize="0">
+        <Dimension Lower="0" Upper="31" />
+      </Array>
+    </DataType>
+    <DataType Name="INT_DEVROT" Comment="" Access="ReadOnly">
+      <Array Order="1" DataType="INT" StringSize="0">
+        <Dimension Lower="0" Upper="31" />
+      </Array>
+    </DataType>
+    <DataType Name="BOOL_DEVROT" Comment="IdCircMin_DEVROT.. IdCircMax_DEVROT" Access="ReadOnly">
+      <Array Order="1" DataType="BOOL" StringSize="0">
+        <Dimension Lower="0" Upper="31" />
+      </Array>
+    </DataType>
+    <DataType Name="CFG_DEVROT" Comment="Devices rotation configuration" Access="ReadOnly">
+      <Struct FieldOrder="0" Order="1">
+        <Variable Name="DevNoPerCirc" DataType="INT" Comment="Number of device per circuit" StringSize="0" Order="2" />
+        <Variable Name="DevNoPerCircMax" DataType="INT" Comment="Maximum number of device per circuit" StringSize="0" Order="3" />
+        <Variable Name="CircNo" DataType="INT" Comment="Number of circuit (1..4)" StringSize="0" Order="4" />
+        <Variable Name="EqualizedCircPwr" DataType="INT" Comment="Equalizes power between circuits (0=grouped, 1=equalized, 2=grouped at start and equalized at shutdown)" StringSize="0" Order="5" />
+        <Variable Name="LdUpT" DataType="INT" Comment="Delay time between two on requests in seconds" StringSize="0" Order="6" />
+        <Variable Name="LdDwnT" DataType="INT" Comment="Delay time between two off requests in seconds" StringSize="0" Order="7" />
+        <Variable Name="DTUnLd" DataType="INT" Comment="Delay time between two steps increases in seconds" StringSize="0" Order="8" />
+        <Variable Name="PmpDwnTyp" DataType="INT" Comment="Pump down type (0=None, 1=at stop, 2=at start, 3=Both start and stop)" StringSize="0" Order="9" />
+        <Variable Name="RotTyp" DataType="INT" Comment="Type of rotation (0:---, 1:FIFO, 2:LIFO, 3:Timed, 4:Custom, 5:Custom 2)" StringSize="0" Order="10" />
+        <Variable Name="UnLdDevSeq" DataType="INT" Comment="Load step sequence (0=---, 1=CCpppppp, 2=CpppCppp)" StringSize="0" Order="11" />
+        <Variable Name="EnInv" DataType="BOOL" Comment="Enables inverter management" StringSize="0" Order="12" />
+        <Variable Name="CompMinPwr" DataType="INT" Comment="Minimum inverter compressor power (0-1000)" StringSize="0" Order="13" />
+        <Variable Name="CompMaxPwr" DataType="INT" Comment="Maximum inverter compressor power (0-1000)" StringSize="0" Order="14" />
+        <Variable Name="CascOptimization" DataType="INT" Comment="Optimization for device lines in cascade (0=disabled, 1=enabled)" StringSize="0" Order="16" />
+        <Variable Name="Mode" DataType="INT" Comment="" StringSize="0" Order="17" />
+        <Variable Name="FirstCompCircPriority" DataType="BOOL" Comment="" StringSize="0" Order="18" />
+      </Struct>
+    </DataType>
+    <DataType Name="TEEV" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="1" Order="3">
+        <Variable Name="Enable" DataType="BOOL" Comment="" StringSize="0" Order="1" />
+        <Variable Name="PositionToSet" DataType="UINT" Comment="" StringSize="0" Order="2" />
+        <Variable Name="VariationToSet" DataType="INT" Comment="" StringSize="0" Order="3" />
+        <Variable Name="CurrentEstimatedPosition" DataType="UINT" Comment="" StringSize="0" Order="4" />
+        <Variable Name="VariationRemaining" DataType="INT" Comment="" StringSize="0" Order="5" />
+        <Variable Name="MaxSteps" DataType="UINT" Comment="" StringSize="0" Order="6" />
+        <Variable Name="MinSteps" DataType="UINT" Comment="" StringSize="0" Order="7" />
+        <Variable Name="ClosingSteps" DataType="UINT" Comment="" StringSize="0" Order="8" />
+        <Variable Name="NominalCurrent" DataType="UINT" Comment="" StringSize="0" Order="9" />
+        <Variable Name="HoldingCurrent" DataType="UINT" Comment="" StringSize="0" Order="10" />
+        <Variable Name="Speed" DataType="UINT" Comment="" StringSize="0" Order="11" />
+        <Variable Name="DutyCycle" DataType="UINT" Comment="" StringSize="0" Order="12" />
+        <Variable Name="DutyCycleEnable" DataType="BOOL" Comment="" StringSize="0" Order="13" />
+        <Variable Name="OpeningXSteps" DataType="BOOL" Comment="" StringSize="0" Order="14" />
+        <Variable Name="ClosingXSteps" DataType="BOOL" Comment="" StringSize="0" Order="15" />
+        <Variable Name="FastClosingSpeed" DataType="UINT" Comment="" StringSize="0" Order="16" />
+        <Variable Name="FastClosingSpeedEnable" DataType="BOOL" Comment="" StringSize="0" Order="17" />
+        <Variable Name="Alarms" DataType="USINT" Comment="" StringSize="0" Order="18" />
+      </Struct>
+    </DataType>
+    <DataType Name="ALM" Comment="" Access="ReadOnly">
+      <Struct FieldOrder="1" Order="4">
+        <Variable Name="Trigger" DataType="BOOL" Comment="Alarm status Trigger" StringSize="0" Order="1" />
+        <Variable Name="Active" DataType="BOOL" Comment="Alarm status" StringSize="0" Order="2" />
+      </Struct>
+    </DataType>
+  </DataTypes>
+  <Networks>
+    <Network Name="HSD" SingleTextLine="" LocalNet="true" DistributedNet="false" Comment="" UsedForBinding="true" BindingService="false" AllowWorkbenchCommunications="true">
+      <Parameters />
+      <ConnectionParameters />
+      <ResourceParameters>
+        <Parameter Name="ValidityTime" Format="Long" Default="0" Access="UserDefined" SingleTextLine="Produced Variables validity time." LocalNet="false" DistributedNet="false" />
+      </ResourceParameters>
+      <VariableParameters />
+    </Network>
+    <Network Name="ETCP" SingleTextLine="" LocalNet="false" DistributedNet="true" Comment="" UsedForBinding="true" BindingService="false" AllowWorkbenchCommunications="true">
+      <Parameters />
+      <ConnectionParameters>
+        <Parameter Name="IPAddress" Format="String" Default="127.0.0.1" Access="UserDefined" SingleTextLine="IP address or Computer name" LocalNet="false" DistributedNet="true" />
+      </ConnectionParameters>
+      <ResourceParameters>
+        <Parameter Name="TimeOut" Format="Long" Default="10000" Access="UserDefined" SingleTextLine="Maximum allowed time (in ms) to transport a variable" LocalNet="false" DistributedNet="true" />
+      </ResourceParameters>
+      <VariableParameters />
+    </Network>
+    <Network Name="ISARSI" SingleTextLine="" LocalNet="false" DistributedNet="true" Comment="" UsedForBinding="true" BindingService="false" AllowWorkbenchCommunications="true">
+      <Parameters>
+        <Parameter Name="Port" Format="String" Default="COM6" Access="UserDefined" SingleTextLine="Workbench communication port" LocalNet="false" DistributedNet="true" />
+        <Parameter Name="BaudRate" Format="Long" Default="115200" Access="UserDefined" SingleTextLine="Data transfer baud rate" LocalNet="false" DistributedNet="true" />
+        <Parameter Name="Parity" Format="Character" Default="N" Access="UserDefined" SingleTextLine="N: None, E: Even, O: Odd" LocalNet="false" DistributedNet="true" />
+        <Parameter Name="StopBit" Format="Word" Default="1" Access="UserDefined" SingleTextLine="1 or 2 Stop bits" LocalNet="false" DistributedNet="true" />
+        <Parameter Name="HardwareFlowControl" Format="Boolean" Default="FALSE" Access="UserDefined" SingleTextLine="TRUE when using hardware flow control" LocalNet="false" DistributedNet="true" />
+      </Parameters>
+      <ConnectionParameters />
+      <ResourceParameters />
+      <VariableParameters />
+    </Network>
+  </Networks>
+  <NetworkInstances>
+    <NetworkInstance NetworkName="ETCP" Name="ETCP1" />
+    <NetworkInstance NetworkName="ISARSI" Name="ISARSI1" />
+  </NetworkInstances>
+  <Targets>
+    <Target Name="CAREL_PCO" />
+  </Targets>
+  <Configurations>
+    <Configuration Name="Device1" ElementGuid="e5619c74-aed5-4bfa-87ad-8e4823a88b2d" />
+  </Configurations>
+</Project>

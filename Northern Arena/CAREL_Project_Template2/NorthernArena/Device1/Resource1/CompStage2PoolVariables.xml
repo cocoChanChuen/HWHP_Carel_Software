@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="CompStd1Pool_1" Comment="" AccessRights="ReadWrite" DataType="CompStd1Pool" Kind="Var">
+      <Variable Name="PoolWaterRealTemp" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="PoolSP" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="PoolLowerLim" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="PoolUpperLim" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="CompOutput" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="HysterAdv_REAL_1" DataType="HysterAdv_REAL">
+        <Variable Name="In" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Input value" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+        <Variable Name="SetP" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Setpoint" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+        <Variable Name="DiffLeft" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Differential to the left of the setpoint (extreme included)" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+        <Variable Name="DiffRight" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Differential to the right of the setpoint (extreme included)" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+        <Variable Name="Reverse" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="If true, the function is reverted" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Out" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Hysteresis on/off" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="Out_1" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Hysteresis on/off" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="CompStd1Pool_2" Comment="" AccessRights="ReadWrite" DataType="CompStd1Pool" Kind="Var">
+      <Variable Name="PoolWaterRealTemp" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="PoolSP" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="PoolLowerLim" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="PoolUpperLim" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+      <Variable Name="CompOutput" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="HysterAdv_REAL_1" DataType="HysterAdv_REAL">
+        <Variable Name="In" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Input value" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+        <Variable Name="SetP" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Setpoint" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+        <Variable Name="DiffLeft" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Differential to the left of the setpoint (extreme included)" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+        <Variable Name="DiffRight" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Differential to the right of the setpoint (extreme included)" Kind="VarInput" Access="ReadWrite" Decimals="1" />
+        <Variable Name="Reverse" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="If true, the function is reverted" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Out" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Hysteresis on/off" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="Out_1" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Hysteresis on/off" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="DelayOnOff_INT_2" Comment="" AccessRights="ReadWrite" DataType="DelayOnOff_INT" Kind="Var">
+      <Variable Name="In" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Input value" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Time1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="Seconds" Comment="Delay time (seconds)" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Out" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Output value" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="SR_1" DataType="SR">
+        <Variable Name="SET1" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE sets  Q1 to TRUE (dominant)" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="RESET" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE resets Q1 to False" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Q1" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="boolean memory state" Kind="VarOutput" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="TON_1" DataType="TON">
+        <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if Rising edge, starts increasing internal timer. If Falling Edge, stops and resets internal timer" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE, programmed time is elapsed" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+        <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+      </Variable>
+      <Variable Name="TON_2" DataType="TON">
+        <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if Rising edge, starts increasing internal timer. If Falling Edge, stops and resets internal timer" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+        <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE, programmed time is elapsed" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+        <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+        <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+      </Variable>
+    </Variable>
+    <Variable Name="LeadSubComp_1" Comment="" AccessRights="ReadWrite" DataType="LeadSubComp" Kind="Var">
+      <Variable Name="LeadIn" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="SubIn" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Diff" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="InLeadStatus" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Comp1Out" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Comp2Out" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="OutLeadStatus" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="TimeForSwtich" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="Pool1Demand" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="Pool2Demand" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="PoolLowerLim_1" Comment="Automatically generated" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="PoolLowerLim_2" Comment="Automatically generated" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="PoolSP_1" Comment="Automatically generated" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="PoolSP_2" Comment="Automatically generated" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="PoolUpperLim_1" Comment="Automatically generated" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="PoolUpperLim_2" Comment="Automatically generated" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="PoolWaterRealTemp_1" Comment="Automatically generated" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="PoolWaterRealTemp_2" Comment="Automatically generated" AccessRights="Read" DataType="REAL" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" Decimals="1" />
+    <Variable Name="UnitCompA" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="UnitCompARunTime" Comment="" AccessRights="Read" DataType="UDINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="UnitCompB" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="UnitCompBRunTime" Comment="" AccessRights="Read" DataType="UDINT" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="UnitLead" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="UnitSub" Comment="" AccessRights="ReadWrite" DataType="BOOL" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+  </Variables>
+</Manifest>

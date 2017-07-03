@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# c.strategy Solution File, Format Version 11.00
+Project("{A6F45E2C-46AC-4E2B-9F75-4E058226B5AB}") = "NorthernArena", "NorthernArena.acfproj", "{9765C476-6D66-4EAA-ABDB-3DD9AB36EFFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Views", "Solution Views", "{7E00872C-895A-469F-85C2-106C1487218F}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment.isadpl = Deployment.isadpl
+	EndProjectSection
+	ProjectSection(FolderGlobals) = preProject
+		DeploymentSolutionViews = True
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Online|Any CPU = Online|Any CPU
+		Simulation|Any CPU = Simulation|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9765C476-6D66-4EAA-ABDB-3DD9AB36EFFE}.Online|Any CPU.ActiveCfg = Online|Any CPU
+		{9765C476-6D66-4EAA-ABDB-3DD9AB36EFFE}.Online|Any CPU.Build.0 = Online|Any CPU
+		{9765C476-6D66-4EAA-ABDB-3DD9AB36EFFE}.Simulation|Any CPU.ActiveCfg = Simulation|Any CPU
+		{9765C476-6D66-4EAA-ABDB-3DD9AB36EFFE}.Simulation|Any CPU.Build.0 = Simulation|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,154 @@
+Version 1.0 tERASetting
+Settings
+ConfigName	ConfigVersion	Password	UoM_tERA	UoM_Web	Instance	CWebCheckBox
+DevicesRotation	1.0		0	0	DevicesRotation_mngFalse
+Variables
+Variable	Description	Access	WebAccess
+DevicesRotation_mng.CfgStage[0]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[1]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[10]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[11]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[12]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[13]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[14]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[15]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[16]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[17]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[18]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[19]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[2]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[20]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[21]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[22]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[23]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[24]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[25]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[26]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[27]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[28]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[29]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[3]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[30]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[31]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[4]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[5]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[6]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[7]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[8]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.CfgStage[9]	Array with the number of load steps for each device	Disabled	Disabled
+DevicesRotation_mng.Configuration.CascOptimization	Function block configuration - Optimization for device lines in cascade (0=disabled, 1=enabled)	Disabled	Disabled
+DevicesRotation_mng.Configuration.CircNo	Function block configuration - Number of circuit (1..4)	Disabled	Disabled
+DevicesRotation_mng.Configuration.CompMaxPwr	Function block configuration - Maximum inverter compressor power (0-1000)	Disabled	Disabled
+DevicesRotation_mng.Configuration.CompMinPwr	Function block configuration - Minimum inverter compressor power (0-1000)	Disabled	Disabled
+DevicesRotation_mng.Configuration.DevNoPerCirc	Function block configuration - Number of device per circuit	Disabled	Disabled
+DevicesRotation_mng.Configuration.DevNoPerCircMax	Function block configuration - Maximum number of device per circuit	Disabled	Disabled
+DevicesRotation_mng.Configuration.DTUnLd	Function block configuration - Delay time between two steps increases in seconds	Disabled	Disabled
+DevicesRotation_mng.Configuration.EnInv	Function block configuration - Enables inverter management	Disabled	Disabled
+DevicesRotation_mng.Configuration.EqualizedCircPwr	Function block configuration - Equalizes power between circuits (0=grouped, 1=equalized, 2=grouped at start and equalized at shutdown)	Disabled	Disabled
+DevicesRotation_mng.Configuration.FirstCompCircPriority	Function block configuration	Disabled	Disabled
+DevicesRotation_mng.Configuration.LdDwnT	Function block configuration - Delay time between two off requests in seconds	Disabled	Disabled
+DevicesRotation_mng.Configuration.LdUpT	Function block configuration - Delay time between two on requests in seconds	Disabled	Disabled
+DevicesRotation_mng.Configuration.Mode	Function block configuration	Disabled	Disabled
+DevicesRotation_mng.Configuration.PmpDwnTyp	Function block configuration - Pump down type (0=None, 1=at stop, 2=at start, 3=Both start and stop)	Disabled	Disabled
+DevicesRotation_mng.Configuration.RotTyp	Function block configuration - Type of rotation (0:---, 1:FIFO, 2:LIFO, 3:Timed, 4:Custom, 5:Custom 2)	Disabled	Disabled
+DevicesRotation_mng.Configuration.UnLdDevSeq	Function block configuration - Load step sequence (0=---, 1=CCpppppp, 2=CpppCppp)	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[0]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[1]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[10]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[11]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[12]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[13]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[14]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[15]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[16]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[17]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[18]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[19]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[2]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[20]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[21]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[22]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[23]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[24]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[25]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[26]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[27]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[28]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[29]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[3]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[30]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[31]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[4]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[5]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[6]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[7]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[8]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOff[9]	Array for custom rotation, specify shutdown order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[0]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[1]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[10]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[11]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[12]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[13]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[14]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[15]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[16]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[17]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[18]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[19]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[2]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[20]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[21]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[22]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[23]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[24]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[25]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[26]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[27]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[28]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[29]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[3]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[30]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[31]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[4]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[5]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[6]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[7]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[8]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.CstRotOn[9]	Array for custom rotation, specify start order	Disabled	Disabled
+DevicesRotation_mng.DevPwr[0]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[1]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[10]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[11]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[12]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[13]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[14]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[15]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[16]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[17]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[18]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[19]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[2]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[20]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[21]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[22]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[23]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[24]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[25]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[26]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[27]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[28]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[29]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[3]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[30]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[31]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[4]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[5]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[6]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[7]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[8]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.DevPwr[9]	Array with devices power in Kw	Disabled	Disabled
+DevicesRotation_mng.En_DevicesRotation	Enable the function block	Disabled	Disabled
+DevicesRotation_mng.ModulPwrReq	Power request for the inverter (if present)	Disabled	Disabled
+DevicesRotation_mng.ModulPwrReqLog		Disabled	Disabled
+DevicesRotation_mng.PwrReqLog		Disabled	Disabled

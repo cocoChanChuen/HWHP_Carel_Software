@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="Device" Comment="Status of the pump (FALSE: pump off, TRUE: pump on)" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="SaftyIn" Comment="Status of the water flow switch(FALSE: normal condition, TRUE: alarm condition)" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="DevicePresent" Comment="Specify whether the pump is enabled for operation (FALSE: pump disabled, TRUE: pump enabled)" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="StartUpDT" Comment="Alarm delay time on pump power-up" AccessRights="Read" DataType="UINT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+    <Variable Name="RunningDT" Comment="Alarm delay time in stable operation" AccessRights="Read" DataType="UINT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+    <Variable Name="En_RunStartUpDT_Alrm" Comment="Enable the function block" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="AlrmOut" Comment="Alarm status" AccessRights="Write" DataType="BOOL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="TStartUp" Comment="" AccessRights="ReadWrite" DataType="TIME" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="TRunning" Comment="" AccessRights="ReadWrite" DataType="TIME" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="TON_1" Comment="" AccessRights="ReadWrite" DataType="TON" Modifier="Constant" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="TON_2" Comment="" AccessRights="ReadWrite" DataType="TON" Modifier="Constant" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="F_TRIG_1" Comment="" AccessRights="ReadWrite" DataType="F_TRIG" Modifier="Constant" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Fedge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="F_TRIG_2" Comment="" AccessRights="ReadWrite" DataType="F_TRIG" Modifier="Constant" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Fedge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="SR_1" Comment="" AccessRights="ReadWrite" DataType="SR" Modifier="Constant" Kind="Var">
+      <Variable Name="SET1" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="RESET" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q1" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="DelayOn_1" Comment="" AccessRights="ReadWrite" DataType="TON" Modifier="Constant" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="DelayOn_2" Comment="" AccessRights="ReadWrite" DataType="TON" Modifier="Constant" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="SR_Set" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+  </Variables>
+</Manifest>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="VlvNo" Comment="Valve number" AccessRights="Read" DataType="DINT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="SteplessStep" Comment="0: Stepless; 1: Step" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="CfgCompVlv" Comment="Configuration valves for screw compressors" AccessRights="Read" DataType="CFG_VLV_COMP" Modifier="Constant" Kind="VarInput">
+      <Variable Name="VlvNo" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="TBlink" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="T_PulseIncr" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Milliseconds" IsRetained="false" />
+      <Variable Name="T_PulseDecr" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Milliseconds" IsRetained="false" />
+      <Variable Name="VlvCmd" DataType="VLV_CMD_INFO_COMP">
+        <Variable Name="VlvCmd[1]" DataType="VLV_CMD_CASES_COMP">
+          <Variable Name="Off" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="StartUp1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="StartUp2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph3" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph4" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="ShOff1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="ShOff2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        </Variable>
+        <Variable Name="VlvCmd[2]" DataType="VLV_CMD_CASES_COMP">
+          <Variable Name="Off" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="StartUp1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="StartUp2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph3" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph4" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="ShOff1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="ShOff2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        </Variable>
+        <Variable Name="VlvCmd[3]" DataType="VLV_CMD_CASES_COMP">
+          <Variable Name="Off" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="StartUp1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="StartUp2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph3" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph4" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="ShOff1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="ShOff2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        </Variable>
+        <Variable Name="VlvCmd[4]" DataType="VLV_CMD_CASES_COMP">
+          <Variable Name="Off" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="StartUp1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="StartUp2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph3" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="Ph4" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="ShOff1" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+          <Variable Name="ShOff2" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        </Variable>
+      </Variable>
+    </Variable>
+    <Variable Name="PhRun" Comment="Phase run" AccessRights="Read" DataType="USINT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="T_PulseOff" Comment="Valve pulsing off time" AccessRights="Read" DataType="UINT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+    <Variable Name="T_PulseOn_Mul" Comment="Valve pulsing on time multiplier" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+    <Variable Name="En_CompVlvs" Comment="Enable this function block" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="VlvPulse" Comment="Valve pulsing" AccessRights="Write" DataType="BOOL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="VlvDoutInfo" Comment="Valve outputs for I/O" AccessRights="Write" DataType="VLV_OUTPUTS_COMP" Modifier="Constant" Kind="VarOutput">
+      <Variable Name="OnOff" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="DT_On" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Milliseconds" IsRetained="false" />
+      <Variable Name="DT_Off" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Milliseconds" IsRetained="false" />
+      <Variable Name="DoutTyp" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="VlvCmd" Comment="Valve cmd" AccessRights="Write" DataType="INT" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="DevPresent" Comment="Device present" AccessRights="Write" DataType="BOOL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="En_PulseVariation" Comment="Enable pulsing variation" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="PeriodT" Comment="" AccessRights="ReadWrite" DataType="TIME" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="F_TRIG_1" Comment="" AccessRights="ReadWrite" DataType="F_TRIG" Modifier="Constant" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Fedge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="F_TRIG_2" Comment="" AccessRights="ReadWrite" DataType="F_TRIG" Modifier="Constant" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Fedge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="PulseVariation" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="TON_1" Comment="" AccessRights="ReadWrite" DataType="TON" Modifier="Constant" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+  </Variables>
+</Manifest>

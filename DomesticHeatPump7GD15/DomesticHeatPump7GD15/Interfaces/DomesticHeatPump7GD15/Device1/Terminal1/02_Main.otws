@@ -79,12 +79,12 @@
     <Mask Name="Set" Type="Normal" X="1" Y="6" Color="LightBlue">
       <Fields>
         <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
-        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="Water Temp - heat pump" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="Water Temp - Heat Pump" />
         <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Set" />
         <Field Type="Variable" Name="Variable_1" Row="0" Column="0" Content="dummy" Class="CL_Move" Format="ib" Min="0" Max="1" />
         <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Mid probe in cylinder" />
-        <Field Type="Variable" Name="Variable" Row="4" Column="12" Content="MidCylinder_T_SP" Min="50.0" Max="75.0" Class="CL_REAL_1" Format="io+3.1" />
-        <Field Type="Text" Name="Text" Row="4" Column="0" Content="Water Temp:          " />
+        <Field Type="Variable" Name="Variable" Row="4" Column="14" Content="MidCylinder_T_SP" Min="50.0" Max="75.0" Class="CL_REAL_1" Format="io+3.1" SimulationValue="65.0" />
+        <Field Type="Text" Name="Text" Row="4" Column="0" Content="Water Temp SP:       " />
       </Fields>
       <KeyBindings />
     </Mask>

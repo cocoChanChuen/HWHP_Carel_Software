@@ -1,0 +1,4624 @@
+﻿<Manifest
+  Version="1.0.0"
+  IsLibrary="true">
+  <Libraries />
+  <Pou
+    Name="Calc_Power_Max_DEVROT"
+    Moniker="Calc_Power_Max_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="Function"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="i"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Devices_Num_Per_Circuit"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Circuit_Num"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Calc_Power_Max_DEVROT"
+      Comment=""
+      AccessRights="Write"
+      DataType="REAL"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="TIMER_SET_PT_DEVROT"
+    Moniker="TIMER_SET_PT_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="PTp"
+      Comment=""
+      AccessRights="Read"
+      DataType="UDINT"
+      Kind="VarInput" />
+    <Variable
+      Name="timIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="TIMER_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="tim"
+      Comment=""
+      AccessRights="Write"
+      DataType="TIMER_DEVROT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="TIMER_SET_DEVROT"
+    Moniker="TIMER_SET_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="PTp"
+      Comment=""
+      AccessRights="Read"
+      DataType="UDINT"
+      Kind="VarInput" />
+    <Variable
+      Name="timIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="TIMER_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="tim"
+      Comment=""
+      AccessRights="Write"
+      DataType="TIMER_DEVROT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="TIMER_RESET_DEVROT"
+    Moniker="TIMER_RESET_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="timIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="TIMER_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="tim"
+      Comment=""
+      AccessRights="Write"
+      DataType="TIMER_DEVROT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="TIMER_READ_DEVROT"
+    Moniker="TIMER_READ_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="ETpIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="UDINT"
+      Kind="VarInput" />
+    <Variable
+      Name="QpIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="timIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="TIMER_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ETp"
+      Comment=""
+      AccessRights="Write"
+      DataType="UDINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Qp"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="tim"
+      Comment=""
+      AccessRights="Write"
+      DataType="TIMER_DEVROT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="Calc_Power_Stage_DEVROT"
+    Moniker="Calc_Power_Stage_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Stages_Conf"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Dev_Power"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Stage_Act"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Comp_Power_Min_Mill"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Comp_Power_Max_Mill"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Comp_Step"
+      Comment=""
+      AccessRights="Read"
+      DataType="COMPSTEP_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Stage_MaxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Stage_MinIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Power_ActIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Stage_Max"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Stage_Min"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Power_Act"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Power_Perc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="STD_Error_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STD_Error_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="USINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="Calc_Stage_Max_DEVROT"
+    Moniker="Calc_Stage_Max_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="N_CompsCirc"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="N_Circ"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="N_CompsCircMax"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Comp_StepIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="COMPSTEP_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Out"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Comp_Step"
+      Comment=""
+      AccessRights="Write"
+      DataType="COMPSTEP_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCompRel"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="StageMax_tmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Stage_Min_tmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Power_Act_tmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Calc_Power_Stage_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="Calc_Power_Stage_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="COMPRESSOR_Calc_Info_DEVROT"
+    Moniker="COMPRESSOR_Calc_Info_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Device_Available"
+      Comment=""
+      AccessRights="Read"
+      DataType="USINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Comp_Power_Min_Mill"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Comp_Power_Max_Mill"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="tmpTimer"
+      Comment=""
+      AccessRights="Read"
+      DataType="UDINT"
+      Kind="VarInput" />
+    <Variable
+      Name="WorkingTime"
+      Comment=""
+      AccessRights="Read"
+      DataType="UDINT"
+      Kind="VarInput" />
+    <Variable
+      Name="CountDown_Safety_Time"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="CountDown_ForceOn_Time"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Comp_StepIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="COMPSTEP_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="compIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="COMPRESSOR_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Comp_Step"
+      Comment=""
+      AccessRights="Write"
+      DataType="COMPSTEP_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="comp"
+      Comment=""
+      AccessRights="Write"
+      DataType="COMPRESSOR_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Device_Available_Int"
+      Comment="NOTE: in 1tool, Device_Available is modified also if it is declared as VAR_IN. This is allowed also if not standard. To do this in c.suite, we copy at first that variable inside this one, the use this one in the code."
+      AccessRights="ReadWrite"
+      DataType="USINT"
+      Kind="Var" />
+    <Variable
+      Name="tmpStage_Max"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="tmpStage_Min"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="tmpPower"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Calc_Power_Stage_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="Calc_Power_Stage_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="StoreError_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STD_Error_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="USINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="COMPR_Calc_Info_Inverter_DEVROT"
+    Moniker="COMPR_Calc_Info_Inverter_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Device_Available"
+      Comment=""
+      AccessRights="Read"
+      DataType="USINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Dev_Power_Min_Mill"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="tmpTimer"
+      Comment=""
+      AccessRights="Read"
+      DataType="UDINT"
+      Kind="VarInput" />
+    <Variable
+      Name="WorkingTime"
+      Comment=""
+      AccessRights="Read"
+      DataType="UDINT"
+      Kind="VarInput" />
+    <Variable
+      Name="CountDown_Safety_Time"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="CountDown_ForceOn_Time"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT"
+      Kind="VarInput" />
+    <Variable
+      Name="compIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="COMPRESSOR_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="comp"
+      Comment=""
+      AccessRights="Write"
+      DataType="COMPRESSOR_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Device_Available_Int"
+      Comment="NOTE: in 1tool, Device_Available is modified also if it is declared as VAR_IN. This is allowed also if not standard. To do this in c.suite, we copy at first that variable inside this one, the use this one in the code."
+      AccessRights="ReadWrite"
+      DataType="USINT"
+      Kind="Var" />
+    <Variable
+      Name="tmpStage_Max"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="tmpStage_Min"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="tmpPower"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="StoreError_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STD_Error_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="USINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_ResetTimerCompSt_DEVROT"
+    Moniker="MACHINE_ResetTimerCompSt_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="TIMER_RESET_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TIMER_RESET_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_ResetTimerUP_DEVROT"
+    Moniker="MACHINE_ResetTimerUP_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="TIMER_RESET_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TIMER_RESET_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_ResetTimerDW_DEVROT"
+    Moniker="MACHINE_ResetTimerDW_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="TIMER_RESET_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TIMER_RESET_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_ReadTimer_DEVROT"
+    Moniker="MACHINE_ReadTimer_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="TIMER_READ_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TIMER_READ_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_Comp_Mng_DEVROT"
+    Moniker="MACHINE_Comp_Mng_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Act"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Mode"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Power_Mod"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="out"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="tmpSt"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="tmpPower_Max"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="tmpPower_Min"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="tmpTime"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UDINT"
+      Kind="Var" />
+    <Variable
+      Name="StoreError_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STD_Error_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="USINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_Calc_Comps_Info_DEVROT"
+    Moniker="MACHINE_Calc_Comps_Info_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Lst_Devices_Available"
+      Comment=""
+      AccessRights="Read"
+      DataType="USINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Tsec_Dw"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Tsec_Up"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Tsec_St"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_WorkingTime"
+      Comment=""
+      AccessRights="Read"
+      DataType="UDINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_CountDown_Safety_Time"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_CountDown_ForceOn_Time"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Comp_Min_Power"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Comp_Max_Power"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Comp_StepIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="COMPSTEP_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Comp_Step"
+      Comment=""
+      AccessRights="Write"
+      DataType="COMPSTEP_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCompRel"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="tmpTime"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UDINT"
+      Kind="Var" />
+    <Variable
+      Name="tmpWorkingTime"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UDINT"
+      Kind="Var" />
+    <Variable
+      Name="deb1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="deb2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="deb3"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="deb4"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="STD_TIMER_SET_PT_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TIMER_SET_PT_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_COMPR_Calc_Info_Inverter_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="COMPR_Calc_Info_Inverter_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_COMPRESSOR_Calc_Info_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="COMPRESSOR_Calc_Info_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ResetTimerCompSt_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ResetTimerCompSt_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ResetTimerUP_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ResetTimerUP_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ResetTimerDW_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ResetTimerDW_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="COMPRESSOR_Reset_DEVROT"
+    Moniker="COMPRESSOR_Reset_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="compIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="COMPRESSOR_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="comp"
+      Comment=""
+      AccessRights="Write"
+      DataType="COMPRESSOR_DEVROT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="CIRCUIT_Reset_DEVROT"
+    Moniker="CIRCUIT_Reset_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="circIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="CIRCUIT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="circ"
+      Comment=""
+      AccessRights="Write"
+      DataType="CIRCUIT_DEVROT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="MACHINE_Reset_DEVROT"
+    Moniker="MACHINE_Reset_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="TIMER_SET_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TIMER_SET_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_Set_DEVROT"
+    Moniker="MACHINE_Set_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="N_Circ"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="N_CompsCirc"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="N_CompsCircMax"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Tsec_Dw"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Tsec_Up"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Tsec_St"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Eq_Circ"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Pump_Down_Type"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Rotation_Type"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Devices_Unload_Sequence"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="En_Inverter"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="First_Comp_Circuit_Priority"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Mode"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Dev_Power"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Stage_Conf"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Custom_Rot_On"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Custom_Rot_Off"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Comp_StepIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="COMPSTEP_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="MachIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Comp_Step"
+      Comment=""
+      AccessRights="Write"
+      DataType="COMPSTEP_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="PTtmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UDINT"
+      Kind="Var" />
+    <Variable
+      Name="ETtmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="UDINT"
+      Kind="Var" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCompRel"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="USINT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Reset_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Reset_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_CIRCUIT_Reset_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="CIRCUIT_Reset_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_COMPRESSOR_Reset_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="COMPRESSOR_Reset_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_TIMER_SET_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="TIMER_SET_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="StoreError_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STD_Error_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_Calc_Stage_Max_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="Calc_Stage_Max_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_ChangeSet_DEVROT"
+    Moniker="MACHINE_ChangeSet_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="N_Circ"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="N_CompsCirc"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="N_CompsCircMax"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Eq_Circ"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Pump_Down_Type"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Rotation_Type"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Devices_Unload_Sequence"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="En_Inverter"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Comp_Power_Min"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="First_Comp_Circuit_Priority"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Mode"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Dev_Power"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Stage_Conf"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Custom_Rot_On"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Custom_Rot_Off"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ResuIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Resu"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="tmpPower"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCompRel"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_VerifyInp_DEVROT"
+    Moniker="MACHINE_VerifyInp_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="N_CircIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="N_CompsCircIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="N_CompsCircMaxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Pump_Down_TypeIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Rotation_TypeIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Devices_Unload_SequenceIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="En_Inverter"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Comp_Power_MinIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Comp_Power_MaxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="ModeIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="N_Circ"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="N_CompsCirc"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="N_CompsCircMax"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Pump_Down_Type"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Rotation_Type"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Devices_Unload_Sequence"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Comp_Power_Min"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Comp_Power_Max"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Mode"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="USINT"
+      Kind="Var" />
+    <Variable
+      Name="STD_Error_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STD_Error_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="COMPRESSOR_Value_DEVROT"
+    Moniker="COMPRESSOR_Value_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Rotation_Type"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Devices_Unload_Sequence"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Act"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="comp"
+      Comment=""
+      AccessRights="Read"
+      DataType="COMPRESSOR_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="value1In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="value2In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="value3In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="value4In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="value5In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="value1"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="value2"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="value3"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="value4"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="value5"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="inverterPresentOff"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="inverterNotLastOn"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="compEv"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="StoreError_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STD_Error_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="USINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_ComprSelection_DEVROT"
+    Moniker="MACHINE_ComprSelection_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Act"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="iCompIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="iCompSkip"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iCompRel"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="itmpComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="value1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value3"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value4"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value5"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value1Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value2Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value3Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value4Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value5Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="res"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="STD_COMPRESSOR_Value_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="COMPRESSOR_Value_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="CIRCUIT_Value_DEVROT"
+    Moniker="CIRCUIT_Value_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Rotation_Type"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Eq_Circ"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Mode"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Act"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="circ"
+      Comment=""
+      AccessRights="Read"
+      DataType="CIRCUIT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Value1In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Value2In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Value3In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Value4In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Value5In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="Value6In"
+      Comment=""
+      AccessRights="Read"
+      DataType="DINT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="value1"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="value2"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="value3"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="value4"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="value5"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Value6"
+      Comment=""
+      AccessRights="Write"
+      DataType="DINT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="circEv"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="inverterPresentOff"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="inverterNotLastOn"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="STD_ERROR_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STD_Error_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="USINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_CircSelection_DEVROT"
+    Moniker="MACHINE_CircSelection_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Act"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="iCircIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="iCompIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCircTmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCircuitTmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCompRel"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="value1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value3"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value4"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value5"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value6"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value1Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value2Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value3Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value4Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value5Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="value6Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="tmpAction"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ComprSelection_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ComprSelection_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_CIRCUIT_Value_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="CIRCUIT_Value_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="iCompTmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="STD_COMPRESSOR_Value_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="COMPRESSOR_Value_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="Set_Comp_Out_DEVROT"
+    Moniker="Set_Comp_Out_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Modulate_power_ReqIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Rotation_DevIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Devices_Available"
+      Comment=""
+      AccessRights="Read"
+      DataType="USINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Dev_StatusIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="USINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_CountDown_ForceOn_Time"
+      Comment=""
+      AccessRights="Read"
+      DataType="UINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Dev_Power_OutIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Dev_Power_Out_MillIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Circuit_Next_OnIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Device_Next_OnIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Circuit_Next_OffIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Device_Next_OffIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Steps_RequiredIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Num_StepsIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="iCompPrevent"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Stop_Other_DevicesIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="LoadUp_CountdownIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="LoadDown_CountdownIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Prevent_ResultIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Modulate_power_Req"
+      Comment=""
+      AccessRights="Write"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Rotation_Dev"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Dev_Status"
+      Comment=""
+      AccessRights="Write"
+      DataType="USINT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Dev_Power_Out"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Dev_Power_Out_Mill"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Circuit_Next_On"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Device_Next_On"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Circuit_Next_Off"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Device_Next_Off"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Steps_Required"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Num_Steps"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Stop_Other_Devices"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="LoadUp_Countdown"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="LoadDown_Countdown"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Prevent_Result"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="compStatusTmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SINT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="USINT"
+      Kind="Var" />
+    <Variable
+      Name="StoreError_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STD_Error_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="SetCompOutDisable_DEVROT"
+    Moniker="SetCompOutDisable_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Modulate_power_ReqIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Rotation_DevIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Dev_StatusIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="USINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Dev_Power_OutIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Circuit_Next_OnIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Device_Next_OnIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Circuit_Next_OffIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Device_Next_OffIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Steps_RequiredIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Num_StepsIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Stop_Other_DevicesIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="LoadUp_CountdownIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="LoadDown_CountdownIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="Modulate_power_Req"
+      Comment=""
+      AccessRights="Write"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Rotation_Dev"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Dev_Status"
+      Comment=""
+      AccessRights="Write"
+      DataType="USINT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Dev_Power_Out"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Circuit_Next_On"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Device_Next_On"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Circuit_Next_Off"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Device_Next_Off"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Steps_Required"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Num_Steps"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Stop_Other_Devices"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="LoadUp_Countdown"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="LoadDown_Countdown"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_Forestall_DEVROT"
+    Moniker="MACHINE_Forestall_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_IncIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Prevent_Circuit"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Prevent_Circuit_oldIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="iCompIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Inc"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Prevent_Circuit_old"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="out"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Circs_OnPrevent"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="itmpCircPrev"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="reqPrevent"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="Status"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="N_Circ_Max_Reset"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Circuit_Selection_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_CircSelection_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Comp_Mng_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Comp_Mng_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="i"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_ForceOn_DEVROT"
+    Moniker="MACHINE_ForceOn_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_IncIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_DecIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="lst_ForceOn_Devices_Circ"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Inc"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Dec"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="out"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="resu"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="iCompRel"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ComprSelection_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ComprSelection_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Comp_Mng_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Comp_Mng_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_ForceRotation_DEVROT"
+    Moniker="MACHINE_ForceRotation_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Inc"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Dec"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="lst_Force_Rotation"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="lst_Force_Rotation_OldIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="lst_Force_Rotation_Old"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="out"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iComp2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="state"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="resu1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="resu2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="evRot"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ComprSelection_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ComprSelection_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Comp_Mng_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Comp_Mng_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_Termoreg_DEVROT"
+    Moniker="MACHINE_Termoreg_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Power_Request"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Inc"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Dec"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Cascate_Optimization"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="fbm_finalconfig"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCompInc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCompDec"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Power_req"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Power_Del_Inc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Power_Del_Dec"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Inverter_step"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="ev_status_tmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="ev_status"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="Power_Min_Inv"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="scarto_inverter"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="deb_PowerDec"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="deb_mach_Lst_Comps_Info_iComp_Power_Act"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_CircSelection_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_CircSelection_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Comp_Mng_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Comp_Mng_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="StoreError_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STD_Error_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_ThReg_StepReq_DEVROT"
+    Moniker="MACHINE_ThReg_StepReq_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Step_req"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Inc"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Dec"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Cascade_Optimization"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="fbm_finalconfig"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="ev_status_tmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="deb_mach_Lst_Comps_Info_iComp_Power_Act"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_CircSelection_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_CircSelection_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Comp_Mng_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Comp_Mng_DEVROT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_ThReg2CmpOnAlways_DEVROT"
+    Moniker="MACHINE_ThReg2CmpOnAlways_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Power_Request"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_IncIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_DecIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Cascate_Optimization"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="fbm_finalconfig"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Inc"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Dec"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iComp2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCompInc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iCompDec"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Power_req"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Power_Del_Inc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Power_Del_Dec"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Inverter_step"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="ev_status_tmp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="ev_status"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="Power_Min_Inv"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="scarto_inverter"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="deb_PowerDec"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="deb_mach_Lst_Comps_Info_iComp_Power_Act"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_CircSelection_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_CircSelection_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Comp_Mng_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Comp_Mng_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ComprSelection_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ComprSelection_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="StoreError_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="STD_Error_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="Delta_Power_Inc"
+      Comment="Used ton calcolate the power increase when you turn on one o two compressor"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Delta_Power_Dec"
+      Comment="Used ton calcolate the power decrease when you turn on one o two compressor"
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="MustIncrease"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="MustDecrease"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_CascadeOptim_DEVROT"
+    Moniker="MACHINE_CascadeOptim_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Cascate_Optimization"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT"
+      Kind="VarInput" />
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_IncIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Inc"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_CircSelection_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_CircSelection_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Comp_Mng_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Comp_Mng_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_NextDevice_DEVROT"
+    Moniker="MACHINE_NextDevice_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Inc"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Dec"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="out"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="iComp"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="MACHINE_Circuit_Selection_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_CircSelection_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="st_Lst_Circs_OnRotation_Inc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="st_Lst_Circs_OnRotation_Dec"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Inc2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Dec2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="i"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="MACHINE_StepReq_DEVROT"
+    Moniker="MACHINE_StepReq_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="Power_Request"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="machIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Write"
+      DataType="MACHINE_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="out"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="Power_req"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Power_Del_Inc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="Power_Del_Dec"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="REAL"
+      Kind="Var" />
+    <Variable
+      Name="ERR_this_function"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="retu"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="STD_Error_DEVROT"
+    Moniker="STD_Error_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="nFunc"
+      Comment=""
+      AccessRights="Read"
+      DataType="USINT"
+      Kind="VarInput" />
+    <Variable
+      Name="nStep"
+      Comment=""
+      AccessRights="Read"
+      DataType="USINT"
+      Kind="VarInput" />
+    <Variable
+      Name="nGravity"
+      Comment=""
+      AccessRights="Read"
+      DataType="USINT"
+      Kind="VarInput" />
+    <Variable
+      Name="nType"
+      Comment=""
+      AccessRights="Read"
+      DataType="USINT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="ErrorBoxOut"
+      Comment=""
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+  </Pou>
+  <Pou
+    Name="MainPage_CircOnRotation_DEVROT"
+    Moniker="MainPage_CircOnRotation_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="Read"
+      DataType="MACHINE_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_IncIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_DecIn"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Wait_Other_Device"
+      Comment=""
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Inc"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Dec"
+      Comment=""
+      AccessRights="Write"
+      DataType="BOOL_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="DevPwrToInt_DEVROT"
+    Moniker="DevPwrToInt_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="DevPwr_REAL"
+      Comment=""
+      AccessRights="Read"
+      DataType="REAL,0-31"
+      Kind="VarInput" />
+    <Variable
+      Name="DevPwr_INT"
+      Comment=""
+      AccessRights="Write"
+      DataType="INT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="i"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="DevPwrOutToReal_DEVROT"
+    Moniker="DevPwrOutToReal_DEVROT.stf"
+    Language="ST"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="false"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="false">
+    <Variable
+      Name="DevPwrOut_INT"
+      Comment=""
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="DevPwrOut_REAL"
+      Comment=""
+      AccessRights="Write"
+      DataType="REAL,0-31"
+      Kind="VarOutput" />
+    <Variable
+      Name="i"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DINT"
+      Kind="Var" />
+  </Pou>
+  <Pou
+    Name="DevicesRotation_3"
+    Moniker="DevicesRotation_3.stf"
+    Language="FBD"
+    IsIec61499="false"
+    Kind="FunctionBlock"
+    Password="E4BDBA2BEF6CC4DC"
+    GenerateDebugInfo="true"
+    GeneratingMonitoringSymbols="true"
+    UserEdited="false"
+    Deprecated="false"
+    IsVisible="true">
+    <Variable
+      Name="PwrReq"
+      Comment="Power request"
+      AccessRights="Read"
+      DataType="REAL"
+      Kind="VarInput" />
+    <Variable
+      Name="CfgStage"
+      Comment="Array with the number of load steps for each device"
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="DevPwr"
+      Comment="Array with devices power in Kw"
+      AccessRights="Read"
+      DataType="REAL,0-31"
+      Kind="VarInput" />
+    <Variable
+      Name="DevAvbl_Array"
+      Comment="Array of devices feedbacks"
+      AccessRights="Read"
+      DataType="USINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="TWork"
+      Comment="Array with the device operating hours"
+      AccessRights="Read"
+      DataType="UDINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="CstRotOn"
+      Comment="Array for custom rotation, specify start order"
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="CstRotOff"
+      Comment="Array for custom rotation, specify shutdown order"
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="CntDwnSafT_Array"
+      Comment="Array containing countdowns of safety times for each device"
+      AccessRights="Read"
+      DataType="UINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="CntDwnFrcOnT"
+      Comment="Array containing countdowns of minimum on time for each device"
+      AccessRights="Read"
+      DataType="UINT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="PreventCirc"
+      Comment="Array of preventing situation management for each circuit"
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="FrcRot"
+      Comment="Array of devices rotation forcing per circuit (0=disabled, 1=enabled)"
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="FrcOnDevCirc"
+      Comment="Array of on forcing per circuit (0=disabled, 1=enabled)"
+      AccessRights="Read"
+      DataType="INT_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="Conf"
+      Comment="Function block configuration"
+      AccessRights="Read"
+      DataType="CFG_DEVROT"
+      Kind="VarInput" />
+    <Variable
+      Name="WaitOtherDev"
+      Comment="Awaiting second module device (dual line management)"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="En_DevicesRotation"
+      Comment="Enables the function block"
+      AccessRights="Read"
+      DataType="BOOL"
+      Kind="VarInput" />
+    <Variable
+      Name="Comp_Step"
+      Comment=""
+      AccessRights="Write"
+      DataType="COMPSTEP_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="DevRot"
+      Comment="Array of requests to each device (on/off/number of steps required)"
+      AccessRights="Write"
+      DataType="INT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="DevStatus"
+      Comment="Array of actual devices status"
+      AccessRights="Write"
+      DataType="USINT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="DevPwrOut"
+      Comment="Array of currently used power for each device"
+      AccessRights="Write"
+      DataType="REAL,0-31"
+      Kind="VarOutput" />
+    <Variable
+      Name="DevPwrOutPerc"
+      Comment="Array of currently used power for each device in percentual"
+      AccessRights="Write"
+      DataType="INT_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="ModulPwrReq"
+      Comment="Power request for the inverter (if present)"
+      AccessRights="Write"
+      DataType="REAL"
+      Kind="VarOutput" />
+    <Variable
+      Name="DevNextOn"
+      Comment="Index of next devices to be switched on"
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="CircNextOn"
+      Comment="Index of next circuit to be switched on"
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="DevNextOff"
+      Comment="Index of next devices to be switched off"
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="CircNextOff"
+      Comment="Index of next circuit to be switched off"
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="StepsRequired"
+      Comment="Current number of steps required to meet power request"
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="StepsNo"
+      Comment="Total number of steps"
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="LdUpCntDwn"
+      Comment="Countdown for next step increase"
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="LdDwnCntDwn"
+      Comment="Countdown for next step decrease"
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="PreventResult"
+      Comment="Result of prevent function"
+      AccessRights="Write"
+      DataType="INT"
+      Kind="VarOutput" />
+    <Variable
+      Name="StopOtherDev"
+      Comment="Stops devices in applications with a second line (dual line management)"
+      AccessRights="Write"
+      DataType="BOOL"
+      Kind="VarOutput" />
+    <Variable
+      Name="ErrorBox"
+      Comment="Errors buffer"
+      AccessRights="Write"
+      DataType="ERROR_BOX_DEVROT"
+      Kind="VarOutput" />
+    <Variable
+      Name="DevPwrOut_INT"
+      Comment="Array of currently used power for each device"
+      AccessRights="ReadWrite"
+      DataType="INT_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="ChangeConf"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="Lst_Prevent_Circuit_old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Inc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="Lst_Circs_OnRotation_Dec"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="lst_Force_Rotation_Old"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="iCompPrevent"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="mach"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="fbm_finalconfig"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="iCirc"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="State"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="BOOL"
+      Kind="Var" />
+    <Variable
+      Name="MainPage_CircOnRotation_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MainPage_CircOnRotation_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="Devices_Num_Per_Circuit"
+      Comment="VAR_IN_OUT"
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Devices_Num_Per_CircuitMax"
+      Comment="VAR_IN_OUT"
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Circuit_Num"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Pump_Down_Type"
+      Comment="VAR_IN_OUT"
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Rotation_Type"
+      Comment="VAR_IN_OUT"
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Devices_Unload_Sequence"
+      Comment="VAR_IN_OUT"
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Comp_Power_Min"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Comp_Power_Max"
+      Comment="VAR_IN_OUT"
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="Mode"
+      Comment="VAR_IN_OUT"
+      AccessRights="ReadWrite"
+      DataType="INT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ThReg_StepReq_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ThReg_StepReq_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ThReg2CmpOnAlways_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ThReg2CmpOnAlways_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_CascadeOptim_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_CascadeOptim_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ThReg2CmpOnAlways_2"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ThReg2CmpOnAlways_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Termoreg_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Termoreg_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_VerifyInp_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_VerifyInp_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ChangeSet_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ChangeSet_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Set_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Set_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Calc_Comps_Info_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Calc_Comps_Info_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ReadTimer_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ReadTimer_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_Forestall_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_Forestall_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ForceOn_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ForceOn_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_ForceRotation_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_ForceRotation_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_Set_Comp_Out_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="Set_Comp_Out_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_NextDevice_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_NextDevice_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_MACHINE_StepReq_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="MACHINE_StepReq_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="STD_Set_Comp_Out_Disable_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="SetCompOutDisable_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="DevPwr_INT"
+      Comment="Array with devices power in Kw"
+      AccessRights="ReadWrite"
+      DataType="INT_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="DevPwrToInt_DEVROT_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DevPwrToInt_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="DevPwrToReal_DEVROT_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DevPwrOutToReal_DEVROT"
+      Kind="Var" />
+    <Variable
+      Name="DevPwrOutToReal_DEVROT_1"
+      Comment=""
+      AccessRights="ReadWrite"
+      DataType="DevPwrOutToReal_DEVROT"
+      Kind="Var" />
+  </Pou>
+</Manifest>

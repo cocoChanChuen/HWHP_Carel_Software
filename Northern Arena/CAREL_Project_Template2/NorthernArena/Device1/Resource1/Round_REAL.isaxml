@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pou FileVersion="200.00.003" Name="Round_REAL" ElementGuid="b96674f8-9d7f-474d-96b2-67de5575d3f4" Comment="" SingleTextLine="Rounds a Real number" Language="ST" CustomFbd="0" Localization="Prj" GroupName="(User defined)" Password="E4BDBA2BEF6CC4DC" GenDebugInfo="false" UseResPassword="true" GenerateSymbMon="true" Is1499="false">
+  <Function IdentifierNb="0" Keyword="" ConvDirection="NoConversion" DataType="DINT" />
+  <LocalVars>
+    <Variable Name="Round_REAL" DataType="REAL" InitialValue="" Comment="Rounded input" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="ReadWrite" StringSize="0" Direction="Output" CommentFields="" Attributes="23825" />
+    <Variable Name="In" DataType="REAL" InitialValue="" Comment="Input value" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+  </LocalVars>
+  <PouBody><![CDATA[gFQnV1NbWi9dZGUTZGofaWwxMzU3g1NLR1dLTk5hlmpxbWZeUgSFSQkJS0coCKo7OTMsMSlhkE1BTSJTbzSqYVtRR0BMe/lRVlZMQigIqi40LTcoO0zOQEhQRyFSLrFrYFxQREEN/jhQUVdPQ2mNaykzLDQpeskPQU1GXkkH/wgORkxFXweRS0dXS05O]]></PouBody>
+  <PouUIProperties><![CDATA[]]></PouUIProperties>
+</Pou>

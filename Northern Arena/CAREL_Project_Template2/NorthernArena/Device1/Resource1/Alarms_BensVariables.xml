@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest Version="1.1.0">
+  <Variables>
+    <Variable Name="ET_1" Comment="current elapsed time" AccessRights="ReadWrite" DataType="TIME" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Access="ReadWrite" />
+    <Variable Name="TON_1" Comment="" AccessRights="ReadWrite" DataType="TON" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if Rising edge, starts increasing internal timer. If Falling Edge, stops and resets internal timer" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE, programmed time is elapsed" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="TON_2" Comment="" AccessRights="ReadWrite" DataType="TON" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if Rising edge, starts increasing internal timer. If Falling Edge, stops and resets internal timer" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE, programmed time is elapsed" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="TON_3" Comment="" AccessRights="ReadWrite" DataType="TON" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if Rising edge, starts increasing internal timer. If Falling Edge, stops and resets internal timer" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE, programmed time is elapsed" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+    <Variable Name="TON_4" Comment="" AccessRights="ReadWrite" DataType="TON" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if Rising edge, starts increasing internal timer. If Falling Edge, stops and resets internal timer" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="maximum programmed time" Kind="VarInput" Access="ReadWrite" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="if TRUE, programmed time is elapsed" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="current elapsed time" Kind="VarOutput" Access="ReadWrite" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Previous date" Kind="Var" Access="ReadWrite" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" IsRetained="false" Alarm="false" UoM="NoUnits" Comment="Rising edge" Kind="Var" Access="ReadWrite" />
+    </Variable>
+  </Variables>
+</Manifest>

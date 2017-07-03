@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Worksheet Name="02_Main" Version="1.0.0">
+  <Mask Name="Main" Type="Normal" X="0" Y="4">
+    <Fields>
+      <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Training:            c" />
+      <Field Type="Text" Name="Text_2" Row="0" Column="2" Content="/" />
+      <Field Type="Text" Name="Text_3" Row="0" Column="5" Content="/" />
+      <Field Type="Text" Name="Text_4" Row="0" Column="19" Content=":" />
+      <Field Type="Variable" Name="Variable_1" Row="0" Column="0" Content="Date1" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+      <Field Type="Variable" Name="Variable_2" Row="0" Column="3" Content="Date2" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+      <Field Type="Variable" Name="Variable_3" Row="0" Column="6" Content="Date3" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+      <Field Type="Variable" Name="Variable_4" Row="0" Column="20" Content="GeneralMng.Minute" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+      <Field Type="Variable" Name="Variable_5" Row="0" Column="17" Content="GeneralMng.Hour" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+      <Field Type="Image" Name="Image_2" Row="6" Column="16" Content="Black_.bmp" />
+      <Field Type="Variable" Name="Variable_7" Row="6" Column="17" Content="IdxImgQM" Class="IdxImgQM" Format="o1" Min="0" Max="9" />
+      <Field Type="Image" Name="Image_4" Row="6" Column="20" Content="UpDown2.bmp" />
+      <Field Type="Text" Name="Text_5" Row="6" Column="0" Content="C1  C2  C1  C2" />
+      <Field Type="Variable" Name="Variable_8" Row="0" Column="11" Content="GeneralMng.DayOfWeek" Class="DayOfWeekShort" Format="o1" Min="0" Max="9" />
+      <Field Type="Text" Name="Text_6" Row="2" Column="0" Content="Teaching:            c" />
+      <Field Type="Text" Name="Text_7" Row="3" Column="0" Content="Combined:            c" />
+      <Field Type="Variable" Name="Variable" Row="1" Column="15" Content="Pool1WaterReal" Class="CL_REAL_1" Format="o+2.1" Min="-99.9" Max="99.9" />
+      <Field Type="Variable" Name="Variable_6" Row="2" Column="15" Content="Pool2WaterReal" Class="CL_REAL_1" Format="o+2.1" Min="-99.9" Max="99.9" />
+      <Field Type="Variable" Name="Variable_9" Row="3" Column="15" Content="Pool3WaterReal" Class="CL_REAL_1" Format="o+2.1" Min="-99.9" Max="99.9" />
+      <Field Type="Variable" Name="Variable_10" Row="7" Column="0" Content="Unit1Comp1" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="ob" />
+      <Field Type="Variable" Name="Variable_11" Row="7" Column="8" Content="Unit2Comp1" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="ob" />
+      <Field Type="Variable" Name="Variable_12" Row="7" Column="4" Content="Unit1Comp2" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="ob" />
+      <Field Type="Variable" Name="Variable_13" Row="7" Column="12" Content="Unit2Comp2" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="ob" />
+      <Field Type="Text" Name="Text" Row="5" Column="2" Content="U1      U2" />
+    </Fields>
+    <KeyBindings>
+      <KeyBinding Key="PRG" BindOn="GotoMainMenu" />
+      <KeyBinding Key="UP" BindOn="QuickMenuUP" />
+      <KeyBinding Key="DOWN" BindOn="QuickMenuDOWN" />
+      <KeyBinding Key="ENTER" BindOn="QuickMenuENT" />
+    </KeyBindings>
+  </Mask>
+  <Loop Name="STARTUP" Type="Normal" X="0" Y="0">
+    <Mask Name="LOGO" Type="Normal" X="0" Y="1">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="hwhplogo2.bmp" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="ALARM" BindOn="DoNothing" />
+        <KeyBinding Key="ESC" BindOn="DoNothing" />
+        <KeyBinding Key="PRG" BindOn="DoNothing" />
+      </KeyBindings>
+    </Mask>
+    <Mask Name="Language" Type="Normal" X="0" Y="2">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Image" Name="Image_2" Row="7" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Variable" Name="Variable_7" Row="7" Column="20" Content="LangTime" Class="CL_INT" Format="o2" Min="0" Max="99" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="0" Content="Language" />
+        <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Language:" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="12" Content="ENGLISH" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="ENTER to change" />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="ESC to confirm" />
+        <Field Type="Text" Name="Text_6" Row="7" Column="0" Content="Show mask time" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="ENTER" BindOn="Lang_UP" />
+        <KeyBinding Key="ESC" BindOn="GotoMain" />
+      </KeyBindings>
+    </Mask>
+  </Loop>
+  <Loop Name="Train" Type="Normal" X="0" Y="5">
+    <Mask Name="Train" Type="Normal" X="0" Y="6" Color="ActiveCaption">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="0" Content="Training Pool Temp" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Set Point:         C" />
+        <Field Type="Variable" Name="Variable_2" Row="1" Column="13" Content="Pool1SP" Class="CL_REAL_1" Format="io+2.1" Min="25.0" Max="40.0" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="Lower Diff:        C" />
+        <Field Type="Text" Name="Text_4" Row="3" Column="0" Content="Higher Diff:       C" />
+        <Field Type="Variable" Name="Variable_3" Row="2" Column="13" Content="Pool1LowerLim" Class="CL_REAL_1" Format="io+2.1" Min="-1.0" Max="0.0" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="13" Content="Pool1UpperLim" Class="CL_REAL_1" Format="io+2.1" Min="0.0" Max="1.0" />
+        <Field Type="Image" Name="Image" Row="7" Column="0" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_2" Row="7" Column="2" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_3" Row="7" Column="4" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_4" Row="7" Column="6" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_5" Row="7" Column="8" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_6" Row="7" Column="10" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_7" Row="7" Column="12" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_8" Row="7" Column="14" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_9" Row="7" Column="16" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_10" Row="7" Column="18" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_11" Row="7" Column="20" Content="1Training.bmp" />
+        <Field Type="Text" Name="Text_6" Row="4" Column="0" Content="Tandem Staging: " />
+        <Field Type="Variable" Name="Variable_5" Row="4" Column="16" Content="Unit1StageBool" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="iob" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="DOWN" BindOn="OnOffSwitch" />
+        <KeyBinding Key="UP" BindOn="OnOffSwitch" />
+      </KeyBindings>
+    </Mask>
+  </Loop>
+  <Loop Name="Teach" Type="Normal" X="2" Y="5">
+    <Mask Name="Teach" Type="Normal" X="2" Y="6" Color="LightBlue">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="0" Content="Teaching Pool Temp" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="Higher Diff:       C" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="13" Content="Pool3UpperLIm" Class="CL_REAL_1" Format="io+2.1" Min="0.0" Max="1.0" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="Lower Diff:        C" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="Set Point:         C" />
+        <Field Type="Image" Name="Image" Row="7" Column="0" Content="Teaching.bmp" />
+        <Field Type="Image" Name="Image_2" Row="7" Column="2" Content="Teaching.bmp" />
+        <Field Type="Image" Name="Image_3" Row="7" Column="4" Content="Teaching.bmp" />
+        <Field Type="Image" Name="Image_4" Row="7" Column="10" Content="Teaching.bmp" />
+        <Field Type="Image" Name="Image_5" Row="7" Column="8" Content="Teaching.bmp" />
+        <Field Type="Image" Name="Image_6" Row="7" Column="6" Content="Teaching.bmp" />
+        <Field Type="Image" Name="Image_7" Row="7" Column="16" Content="Teaching.bmp" />
+        <Field Type="Image" Name="Image_8" Row="7" Column="14" Content="Teaching.bmp" />
+        <Field Type="Image" Name="Image_9" Row="7" Column="12" Content="Teaching.bmp" />
+        <Field Type="Image" Name="Image_10" Row="7" Column="20" Content="Teaching.bmp" />
+        <Field Type="Image" Name="Image_11" Row="7" Column="18" Content="Teaching.bmp" />
+        <Field Type="Text" Name="Text_6" Row="4" Column="0" Content="Tandem Staging: " />
+        <Field Type="Variable" Name="Variable_6" Row="4" Column="16" Content="Unit2StageBool" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="iob" />
+        <Field Type="Variable" Name="Variable_3" Row="1" Column="13" Content="Pool3SP" Class="CL_REAL_1" Format="io+2.1" Min="25.0" Max="40.0" />
+        <Field Type="Variable" Name="Variable_4" Row="2" Column="13" Content="Pool3LowerLim" Class="CL_REAL_1" Format="io+2.1" Min="0.0" Max="1.0" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+  </Loop>
+  <Loop Name="INFO" Type="Normal" X="3" Y="5">
+    <Mask Name="SwInfo_Clone_2" Type="Normal" X="3" Y="6" Color="LightCyan">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="0" Content="Hours x 10" />
+        <Field Type="Text" Name="Text" Row="2" Column="0" Content="Unit 1:" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="Comp1 Hours" />
+        <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Comp2 Hours" />
+        <Field Type="Text" Name="Text_5" Row="5" Column="0" Content="Unit 2:" />
+        <Field Type="Text" Name="Text_6" Row="6" Column="0" Content="Comp1 Hours" />
+        <Field Type="Text" Name="Text_7" Row="7" Column="0" Content="Comp2 Hours" />
+        <Field Type="Variable" Name="Variable" Row="3" Column="15" Content="BensVersion.hoursOut_1_1" Class="CL_UDINT" Format="o6" Min="0" Max="999999" />
+        <Field Type="Variable" Name="Variable_2" Row="4" Column="15" Content="BensVersion.hoursOut_1_2" Class="CL_UDINT" Format="o6" Min="0" Max="999999" />
+        <Field Type="Variable" Name="Variable_3" Row="6" Column="15" Content="BensVersion.hoursOut_2_1" Class="CL_UDINT" Format="o6" Min="0" Max="999999" />
+        <Field Type="Variable" Name="Variable_4" Row="7" Column="15" Content="BensVersion.hoursOut_2_2" Class="CL_UDINT" Format="o6" Min="0" Max="999999" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+    <Mask Name="SwInfo" Type="Normal" X="3" Y="7" Color="LightCyan">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="0" Content="Info" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Hot Water Heat Pump" />
+        <Field Type="Text" Name="Text_2" Row="5" Column="0" Content="SW ver.:" />
+        <Field Type="Text" Name="Text_5" Row="6" Column="0" Content="OS ver.:" />
+        <Field Type="Variable" Name="Variable_1" Row="6" Column="11" Content="GeneralMng.OsVersion[1]" Class="CL_UDINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_2" Row="6" Column="13" Content="GeneralMng.OsVersion[2]" Class="CL_UDINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_3" Row="6" Column="15" Content="GeneralMng.OsVersion[3]" Class="CL_UDINT" Format="o3z" Min="0" Max="999" />
+        <Field Type="Text" Name="Text_7" Row="6" Column="12" Content="." />
+        <Field Type="Text" Name="Text_8" Row="6" Column="14" Content="." />
+        <Field Type="Variable" Name="Variable_10" Row="5" Column="18" Content="GeneralMng.CurrVer.IsBeta" Class="Beta" Format="ob" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_11" Row="5" Column="12" Content=". ." />
+        <Field Type="Variable" Name="Variable_7" Row="5" Column="11" Content="GeneralMng.CurrVer.X" Class="CL_UINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_8" Row="5" Column="13" Content="GeneralMng.CurrVer.Y" Class="CL_UINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_9" Row="5" Column="15" Content="GeneralMng.CurrVer.Z" Class="CL_UINT" Format="o3z" Min="0" Max="999" />
+        <Field Type="Variable" Name="Variable_11" Row="5" Column="20" Content="GeneralMng.CurrVer.D" Class="Demo" Format="o2z" Min="0" Max="99" />
+        <Field Type="Text" Name="Text_4" Row="2" Column="0" Content="Code:Northern Arena" />
+        <Field Type="Text" Name="Text" Row="7" Column="0" Content="BOOT ver.:" />
+        <Field Type="Variable" Name="Variable_4" Row="7" Column="11" Content="GeneralMng.BootVersion[1]" Class="CL_UDINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_5" Row="7" Column="13" Content="GeneralMng.BootVersion[2]" Class="CL_UDINT" Format="o1" Min="0" Max="9" />
+        <Field Type="Variable" Name="Variable_6" Row="7" Column="15" Content="GeneralMng.BootVersion[3]" Class="CL_UDINT" Format="o3z" Min="0" Max="999" />
+        <Field Type="Text" Name="Text_6" Row="7" Column="12" Content="." />
+        <Field Type="Text" Name="Text_9" Row="7" Column="14" Content="." />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+    <Mask Name="SysInfo" Type="Normal" X="3" Y="8" Color="LightCyan">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Info" />
+        <Field Type="Variable" Name="Variable_2" Row="7" Column="0" Content="GeneralMng.PrgCycleMs" Class="CL_UINT" Format="o4" Min="0" Max="9999" />
+        <Field Type="Text" Name="Text_3" Row="7" Column="15" Content="Cycle/s" />
+        <Field Type="Text" Name="Text_4" Row="7" Column="4" Content="ms" />
+        <Field Type="Variable" Name="Variable_1" Row="7" Column="7" Content="GeneralMng.CyclesPerSecond" Class="CL_REAL_2" Format="o+5.1" Min="-99999.9" Max="99999.9" />
+        <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Board type:" />
+        <Field Type="Text" Name="Text_5" Row="3" Column="0" Content="Board size:" />
+        <Field Type="Text" Name="Text_6" Row="4" Column="0" Content="Board temp:" />
+        <Field Type="Text" Name="Text_7" Row="6" Column="0" Content="Main task:" />
+        <Field Type="Variable" Name="Variable_3" Row="2" Column="12" Content="GeneralMng.BoardTyp[1]" Class="pCO_Type" Format="o2" Min="0" Max="99" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="12" Content="GeneralMng.BoardTyp[2]" Class="BoardType" Format="o2" Min="0" Max="99" />
+        <Field Type="Text" Name="Text_8" Row="4" Column="21" Content="" />
+        <Field Type="Variable" Name="Variable_5" Row="4" Column="17" Content="BoardTempMsk" Class="CL_DINT" Format="io+3" Min="0" Max="999" />
+        <Field Type="Text" Name="Text_9" Row="5" Column="0" Content="Ret mem writes:" />
+        <Field Type="Variable" Name="Variable_6" Row="5" Column="16" Content="MemWritingsNo" Class="CL_UDINT" Format="o6" Min="0" Max="999999" />
+        <Field Type="Text" Name="Text_10" Row="1" Column="0" Content="System info" />
+        <Field Type="Variable" Name="Variable_7" Row="0" Column="0" Content="dummy" Class="CL_Move" Format="ib" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="DOWN" BindOn="Move_DOWN" />
+        <KeyBinding Key="UP" BindOn="Move_UP" />
+      </KeyBindings>
+    </Mask>
+    <Mask Name="WorkHours" Type="Normal" X="3" Y="9" Color="LightCyan">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Work hours" />
+        <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Unit1Comp1:          h" />
+        <Field Type="Variable" Name="Variable_1" Row="2" Column="15" Content="Main.Unit1Comp1TotalRunTime" Class="CL_UDINT" Format="o6z" Min="0" Max="999999" />
+        <Field Type="Text" Name="Text_3" Row="0" Column="1" Content="Info" />
+        <Field Type="Variable" Name="Variable_2" Row="0" Column="0" Content="dummy" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="15" Content="Main.Unit1Comp2TotalRunTime" Class="CL_UDINT" Format="o6z" Min="0" Max="999999" />
+        <Field Type="Variable" Name="Variable_4" Row="4" Column="15" Content="Main.Unit2Comp1TotalRunTime" Class="CL_UDINT" Format="o6z" Min="0" Max="999999" />
+        <Field Type="Variable" Name="Variable_5" Row="5" Column="15" Content="Main.Unit2Comp2TotalRunTime" Class="CL_UDINT" Format="o6z" Min="0" Max="999999" />
+        <Field Type="Text" Name="Text_4" Row="3" Column="0" Content="Unit1Comp2:          h" />
+        <Field Type="Text" Name="Text_5" Row="4" Column="0" Content="Unit2Comp2:          h" />
+        <Field Type="Text" Name="Text_6" Row="5" Column="0" Content="Unit2Comp2:          h" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="DOWN" BindOn="Move_DOWN" />
+        <KeyBinding Key="UP" BindOn="Move_UP" />
+      </KeyBindings>
+    </Mask>
+    <Mask Name="Blackout" Type="Normal" X="3" Y="10" Color="LightCyan">
+      <Fields>
+        <Field Type="Text" Name="Text_1" Row="4" Column="0" Content="PowerOff time:" />
+        <Field Type="Variable" Name="Variable_1" Row="5" Column="0" Content="GeneralMng.LastOnDay" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Variable" Name="Variable_2" Row="5" Column="3" Content="GeneralMng.LastOnMonth" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Variable" Name="Variable_3" Row="5" Column="6" Content="GeneralMng.LastOnYear" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Text" Name="Text_2" Row="5" Column="2" Content="/" />
+        <Field Type="Text" Name="Text_3" Row="5" Column="5" Content="/" />
+        <Field Type="Variable" Name="Variable_4" Row="5" Column="17" Content="GeneralMng.LastOnMinute" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Variable" Name="Variable_5" Row="5" Column="14" Content="GeneralMng.LastOnHour" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Text" Name="Text_4" Row="6" Column="0" Content="Length last time off:" />
+        <Field Type="Text" Name="Text_5" Row="5" Column="16" Content=":" />
+        <Field Type="Variable" Name="Variable_6" Row="5" Column="20" Content="GeneralMng.LastOnSecond" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Variable" Name="Variable_7" Row="7" Column="0" Content="GeneralMng.OffDays" Class="CL_UINT" Format="o3" Min="0" Max="999" />
+        <Field Type="Variable" Name="Variable_8" Row="7" Column="9" Content="GeneralMng.OffHours" Class="CL_UINT" Format="o2" Min="0" Max="99" />
+        <Field Type="Variable" Name="Variable_9" Row="7" Column="16" Content="GeneralMng.OffMinutes" Class="CL_UINT" Format="o2" Min="0" Max="99" />
+        <Field Type="Text" Name="Text_6" Row="7" Column="3" Content="Days    Hrs    Min" />
+        <Field Type="Text" Name="Text_7" Row="5" Column="19" Content=":" />
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_8" Row="0" Column="1" Content="Info" />
+        <Field Type="Variable" Name="Variable_10" Row="3" Column="17" Content="GeneralMng.Minute" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Text" Name="Text_9" Row="3" Column="16" Content=":" />
+        <Field Type="Variable" Name="Variable_11" Row="3" Column="14" Content="GeneralMng.Hour" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Text" Name="Text_10" Row="3" Column="2" Content="/" />
+        <Field Type="Text" Name="Text_11" Row="3" Column="5" Content="/" />
+        <Field Type="Variable" Name="Variable_12" Row="3" Column="3" Content="GeneralMng.Month" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Variable" Name="Variable_13" Row="3" Column="6" Content="GeneralMng.Year" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Variable" Name="Variable_14" Row="3" Column="0" Content="GeneralMng.Day" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Text" Name="Text_12" Row="3" Column="19" Content=":" />
+        <Field Type="Text" Name="Text_13" Row="2" Column="0" Content="Current time:" />
+        <Field Type="Variable" Name="Variable_15" Row="3" Column="20" Content="GeneralMng.Second" Class="CL_UINT" Format="o2z" Min="0" Max="99" />
+        <Field Type="Text" Name="Text_14" Row="1" Column="0" Content="Blackout info" />
+        <Field Type="Variable" Name="Variable_16" Row="0" Column="0" Content="dummy" Class="CL_Move" Format="ib" Min="0" Max="1" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="UP" BindOn="Move_UP" />
+        <KeyBinding Key="DOWN" BindOn="Move_DOWN" />
+      </KeyBindings>
+    </Mask>
+  </Loop>
+  <Mask Name="EndDefault" Type="Normal" X="2" Y="1" Color="WhiteSmoke">
+    <Fields>
+      <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Text" Name="Text_1" Row="2" Column="3" Content=" INITIALIZATION" />
+      <Field Type="Text" Name="Text_2" Row="3" Column="4" Content="  COMPLETED" />
+      <Field Type="Image" Name="Image_2" Row="7" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Text" Name="Text_3" Row="5" Column="1" Content=" Wait for automatic " />
+      <Field Type="Text" Name="Text_4" Row="6" Column="0" Content="  application startup" />
+      <Field Type="Text" Name="Text_5" Row="0" Column="0" Content="ATTENTION!" />
+    </Fields>
+    <KeyBindings>
+      <KeyBinding Key="ALARM" BindOn="DoNothing" />
+      <KeyBinding Key="ESC" BindOn="DoNothing" />
+      <KeyBinding Key="PRG" BindOn="DoNothing" />
+    </KeyBindings>
+  </Mask>
+  <Mask Name="InsertManuf" Type="Normal" X="3" Y="2">
+    <Fields>
+      <Field Type="Image" Name="Image_1" Row="7" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Text" Name="Text_1" Row="0" Column="0" Content="Access rights" />
+      <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Insert Manufacturer" />
+      <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="password to modify" />
+      <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Manuf parameters" />
+      <Field Type="Image" Name="Image_2" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Text" Name="Text_5" Row="7" Column="0" Content="Press ESC to back" />
+      <Field Type="Text" Name="Text_6" Row="5" Column="0" Content=" " />
+    </Fields>
+    <KeyBindings>
+      <KeyBinding Key="ESC" BindOn="EscDummyManuf" />
+    </KeyBindings>
+  </Mask>
+  <Mask Name="InsertService" Type="Normal" X="3" Y="1">
+    <Fields>
+      <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Image" Name="Image_2" Row="7" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Text" Name="Text_1" Row="0" Column="0" Content="Access rights" />
+      <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Insert Service" />
+      <Field Type="Text" Name="Text_3" Row="3" Column="0" Content="password to modify" />
+      <Field Type="Text" Name="Text_4" Row="4" Column="0" Content="Service parameters" />
+      <Field Type="Text" Name="Text_5" Row="7" Column="0" Content="Press ESC to back" />
+    </Fields>
+    <KeyBindings>
+      <KeyBinding Key="ESC" BindOn="EscDummyService" />
+    </KeyBindings>
+  </Mask>
+  <Mask Name="TurnOffUnit" Type="Normal" X="2" Y="2">
+    <Fields>
+      <Field Type="Text" Name="Text" Row="2" Column="0" Content="Turn off the unit" />
+      <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="to change unit" />
+      <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="settings" />
+      <Field Type="Text" Name="Text_4" Row="7" Column="0" Content="Press ESC to back" />
+      <Field Type="Text" Name="Text_5" Row="0" Column="0" Content="ATTENTION!" />
+      <Field Type="Image" Name="Image" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+      <Field Type="Image" Name="Image_2" Row="7" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+    </Fields>
+    <KeyBindings>
+      <KeyBinding Key="ESC" BindOn="EscDummyService" />
+    </KeyBindings>
+  </Mask>
+  <Loop Name="Combine" X="1" Y="5">
+    <Mask Name="Combine" Type="Normal" X="1" Y="6" Color="LightBlue">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="0" Content="Combined Pool Temp" />
+        <Field Type="Text" Name="Text_2" Row="3" Column="0" Content="Higher Diff:       C" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="Lower Diff:        C" />
+        <Field Type="Text" Name="Text_4" Row="1" Column="0" Content="Set Point:         C" />
+        <Field Type="Image" Name="Image" Row="7" Column="0" Content="Combine.bmp" />
+        <Field Type="Image" Name="Image_2" Row="7" Column="2" Content="Combine.bmp" />
+        <Field Type="Image" Name="Image_3" Row="7" Column="4" Content="Combine.bmp" />
+        <Field Type="Image" Name="Image_4" Row="7" Column="6" Content="Combine.bmp" />
+        <Field Type="Image" Name="Image_5" Row="7" Column="12" Content="Combine.bmp" />
+        <Field Type="Image" Name="Image_6" Row="7" Column="14" Content="Combine.bmp" />
+        <Field Type="Image" Name="Image_7" Row="7" Column="10" Content="Combine.bmp" />
+        <Field Type="Image" Name="Image_8" Row="7" Column="8" Content="Combine.bmp" />
+        <Field Type="Image" Name="Image_9" Row="7" Column="18" Content="Combine.bmp" />
+        <Field Type="Image" Name="Image_10" Row="7" Column="20" Content="Combine.bmp" />
+        <Field Type="Image" Name="Image_11" Row="7" Column="16" Content="Combine.bmp" />
+        <Field Type="Text" Name="Text_6" Row="4" Column="0" Content="Tandem Staging: " />
+        <Field Type="Variable" Name="Variable_6" Row="4" Column="16" Content="Unit2StageBool" Min="0" Max="1" Class="CL_BOOL_SWAP" Format="iob" />
+        <Field Type="Variable" Name="Variable_2" Row="3" Column="13" Content="Pool2UpperLIm" Class="CL_REAL_1" Format="io+2.1" Min="0.0" Max="1.0" />
+        <Field Type="Variable" Name="Variable_3" Row="2" Column="13" Content="Pool2LowerLim" Class="CL_REAL_1" Format="io+2.1" Min="-1.0" Max="0.0" />
+        <Field Type="Variable" Name="Variable_4" Row="1" Column="13" Content="Pool2SP" Class="CL_REAL_1" Format="io+2.1" Min="25.0" Max="40.0" />
+      </Fields>
+      <KeyBindings />
+    </Mask>
+  </Loop>
+  <Loop Name="SET" X="4" Y="5">
+    <Mask Name="Setpoints" Type="Normal" X="4" Y="6" Color="ActiveCaption">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="0" Content="Set Points" />
+        <Field Type="Text" Name="Text_2" Row="1" Column="0" Content="Training:            c" />
+        <Field Type="Variable" Name="Variable_2" Row="1" Column="15" Content="Pool1SP" Class="CL_REAL_1" Format="io+2.1" Min="20.0" Max="35.0" />
+        <Field Type="Text" Name="Text_3" Row="2" Column="0" Content="Teaching:            c" />
+        <Field Type="Text" Name="Text_4" Row="3" Column="0" Content="Combined:            c" />
+        <Field Type="Variable" Name="Variable_3" Row="2" Column="15" Content="Pool2SP" Class="CL_REAL_1" Format="io+2.1" Min="20.0" Max="35.0" />
+        <Field Type="Variable" Name="Variable_4" Row="3" Column="15" Content="Pool3SP" Class="CL_REAL_1" Format="io+2.1" Min="20.0" Max="35.0" />
+        <Field Type="Image" Name="Image" Row="7" Column="0" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_2" Row="7" Column="2" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_3" Row="7" Column="4" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_4" Row="7" Column="6" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_5" Row="7" Column="8" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_6" Row="7" Column="10" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_7" Row="7" Column="12" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_8" Row="7" Column="14" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_9" Row="7" Column="16" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_10" Row="7" Column="18" Content="1Training.bmp" />
+        <Field Type="Image" Name="Image_11" Row="7" Column="20" Content="1Training.bmp" />
+        <Field Type="Text" Name="Text" Row="5" Column="0" Content="Lower Limit:         c" />
+        <Field Type="Text" Name="Text_5" Row="6" Column="0" Content="Upper Limit:         c" />
+        <Field Type="Variable" Name="Variable" Row="5" Column="15" Content="Pool1LowerLim" Class="CL_REAL_1" Format="io+2.1" Min="-5.0" Max="0.0" />
+        <Field Type="Variable" Name="Variable_5" Row="6" Column="15" Content="Pool1UpperLim" Class="CL_REAL_1" Format="io+2.1" Min="0.0" Max="5.0" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="DOWN" BindOn="OnOffSwitch" />
+        <KeyBinding Key="UP" BindOn="OnOffSwitch" />
+      </KeyBindings>
+    </Mask>
+  </Loop>
+</Worksheet>

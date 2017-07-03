@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution>
+  <Info ManifestVersion="1.1.0">
+    <Name>Northern Arena</Name>
+    <Description></Description>
+    <Version></Version>
+    <CreationDate>2017-02-20T19:03:08.5754494Z</CreationDate>
+    <Owner></Owner>
+    <StorageToolManaged>false</StorageToolManaged>
+    <CSuiteVersion>4.0.45</CSuiteVersion>
+  </Info>
+</Solution>

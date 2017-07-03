@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pou FileVersion="200.00.003" Name="RealToUint" ElementGuid="8f7a5fcd-ecbf-47b4-acb5-ae60dfdab380" Comment="" SingleTextLine="Round and cast Real numbers" Language="FBD" CustomFbd="0" Localization="Prj" GroupName="(User defined)" Password="E4BDBA2BEF6CC4DC" GenDebugInfo="false" UseResPassword="true" GenerateSymbMon="true" Is1499="false">
+  <Function IdentifierNb="0" Keyword="" ConvDirection="NoConversion" DataType="DINT" />
+  <LocalVars>
+    <Variable Name="RealToUint" DataType="UINT" InitialValue="" Comment="Rounded and casted input" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="ReadWrite" StringSize="0" Direction="Output" CommentFields="" Attributes="23825" />
+    <Variable Name="In" DataType="REAL" InitialValue="" Comment="Input value" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+  </LocalVars>
+  <PouBody><![CDATA[wFQnV1NbWi9dZGUTZGofaWwxMzU3g1NLR1dLTk5hlmBlb1ZuVSiqcQkJIWhuJ6s4JEVARQ1LhEVKQUtFPXXJD0RBTVk6c+hVOSs2NTht9TEwKi5SPWn2NTwvNjkpbYc4LDIuMCltnDhWZmNtVC6AbGp3DwtUfPQIDkNATlh78ClUPio3OHnoNDA3Ky1TfOw0NTEuNTho6EY5KzMtMWjoXTlCTFhfFYtaUUpMVQ1LkDg0DghBVgCWPzUvUjwocvE3KDI3NyltlzgsNTYtMnXtKUc+KjAscO0pXD5Lbw1LhFNFUTgyLBH5LTwwMC0xdPIsKFA/KTl36DcwKi5CPWn1KTUqLlk9E6FkaFdtVGkvsAgOQ0NTQ3uAODQvWDwoceg1LS9EPChw6DUtL1Y8KHPoNS0OCFE9afA0Mi0zNzh68DQyLTM3OHrwNjYtMzc4evAxPC0zNzhoyQ9EQlBCOgX5NShZPykwbfQsKEU/KTJt9CwoVz8pNG30LAkJUjwod/EzKjI0OTt38TMqMjQ5O3fzNyoyNDk7d/w9KjI0OSlMzkVFUUE7RHz0KV4+KjEsce0pQj4qNSxx7SlQPioyLHHtCA5TPyk4cfQrNTU6Ojhx9Cs1NTo6OHDyKzU1Ojo4cvYrNTU6KA1L52BqZ11obierCA4ga29mLvklS1dKRFJMzlNhcXFoby/5TD4xDwtTIqVpbW1lPFAI7DQoMisMCgKhaWhQa3tlfJRMLDI0LTFz7QgOIGdvZB6ta2JsDwsjKKpjaz4iSEQeiURcDghPZTmwTGA+NgwKYqFrYFxrb2YuyQ9BTUZeRhSKRlBKTU8=]]></PouBody>
+  <PouUIProperties><![CDATA[]]></PouUIProperties>
+</Pou>

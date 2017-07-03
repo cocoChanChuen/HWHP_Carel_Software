@@ -1,0 +1,72 @@
+Trying to change property 'svn:global-ignores'
+but the property has already been locally changed to a different value.
+MLGE
+SymbolTable
+To Download
+SpyListPersistence
+c.HMI
+Bin
+Releases
+*.otsuo
+*.mtc
+*.mws
+*.rtc
+*.rws
+*.xtc
+*.ttc
+*.xws
+*.tws
+*.gpm
+*.err
+*.ipa
+*.ain
+*.cnf
+*.dop
+*.fmo
+*.ic
+*.ics
+*.icp
+*.ict
+*.unc
+*.tunc
+*.stp
+<<<<<<< (local property value)
+*.lst
+*.sfc
+||||||| (incoming 'changed from' value)
+=======
+*.lst
+>>>>>>> (incoming 'changed to' value)
+*.mdb
+*.isasuo
+*.AcfMlge
+*.acfmlge
+*.stf
+*.bak
+*.configSettings
+*.iessuo
+*.iesuo
+*.tmp
+*.otr
+*.journal
+*-wal
+*-shm
+StorageToolRegistry.xml
+LibraryToken
+DwlOrder.txt
+<<<<<<< (local property value)
+MdfConf.txt
+*_Dwl.txt
+RetainRes1A
+RetainRes1B
+NVRAM_RTC.bin
+||||||| (incoming 'changed from' value)
+=======
+db.ini
+MdfConf.txt
+*_Dwl.txt
+RetainRes1A
+RetainRes1B
+DBR.INI
+NVRAM_RTC.bin
+>>>>>>> (incoming 'changed to' value)

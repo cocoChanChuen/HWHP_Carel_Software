@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <Variables>
+    <Variable Name="CfgCompStepless_STPLS" Comment="Configuration compressor stepless" AccessRights="Read" DataType="CFG_STEPLESS_COMP" Modifier="Constant" Kind="VarInput">
+      <Variable Name="StartUpT1" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="StartUpT2" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="ShOffT1" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="ShOffT2" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="StartStopPwr" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Percent" IsRetained="false" />
+      <Variable Name="MinPwr" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Percent" IsRetained="false" />
+      <Variable Name="DT_MinPwr" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="DT_MaxPwr" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="En_ModulLimPwr" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="DT_BelowMinPwr" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="MinMinT_On" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="MinMinT_Off" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="MInMinT_OnOnSame" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+    </Variable>
+    <Variable Name="CompReq_STPLS" Comment="Compressor request" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Percent" IsRetained="false" />
+    <Variable Name="DevAvbl_STPLS" Comment="Device available" AccessRights="Read" DataType="USINT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="VlvPulse_STPLS" Comment="Valve pulsing from FB CompVlvs" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="T_Incr_STPLS" Comment="Time increase for valve pulsing" AccessRights="Read" DataType="UINT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Milliseconds" IsRetained="false" />
+    <Variable Name="T_Decr_STPLS" Comment="Time decrease for valve pulsing" AccessRights="Read" DataType="UINT" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Milliseconds" IsRetained="false" />
+    <Variable Name="DT_MaxPwrAdj_STPLS" Comment="Delaytime maximum power adjust" AccessRights="Read" DataType="REAL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="RunPrevent_STPLS" Comment="Prevent run" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="ShOffRes_STPLS" Comment="Shutoff reset" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="En_CompStepless" Comment="Enable the function block" AccessRights="Read" DataType="BOOL" Modifier="Constant" Kind="VarInput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="CompOn_STPLS" Comment="Compressor on" AccessRights="Write" DataType="BOOL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="PulseReq_STPLS" Comment="Pulsing request" AccessRights="Write" DataType="REAL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Percent" IsRetained="false" />
+    <Variable Name="T_PulseOnMul_STPLS" Comment="Valve pulsing on time multiplier" AccessRights="Write" DataType="REAL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+    <Variable Name="CompOffReq_STPLS" Comment="Compressor off request" AccessRights="Write" DataType="BOOL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="PwrRun_STPLS" Comment="Power run" AccessRights="Write" DataType="REAL" Modifier="Constant" Kind="VarOutput" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Percent" IsRetained="false" />
+    <Variable Name="PhStatus_STPLS" Comment="Phase status" AccessRights="Write" DataType="PH_COMP" Modifier="Constant" Kind="VarOutput">
+      <Variable Name="Run" DataType="USINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="InCntDwn" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="CntDwn" DataType="UINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+    </Variable>
+    <Variable Name="F_TRIG_1" Comment="" AccessRights="ReadWrite" DataType="F_TRIG" Modifier="Constant" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Fedge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="R_TRIG_1" Comment="" AccessRights="ReadWrite" DataType="R_TRIG" Modifier="Constant" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="HysterAdv_REAL_1" Comment="" AccessRights="ReadWrite" DataType="HysterAdv_REAL_COMP" Modifier="Constant" Kind="Var">
+      <Variable Name="In" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="SetP" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="DiffLeft" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="DiffRight" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Reverse" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Out" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="TP_1" Comment="" AccessRights="ReadWrite" DataType="TP" Modifier="Constant" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="TOF_1" Comment="" AccessRights="ReadWrite" DataType="TOF" Modifier="Constant" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Fedge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="TOF_2" Comment="" AccessRights="ReadWrite" DataType="TOF" Modifier="Constant" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Fedge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="TOF_3" Comment="" AccessRights="ReadWrite" DataType="TOF" Modifier="Constant" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Fedge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="F_TRIG_2" Comment="" AccessRights="ReadWrite" DataType="F_TRIG" Modifier="Constant" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Fedge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="PulseTrig" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="CompReqTmp" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="CompOffRun" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="AlrmComp" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="Req" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="CompReqOn" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="PwrReq" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="TStartUpT1" Comment="" AccessRights="ReadWrite" DataType="TIME" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="RunStartUp1" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="RunStartUp2" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="CntDwnStartUp" Comment="" AccessRights="ReadWrite" DataType="DINT" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="CntDwnIncrStartUp" Comment="" AccessRights="ReadWrite" DataType="DINT" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="TStartUpT2" Comment="" AccessRights="ReadWrite" DataType="TIME" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="RunShOff1" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="RunShOff2" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="CntDwnDecrShOff" Comment="" AccessRights="ReadWrite" DataType="DINT" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="CntDwnShOff" Comment="" AccessRights="ReadWrite" DataType="DINT" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="TShOffT1" Comment="" AccessRights="ReadWrite" DataType="TIME" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="TShOffT2" Comment="" AccessRights="ReadWrite" DataType="TIME" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="StartStopLowPwr" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="StartStopHiPwr" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="RegPhase" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="PulseIncrVal" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="PulseDecrVal" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="ThrshPulseIncr" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="ThrshPulseDecr" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="IncrTmp" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="DecrTmp" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="HoldMaxPwr" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="HoldMinPwr" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="BLINK_1" Comment="" AccessRights="ReadWrite" DataType="BLINK" Modifier="Constant" Kind="Var">
+      <Variable Name="RUN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="CYCLE" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="BLINK_2" Comment="" AccessRights="ReadWrite" DataType="BLINK" Modifier="Constant" Kind="Var">
+      <Variable Name="RUN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="CYCLE" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="IncrReq" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="StbyReq" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="DecrReq" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="PwrChg" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="DeltaReq" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="PwrRunOld" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="CntDwnPhaseTmp" Comment="" AccessRights="ReadWrite" DataType="DINT" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="MinPwrDwn" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="MaxDeltaActive" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="HysterAdv_REAL_2" Comment="" AccessRights="ReadWrite" DataType="HysterAdv_REAL_COMP" Modifier="Constant" Kind="Var">
+      <Variable Name="In" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="SetP" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="DiffLeft" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="DiffRight" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Reverse" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Out" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="HysterAdv_REAL_3" Comment="" AccessRights="ReadWrite" DataType="HysterAdv_REAL_COMP" Modifier="Constant" Kind="Var">
+      <Variable Name="In" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="SetP" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="DiffLeft" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="DiffRight" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Reverse" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Out" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="DeltaReq_Tmp" Comment="" AccessRights="ReadWrite" DataType="REAL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="EnMultiplierCount" Comment="" AccessRights="ReadWrite" DataType="BOOL" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="HysterAdv_REAL_4" Comment="" AccessRights="ReadWrite" DataType="HysterAdv_REAL_COMP" Modifier="Constant" Kind="Var">
+      <Variable Name="In" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="SetP" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="DiffLeft" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="DiffRight" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Reverse" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Out" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="TimeCounter_INT_1" Comment="" AccessRights="ReadWrite" DataType="TimeCounter_INT_COMP" Modifier="Constant" Kind="Var">
+      <Variable Name="In" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Du" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Reset" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Enable" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Out" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="Time_Cont" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Time_Old" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Out_Int" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="InOld" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="R_TRIG_2" Comment="" AccessRights="ReadWrite" DataType="R_TRIG" Modifier="Constant" Kind="Var">
+      <Variable Name="CLK" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="Interpolate_REAL_1" Comment="" AccessRights="ReadWrite" DataType="Interpolate_REAL_COMP" Modifier="Constant" Kind="Var">
+      <Variable Name="X" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="XDot" DataType="REAL,0-127">
+        <Variable Name="XDot[0]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[1]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[2]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[3]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[4]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[5]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[6]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[7]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[8]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[9]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[10]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[11]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[12]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[13]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[14]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[15]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[16]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[17]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[18]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[19]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[20]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[21]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[22]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[23]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[24]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[25]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[26]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[27]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[28]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[29]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[30]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[31]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[32]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[33]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[34]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[35]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[36]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[37]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[38]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[39]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[40]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[41]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[42]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[43]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[44]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[45]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[46]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[47]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[48]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[49]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[50]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[51]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[52]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[53]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[54]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[55]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[56]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[57]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[58]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[59]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[60]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[61]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[62]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[63]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[64]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[65]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[66]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[67]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[68]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[69]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[70]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[71]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[72]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[73]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[74]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[75]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[76]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[77]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[78]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[79]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[80]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[81]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[82]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[83]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[84]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[85]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[86]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[87]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[88]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[89]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[90]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[91]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[92]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[93]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[94]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[95]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[96]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[97]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[98]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[99]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[100]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[101]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[102]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[103]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[104]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[105]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[106]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[107]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[108]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[109]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[110]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[111]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[112]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[113]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[114]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[115]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[116]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[117]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[118]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[119]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[120]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[121]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[122]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[123]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[124]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[125]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[126]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="XDot[127]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      </Variable>
+      <Variable Name="YDot" DataType="REAL,0-127">
+        <Variable Name="YDot[0]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[1]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[2]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[3]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[4]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[5]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[6]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[7]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[8]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[9]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[10]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[11]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[12]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[13]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[14]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[15]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[16]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[17]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[18]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[19]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[20]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[21]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[22]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[23]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[24]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[25]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[26]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[27]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[28]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[29]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[30]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[31]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[32]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[33]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[34]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[35]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[36]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[37]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[38]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[39]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[40]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[41]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[42]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[43]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[44]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[45]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[46]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[47]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[48]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[49]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[50]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[51]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[52]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[53]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[54]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[55]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[56]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[57]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[58]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[59]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[60]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[61]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[62]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[63]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[64]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[65]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[66]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[67]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[68]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[69]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[70]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[71]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[72]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[73]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[74]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[75]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[76]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[77]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[78]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[79]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[80]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[81]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[82]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[83]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[84]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[85]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[86]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[87]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[88]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[89]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[90]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[91]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[92]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[93]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[94]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[95]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[96]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[97]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[98]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[99]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[100]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[101]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[102]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[103]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[104]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[105]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[106]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[107]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[108]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[109]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[110]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[111]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[112]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[113]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[114]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[115]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[116]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[117]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[118]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[119]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[120]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[121]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[122]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[123]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[124]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[125]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[126]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+        <Variable Name="YDot[127]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      </Variable>
+      <Variable Name="MaxIdx" DataType="USINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Out" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Index" DataType="DINT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="X_Tmp" Comment="" AccessRights="ReadWrite" DataType="REAL,0-127" Modifier="Constant" Kind="Var">
+      <Variable Name="X_Tmp[0]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[1]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[2]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[3]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[4]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[5]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[6]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[7]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[8]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[9]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[10]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[11]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[12]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[13]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[14]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[15]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[16]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[17]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[18]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[19]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[20]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[21]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[22]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[23]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[24]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[25]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[26]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[27]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[28]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[29]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[30]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[31]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[32]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[33]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[34]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[35]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[36]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[37]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[38]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[39]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[40]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[41]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[42]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[43]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[44]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[45]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[46]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[47]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[48]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[49]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[50]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[51]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[52]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[53]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[54]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[55]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[56]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[57]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[58]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[59]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[60]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[61]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[62]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[63]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[64]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[65]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[66]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[67]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[68]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[69]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[70]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[71]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[72]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[73]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[74]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[75]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[76]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[77]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[78]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[79]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[80]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[81]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[82]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[83]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[84]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[85]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[86]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[87]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[88]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[89]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[90]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[91]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[92]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[93]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[94]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[95]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[96]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[97]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[98]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[99]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[100]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[101]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[102]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[103]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[104]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[105]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[106]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[107]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[108]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[109]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[110]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[111]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[112]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[113]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[114]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[115]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[116]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[117]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[118]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[119]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[120]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[121]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[122]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[123]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[124]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[125]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[126]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="X_Tmp[127]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="Y_Tmp" Comment="" AccessRights="ReadWrite" DataType="REAL,0-127" Modifier="Constant" Kind="Var">
+      <Variable Name="Y_Tmp[0]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[1]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[2]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[3]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[4]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[5]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[6]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[7]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[8]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[9]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[10]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[11]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[12]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[13]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[14]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[15]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[16]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[17]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[18]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[19]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[20]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[21]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[22]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[23]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[24]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[25]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[26]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[27]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[28]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[29]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[30]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[31]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[32]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[33]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[34]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[35]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[36]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[37]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[38]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[39]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[40]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[41]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[42]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[43]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[44]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[45]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[46]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[47]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[48]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[49]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[50]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[51]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[52]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[53]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[54]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[55]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[56]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[57]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[58]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[59]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[60]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[61]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[62]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[63]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[64]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[65]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[66]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[67]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[68]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[69]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[70]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[71]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[72]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[73]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[74]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[75]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[76]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[77]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[78]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[79]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[80]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[81]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[82]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[83]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[84]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[85]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[86]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[87]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[88]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[89]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[90]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[91]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[92]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[93]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[94]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[95]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[96]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[97]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[98]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[99]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[100]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[101]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[102]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[103]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[104]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[105]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[106]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[107]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[108]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[109]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[110]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[111]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[112]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[113]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[114]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[115]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[116]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[117]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[118]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[119]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[120]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[121]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[122]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[123]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[124]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[125]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[126]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Y_Tmp[127]" DataType="REAL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="Index" Comment="" AccessRights="ReadWrite" DataType="DINT" Modifier="Constant" Kind="Var" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    <Variable Name="TimeCounter_INT_2" Comment="" AccessRights="ReadWrite" DataType="TimeCounter_INT_COMP" Modifier="Constant" Kind="Var">
+      <Variable Name="In" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Du" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Reset" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Enable" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Out" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="Seconds" IsRetained="false" />
+      <Variable Name="Time_Cont" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Time_Old" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Out_Int" DataType="INT" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="InOld" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="RS_1" Comment="" AccessRights="ReadWrite" DataType="RS" Modifier="Constant" Kind="Var">
+      <Variable Name="SET" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="RESET1" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q1" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+    <Variable Name="TON_1" Comment="" AccessRights="ReadWrite" DataType="TON" Modifier="Constant" Kind="Var">
+      <Variable Name="IN" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="PT" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Q" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="ET" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Pdate" DataType="TIME" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+      <Variable Name="Redge" DataType="BOOL" IO="false" Protocol="false" UI="false" Default="false" LogPV="false" Alarm="false" UoM="NoUnits" IsRetained="false" />
+    </Variable>
+  </Variables>
+</Manifest>

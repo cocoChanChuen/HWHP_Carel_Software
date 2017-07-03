@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pou FileVersion="200.00.003" Name="PsiToBar_INT" ElementGuid="8bf2cd13-9355-48ed-b4e0-6ce0259f1397" Comment="" SingleTextLine="Converts a value in Psi to a value in Bar" Language="FBD" CustomFbd="0" Localization="Prj" GroupName="(User defined)" Password="E4BDBA2BEF6CC4DC" GenDebugInfo="false" UseResPassword="true" GenerateSymbMon="true" Is1499="false">
+  <Function IdentifierNb="0" Keyword="" ConvDirection="NoConversion" DataType="DINT" />
+  <LocalVars>
+    <Variable Name="PsiToBar_INT" DataType="INT" InitialValue="" Comment="Value in Bar" Address="" Modifier="Constant" Kind="VarOutput" Alias="" AccessRights="ReadWrite" StringSize="0" Direction="Output" CommentFields="" Attributes="23825" />
+    <Variable Name="In" DataType="INT" InitialValue="" Comment="Value in Psi" Address="" Modifier="Constant" Kind="VarInput" Alias="" AccessRights="Read" StringSize="0" Direction="Input" CommentFields="" Attributes="0" />
+  </LocalVars>
+  <PouBody><![CDATA[uFQnV1NbWi9dZGUTZGofaWwxMzU3g1NLR1dLTk5hlHZtV21DYTObTEpXDwsjKKpjaz4iR0IFyQ9EQ0xDSQX5MAkJQkNPGf40KFM/KTN3/Ck2MzYoLBL5LTYzOi00ee0pRz4qMCxw7SlcPlJyaRWrR2VxXVNFAIgIDlc/MQ1LhEdLWzgyLBH5LTYzOi0ycfAsKFA/KTFz/CkwOystQ3zsNCgyKy1YfIVLXVxWTl8TgURIDghVPXHJD0RBTVk6dehVOSs0MTht9jUwKi5SPWn1NzwvNjkpbYc4LDIuMCltnDhWZmNtVC6Na3AOCFU9cckPRFVDUzpz6FU5KzoxLHP1My0vUTwoePIpNjcrLUN87DQoMistWHyNawkJQldBE/4wKFM/KTd3/Ck2MjQoLBL5LT01LjM0aOhGOSszLTFo6F05U3FoVC6GZHZcS09UTM5FRVFBO0R89ClePioxLHHtKUI+KjMsce0pUD4qMixx7QgOUz8pMXbyKzYxOjoxdvIrNjE6OjF49is2MTo6MnH8KzYxOigNS4REVkA4RT1x6F85KzItMGjoQzkrMS0waOhROSszLTBoyQ9UPioyM3fqNzY7OTIzd+o3Njs5MjVz6jc2OzkyNnnqNzY7KwwKAYVXRzlGPDBtnjgsMy4xKW2COCwyLjEpbZA4LDcuMSlMzlU5Kzc2Nm/2Nzw4NzY2b/Y3PDg3ODJv9jc8ODQxOG/2NzwqDwtAAJZGPkc/MSwb+S00LzIoLAf5LTAvMigsFfktMS8yKA1LlDgsNDE3LnP2PT80MTcuc/Y9PzQ3My5z9j0/NDQ5LnP2PS0OCCJlL6BabW1kbg1L52xqZW08IA6QTUFRDwtWJLZ2bWxsPEl79ggOUGFgbCiqYjlTSykxbfUsCQlBZGwtl2x+Zj9RSWn1MygyMCgNS+dgamddaG4nqwgOIGtvZi75JU1HXUxBGckPSmZ6dUkl+TAJCSFkbiWbbGplbQwKBIpBW0VXT0MVjUpK]]></PouBody>
+  <PouUIProperties><![CDATA[]]></PouUIProperties>
+</Pou>

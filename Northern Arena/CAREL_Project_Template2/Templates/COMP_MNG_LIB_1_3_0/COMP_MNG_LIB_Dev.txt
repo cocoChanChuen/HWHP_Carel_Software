@@ -1,0 +1,40 @@
+Version 1.1 DevConfiguration
+Settings
+Instance
+CompressorMng
+Variables
+Variable	Description	DataType	DefaultValue
+CompressorMng.CompCurrManuf	support variable for the index of manufacturer compressor index	UINT	
+CompressorMng.CompCurrModel	support variable for the index of model compressor index	UINT	
+CompressorMng.CompIdx	Index of the compressors	UINT	
+CompressorMng.DT_DscgHiP_Alrm	Delaytime discharge high pressure alarm	UINT	40
+CompressorMng.DT_HiCurrAlrm	Delaytime high current alarm	UINT	20
+CompressorMng.DT_HiRatioP_Alrm	High ratio of pressure delay	UINT	60
+CompressorMng.EcoDiffTemp	Economizer temperature differential	REAL	
+CompressorMng.EcoMinPwr	Economizer minimum power	REAL	
+CompressorMng.EcoTempSetP	Economizer temperature set point	REAL	
+CompressorMng.En_Eco	Enable economizer	BOOL	
+CompressorMng.En_InjLiqd	Enable injection liquid	BOOL	
+CompressorMng.MaxRetryAlLowSuctP	Low suction pressure alarms maximum allowed retry	UINT	
+CompressorMng.MinOffT	Safety off time	UINT	
+CompressorMng.MinOnOnSameT	Safety time between two on of same compressor	UINT	
+CompressorMng.MinOnT	Safety on time	UINT	
+CompressorMng.PartwindDT	Part winding delaytime	UINT	
+CompressorMng.PreventT	Prevent time	UINT	
+CompressorMng.RunDT_DscgLowP_Alrm	Running delaytime discharge low pressure alarm	UINT	60
+CompressorMng.RunDT_LowDeltaP_Alrm	Running delaytime low delta pressure alarm 	UINT	20
+CompressorMng.RunDT_LowRatioP_Alrm	Running delaytime low ratio pressure alarm	UINT	20
+CompressorMng.RunDT_SuctHiP_Alrm	Running delaytime suction high pressure alarm	UINT	60
+CompressorMng.RunDT_SuctLowP_Alrm	 Running delaytime suction low pressure alarm	UINT	60
+CompressorMng.StarDeltaDT	Star delta delaytime	UINT	
+CompressorMng.StarT	Star time	UINT	
+CompressorMng.StartUpDT_DscgLowP_Alrm	Startup delaytime discharge low pressure alarm	UINT	180
+CompressorMng.StartUpDT_LowDeltaP_Alrm	Startup delaytime low delta pressure alarm	UINT	45
+CompressorMng.StartUpDT_LowRatioP_Alrm	Startup delaytime low ratio pressure alarm	UINT	60
+CompressorMng.StartUpDT_SuctHiP_Alrm	Startup delaytime suction high pressure alarm	UINT	120
+CompressorMng.StartUpDT_SuctLowP_Alrm	Startup delaytime suction low pressure alarm	UINT	180
+CompressorMng.TypIgn	Type ignition	USINT	
+CompressorMng.UnitMeasurePui	Unit of measure for pressure used by user interface (FALSE: barg,  TRUE :psig)	BOOL	
+CompressorMng.UnitMeasureTempUI	Unit of measure for temperature used by user interface (FALSE: °C,  TRUE :°F)	BOOL	
+CompressorMng.VlvMaxPulseOffT	Valve maximum pulsing off time	UINT	
+CompressorMng.VlvMinPulseOffT	Valve minimum pulsing off time	UINT	

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest
+  Version="1.0.0">
+  <Variables>
+    <Variable
+      Name="TypIgn"
+      Comment="0:Direct; 1:Part-winding; 2:Star/Delta"
+      AccessRights="Read"
+      DataType="USINT"
+      Modifier="Constant"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false" />
+    <Variable
+      Name="PartwindDT"
+      Comment="Part winding delaytime"
+      AccessRights="Read"
+      DataType="UINT"
+      Modifier="Constant"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="Milliseconds"
+      IsRetained="false" />
+    <Variable
+      Name="T_Star"
+      Comment="Star working time"
+      AccessRights="Read"
+      DataType="UINT"
+      Modifier="Constant"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="Milliseconds"
+      IsRetained="false" />
+    <Variable
+      Name="StarDeltaDT"
+      Comment="Star delta delaytime"
+      AccessRights="Read"
+      DataType="UINT"
+      Modifier="Constant"
+      Kind="VarInput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="Milliseconds"
+      IsRetained="false" />
+    <Variable
+      Name="Delta_PartwindA_Direct"
+      Comment="The excution time for Relay A work as (Delta/partwinding A/direct)"
+      AccessRights="Write"
+      DataType="MOTIGN_TIMES_COMP"
+      Modifier="Constant"
+      Kind="VarOutput">
+      <Variable
+        Name="DT_On"
+        DataType="UINT"
+        IO="false"
+        Protocol="false"
+        UI="false"
+        Default="false"
+        LogPV="false"
+        Alarm="false"
+        UoM="Milliseconds"
+        IsRetained="false" />
+      <Variable
+        Name="DT_Off"
+        DataType="UINT"
+        IO="false"
+        Protocol="false"
+        UI="false"
+        Default="false"
+        LogPV="false"
+        Alarm="false"
+        UoM="Milliseconds"
+        IsRetained="false" />
+    </Variable>
+    <Variable
+      Name="Star_PartwindB"
+      Comment="The excution time for Relay B work as (Star/partwinding B)"
+      AccessRights="Write"
+      DataType="MOTIGN_TIMES_COMP"
+      Modifier="Constant"
+      Kind="VarOutput">
+      <Variable
+        Name="DT_On"
+        DataType="UINT"
+        IO="false"
+        Protocol="false"
+        UI="false"
+        Default="false"
+        LogPV="false"
+        Alarm="false"
+        UoM="Milliseconds"
+        IsRetained="false" />
+      <Variable
+        Name="DT_Off"
+        DataType="UINT"
+        IO="false"
+        Protocol="false"
+        UI="false"
+        Default="false"
+        LogPV="false"
+        Alarm="false"
+        UoM="Milliseconds"
+        IsRetained="false" />
+    </Variable>
+    <Variable
+      Name="StarDeltaMode"
+      Comment="Star delta mode"
+      AccessRights="Write"
+      DataType="BOOL"
+      Modifier="Constant"
+      Kind="VarOutput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false" />
+    <Variable
+      Name="PartWindMode"
+      Comment="Part winding mode"
+      AccessRights="Write"
+      DataType="BOOL"
+      Modifier="Constant"
+      Kind="VarOutput"
+      IO="false"
+      Protocol="false"
+      UI="false"
+      Default="false"
+      LogPV="false"
+      Alarm="false"
+      UoM="NoUnits"
+      IsRetained="false" />
+  </Variables>
+</Manifest>
