@@ -193,6 +193,36 @@ msgid "AL*16"
 msgstr "AL*16"
 
 #: Classes.otsf
+#| msgctxt "[Class:Class][Resource:0]"
+msgctxt "[Class:BacnetClientDeviceError][Resource:0]"
+msgid "Device answered as expected (online)"
+msgstr "Answered as expected"
+
+#: Classes.otsf
+#| msgctxt "[Class:Class][Resource:1]"
+msgctxt "[Class:BacnetClientDeviceError][Resource:1]"
+msgid "Device did not answer (offline)"
+msgstr "Did not answer"
+
+#: Classes.otsf
+#| msgctxt "[Class:Class][Resource:2]"
+msgctxt "[Class:BacnetClientDeviceError][Resource:2]"
+msgid "Device answered with an invalid packet"
+msgstr "Invalid packet"
+
+#: Classes.otsf
+#| msgctxt "[Class:Class][Resource:3]"
+msgctxt "[Class:BacnetClientDeviceError][Resource:3]"
+msgid "Device answered with an error code"
+msgstr "Answered-error code"
+
+#: Classes.otsf
+#| msgctxt "[Class:Class][Resource:4]"
+msgctxt "[Class:BacnetClientDeviceError][Resource:4]"
+msgid "Device has yet to be queried"
+msgstr "Not yet to be queried"
+
+#: Classes.otsf
 msgctxt "[Class:Beta][Resource:0]"
 msgid ""
 msgstr ""
@@ -2681,6 +2711,38 @@ msgid "to DATA LOGGER"
 msgstr "to DATA LOGGER"
 
 #: 02_Main.otws
+msgctxt "[Mask:Bacnet][Field:Text]"
+msgid "Port:"
+msgstr "Port:"
+
+#: 02_Main.otws
+#| msgctxt "[Mask:HeatPumpInfo_Clone_2][Field:Text_1]"
+msgctxt "[Mask:Bacnet][Field:Text_1]"
+msgid "Info"
+msgstr "Info BacNet"
+
+#: 02_Main.otws
+msgctxt "[Mask:Bacnet][Field:Text_2]"
+msgid "Server Instance:"
+msgstr "Client Instance:"
+
+#: 02_Main.otws
+msgctxt "[Mask:Bacnet][Field:Text_3]"
+msgid "Client Status"
+msgstr "Client Status:"
+
+#: 02_Main.otws
+msgctxt "[Mask:Bacnet][Field:Text_4]"
+msgid "Client Error Code: "
+msgstr "Client Error Code: "
+
+#: 02_Main.otws
+#| msgctxt "[Mask:HeatPumpInfo_Clone_2][Field:Text_10]"
+msgctxt "[Mask:Bacnet][Field:Text_10]"
+msgid "HP:       bar/      "
+msgstr "Server Instance:"
+
+#: 02_Main.otws
 msgctxt "[Mask:Blackout][Field:Text_1]"
 msgid "PowerOff time:"
 msgstr "PowerOff time:"
@@ -2996,7 +3058,7 @@ msgstr "Temp SP:             "
 #| msgctxt "[Mask:SysInfo_Clone_2][Field:Text_1]"
 msgctxt "[Mask:HeatPumpInfo][Field:Text_1]"
 msgid "Info"
-msgstr "Info"
+msgstr "Info Heat Pump"
 
 #: 02_Main.otws
 msgctxt "[Mask:HeatPumpInfo][Field:Text_2]"

@@ -117,6 +117,9 @@
   <AcfElementGuid Guid="70b2f4f0-f4d6-4f13-90c4-04b1db836dc2">
     <File>WeekDay_UINT.AcfMlge</File>
   </AcfElementGuid>
+  <AcfElementGuid Guid="719680ad-5936-4b98-8187-bf0470b9a133">
+    <File>BlinkOnOff_INT.AcfMlge</File>
+  </AcfElementGuid>
   <AcfElementGuid Guid="72a0faa2-4c52-4cec-8f6f-146a44f764a5">
     <File>Min_REAL.AcfMlge</File>
   </AcfElementGuid>

@@ -122,7 +122,7 @@
     <Mask Name="HeatPumpInfo" Type="Normal" X="2" Y="7" Color="LightCyan">
       <Fields>
         <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
-        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Info" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Info Heat Pump" />
         <Field Type="Text" Name="Text_10" Row="1" Column="0" Content="HP:       bar/      " />
         <Field Type="Variable" Name="Variable_7" Row="0" Column="0" Content="dummy" Class="CL_Move" Format="ib" Min="0" Max="1" />
         <Field Type="Text" Name="Text_8" Row="2" Column="0" Content="LP:       bar/      " />
@@ -140,7 +140,28 @@
         <KeyBinding Key="UP" BindOn="Move_UP" />
       </KeyBindings>
     </Mask>
-    <Mask Name="WorkHours" Type="Normal" X="2" Y="8" Color="LightCyan">
+    <Mask Name="Bacnet" Type="Normal" X="2" Y="8" Color="LightCyan">
+      <Fields>
+        <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
+        <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Info BacNet" />
+        <Field Type="Text" Name="Text_10" Row="1" Column="0" Content="Server Instance:" />
+        <Field Type="Variable" Name="Variable_7" Row="0" Column="0" Content="dummy" Class="CL_Move" Format="ib" Min="0" Max="1" />
+        <Field Type="Text" Name="Text_2" Row="2" Column="0" Content="Client Instance:" />
+        <Field Type="Text" Name="Text" Row="3" Column="0" Content="Port:" />
+        <Field Type="Text" Name="Text_3" Row="4" Column="0" Content="Client Status:" />
+        <Field Type="Text" Name="Text_4" Row="6" Column="0" Content="Client Error Code: " />
+        <Field Type="Variable" Name="Variable" Row="5" Column="0" Content="BacnetCLientDeviceError" Class="BacnetClientDeviceError" Format="o+5" Min="-32768" Max="32767" />
+        <Field Type="Variable" Name="Variable_2" Row="7" Column="0" Content="BacnetClientDeviceErrorCode" Class="CL_INT" Format="o+5" Min="-32768" Max="32767" />
+        <Field Type="Variable" Name="Variable_3" Row="3" Column="6" Content="BacnetPort" Class="CL_UDINT" Format="io6" Min="0" Max="999999" />
+        <Field Type="Variable" Name="Variable_4" Row="2" Column="16" Content="BacnetClientDeviceInstance" Class="CL_UDINT" Format="io6" Min="0" Max="999999" />
+        <Field Type="Variable" Name="Variable_5" Row="1" Column="16" Content="BacnetServerDeviceInstance" Class="CL_UDINT" Format="io6" Min="0" Max="999999" />
+      </Fields>
+      <KeyBindings>
+        <KeyBinding Key="DOWN" BindOn="Move_DOWN" />
+        <KeyBinding Key="UP" BindOn="Move_UP" />
+      </KeyBindings>
+    </Mask>
+    <Mask Name="WorkHours" Type="Normal" X="2" Y="9" Color="LightCyan">
       <Fields>
         <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
         <Field Type="Text" Name="Text_1" Row="1" Column="0" Content="Work hours" />
@@ -160,7 +181,7 @@
         <KeyBinding Key="UP" BindOn="Move_UP" />
       </KeyBindings>
     </Mask>
-    <Mask Name="SysInfo" Type="Normal" X="2" Y="9" Color="LightCyan">
+    <Mask Name="SysInfo" Type="Normal" X="2" Y="10" Color="LightCyan">
       <Fields>
         <Field Type="Image" Name="Image_1" Row="0" Column="0" Content="BLACK_ROWS_132X8.BMP" />
         <Field Type="Text" Name="Text_1" Row="0" Column="1" Content="Info" />
@@ -186,7 +207,7 @@
         <KeyBinding Key="UP" BindOn="Move_UP" />
       </KeyBindings>
     </Mask>
-    <Mask Name="Blackout" Type="Normal" X="2" Y="10" Color="LightCyan">
+    <Mask Name="Blackout" Type="Normal" X="2" Y="11" Color="LightCyan">
       <Fields>
         <Field Type="Text" Name="Text_1" Row="4" Column="0" Content="PowerOff time:" />
         <Field Type="Variable" Name="Variable_1" Row="5" Column="0" Content="GeneralMng.LastOnDay" Class="CL_UINT" Format="o2z" Min="0" Max="99" />

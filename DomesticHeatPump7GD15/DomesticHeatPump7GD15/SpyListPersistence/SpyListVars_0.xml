@@ -9,4 +9,16 @@
   <Variable>
     <FullName>DomesticHeatPump7GD15.Device1.Resource1.MIdCylinder_T_Raw</FullName>
   </Variable>
+  <Variable>
+    <FullName>DomesticHeatPump7GD15.Device1.Resource1.HP_P</FullName>
+  </Variable>
+  <Variable>
+    <FullName>DomesticHeatPump7GD15.Device1.Resource1.LP_P</FullName>
+  </Variable>
+  <Variable>
+    <FullName>DomesticHeatPump7GD15.Device1.Resource1.LP_T</FullName>
+  </Variable>
+  <Variable>
+    <FullName>DomesticHeatPump7GD15.Device1.Resource1.HP_T</FullName>
+  </Variable>
 </SpyListVars_0>
